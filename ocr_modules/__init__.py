@@ -1,4 +1,4 @@
-# dpsk_modules - Refactored DPSK OCR data processing pipeline
+# ocr_modules - Refactored OCR data processing pipeline
 #
 # Modules:
 #   config            – Constants, regex patterns, dictionaries
