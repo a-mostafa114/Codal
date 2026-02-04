@@ -3,7 +3,7 @@
 config.py – Constants, regex patterns, and reference dictionaries.
 
 All hard-coded patterns and look-up tables live here so that every other
-module can simply ``from dpsk_modules.config import …``.
+module can simply ``from ocr_modules.config import …``.
 """
 
 # ── Firm regex pattern ──────────────────────────────────────────────────
