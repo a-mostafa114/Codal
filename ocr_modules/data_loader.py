@@ -7,7 +7,7 @@ Functions
 load_dirty_last_names(path)   – Excel file with last-name corrections.
 load_death_register(path)     – Updated death-register CSV.
 load_first_names(path)        – Stata file with burial first names.
-load_main_dataframe(path)     – Main OCR CSV (``dpsk_whole.csv``).
+load_main_dataframe(path)     – Main OCR CSV (``ocr_input.csv``).
 build_surname_list(main_df)   – Construct the initial ``surname_list`` frame.
 load_occupation_list(path)    – Occupation reference CSV.
 """
@@ -49,7 +49,7 @@ def load_first_names(path="Burial_names.dta"):
 
 
 # ── Main dataframe ──────────────────────────────────────────────────────
-def load_main_dataframe(path="dpsk_whole.csv"):
+def load_main_dataframe(path="ocr_input.csv"):
     return pd.read_csv(path)
 
 
