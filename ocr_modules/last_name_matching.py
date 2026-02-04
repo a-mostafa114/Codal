@@ -16,6 +16,10 @@ Also handles:
 """
 
 import re
+import os
+import multiprocessing as mp
+
+import numpy as np
 import pandas as pd
 from rapidfuzz import fuzz
 
@@ -260,3 +264,57 @@ def _boundary_ok(line, compare_part):
     comma_d = after.find(",") if "," in after else float('inf')
     dot_d   = after.find(".") if "." in after else float('inf')
     return abs(min(space_d, comma_d, dot_d)) == 0
+
+
+# ── parallel helpers ──────────────────────────────────────────────────
+
+def _worker_apply_alt_algorithm(args):
+    """Process a chunk of the DataFrame (runs in a child process)."""
+    chunk, df_death_reg_unacc, dirty_last_names_list = args
+    return chunk.apply(
+        lambda row: alt_algorithm(row, df_death_reg_unacc, dirty_last_names_list),
+        axis=1,
+    )
+
+
+def parallel_alt_algorithm(surname_list, df_death_reg_unacc,
+                           dirty_last_names_list, n_workers=None):
+    """Run :func:`alt_algorithm` in parallel across multiple CPU cores.
+
+    Parameters
+    ----------
+    surname_list : DataFrame
+        The rows to match.
+    df_death_reg_unacc : DataFrame
+        Death-register reference data (read-only).
+    dirty_last_names_list : DataFrame
+        Dirty-name → clean-name mapping (read-only).
+    n_workers : int, optional
+        Number of parallel workers.  Defaults to ``os.cpu_count()``.
+    """
+    n_rows = len(surname_list)
+    if n_workers is None:
+        n_workers = os.cpu_count() or 1
+    n_workers = max(1, min(n_workers, n_rows))
+
+    if n_workers <= 1:
+        return surname_list.apply(
+            lambda row: alt_algorithm(
+                row, df_death_reg_unacc, dirty_last_names_list),
+            axis=1,
+        )
+
+    chunks = np.array_split(surname_list, n_workers)
+    chunks = [c for c in chunks if len(c) > 0]
+
+    args = [
+        (chunk, df_death_reg_unacc, dirty_last_names_list)
+        for chunk in chunks
+    ]
+
+    print(f"  → Distributing {n_rows:,} rows across {len(chunks)} workers ...")
+
+    with mp.Pool(processes=len(chunks)) as pool:
+        results = pool.map(_worker_apply_alt_algorithm, args)
+
+    return pd.concat(results)
