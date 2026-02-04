@@ -1,0 +1,2236 @@
+,parish,parish_cleaned,mapped_parish
+0,H.,Hedvig Eleonora,Hedvig Eleonora 
+1,O.,Oscars,Oscarstad 
+2,E.,Engelbrekts,Engelbrekt 
+3,J.,Jakobs o. Johannes,Jakob och Johannes 
+4,A.,Adolf Fredriks,Adolf Fredrik 
+5,Kh.,Kungsholms,Kungsholm
+6,M.,Matteus,Matteus 
+7,G.,Gustaf Wasa,
+8,Kl.,Klara,Klara
+9,Mt.,Mjoback,Mjoback 
+10,Kt.,Katarina,Katarina 
+11,Djursholm,Djursholm,Djursholm 
+12,N.,Nikolai,Nikolai
+13,Lidingo,Lidingo,Lidingo 
+14,Saltsjobaden,Saltsjobaden,Saltsjobaden 
+15,Stocksund,Stocksund,Stocksund 
+16,Lidingoo,Lidingo,Lidingo 
+17,Nacka,Nacka,Nacka 
+18,Storangen,Storrangen,
+19,Brannkyrka,Brannkyrka,Brannkyrka
+20,Solna,Solna,Solna 
+21,Sundbyberg,Sundbyberg,Sundbyberg 
+22,Orgryte,Orgryte,Orgryte 
+23,Norrviken,Norrviken,
+24,Huddinge,Huddinge,Huddinge 
+25,Boden,Boden,Bodens
+26,Dj:holm,Djursholm,Djursholm 
+27,Bollnas,Bollnas,Bollnas 
+28,Liljeholmen,Liljeholmen,
+29,Trollhattan,Trollhattan,Trollhattan 
+30,Botkyrka,Botkyrka for,Botkyrka
+31,Kopparberg,Kopparbergs lands,Kopparberg 
+32,Bromma,Bromma forsam,Bromma
+33,Karlskoga,Karlskoga,Karlskoga 
+34,Rasunda,Rasunda,Rasunda 
+35,Ljungby,Ljungby,Ljungby
+36,Salem,Salem kyrka,Salem 
+37,Sodertalje,Sodertalje,Sodertalje
+38,Hassleholm,Hassleholm,Hassleholm 
+39,Partilled,Partille,Partille
+40,Ludvika,Ludvika,Ludvika 
+41,Limhamn,Limhamn,Limhamn 
+42,Dalby,Dalby kyrkby,Dalby 
+43,Rada,Rada,Norra Rada 
+44,Alfta,Alfta,Alfta 
+45,Burlof,Burlofs forsam,Burlof
+46,Ljusdal,Ljusdal,Ljusdal 
+47,Karlsborg,Karlsborg,Karlsborg 
+48,Skurup,Skurups forsam,Skurup 
+49,Tuna,Tuna,Stora Tuna 
+50,Ed,Edsforsamlingen,
+51,Nynashamn,Nynashamn,Nynashamn 
+52,Hogbo,Hagbo,Habo 
+53,Norrbarke,Norrbarke,Norrbarke 
+54,Fassberg,Fassbergs forsam,Fassberg 
+55,Gellivare,Gallivare,Gallivare
+56,Gustafsberg,Gustafsberg,Gustavsberg 
+57,Hvetlanda,Hvetlanda,Hvetlanda
+58,Sunne,Sunne forsamling,Sunne 
+59,Mjolby,Mjolby,Mjolby
+60,O,Oscars,Oscarstad 
+61,Frolunda,Frolunda,Frolunda
+62,Borgsjo,Borgsjo,Borgsjo
+63,Solhem,Solhem,
+64,Grangarde,Grangarde,Grangarde 
+65,Norberg,Norbergs forsamling,Nora bergsforsamling 
+66,Bo,Bohuslans,Bohuslans
+67,Tranas,Tranas,Tranas 
+68,Orsa,Orsa,Orsa 
+69,Danderyd,Danderyds for,Danderyd 
+70,Torp,Torp,Ostra Torp 
+71,Leksand,Leksand,Leksand 
+72,M,Matteus,Matteus 
+73,Skelleftea s:n,Skelleftea sock,
+74,Borlange,Borlange,Borlange
+75,Klruna,Kiruna,Kiruna 
+76,Rindo,Rindo,
+77,Lerum,Lerum,Lerum 
+78,A,Adolf Fredriks,Adolf Fredrik 
+79,Nassjo,Nassjo,Nassjo 
+80,Vingaker,Vingaker,Ostra Vingaker 
+81,Tomelilla,Tomelilla,Tomelilla 
+82,Brunnby,Brunnby forsam,Brunnby 
+83,Asum,Asum,Asum 
+84,Valbo,Valbo forsamling,Valbo 
+85,Djurs- holm,Djurs holm,Djursholm 
+86,Saby,Saby,Saby 
+87,Varmdo,Varmdo,Varmdo 
+88,Husby,Husby,Husby
+89,Morastrand,Morastrand,
+90,Ofvansjo,Ovrekjala,Ovansjo 
+91,Horby,Horby,Horby 
+92,Klnna,Klinna,Kinna 
+93,Hafvero,Havero,Havero 
+94,Risinge,Risinge forsam,Risinge
+95,Katrineholm,Katrineholm,Katrineholm 
+96,Klsa,Kils forsamling,
+97,Hallsberg,Hallsberg,Hallsberg 
+98,Norrtalje,Norrtalje,Norrtalje 
+99,Motala,Motala,Motala 
+100,Ahus,Ahus,Ahus 
+101,Fryksande,Fryksande,Fryksande 
+102,Grodinge,Grodinge forsam,Grodinge 
+103,Klippan,Klippan,Klippan 
+104,Resele,Resele forsamling,Resele 
+105,Avesta,Avesta,Avesta 
+106,Skon,Skane,Skanela 
+107,Fritsla,Fritsla forsam,Fritsla 
+108,Hogsby,Hogsby,Hogsby 
+109,Broby,Broby forsamling,Broby 
+110,Kh,Kungsholms,Kungsholm
+111,Kl,Klara,Klara
+112,Kattarp,Kattarp,Kattarp 
+113,Kumla,Kumla forsam,Kumla 
+114,Gudmundra,Gudmundra,Gudmundra 
+115,Knifsta,Knivsta,Knivsta 
+116,Hor,Hoor,Hoor 
+117,Flen,Flen,Flen 
+118,By,Byn,Byn 
+119,Alno,Alno,Alno 
+120,H,Hedvig Eleonora,Hedvig Eleonora 
+121,Nordmaling,Nordmaling,Nordmaling 
+122,Anundsjo,Anundsjo,Anundsjo
+123,G,Gustaf Wasa,
+124,Umea s:n,Umea socken,
+125,E,Engelbrekts,Engelbrekt 
+126,Eda,Eda forsamling,Eda 
+127,Seffle,Saffle,Saffle 
+128,Harg,Harg,Harg 
+129,Gamleby,Gamleby forsam,Gamleby 
+130,Vara,Vara,Vara 
+131,Nybro,Nybro forsamling,Nybro
+132,Ullerud,Ulleruds forsam,Nedre Ullerud 
+133,Hammarby,Hammarby,Hammarby 
+134,Kt,Katarina,Katarina 
+135,Borg,Borgs forsam,Borg 
+136,Ockelbo,Ockelbo kommun,Ockelbo 
+137,Ny,Nysatra,Nysatra 
+138,Hammar,Hammars forsam,Hammar 
+139,Ronneby,Ronneby,Ronneby
+140,Vastanfors,Vastanfors,Vastanfors 
+141,Raus,Raus forsamling,Raus 
+142,Taby,Taby,Taby 
+143,Eksharad,Eksharad,Eksharad 
+144,Reslof,Rasslefors,
+145,Hvellinge,Hvalvinge,Hyellinge
+146,Nikolai,Nikolai forsam,Nikolai
+147,Bastad,Bastad,Bastad 
+148,Vaxholm,Vaxholm,Vaxholm 
+149,Sallerup,Sallerups forsam,Ostra Sallerup 
+150,Fosie,Fosie forsam,Fosie 
+151,Tureberg,Turebergs forsam,
+152,Asele,Asele,Asele 
+153,Herrljunga,Herrljunga,Herrljunga 
+154,Tunhem,Tunhem,Ostra Tunhem 
+155,Soderala,Soderala,Soderala 
+156,Klnnarumma,Kinnared,Kinnared 
+157,Frustuna,Frustuna forsam,Frustuna 
+158,Svalof,Svalovs for,
+159,Skraflinge,Skraflinge,Skravlinge 
+160,Alfkarleby,Alfkarleby,Alvkarleby 
+161,Bondkyrko,Bondkyrka,Bondkyrka 
+162,Malm,Malmo,Malmo
+163,Malmkoping,Malmkoping,Malmkoping 
+164,Dufbo,Dufbo,
+165,Vala,Vala,Vala 
+166,Njurunda,Njurunda,Njurunda 
+167,Edet,Edet forsamling,
+168,Varnamo,Varnamo,Varnamo 
+169,Osmo,Osmo,Osmo 
+170,Lofta,Lofta forsamling,Lofta 
+171,Orby,Orby,Orby 
+172,Fernebo,Farnebo,Farnebo 
+173,Kll,Kullersta,Kullerstad 
+174,Qvillinge,Qvillinge,Qvillinge
+175,Tumba,Tumba,Tumba
+176,Fresta,Fresta forsam,Fresta 
+177,Saltsjo- baden,Saltsjobaden,Saltsjobaden 
+178,Rotebro,Rotebro,
+179,Lomma,Lomma kyrk,Lomma 
+180,Nora s:n,Nora socken,
+181,Asarum,Asarum,Asarum 
+182,Vinslof,Vinslov,Vinslov 
+183,Lycksele,Lycksele,Lycksele
+184,Vasby,Vasby,Vasby 
+185,Fredriksborg,Fredriksborg,
+186,Aby,Aby,Aby 
+187,Malung,Malung,Malung
+188,Farlof,Farlof,Farlof
+189,Mellby,Mellby forsam,Mellby 
+190,Folkarna,Folkarna,Folkarna
+191,Anderslof,Anderslof,Anderslov 
+192,Degerfors,Degerfors,Degerfors
+193,Almunge,Almunge,Almunge 
+194,Sabra,Sabra,Sabra 
+195,Bondestad,Bondestaden,
+196,Monsteras,Monsteras,Monsteras 
+197,Oxelosund,Oxelosund,Oxelosund 
+198,Sollentuna,Sollentuna,Sollentuna 
+199,Ofvanaker,Ovanaker,Ovanaker 
+200,Finnskoga,Finnskoga,Finnskoga 
+201,Bro,Bro forsamling,Bro 
+202,J,Jakobs o. Johannes,Jakob och Johannes 
+203,Fleninge,Fleninge,Fleninge 
+204,Wassanda-Naglum,Vassunda-Na,Vassanda-Naglum 
+205,Elmhult,Elmhult,Elmhult
+206,Vaxjo s:n,Vaxjo sock,
+207,Fjallsjo,Fjallsjo,Fjallsjo 
+208,Sandsjo,Sandsjo,Sandsjo
+209,Hanebo,Hanebo,Hanebo 
+210,Ramsele,Ramsele,Ramsele 
+211,Eneby,Eneby,Eneby 
+212,Ekeby,Ekeby,Ekeby
+213,Foss,Foss socken,Foss 
+214,Forshaga,Forshaga,Forshaga 
+215,Helgum,Helgum,Helgum 
+216,Ramnas,Ramnas,Ramnas 
+217,Liden,Liden,Adals-Liden 
+218,Arbra,Arbra,Arbra 
+219,Nyed,Nyeds forsamling,Nyed 
+220,Askim,Askim,Askim 
+221,Lofsta,Lovsjon,Lofstad 
+222,Gryt,Gryts forsam,Gryt 
+223,Rattvik,Rattvik,Rattvik 
+224,Vika,Vika forsamling,Vika 
+225,Vaddo,Varmdo,Varmdo 
+226,Skedvi,Skedvi forsam,Skedvi 
+227,Nor,Norrkoping,Norrkopings
+228,Kolback,Kolback,Kolback 
+229,Asheda,Asheda,Aseda 
+230,Langsele,Langsele,Langsele 
+231,Silbodal,Silbodals forsam,Silbodal 
+232,Sirekopinge,Sirekoping,Sirekopinge 
+233,Spanga,Spanga,Spanga
+234,Helgesta,Helgesta forsam,Helgesta 
+235,Mellosa,Mellosa,Lilla Mellosa 
+236,Jarfso,Jarfso,Jarfso
+237,Edebo,Edebo,Edebo 
+238,Haslof,Hasslof,Hasslo 
+239,Hokopinge,Hokopinge,Hokopinge 
+240,Lofo,Lofoten,
+241,Laxarby,Laxarby,Laxarby 
+242,Nattraby,Nattraby,Nattraby 
+243,Orgryte),Orgryte,Orgryte 
+244,Malmberget,Malmberget,Malmberget 
+245,Kalix,Kalix forsamling,Kalix 
+246,Klmstad,Klimstad,Kimstad 
+247,Kjeflinge,Kaflinge,Kallinge
+248,Stromsund,Stromsund,
+249,Ekero,Ekero,Ekero 
+250,Julita,Julita forsamling,Julita 
+251,Holm,Holms socken,Holm 
+252,Atvidaberg,Atvidaberg,
+253,Forssa,Forssa,Forssa 
+254,Byske,Byske,Byske 
+255,Safsjo,Safsjo,Safsjo
+256,Brann- kyrka,Brannkyrka,Brannkyrka
+257,Alfdalen,Alvdalen,Alvdalen 
+258,Safsnas,Safsnas,Safsnas 
+259,Mt,Motteras,
+260,Grastorp,Grastorp,Grastorp
+261,Tygelsjo,Tygelsjo,Tygelsjo 
+262,Bygdea,Bygdea,Bygdea
+263,Fellingsbro,Fellingsbro,Fellingsbro
+264,Lerback,Lerbacken,Lerback 
+265,Viby,Viby forsamling,Viby 
+266,Sthlm),Stockholm,Stockholms
+267,Mo,Mora,Mora 
+268,Drottningholm,Drottningholm,
+269,Rau,Raus,Raus 
+270,Veit,Vaxjo,Vaxjo
+271,Gillberga,Gillberga,Gillberga 
+272,Allerum,Allerums forsam,Allerum 
+273,Asbo,Asbo forsamling,Asbo 
+274,Herslof,Hasslovik,Hasslov 
+275,Prastbordet,Prastbordet,
+276,Film,Film,Film 
+277,Oskarstrom,Oskarstrom,Oskarstrom 
+278,Torup,Torups forsamling,Torup 
+279,Timra,Timra,Timra 
+280,Alstad,Alstad,Alstad 
+281,Torsaker,Torsaker,Torsaker 
+282,Ljusne,Ljusne,Ljusne 
+283,Rimbo,Rimbo,Rimbo 
+284,Elghult,Elghult,Elghult
+285,Algutsboda,Algutsboda,Algutsboda 
+286,Kvidinge,Kvidinge kyrk,Kvidinge 
+287,Flisaryd,Flisaryd,Flisaryd
+288,Skinnskatteberg,Skinnskatteberg,Skinnskatteberg 
+289,Ytterlannas,Ytterlannas,Ytterlannas 
+290,Torpa,Torpa forsamling,Torpa 
+291,Mellerud,Mellerud,
+292,Ryssby,Ryssby forsam,Ryssby 
+293,Stigtomta,Stigtomta,Stigtomta 
+294,Astorp,Astorp,
+295,Vrams,Vrams socken,Vrams
+296,Helgona,Helgona forsam,Alla Helgona 
+297,Backa,Backa,Backa 
+298,Rekarne,Rekarne forsam,Husby-Rekarne 
+299,Alem,Alem,Alem 
+300,Markaryd,Markaryd,Markaryd 
+301,Farentuna,Farentuna forsam,Farentuna 
+302,Sollefte&,Solleftea,Solleftea 
+303,Soderfors,Soderfors,Soderfors 
+304,Partilled),Partille,Partille
+305,Allmundsryd,Almundsryd,Almundsryd 
+306,Morlunda,Morlunda,Morlunda 
+307,Vi,Vi,
+308,Soderakra,Soderakra,Soderakra
+309,Torsas,Torsas,Ostra Torsas 
+310,Bodum,Bodums forsam,Bodum 
+311,Jamshog,Jamshog,Jamshog 
+312,Ortofta,Ortofta,Ortofta 
+313,Ransater,Ransater,Ransater 
+314,Garda,Garda,
+315,Fellings- bro,Fellingsbro,Fellingsbro
+316,Mora,Mora socken,Mora 
+317,Osthammar,Osthammars for,Osthammar 
+318,Sarna,Sarna,Sarna 
+319,Floda,Floda,Floda 
+320,Kopinge,Kopinge,Kopinge 
+321,Hvena,Hvena,
+322,Vissefjarda,Vissefjarda,Vissefjarda 
+323,Stode,Stode,Stode 
+324,Barkakra,Barkakra,Barkakra 
+325,Osterhaninge,Osterhaninge,Osterhaninge
+326,Riseberga,Riseberga forsam,Riseberga 
+327,Oscar Fredriks- borg,Oscar Fredriksborg,
+328,Sura,Sura forsamling,Sura 
+329,Solleftea,Solleftea,Solleftea 
+330,Hassjo,Hasselby,Hasselby
+331,Stock- sund,Stockholm,Stockholms
+332,Reng,Rengsjo,Rengsjo 
+333,Ljung,Ljungby,Ljungby
+334,Harlosa,Harlosa,Harlosa 
+335,Valo,Valbo,Valbo 
+336,Vato,Vartofta,Vartofta-Asaka 
+337,Klagstorp,Klagstorp,Klagstorp 
+338,Torlosa,Torslanda,Torslanda 
+339,Ingaro,Ingaro,Ingaro 
+340,Hofors,Hofors,Hofors 
+341,Skallsjo,Skallsjo,Skallsjo 
+342,Alingsas landsf.,Alingsas landsfor,Alingsas landsforsamling 
+343,Fristad,Fristads forsam,Fristad 
+344,Ousby,Ousby,Ousby
+345,Svedvi,Svedvi,Svedvi 
+346,Kungsor,Kungsor,Kungsors
+347,Odensvi,Odensvi forsam,Odensvi 
+348,Skallerud,Skallerud,Skallerud 
+349,Finnboda,Finnboda,
+350,Rebbelberga,Rebbelberga,Rebbelberga 
+351,Osteraker,Osteraker,Osteraker 
+352,Svartsjo,Svartsjo,Svartsjo
+353,Svenljunga,Svenljunga,Svenljunga 
+354,(Kopenh.),Kopenhamn,
+355,Ifvetofta,Ifbytofta,Ivetofta 
+356,Ramsberg,Ramsberg,Ramsberg 
+357,Gislof,Gislof,Gislof
+358,Nas,Nas,Enkopings-Nas 
+359,Bunkeflo,Bunkeflo,Bunkeflo 
+360,Vasterhaninge,Vasterhaninge,Vasterhaninge 
+361,Karlstads s:n,Karlstads socken,
+362,Skepparslof,Skepparslo,Skepparslov 
+363,Ingelstad,Ingelstad,Ingelstad 
+364,Nasby,Nasby,Nasby 
+365,Kloster,Klosters forsamling,Eskilstuna Kloster 
+366,Hassleby,Hasselby,Hasselby
+367,Alfvesta,Alfvesta,Alvesta 
+368,Vadsbro,Vadsbro forsam,Vadsbro 
+369,Svegsmon,Svegsmon,
+370,Dunker,Dunkers kyrka,Dunker 
+371,Ekeberga,Ekeberga,Ekeberga 
+372,Misterhult,Misterhult,Misterhult 
+373,Gislaved,Gislaved,Gislaved 
+374,Helleberga,Helleberga,Halleberga 
+375,Klinte,Klintehamn,Klinte 
+376,Bjornlunda,Bjornlunda,Bjornlunda 
+377,Bettna,Bettna kyrka,Bettna 
+378,Viken,Viken,Viken 
+379,Bjorkvik,Bjorkviks for,Bjorkvik 
+380,Krylbo,Krylbo,Krylbo
+381,Kullerstad,Kullerstad,Kullerstad 
+382,Rostanga,Rostanga,Rostanga 
+383,Gylle,Gylle kyrk,Gylle 
+384,Ottarp,Ottarp,Ottarp 
+385,Jonstorp,Jonstorp,Jonstorp 
+386,Bjuf,Bjuv,Bjuv 
+387,Asker,Asker,Asker 
+388,Bragarp,Bragarp,Bragarp 
+389,Jorn,Jorn,Jorn 
+390,Hamrange,Hamrange,Hamrange 
+391,Grafva,Grava,Grava 
+392,Harplinge,Harplinge,Harplinge 
+393,Hallestad,Hallestads forsam,Hallestad 
+394,Brunneby,Brunneby,Brunneby 
+395,Kroppa,Kroppa forsam,Kroppa
+396,Tollstad,Tollstad,Ostra Tollstad 
+397,Hemse,Hemse,Hemse 
+398,Tranemo,Tranemo,Tranemo 
+399,Skifarp,Skifarp,Skifarp
+400,Hoganas,Hoganas,Hoganas 
+401,Almarestaket,Almarestaka,
+402,Halsingborgs s:n,Helsingborgs,Helsingborgs
+403,Slagarp,Slagarp,Lilla Slagarp 
+404,Dalaro,Dalaro,Dalaro
+405,Fargelanda,Fargelanda,Fargelanda 
+406,Ytter-Selo,Ytterseglo,Ytterselo 
+407,Hjorted,Hjorted,Hjorted 
+408,Vram,Vram,Norra Vram 
+409,Frolunda),Frolunda,Frolunda
+410,Varvik,Varvik,Varvik 
+411,Vemmerlof,Vemmerlof,Vemmerlof
+412,Hogsjo,Hogsjo,Hogsjo 
+413,Multra,Mulltrask,Multra 
+414,Stenbrohult,Stenbrohult,Stenbrohult 
+415,Tingsas,Tingsas,Tingsas 
+416,Boo,Boo forsamling,Boo 
+417,Ytterjarna,Ytterjarna,Ytterjarna 
+418,Nederkalix,Nederkalix for,Nederkalix 
+419,Ringarum,Ringarum,Ringarum 
+420,Dal,Dalarna,Dal 
+421,Junsele,Junsele forsamling,Junsele 
+422,Attmar,Attmar,Attmar 
+423,Steneby,Steneby,Steneby 
+424,Tierp,Tierp,Tierp 
+425,Skoldinge,Skoldinge,Skoldinge 
+426,Arila,Arila,Arla 
+427,o,o,
+428,Gramanstorp,Gramanstorp,Gramanstorp 
+429,Karsta,Karsta,Karsta 
+430,Malilla,Malilla,Malilla
+431,Othem,Othem,Othem 
+432,Lenhofda,Lennartsfors,Lenhovda 
+433,Ortomta,Ortoma,Ortomta 
+434,Losen,Losa,Lossa 
+435,Skatelof,Skatelof,Skatelov 
+436,Ossebygarn,Osseby garn,Osseby-Garn 
+437,Kristberg,Kristberg forsamling,Kristberg 
+438,Vikingstad,Vikingstad,Vikingstad 
+439,Visnum,Visnums forsamling,Visnum 
+440,Vassunda,Vassunda,Vassunda 
+441,Karrstorp,Karrstorp,Karrstorp 
+442,Oved,Ovedskloster,Oved 
+443,Farila,Farila,Farila 
+444,Bergsjo,Bergsjo,Bergsjo 
+445,Estuna,Estuna,Estuna 
+446,Hakarp,Hakarp,Hakarp 
+447,Burtrask,Burtrask,Burtrask 
+448,Barkarby,Barkarby,
+449,Fjalie,Fjale,Fjalie
+450,Hammarlof,Hammarlof,Hammarlov 
+451,Kropp,Kropp kyrka,Kropp 
+452,Varnum,Varnums forsam,Varnum 
+453,Morarp,Morarp,Morarp 
+454,Fjerrestad,Fjarrestad,Fjarestad 
+455,Hyby,Hyby forsamling,Hyby 
+456,Djuro,Djuro forsamling,Djuro 
+457,Seglora,Seglora forsam,Seglora 
+458,Sundborn,Sundborn,Sundborn 
+459,Ore,Are,Are 
+460,Jarna,Jarna,Jarna
+461,Hvitsand,Hvitsand,Hvitsand
+462,Knista,Knista forsamling,Knista 
+463,Bokenas,Boknas,Bokenas 
+464,Doderhult,Doderhult,Doderhult 
+465,Ryttern,Ryttern,Lilla Rytterne 
+466,Vidbo,Vidbo,Vidbo 
+467,Karbenning,Karbenning forsam,Karbenning 
+468,Nosaby,Nosaby,Nosaby 
+469,Sjalevad,Skaleby,Saleby 
+470,Sonnarslof,Sonnarshov,Sonnarslov 
+471,Ukna,Uknadals for,Ukna 
+472,Gladhammar,Gladhammars for,Gladhammar 
+473,Dorby,Dorby,Dorby 
+474,Tryserum,Tryserums forsam,Tryserum 
+475,Edsele,Edsele,Edsele 
+476,Ilian,Lidan,Ilian 
+477,Skultuna,Skultuna,Skultuna 
+478,Artemark,Artemark,Artemark 
+479,Arboga,Arboga,Arboga
+480,Hannas,Hanna,Hannas 
+481,Hammenhog,Hammenhog,Hammenhog 
+482,Ossjo,Ossjo,Ossjo 
+483,Hoja,Hoja,Hoja 
+484,Jarfalla,Jarfalla,Jarfalla
+485,Stroo,Stroo,Stro 
+486,Kviinge,Kviinge,Kviinge 
+487,Limhamn),Limhamn,Limhamn 
+488,Lundby,Lundby,Lundby
+489,Transtrand,Transtrand,Transtrand 
+490,Vallentuna,Vallentuna,Vallentuna 
+491,Olme,Olme forsamling,Olme 
+492,Fel- lingsbro,Fellingsbro,Fellingsbro
+493,Ljusnarsberg,Ljusnarsbergs,Ljusnarsbergs
+494,Gotlunda,Gotlandska Gotl,Gotlunda 
+495,Tottarp,Tottarps for,Tottarp 
+496,Skog,Skog sn.,Norska Skogsbygden 
+497,Hille,Hille forsamling,Hille 
+498,Fogelvik,Fogelvik,Fogelvik 
+499,Dorotea,Dorotea forsam,Dorotea 
+500,Barnarp,Barnarp,Barnarp 
+501,Hogserod,Hogserod,Hogserod 
+502,Anderstorp,Anderstorp,Anderstorp 
+503,Bankeryd,Bankeryd,Bankeryd 
+504,Granna s:n,Granna socken,
+505,Byarum,Bjarnums forsam,Byarum 
+506,Harrie,Harrie forsam,Harrie 
+507,Nobbelof,Nobbelef,Nobbele 
+508,Odensala,Odensala forsam,Odensala 
+509,Soderbykarl,Soderby Karl,Soderby-Karl 
+510,Bosarp,Bosarps forsam,Bosarp 
+511,Gudmuntorp,Gudmuntorp,Gudmuntorp 
+512,Dalkopinge,Dalkopinge,Dalkopinge 
+513,Bafve,Batfverke,Bave 
+514,Herrestad,Herrestads forsam,Herrestad 
+515,Orberga,Ornberga,Orberga 
+516,Odeshog,Odeshog,Odeshog 
+517,Glafva,Glava,Glava 
+518,Gardstanga,Gardstanga,Gardstanga 
+519,Orsjo,Orsjo,Orsjo 
+520,Stugubyn,Stuguby,Stugubyn
+521,Klockrike,Klockrike,Klockrike 
+522,Vislanda,Vislanda,Vislanda 
+523,Tveta,Tveta forsamling,Tveta 
+524,Saltsjoba- den,Saltsjobaden,Saltsjobaden 
+525,Aringsas,Aringsas,Aringsas 
+526,Sigtuna,Sigtuna,Sigtuna
+527,Forsmark,Forsmark,Forsmark 
+528,Ryd,Ryds forsam,Linkopings Ryd 
+529,Leksberg,Leksberg,Leksberg 
+530,Undenas,Unde nas,Undenas 
+531,Toreboda,Toreboda,Toreboda 
+532,Salt- sjobaden,Saltjobaden,Saltsjobaden 
+533,Delsbo,Delsbo,Delsbo 
+534,Morrum,Morrum,Morrum 
+535,Ramdala,Ramdala,Ramdala 
+536,Bjorketorp,Bjorketorp,Bjorketorp 
+537,Notteback,Notteback,Notteback
+538,(Sthlm),Stockholm,Stockholms
+539,Toarp,Toarp,Toarp 
+540,Linde,Lindesbergs for,Linde
+541,Natra,Natra,Natra 
+542,Sjosas,Sjosa,Sjosas 
+543,Getinge,Getinge,Getinge 
+544,Slap,Slap,Slap 
+545,Fjaras,Fjaras,Fjaras 
+546,Tolfta,Tolfta forsamling,Tolfta 
+547,Karnbo,Karnbo,Karnbo 
+548,Hjartum,Hjartum,Hjartum 
+549,Vendel,Vendel,Vendel 
+550,Skeptuna,Skepptuna,Skepptuna 
+551,Skedevi,Skedevi forsam,Skedevi
+552,Jokkmokk,Jokkmokk,Jokkmokk 
+553,Lund,Lund,Lunda 
+554,Bye,Bygdea,Bygdea
+555,Jareda,Jarda,Jareda 
+556,Sorby,Sorby,Mjolby med Sorby 
+557,Kt..,Katarina,Katarina 
+558,Almare-Staket,Almare-Staket,
+559,E..,Engelbrekts,Engelbrekt 
+560,J..,Jakobs o. Johannes,Jakob och Johannes 
+561,Svardsjo,Svardsjo,Svardsjo 
+562,Vansbro,Vansbro kyrkob,Vansbro
+563,Angerum,Angerum,Augerum 
+564,Arnas,Arnasjo,Arnas 
+565,Tillberga,Tillberga,Tillberga 
+566,Bergunda,Bergunda forsam,Bergunda 
+567,Hofmantorp,Hofmantorp,Hofmanstorp
+568,Lerum),Lerum,Lerum 
+569,Algutstorp,Algutstorps for,Algutstorp 
+570,Karda,Karda forsamling,Karda 
+571,Moheda,Moheda,Moheda 
+572,Tyreso,Tyreso,Tyreso 
+573,Pitea s:n,Pitea socken,
+574,Alfsby,Alfsby,
+575,Ofverkalix,Overkalix,Overkalix
+576,Neder- lulea,Nederlulea,Nederlulea 
+577,Ede,Ede kyrka,Edebo 
+578,Brackeby,Brackeby,Brackeby
+579,Mallbyn,Mallbyn,Mjallby 
+580,Odenslund,Odenslund,
+581,Morko,Morko,Morko 
+582,Husby-Oppunda,Husby-Opp,Husby-Oppunda 
+583,V. Ving- aker,Vastra Ving,Vastra Vingaker 
+584,Indal,Indal kyrkoby,Indal 
+585,Oja,Oja,Oja 
+586,Roma,Roma,Roma 
+587,Herrakra,Herrakra,Herrakra 
+588,Sidensjo,Sidensjo,Sidensjo 
+589,Fagelas,Fagelas,Fagelas
+590,Essunga,Essunga forsamling,Essunga 
+591,Stor- angen,Stora Angen,
+592,Adelso,Adelso,Adelso 
+593,Vange,Vange,Vange
+594,Dalskog,Dalskog,Dalskog 
+595,Fors,Fors parish,Eskilstuna Fors 
+596,Bjorke,Bjorke,Bjorke 
+597,Drottning- holm,Drottningholm,
+598,Almby,Almby forsam,Almby 
+599,Rammdeboda,Rammsjoboden,Rammdeboda
+600,Trono,Trono,Trono 
+601,Bjuraker,Bjuraker,Bjuraker 
+602,Vase,Vase forsamling,Vase 
+603,Saffle,Saffle,Saffle 
+604,Verkstad,Verkstader,Verkstad
+605,Lofvestad,Lofvestad,Lovestad 
+606,Lyrestad,Lyrestad kvarn,Lyrestad 
+607,Umea,Umea,Umea 
+608,Sorunda,Sorunda forsamling,Sorunda 
+609,Nartuna,Nartuna,Nartuna 
+610,Alfshog,Alfshog,Alfshog 
+611,Eldsberga,Eldsberga,Eldsberga 
+612,Stafsinge,Stafsinge,Stafsinge 
+613,Sloinge,Sloinge,Sloinge 
+614,Tegelsmora,Tegelsmora,Tegelsmora 
+615,Klla,Kallered,Kallered 
+616,Rosersberg,Rosersberg,
+617,Skafto,Skafto,Skafto 
+618,Eksjo,Eksjo,Eksjo
+619,Solberga,Solberga forsam,Norra Solberga 
+620,Voxtorp,Voxtorp,Voxtorp 
+621,Refteled,Reftele,Reftele 
+622,Langaryd,Langaryd,Langaryd 
+623,Fargaryd,Fagerhult,Fagerhult 
+624,Ingatorp,Ingatorps forsam,Ingatorp 
+625,Bexheda,Bexheda,Bexheda 
+626,Kellstorp,Kellstorp,Kallstorp 
+627,Bara,Bara forsamling,Bara 
+628,Trollenas,Trollhattan,Trollhattan 
+629,Skeppsas,Skeppshamn,Skeppsas 
+630,Fjallmo,Fjallmo,Fjallmo
+631,Husie,Husie forsam,Husie 
+632,Sundby- berg,Sundbyberg,Sundbyberg 
+633,Lunda,Lundaker,Lunda 
+634,Ska,Skane,Skanela 
+635,Ranas,Ranas forsamling,Ramnas 
+636,Tjallmo,Tjallmo,Tjallmo 
+637,Brunskog,Brunskog,Brunskog 
+638,Annelof,Annelov,Annelov 
+639,Slaka,Slaka forsamling,Slaka 
+640,Stenby,Stenby forsam,Ostra Stenby 
+641,Skarkind,Skarkinds forsam,Skarkind 
+642,Ostuna,Ostuna,Ostuna 
+643,Tullstorp,Tullstorp,Tullstorp 
+644,Svenstorp,Svenstorp,Svenstorp 
+645,Lonsas,Lonnasa,Lonsas 
+646,Horn,Hornsboda,Horn 
+647,Arrie,Arie,Arrie 
+648,Maglarp,Maglarp,Maglarp 
+649,Kettilstad,Kittelstad,Kattilstad 
+650,Soder- talje,Sodertalje,Sodertalje
+651,Norrsunda,Norrsunda,Norrsunda 
+652,Stala,Stala forsamling,Stala 
+653,Morlanda,Morlanda forsamling,Morlanda 
+654,Askersunds s:n,Askersunds sokn,
+655,Lungsund,Lungsund,Lungsund 
+656,Stro,Stro parish,Hornefors-Strombacks
+657,Schebo bruk,Skebo bruk,
+658,Gillbo,Gillbo forsamling,
+659,Uppakra,Uppakra,Stora Uppakra 
+660,Branstad,Branstad,Brandstad 
+661,Skarhult,Skarhult,Skarhult 
+662,Loddekopinge,Loddekop,Loddekopinge 
+663,Kagerod,Kagerod,Kagerod 
+664,Asmundtorp,Asmundtorp,Asmundtorp 
+665,Halsingborg,Helsingborg,Helsingborg 
+666,Arvika,Arvika,Arvika
+667,Vallkarra,Vallkarra,Vallkarra 
+668,Billeberga,Billeberga,Billeberga 
+669,Hammarlunda,Hammarlunda,Hammarlunda 
+670,Habo,Habo forsamling,Habo 
+671,Fjalkinge,Fjalkinge,Fjalkinge 
+672,Hedemora s:n,Hedemora sock,
+673,Soderbarke,Soderbarke,Soderbarke 
+674,Brosarp,Brosarp,Brosarp 
+675,Madesjo,Madesjo,Madesjo
+676,Hogby,Hogby,Hogby 
+677,Wirserum,Virserum,Virserum 
+678,Styrnas,Styrnas,Styrnas 
+679,Morbylanga,Morbylanga,Morbylanga 
+680,Adolf,Adolfstrom,Adolf Fredrik 
+681,Vidtskofle,Vidtskofle,
+682,Orkelljunga,Orkelljunga,Orkelljunga 
+683,Bogsta,Bogsta,Bogsta 
+684,Nyland,Nylands forsamling,
+685,Vardinge,Vardinge,Vardinge 
+686,Liljehol- men,Liljeholmen,
+687,Nykyrke,Nykyrka,Nykyrka 
+688,Skarf,Skaraborgs,
+689,Aspeboda,Aspeboda,Aspeboda 
+690,Hyssna,Hyssna forsam,Hyssna 
+691,Starrkarr,Starkarr,Starrkarr 
+692,Vanjan,Vanjan,
+693,Garpenberg,Garpenbergs forsam,Garpenberg 
+694,Nodinge,Nodinge,Nodinge 
+695,(Berlin),Berlin,
+696,Stockholm,Stockholm,Stockholms
+697,Gtbg),Goteborg,Domkyrkoforsamlingen i Goteborg eller Gustavi och Kristine 
+698,Stensby,Stensby,Stenby 
+699,Bollebygd,Bollebygd,Bollebygd 
+700,Lerdala,Lerdala,Lerdala 
+701,Marum,Marum,Marum 
+702,Sandhem,Sandhem,Sandhem 
+703,Hastholmen,Hastholmen,Hastholmen 
+704,Vastertalje,Vasterlov,Vasterlovsta 
+705,Edsbro,Edsbro,Edsbro 
+706,Orkened,Orkene forsam,Orkened 
+707,Strofvelstorp,Strofvelstorp,Strovelstorp 
+708,Blido,Blido,Blido 
+709,Toresund,Toresund,Toresund 
+710,Tunaberg,Tunaberg,Tunaberg 
+711,Vagnharad,Vagnharad,Trosa-Vagnharad 
+712,Ripsa,Ripsa forsam,Ripsa 
+713,Fogdo,Fogdegard,Fogdo 
+714,Svedje,Svedje,
+715,Graninge,Graninge forsamling,Graninge 
+716,Kldby,Kallby,Kallby 
+717,Onnestad,Onnestads forsam,Onnestad 
+718,Perstorp,Perstorp,Perstorp 
+719,Fjalkestad,Fjalkestad,Fjalkestad 
+720,Finja,Finja forsamling,Finja 
+721,Knislinge,Knislinge,Knislinge 
+722,Tornesfalla,Tornesfalla,Tornesfalla 
+723,Kalmar s:n,Kalmar socken,
+724,Fagerhult,Fagerhult,Fagerhult 
+725,Hallingeberg,Hallingebergs forsam,Hallingeberg 
+726,Efverod,Everod,Everod 
+727,Strovelstorp,Strovelstorps,Strovelstorp 
+728,Stoby,Stoby forsamling,Stoby 
+729,Osterplana,Osterplana,Osterplana 
+730,Hofva,Hofva,Hofva
+731,Glemminge,Glemminge,Glemminge 
+732,Ullervad,Ullervad,Ullervad 
+733,Lima,Lima forsamling,Lima 
+734,Blomskog,Blomskog,Blomskog 
+735,Hardeberga,Hardeberga,Hardeberga 
+736,Hastad,Hastad,Hastad 
+737,Bjellerup,Bjallerup,Bjallerup 
+738,Bur- lof,Burlov,Burlov 
+739,Remmarlof,Rammarhof,Remmarlof
+740,Sund,Sundsvall,Sundsvall 
+741,Hagrad,Hagrad,Harad 
+742,Barseback,Barseback,Barseback 
+743,Gessie,Gessie forsamling,Gessie 
+744,Skabersjo,Skabersjo,Skabersjo 
+745,Nefvitshog,Nefvitshog,Nefvitshog
+746,Wollsjo,Vallsjo,Vallsjo 
+747,Sofde,Sodra Sofde,
+748,Valinge,Valinge,Valinge 
+749,Bille- berga,Billeberga,Billeberga 
+750,Stafre,Stafaker,
+751,Ubyn,Ubyns forsam,
+752,Ofverocke,Ofre Akero,
+753,Valluf,Valluvagen,
+754,S. karp,Skarpas,
+755,Lackalanga,Lackalanga,Lackalanga 
+756,Ostraby,Ostraby,Ostraby 
+757,Drott- ningholm,Drottningholm,
+758,Tynningso,Tynningo,
+759,Rams- berg,Ramsberg,Ramsberg 
+760,Qvissbro,Kvisbro,Kvistbro 
+761,Ljusnars- berg,Ljusnarsbergs,Ljusnarsbergs
+762,Hellefors,Hellefors,Hellefors
+763,Karlanda,Karlanda,Karlanda 
+764,Tanum,Tanums kommun,Tanum 
+765,Tegneby,Tegneby,Tegneby 
+766,Norum,Norrum,Norum 
+767,Lycke,Lycke forsamling,Lycke 
+768,Safve,Save,Save 
+769,Brastad,Brastad,Brastad 
+770,Stenkyrka,Stenkyrka,Stenkyrka 
+771,Ramen,Ramen,Rammen 
+772,Jernskog,Jarnskog,Jarnskog 
+773,Enskede,Enskede,Enskede 
+774,Namndo,Namno,Namn
+775,Ostertalje,Ostertalje,Ostertalje 
+776,Olof,Olofstorp,Olof 
+777,Ekebyborna,Ekebyborna,Ekebyborna 
+778,Berg,Bergs forsam,Berg 
+779,Lunds s:n,Lunds socken,
+780,Simlinge,Simlinge,Simlinge 
+781,Norrhvidinge,Norrhvidinge,Norrvidinge 
+782,Bodarp,Bodarp,Bodarp 
+783,Myckelgard,Myckelgard,
+784,Sjorup,Sjorupp,Sjorup 
+785,Bedinge,Bedinge,Bedinge 
+786,Hoj,Hojax.,Hoj 
+787,Kaga,Kaga,Kaga 
+788,Sjogestad,Sjogestad,Sjogestad 
+789,Ro,Roe,Roeim 
+790,Ofverjarna,Ofverjarna,Overjarna 
+791,Orkesta,Orkesta forsam,Orkesta 
+792,Annx,Annex,
+793,Landeryd,Landeryd,Landeryd 
+794,Karna,Karna,Karna 
+795,Eskilstorp,Eskilstorp,Eskilstorp 
+796,Tofta,Tofta,Tavelsas med Tofta 
+797,Bunkafle,Bunkafle,
+798,Flackarp,Flackarp,Flackarp 
+799,Tirup,Tidaholm,Tidaholm 
+800,Skillingaryd,Skillingaryds for,
+801,Barkeryd,Barkeryd,Barkeryd 
+802,Alsheda,Alshult,Alghult 
+803,Orreryd,Orreryd,Oreryd 
+804,Sandseryd,Sandseryd,Sandseryd 
+805,Skarstad,Skarstad,Skarstad 
+806,Lommaryd,Lommaryd,Lommaryd 
+807,Bredestad,Bredestads for,Bredestad 
+808,Rogberga,Rogberga,Rogberga 
+809,Vrigstad,Vrigstad,Vrigstad 
+810,Munso,Munso,Munso 
+811,Lagga,Laggesta,Lagga 
+812,Oregrund,Oregrund,Oregrund 
+813,Kungshamn,Kungshamn,Kungshamn 
+814,Dannemora,Dannemora,Dannemora 
+815,Vessland,Vasslunda,Vassunda 
+816,Skepthammar,Skepptahammar,Skepthammar
+817,Hyltinge,Hyltinge,Hyltinge 
+818,Kjula,Kjula,Kjula 
+819,Malma,Malma kyrkobok,Malma
+820,Snostorp,Snostorp,Snostorp 
+821,Morup,Morups forsamling,Morup 
+822,Veinge,Veinge forsamling,Veinge 
+823,Wallda,Vallda,Vallda 
+824,Kvibille,Kvibille,Kvibille 
+825,Tolo,Tolo,Tolo 
+826,Tvaaker,Tvaaker,Tvaaker 
+827,Bromsten,Bromsten,
+828,Li- dingo,Lidingo,Lidingo 
+829,Nack'a,Nacka,Nacka 
+830,Rappestad,Rappestad,Rappestad 
+831,Skallvik,Skallvik,Skallvik 
+832,Stenstorp,Stenstorp,Stenstorp 
+833,Wannas,Vannas,Vannas
+834,Lofanger,Lofanger,Lofanger
+835,Hamranger,Hamra harad,Hamrange 
+836,Ramsjo,Ramsjo,Ramsjo 
+837,Nysund,Nysund,Nysund 
+838,Skanella,Skanor,Skanor 
+839,Orno,Orno,Orno 
+840,Roslagsbro,Roslags-Bro,Roslags-Bro 
+841,Hidinge,Hidinge,Hidinge 
+842,Guld- smedshytte,Guldsmedsh,Guldsmedshyttan 
+843,Karl- skoga,Karlskoga,Karlskoga 
+844,Snaflunda,Snaflunda,Snaflunda
+845,Alfsered,Alfsborgs for,Alvsered 
+846,Backe,Backe,Backe 
+847,Kullings-Skofde,Kullings-Sko,Kullings-Skovde 
+848,Barlingbo,Barlingbo,Barlingbo 
+849,Bunge,Bunge,Bunge 
+850,Tving,Tvinge,Tving 
+851,Aryd,Aryd,Aryd 
+852,Norrala,Norrala,Norrala 
+853,Vesterhejde,Vasterhejde,Vasterhejde 
+854,Dalhem,Dalhem,Dalhem 
+855,Norsjo,Norsjo,Norsjo
+856,Stensele,Stensele forsam,Stensele
+857,Nysatra,Nysatra,Nysatra 
+858,Forshem,Forshem,Forshem 
+859,Alsike,Alsike,Alsike 
+860,Ununge,Ununge,Ununge 
+861,Hemmesjo,Hemmesjo,Hemmesjo
+862,Nobbeled,Nobbelede,Nobbele 
+863,Marback,Morback,Marback 
+864,Indals-Liden,Indals-Liden,Indals-Liden 
+865,Adals-Liden,Adalsliden,Adals-Liden 
+866,Bjertra,Bjertra,Bertra 
+867,Sattna,Sattna,Sattna 
+868,Hellgum,Hallgum,Hallum 
+869,Ljustorp,Ljustorp,Ljustorp 
+870,Tysslinge,Tysslinge,Tysslinge 
+871,Viker,Vikens forsam,Viker 
+872,Naset,Nasset,
+873,Gasinga,Gastrikland,Gasinge 
+874,Ardala,Ardala forsamling,Ardala 
+875,Roslagskullen,Roslags-Kulla,Roslags-Kulla 
+876,Alanaset,Alanaset,Alanas 
+877,Haxas,Haxas,
+878,Bohle,Bohla,
+879,Jukkasjarvi,Jukkasjarvi,Jukkasjarvi 
+880,Ranea,Ranea,Ranea
+881,Edefors,Edefors kyrkob,Edefors 
+882,Neder- kalix,Nederkalix,Nederkalix 
+883,Jukkas- jarvi,Jukkasjarvi,Jukkasjarvi 
+884,Tore,Tore Horgs,Tore 
+885,Arvidsjaur,Arvidsjaur,Arvidsjaur 
+886,Gellivara,Gallivare,Gallivare
+887,Vardnas,Varnamo,Varnamo 
+888,Bjorkeberg,Bjorkeberg,Bjorkeberg 
+889,Odehog,Odehog,Odeshog 
+890,Tingstad,Tingstad,Tingstad 
+891,Frotuna,Frotonas,Frotuna 
+892,Stockholm),Stockholm,Stockholms
+893,Bolstad,Bolstad forsamling,Bolstad 
+894,Waggeryd,Vaggeryd,
+895,Ojaby,Ojaby,Ojaby 
+896,Soraby,Soraby,Soraby 
+897,Goteryd,Goteryd,Goteryd 
+898,Fogeltofta,Fogeltofta,Fageltofta 
+899,Fogelfors,Fogelfors,Fogelfors
+900,Lonneberga,Lonneberga,Lonneberga 
+901,Pelarne,Pelarne,Pelarne 
+902,Blackstad,Blackstad,Blackstad 
+903,Kristvalla,Kristvalla kyrka,Kristvalla 
+904,Gardserum,Gardserum,Gardserum 
+905,Orsas,Orsa,Orsa 
+906,Harbo,Harbo,Harbo 
+907,Simterno,Simtuna,Simtuna 
+908,Bjorskog,Bjorskog,Bjorskog 
+909,Koping,Koping,Koping 
+910,Mjallby,Mjallby,Mjallby 
+911,Rodeby,Rodeby,Rodeby
+912,Hemso,Hemso,Hemso 
+913,Gudmundr,Gudmundra,Gudmundra 
+914,Nora,Nora kommun,Nora 
+915,Bjursas,Bjursas,Bjursas 
+916,Hvilan,Havelunda,
+917,Kl..,Klara,Klara
+918,K.,Kumla,Kumla 
+919,Fyrunga,Fyrunga,Fyrunga 
+920,Hjarpas,Hjarparas,Hjarpas 
+921,Langemala,Langemala,Langemala 
+922,Koppar- berg,Kopparberg,Kopparberg 
+923,Myresjo,Myresjo,Myresjo 
+924,Hammaren,Hammaren,Hammaren
+925,Farhult,Farhult,Farhult 
+926,Stangby,Stangby,Stangby 
+927,Ving,Vinge,Veinge 
+928,Lagden,Lagenhet,
+929,Hasjo,Halsingtuna,Halsingtuna 
+930,Grydt,"Grytd,",Grydt
+931,As,Aspered,Aspered 
+932,Stureplan,Stureplan,
+933,Grimeton,Grimetons forsam,Grimeton 
+934,Torekows,Torekovs,Torekov 
+935,Kyrkokopinge,Kyrkokopinge,Kyrkokopinge 
+936,'H.,Hedvig Eleonora,Hedvig Eleonora 
+937,Sunnera,Sunnersta,
+938,Halla,Halla,Halla 
+939,Q.,Q.,
+940,Hyellinge,Hjallinge,Hyellinge
+941,Balkakra,Balkakra,Balkakra 
+942,j.,Jaderhult,
+943,Ammer,Ammerland,
+944,Hvittaryd,Hvittaryd,Hvittaryd
+945,D.,Dalarna,
+946,Sofvestad,Sofvestad,Sovestad 
+947,Elmeboda,Elmeboda,Elmeboda
+948,Lyngby,Lyngeby,Lyngby 
+949,Dref,Drefsjo,
+950,A..,Adolf Fredriks,Adolf Fredrik 
+951,Genarp,Genarp,Genarp 
+952,N,Nikolai,Nikolai
+953,Linneryd,Linneryd,Linneryd 
+954,V.,Varmland,Varmlandsberg 
+955,Torsang,Torsang,Torsang 
+956,(Traheryd) Stromsnas bruk,Traheryd Str,
+957,Blacksta,Blaxsta,Blacksta 
+958,Gudmundstorp,Gudmundstorp,Gudmuntorp 
+959,Kvistofta,Kvistofta,Kvistofta 
+960,Norr- barke,Norrbarke,Norrbarke 
+961,Ekby,Ekeby,Ekeby
+962,Refvinge,Refvighult,Revinge 
+963,Eriksberg,Eriksberg,Eriksberg 
+964,Godelof,Goddof,Godelov 
+965,Glumslof,Glumslovs,Glumslov 
+966,Nefvits- hog,Nefvits sk,Nefvitshog
+967,Lindberg,Lindberg,Lindberg 
+968,Vanstad,Vanstads forsam,Vanstad 
+969,Tronninge,Tronninge,Tronninge 
+970,Lekaryd,Lekaryd,Lekaryd 
+971,Faxalfven,Falkopings kommun,
+972,Halmstad,Halmstad,Halmstad 
+973,Raby,Raby,Raby 
+974,Smedsasen,Smedsasens,
+975,Borlunda,Borlunda,Borlunda 
+976,Fortmark,Furmark,Forsmark 
+977,Klappe,Klappe,
+978,Fulltofta,Fulltofta,Fulltofta 
+979,Gevag,Gavag,
+980,Nederlulea,Nederlulea,Nederlulea 
+981,Fridened,Fridene,Fridene 
+982,Rasbo,Rasbo,Rasbo 
+983,Forserum,Forserum,Forserum 
+984,Stafvie,Stafvie,Stavie 
+985,Vapno,Vapno,Vapno 
+986,Vasterstad,Vasterstad,Vasterstad 
+987,Osterslof,Osterslof,Osterslov 
+988,Wa,Vasterasen,Vasteras
+989,Bosjokloster,Bosjokloster,Bosjokloster 
+990,Smedstorp,Smedstorp,Smedstorp 
+991,Lannaskede,Lannaskede,Lannaskede 
+992,Brannestad,Brannestad,Bronnestad 
+993,Frenninge,Frenninge for,Frenninge
+994,Tjornarp,Tjornarp,Tjornarp 
+995,Abild,Abild,Abild 
+996,Kellna,Kallna,Kallna 
+997,Gumlosa,Gumlosa,Gumlosa 
+998,Hjarnarp,Hjarnarp,Hjarnarp 
+999,Skiro,Skiro,Skiro 
+1000,Nye,Nynas,Nynashamn 
+1001,Lonshult,Lonshult,Loshult 
+1002,Karup,Karup,Karup 
+1003,Osterhanninge,Osterhaninge,Osterhaninge
+1004,Danmarks s:n,Danmarks socken,
+1005,Fladie,Fladietsbod,Fladie 
+1006,Skattungbyn,Skattungbyn,
+1007,Flisby,Flisby,Flisby 
+1008,Jonsgard,Jonsgard,
+1009,Ohn,Ahnjarv,
+1010,Lillherdal,Lillherlunda,Lillhardal 
+1011,Juk- kasjarvi,Jukkasjarvi,Jukkasjarvi 
+1012,Svarta,Svarta,Svarta 
+1013,Billinge,Billinge forsamling,Billinge 
+1014,Ibb,Ibbo,Ibb 
+1015,Vemmerslof,Vemmerslov,Vemmerlov 
+1016,Torshalla,Torshalla,Torshalla
+1017,Skoldringe,Skoldringe,Skoldinge 
+1018,Mortorp,Mortorp,Mortorp 
+1019,Bergsbyn,Bergsbyn,
+1020,Barbo,Barbo forsamling,Barbo 
+1021,Dadesjo,Dadesjo,Dadesjo 
+1022,Kolen,Kalen,
+1023,Tutaryd,Tutaryd,Tutaryd 
+1024,Upsala,Uppsala,Uppsala
+1025,Gustafs s:n,Gustafs socken,
+1026,Halltorp,Halltorps forsam,Halltorp 
+1027,Vastrum,Vastrum,Vastrum 
+1028,Snare- stad,Snaredstad,Snarestad 
+1029,Vimmerby,Vimmerby,Vimmerby
+1030,Felestad,Felestad,Felestad 
+1031,Skegrie,Skegrie for,Skegrie 
+1032,Hemmesdynge,Hemmesdynge,Hemmesdynge 
+1033,Kraksmala,Kraksmala,Kraksmala 
+1034,Gerdslof,Gardslovs,Gardslov 
+1035,Bjornekulla,Bjornekulla,Bjornekulla 
+1036,Torekow,Torekov,Torekov 
+1037,Glostorp,Glostorp,Glostorp 
+1038,Veberod,Veberod,Veberod 
+1039,Mallby,Malmby,Malby 
+1040,Barken,Barken,Barke 
+1041,Hossmo,Hossmo forsam,Hossmo 
+1042,Balinge,Balinge,Balinge 
+1043,Upp- akra,Uppakra,Stora Uppakra 
+1044,Oppmanna,Oppmanna,Oppmanna 
+1045,Hjarsa,Hjarsas,Hjarsas 
+1046,Ansa,Alvsby for,Ansta 
+1047,Kattorp,Kattorp,Kattorp
+1048,Wallby,Wallby,
+1049,Trane,Traneberg,Traneberg 
+1050,Eserup,Eserup,
+1051,Korsta,Korsberga,Korsberga 
+1052,Prastbor- det,Prastbordet,
+1053,Virserum,Virserum,Virserum 
+1054,Tullus,Tullus,
+1055,Svenarum,Svenarum,Svenarum 
+1056,Glomminge,Glomminge,Glomminge 
+1057,Asen,Asen,Asen 
+1058,Jarstorp,Jarstorp,Jarstorp 
+1059,Saxtorp,Saxtorps for,Saxtorp 
+1060,Osterlof,Osterlof,
+1061,Raby-Rono,Raby-Ron,Raby-Rono 
+1062,Verum,Verum,Verum 
+1063,Lista,Lista forsamling,Lista 
+1064,Gardveda,Gardevada,Gardveda
+1065,Loftahammar,Loftahammar,Loftahammar 
+1066,Hallingsberg,Hallingsbergs forsam,Hallingeberg 
+1067,Hogestad,Hogestad,Hogestad 
+1068,Hoby,Hoby,Brakne-Hoby 
+1069,Stehag,Stehag,Stehag 
+1070,Prast- bordet,Prastbordet,
+1071,Gladsax,Gladsax forsam,Gladsax 
+1072,Stenkvista,Stenkvista,Stenkvista 
+1073,Oppasen,Oppasen,
+1074,Ingelstorp,Ingelstorp,Ingelstorp 
+1075,Borrby,Borrby forsam,Borrby 
+1076,Hoglunda,Hoglunda,
+1077,Stiby,Stiby,Stiby 
+1078,Skrea,Skrea,Skrea 
+1079,Borgeby,Borgeby,Borgeby 
+1080,Anslunda,Anslunda,Onslunda 
+1081,Ludgo,Ludgo forsam,Ludgo 
+1082,Vallby,Vallby,Vallby 
+1083,Onsala,Onsala,Onsala 
+1084,Tjarby,Tjarby,Tjarby 
+1085,Svegs- mon,Svegssocken,
+1086,Arstad,Arstad,Arstad 
+1087,Silfakra,Silvakra,Silvakra 
+1088,Villstad,Villstad,Villstad 
+1089,Lungre,Lungre,Lungre
+1090,Bjeresjo,Bjarsjo,Bjaresjo 
+1091,Veddige,Veddige,Veddige 
+1092,Landsom,Landsom,
+1093,Sundby,Sundby bergsl,Sundbyberg 
+1094,Holo,Hala,Halanda 
+1095,Orja,Orjan,Orjan 
+1096,Pajala,Pajala,Pajala
+1097,Tommarp,Tommarp,Ostra Tommarp 
+1098,Karaby,Karaby forsamling,Karaby 
+1099,Sosdala,Sosdala,
+1100,Lerbo,Lerbo forsam,Lerbo 
+1101,Aker,Aker,Aker 
+1102,Oppunda,Oppunda,Husby-Oppunda 
+1103,Lastringe,Lastringe,Lastringe 
+1104,Landvetter,Landvetter,Landvetter 
+1105,Ockero,Ockero,Ockero 
+1106,Hjartrum,Hjartrum,Hjartum 
+1107,Styrso,Styro,Styrso 
+1108,Kallered,Kallered,Kallered 
+1109,Borje,Borje,Borje 
+1110,Vaksala,Vaksala,Vaksala 
+1111,Kulla,Kulla,Kulla 
+1112,Tossene,Tossene forsam,Tossene 
+1113,Malmon,Malmen,Malmon 
+1114,Ytterby,Ytterby,Ytterby 
+1115,Askum,Askum,Askum 
+1116,Fryksanda,Fryksande,Fryksande 
+1117,Langserud,Langserud,Langserud 
+1118,Emtervik,Emtervik,Emtervik 
+1119,Tocksmark,Tocksmark,Tocksmark 
+1120,Botilsater,Botilsater,Botilsater 
+1121,Nordmark,Nordmarkens forsam,Nordmark 
+1122,Tufve,Tuvvie,Tuve 
+1123,Forshalla,Forshall,Forshalla 
+1124,Arsunda,Arsunda,Arsunda 
+1125,Jarbo,Jarbo,Jarbo 
+1126,Idenor,Idenors forsam,Idenor 
+1127,Skillingmark,Skillingmarks forsam,Skillingmark 
+1128,Bollnas s:n,Bollnas sock,
+1129,Enanger,Enanger,Enanger 
+1130,Borgvik,Borgvik,Borgvik 
+1131,Kola,Kolla,Kola 
+1132,Brattfors,Brattfors forsam,Brattfors 
+1133,Gunnarskog,Gunnarskog,Gunnarskog 
+1134,Langsered,Langsered,Langserud 
+1135,Stafnas,Stafnasa,Stafnas
+1136,Grums,Grums forsamling,Grums
+1137,Ostervallskog,Ostervallskog,Ostervallskog 
+1138,Vilhelmina,Vilhelmina,Vilhelmina
+1139,Fredrika,Fredrika,Fredrika 
+1140,Skellefte& s:n,Skelleftea sock,
+1141,Bjurholm,Bjurholm,Bjurholm 
+1142,Loos,Ljusdal,Ljusdal 
+1143,Harmanger,Harmanger,Harmanger 
+1144,Njutanger,Njutanger,Njutanger 
+1145,Tasjo,Tasjo,Tasjo 
+1146,Selanger,Selangers forsam,Selanger 
+1147,Jamjo,Jamjo,Jamjo 
+1148,Kyrkhult,Kyrkhult,Kyrkhult 
+1149,Ardre,Ardre,Ardre 
+1150,Voxna,Voxna forsam,Voxna 
+1151,Lingbo,Lingbo socken,Lingbo 
+1152,Ofverlannas,Ofverlannas,Overlannas 
+1153,Skons,Skanska,Skanska
+1154,Grundsunda,Grundsunda forsam,Grundsunda 
+1155,Bjartra,Bjartra,Bjartra 
+1156,Sanga,Satra,Stra 
+1157,Dingtuna,Dingtuna forsam,Dingtuna 
+1158,Munktorp,Munktorpet,Munktorp 
+1159,Norrby,Norrby,Norrby 
+1160,Wittinge,Wittinge,Wittinge
+1161,Irsta,Irsta,Irsta 
+1162,Ullanger,Ullanger,Ullanger 
+1163,Hed,Hede,Hede 
+1164,Hubbo,Hubbovik,Hubbo 
+1165,Badelunda,Badelunda,Badelunda 
+1166,Satterbo,Satterbo,Saterbo
+1167,Botea,Bottna,Bottna 
+1168,Torp.,Torp,Ostra Torp 
+1169,Stigsjo,Stigsjo,Stigsjo 
+1170,Hjortsberga,Hjortsberga,Hjortsberga
+1171,Kronofors,Kronofors,
+1172,Svea,Svea forsamling,Andra Svea artilleriregemente 
+1173,(Hamburg),Hamburg,
+1174,Haraker,Haraker,Haraker 
+1175,Sala,Sala kommun,Sala 
+1176,Skepplanda,Skepplanda,Skepplanda 
+1177,Bone,Baneberg,Bareberg 
+1178,Froskog,Froskog,Froskog 
+1179,Erska,Orserum,Erska 
+1180,Siene,Siene,Siene 
+1181,Fuxerna,Fuxerna,Fuxerna 
+1182,Asarp,Asarp,Asarp 
+1183,Hogsater,Hogsater,Hogsater 
+1184,Or,Orsa,Orsa 
+1185,Satila,Satuna,Satuna 
+1186,Gallstad,Gallstad,Gallstad 
+1187,Bergum,Bergum,Bergum 
+1188,Peder,Pedersore,Peder 
+1189,Gingri,Gingri forsam,Gingri 
+1190,Habol,Habo,Habo 
+1191,Brunn,Brunns forsam,Brunn 
+1192,Hossna,Hussnas,Hossna 
+1193,Refvesjo,Refvensjo,Revesjo 
+1194,Rolanda,Rolanda,Rolanda 
+1195,Lagmansered,Lagmansered,Lagmansered 
+1196,Hindas),Hindas,
+1197,e. O. hof- rattsnot.,Eds Olofsh,
+1198,Varfvet),Varvet,Gamla Varvet 
+1199,Fassberg),Fasberg,Fassberg 
+1200,Kristiania),Kristiania,Kristina 
+1201,Skagershult,Skagershults for,Skagershult 
+1202,Skol- lersta,Skollersta,Skollersta 
+1203,Gryt- hytte,Grythytte,
+1204,Kracklinge,Kracklinge,Kracklinge 
+1205,Ansta,Ansta,Ansta 
+1206,Helle- fors,Hellefors,Hellefors
+1207,Hjulsjo,Hjulsjo,Hjulsjo 
+1208,Got- lunda,Gotgunda,Gotlunda 
+1209,Ler- back,Lerbacken,Lerback 
+1210,Grafve,Grafven,Grave 
+1211,Ofver-Jarna,Over-Jarna,
+1212,Oster-Talje,Ostra-Talje,Ostertalje 
+1213,Lidingo.,Lidingo,Lidingo 
+1214,Osseby-Garn,Osseby forsam,Osseby-Garn 
+1215,Edsberg,Edsbergs forsam,Edsberg 
+1216,Sven- nevad,Svennevads for,Svennevads ovra 
+1217,Radmanso,Rada manso,Radmanso 
+1218,Thuringe,Thuringe,Turinge 
+1219,Frosunda,Frosunda,Frosunda 
+1220,Ytter-Jarna,Ytterjarna,Ytterjarna 
+1221,Oscar Fred- riksborg,Oscar Fredriksborg,
+1222,Osterha- ninge,Osterhaninge,Osterhaninge
+1223,Dagsberg,Dagsbergs forsam,Dagsberg 
+1224,Gustafs- berg,Gustafsberg,Gustavsberg 
+1225,Husby-Lyhundra,Husby-Ly,Husby-Lyhundra 
+1226,Djursholm.,Djursholm,Djursholm 
+1227,Vasterlosa,Vasterlosa,Vasterlosa 
+1228,Johannis,Johannes,Jakob och Johannes 
+1229,Hageby,Hageby,Hagebyhoga 
+1230,Uto,Utlunda,Uto 
+1231,Dj :holm,Djursholm,Djursholm 
+1232,Graso,Graso,Graso 
+1233,Markim,Markim,Markim 
+1234,Fornas,Fornas,Fornasa 
+1235,Ekensbergs varf,Ekensbergs varv,
+1236,Vallen- tuna,Vallentuna,Vallentuna 
+1237,Hammar- by,Hammarsby,Hammarby 
+1238,Pehr,Parla,Per 
+1239,Vinnerstad,Vinnerstad,Vinnerstad 
+1240,Normlosa,Normlosa,Normlosa 
+1241,Vallerstad,Vallerstad,Vallerstad 
+1242,Gaddviken,Gaddviken,
+1243,Nykil,Nykil,Nykil 
+1244,Ledberg,Ledbergs forsamling,Ledberg 
+1245,Fifvelstad,Fifvelstad,Fivelstad 
+1246,Flistad,Flisstad,Flistad 
+1247,Gardeby,Gardeby,Gardeby 
+1248,Stra,Strangnas,Strangnas
+1249,Veta,Veta,Veta 
+1250,Valdemarsvik,Valdemarsvik,Valdemarsvik 
+1251,Haradshammar,Haradshammar,Haradshammar 
+1252,Konungsund,Konungsund,Konungsund 
+1253,Wanga,Vanga,Norra Vanga 
+1254,Rono,Rano,Raby-Rono 
+1255,Godegard,Godegard,Godegard 
+1256,Svanhals,Svanhals,Svanehals
+1257,Skonberga,Skonberga,Skonberga 
+1258,Oppeby,Oppundabyn,Oppeby 
+1259,Riddersvik,Riddersvik,
+1260,Furusund,Furusund,
+1261,Hokhufvud,Hokhuvud,Hokhuvud 
+1262,Loharad,Loharad,Loharad 
+1263,Grisslehamn,Grisslehamn,
+1264,Knutby,Knutby,Knutby 
+1265,Lilje- holmen,Liljeholmen,
+1266,Hof,Hofot,Hofmanstorp
+1267,Osby,Osby kommun,Osby 
+1268,Jonsberg,Jonsbergs forsam,Jonsberg 
+1269,Mogata,Mogata,Mogata 
+1270,Skederid,Skederid,Skederid 
+1271,Husaby,Husaby,Husaby
+1272,Dimbo,Dimbo forsamling,Dimbo 
+1273,Levene,Levene forsamling,Levene 
+1274,Roslagskulla,Roslagskulla,Roslags-Kulla 
+1275,Gottrora,Gottorps for,Gottrora 
+1276,Tidersrum,Tidersrum,Tidersrum 
+1277,S:talje,Sodertalje,Sodertalje
+1278,Norr- talje,Norrtalje,Norrtalje 
+1279,Kyrkefalla,Kyrkefalla,Kyrkefalla 
+1280,Ransberg,Ransbergs forsam,Ransberg 
+1281,Frojered,Frojered,Frojered 
+1282,Varing,Varing,Stora Varing 
+1283,Larf,Larf,
+1284,Fredsberg,Fredsbergs forsam,Fredsberg 
+1285,Edasa,Eda forsamling,Edasa 
+1286,Molltorp,Molltorp,Molltorp 
+1287,Bellefors,Balefors,Ballefors 
+1288,Back,Backen,Backe 
+1289,Skjalfvum,Skjalvum,Skalvum 
+1290,Hassled,Hasslo,Hasslo 
+1291,Stofvie,Stufvenas,
+1292,Gu- stafs s:n,Gustafs socken,
+1293,H- stad,Helsingborgs,Helsingborgs
+1294,Ha- stad,Halsingborg,Halsingborg 
+1295,i Ese- rup,i Eserup,
+1296,Hem- mesdynge,Hemmesdynge,Hemmesdynge 
+1297,Hemmes- dynge,Hemmesdynge,Hemmesdynge 
+1298,Rydaholm,Rydaholms,Rydaholm 
+1299,Bjorko,Bjorko,Bjorko 
+1300,Malmback,Malmbacka,Malmback 
+1301,Visingso,Visingso,Visingso 
+1302,Gallaryd,Gallaryd,Gallaryd 
+1303,Skanderasen,Skanderasen,
+1304,Hessleby,Hassleby,Hassleby 
+1305,Kank- backe,Kankbacke,
+1306,Totten,Tottenskar,
+1307,Lidsjoberg,Lidsjoberg,
+1308,Bracke- by,Bracke by,Brackeby
+1309,Aggen,Aggenas,
+1310,Ostansjo,Ostansjo,
+1311,Stugun,Stugun,Stugun 
+1312,Ytter- an,Yttergran,Yttergran 
+1313,Dafberg,Dafberget,
+1314,Grotingsjo,Grotingsjo,Grotingsjo
+1315,Ask,Askim,Askim 
+1316,Brundby,Brundby,Brundby
+1317,Skarvan- gen,Skarvangen,
+1318,Gallon,Gallon,
+1319,Glissjoberg,Glissjoberg,
+1320,Ora- vattnet,Oravatten,
+1321,Bispgarden,Bispgarden,Biskopsgarden 
+1322,Kyrkbyn,Kyrkbyn,Kyrkoby 
+1323,Backs- gard,Backsgard,
+1324,Sundbacken,Sundbacken,
+1325,Walsjon,Valsjon,Vallsjo 
+1326,Ang,Angasen,Anga 
+1327,Esp- nas,Espelands forsam,
+1328,Haggesta,Haggesta,
+1329,Soderhogen,Soderhog,
+1330,Borringe- kloster i Gustafs s:n,Borringe kloster,
+1331,Borringekloster i Gu- stafs s:n,Borringe kloster,
+1332,Grim- nas-Backen,Grimnas-,
+1333,Digernas,Digernas,
+1334,Norr- gard,Norrgard,
+1335,Haste,Hasteberga,
+1336,Undrom,Undroms forsam,
+1337,Gronby,Gronby,Gronby 
+1338,Kvisttofta,Kvisttofta,Kvistofta 
+1339,Res- lof,Resslov,Reslov 
+1340,Sirekoping,Sirkopings for,Sirekopinge 
+1341,Soderhvidinge,Soderhvid,Sodervidinge 
+1342,Vadensjo,Vadensjo,Vadensjo 
+1343,L:a Har- rie,Laholm,Laholm 
+1344,Karrtorp,Karrtorp,Karrstorp 
+1345,Trillestad,Trillestads for,Frillestad 
+1346,Lunds,Lunds kommun,Lunds
+1347,Hesingborg,Helsingborg,Helsingborg 
+1348,Odarslof,Odarslov,Odarslov 
+1349,Kells,Kalls,Kalls-Nobbelov 
+1350,Munkarp,Munkarp,Munkarp 
+1351,Hede- skoga,Hedeskoga,Hedeskoga 
+1352,V. Vemmer- lof,Vemmerlof,Vemmerlof
+1353,Raslof,Raslov,
+1354,Loddekoping,Loddekoping,Loddekopinge 
+1355,Ismundlandet,Ismundslandet,
+1356,Stromsnas,Stromsnas,
+1357,Ahn,Ahn,
+1358,Klosta,Klosterkyrka,
+1359,Krim- nas,Krimnas,
+1360,Up akra,Upakra,Uppakra 
+1361,Gerd lof,Gerdlof,
+1362,Fjallsta,Fjallsta,
+1363,Stam- garde,Stammgarde,
+1364,Tafnas,Tafnas,Tafnas
+1365,Marsatt,Marsatter,
+1366,Ange,Ange,Ange kbfd 
+1367,Annedal,Annedal,Annedal 
+1368,Sveg- mon,Sveg forsamling,
+1369,Halasen,Halsingland,
+1370,Trusta,Trusta forsamling,
+1371,Morviken,Morviken,
+1372,Espnas,Espanas,
+1373,Munsaker,Munsaker,
+1374,Samsta,Samsta,
+1375,Bynilsvallen,Bynilsvallen,
+1376,Strand,Strandberg,
+1377,Gardnas,Gardna,Gargnas
+1378,Oppne,Oppna,
+1379,Faviken,Faviken,Faviken
+1380,Uppland,Uppland,Upplands
+1381,Asmunds- torp,Asmundstorps for,Asmundtorp 
+1382,Hasslunda,Hasslunda,Hasslunda 
+1383,Norrkvidinge,Norrkvidinge,Norrvidinge 
+1384,Sku- rup,Skurup,Skurup 
+1385,Bonderup,Bonderup,Bonderup 
+1386,Kells- torp,Kallstorp,Kallstorp 
+1387,Bunke- flo,Bunkeflo,Bunkeflo 
+1388,N.Svalof,Nya Sovalo,
+1389,Sandby,Sandby,Norra Sandby 
+1390,Blentarp,Blentarp,Blentarp 
+1391,Helsingborgs s:n,Helsingborgs,Helsingborgs
+1392,Hammarslof,Hammarslof,
+1393,Grefvie,Grefvie,Grevie 
+1394,Gors- lof,Gorslov,Gorslov 
+1395,""" Knas- torp",Knasstorp,Knastorp 
+1396,Gars- lof,Garslof,
+1397,Lacka- langa,Lackalanga,Lackalanga 
+1398,Halsigborg,Helsingborg,Helsingborg 
+1399,N. Skraf- linge,Norr Skafl,
+1400,Vemmerlo,Vemmerlovs,Vemmerlov 
+1401,Fuglie,Fuglie forsam,Fuglie 
+1402,Gard stanga,GoArd Stang,Gardstanga 
+1403,O. Klags- torp,Ostra Klagst,Ostra Klagstorp 
+1404,Nabbelof,Nabbelov,Nobbelov 
+1405,Dvarsatt,Dvarsatt,
+1406,Onet,Onet,
+1407,Westerasen,Westerasen,
+1408,Ham- maren,Hammaren,Hammaren
+1409,Ratansbyn,Ratan'sbyn,
+1410,Vaster- skucku,Vasterlang,Vasterlanda 
+1411,Johannisnas,Johanneshus,
+1412,Tomas- gard,Tomasgard,
+1413,Slatten,Slatten,Slatten
+1414,Makpe,Maklappe,
+1415,Am- mer,Ammers parish,
+1416,Hofdsjo,Hofsjo,Hosjo 
+1417,Ansjo,Ansjo,
+1418,Stroms- nas,Stromsnas,
+1419,Prisgard,Prastgard,
+1420,Byvallen,Byvallen,
+1421,Borglunda,Borglunda,Borgunda 
+1422,Hurfva,Hurfvaga,Hurva 
+1423,Risselas,Risleasen,
+1424,Lilla Uppakra Upp- akra,Lilla Uppakra,
+1425,Hoga- nas,Hoganas,Hoganas 
+1426,Asltad,Aslstad,Alstad 
+1427,Limhamn.,Limhamn,Limhamn 
+1428,Flackharp,Flackarp,Flackarp 
+1429,Uppakra s:n,Uppakra sock,
+1430,Espo,Espoo,
+1431,Bosjoklosters,Bosjoklosters,Bosjokloster 
+1432,Katslosa,Katslosa,Katslosa 
+1433,Fren- ninge,Frenninge,Frenninge
+1434,Virke,Virke forsamling,Virke 
+1435,Eksholm,Eksholm,
+1436,fran Stramsnas i Barse- back,fran Stroms,
+1437,Igellosa,Igelosa,Igelosa 
+1438,Baldringe,Baldringe forsam,Baldringe 
+1439,Bjere- sjo,Bjarsjo,Bjaresjo 
+1440,Torringe,Torringe,Torringe 
+1441,Tottorp,Tottorp,Tottorp
+1442,Asums,Asums forsamling,Asum 
+1443,Valla,Valla,Valla 
+1444,Osterasen,Osterasen,
+1445,Slimminge,Slimminge,Slimminge 
+1446,Knastorp,Knastorp,Knastorp 
+1447,Hbg,Helsingborg,Helsingborg 
+1448,Barat,Barakasen,Bara 
+1449,Hieta- niemi,Hietaniemi,Hietaniemi 
+1450,Arjeplog,Arjeplog,Arjeplog 
+1451,Bergnaset,Bergnaset,Bergnas
+1452,Arvid- sjaur,Arvidsjaur,Arvidsjaur 
+1453,Porjus,Porjus,Porjus
+1454,Pite& s:n,Pitea socken,
+1455,Hoge- stad,Hogestad,Hogestad 
+1456,Lom- ma,Lomma,Lomma 
+1457,Frillestad,Frillestad,Frillestad 
+1458,Skaber- sjo,Skaber-sjo,Skabersjo 
+1459,Hoganas bruksfors.,Hoganas Br,
+1460,O. Vemmen- hog,Ola Vemmen,
+1461,Blen- torp,Blentorps forsam,
+1462,Rorum,Rorum,Norra Rorum 
+1463,Hesslunda,Hesslunda,Hasslunda 
+1464,Konga,Konga forsamling,Konga 
+1465,Hedeskoga,Hedeskoga,Hedeskoga 
+1466,Lyby,Lyby forsamling,Lyby 
+1467,Moglarp,Moglarp,Maglarp 
+1468,Roddinge,Roddinge,Roddinge 
+1469,Oxie,Oxie forsamling,Oxie 
+1470,Forhult,Forhult,Farhult 
+1471,Hellestad,Hellestads forsam,Hallestad 
+1472,Womb,Womb,
+1473,Hogestads sateri i Hoge- stad,Hogestads sa,
+1474,Barslof,Barslov,Barslov 
+1475,Bramstad,Bramstad,Brastad 
+1476,Holje,Holje,
+1477,Husa,Husa forsamling,Husa bruks kapellforsamling 
+1478,Skjor,Skarholmen,Skarholmen 
+1479,Bleka,Bleka,
+1480,Gorvik,Gorvik,
+1481,Nedertornea,Nedertornea,Nedertornea
+1482,Krokvag,Krokvag,
+1483,Sikas,Sika,Ska 
+1484,Ostberg,Ostberg,
+1485,Osterede,Osterhede,
+1486,Katrine- hill,Katrineholm,Katrineholm 
+1487,Sore,Sore,
+1488,Oden- sala,Odensala,Odensala 
+1489,Bredgard,Bredgard,Bredared 
+1490,Farjestor- den,Farjestaden,
+1491,Hog- lunda,Hoglunda,
+1492,Hardgard,Haggard,Raggard 
+1493,Pal- gard,Paltgarde,
+1494,Byn,Byn,Byn 
+1495,Karesuando,Karesuando,Karesuando 
+1496,Hietaniemi,Hietaniemi,Hietaniemi 
+1497,Ofvertornea,Overtornea,Overtornea
+1498,Jokk- mokk,Jokkmokk,Jokkmokk 
+1499,Ranea s:n,Ranea sock,
+1500,Verkon,Varkon,
+1501,Nashult,Nashult,Nashult 
+1502,Nashulta,Nashult,Nashult 
+1503,Sattersta,Sattersta,Sattersta 
+1504,Trosa s:n,Trosa socken,
+1505,Bladakra,Bladakra,Bladaker 
+1506,Nartuda,Nartuna,Nartuna 
+1507,Vasterhanninge,Vasterhanning,Vasterhaninge 
+1508,Vasterhan- ninge,Vasterhaninge,Vasterhaninge 
+1509,Al- marestaket,Almarestaket,
+1510,Faringe,Faringe,Faringe 
+1511,Fors- mark,Forsmark,Forsmark 
+1512,Almarstaket,Almarstaka,
+1513,Skanella.,Skanninge.,Skanninge 
+1514,Oscar Fredriks borg,Oscar Fredriksborg,
+1515,Solhem.,Solhem,
+1516,Hudddinge,Huddinge,Huddinge 
+1517,Storanggen,Stora Angen,
+1518,DjurshoIm,Djursholm,Djursholm 
+1519,Hudinge,Huddinge,Huddinge 
+1520,Ofver- lulea,Over-Lulea,Overlulea
+1521,Arje- plogs,Arjeplogs,Arjeplogs
+1522,Husby-Erlinghundra,Husby-Erling,Husby-Arlinghundra 
+1523,Gottroia,Gottorp,Tottorp
+1524,Syndbyberg,Sundbyberg,Sundbyberg 
+1525,Tynningo,Tynningo,
+1526,Finaboda,Finaboda,
+1527,Hoxang,Hoxang,
+1528,Brannbodarna,Brannbodarna,
+1529,Runtuna,Runtuna,Runtuna 
+1530,Nykyrka,Nykyrka,Nykyrka 
+1531,Barfva,Barva,Barva 
+1532,Steninge,Steninge,Steninge 
+1533,Renneslof,Renneslov,Ranneslov 
+1534,Asige,Asige,Asige 
+1535,Slattakra,Slata kra,Slattakra 
+1536,Enslof,Ensjolf,Enslof
+1537,Vastgard,Vastergard,Vastergarn 
+1538,Bynom,Bygdea man,
+1539,Grimeson,Grimsas,Grimeton 
+1540,Ofraby,Ofraby,Oraby 
+1541,Drangsered,Drangsered,Drangsered 
+1542,Skummerlof,Skummerlof,Skummerlof
+1543,Rafvinge,Raftinge,Ravinge 
+1544,Sondrum,Sondrum,Sondrum 
+1545,Selo,Saby,Saby 
+1546,Husby-Opp- unda,Husby-Opp,Husby-Oppunda 
+1547,Breared,Bredared,Bredared 
+1548,Laholms landsfor- saml.,Laholms lands,Laholms landsforsamling 
+1549,Ebsra,Eberstad,
+1550,Skum- meslof,Skummeslovs,Skummeslov 
+1551,Tonnersjo,Tonnersjo,Tonnersjo 
+1552,Vinoaker,Venaaker,Vingaker 
+1553,V. Fro- lunda,Vastra Frol,Vastra Frolunda 
+1554,Laholms landsfors.,Laholms lands,Laholms landsforsamling 
+1555,Rolfstorp,Rolfstorp,Rolfstorp 
+1556,Winberg,Vinnberg,Vinberg 
+1557,Hanhals,Hanhals,Hanhals 
+1558,Torshalla s:n,Torshalla sock,
+1559,Balinga,Balinge,Balinge 
+1560,Vrena,Vrena forsamling,Vrena 
+1561,Remtuna,Remtuna,
+1562,Hyltinga,Hyltinga,Hyltinge 
+1563,Tumbo,Tumbo,Tumbo 
+1564,Bjorklunda,Bjorklunda,Bjarklunda 
+1565,Tystberga,Tystberga,Tystberga 
+1566,O.Lofsta,Olofsta,O.Lofsta
+1567,Gryta,Gryta,Gryta 
+1568,Frojes- lunda,Frojelunda,Frojeslunda 
+1569,Uppsala,Uppsala,Uppsala
+1570,Lena,Lena forsamling,Lena 
+1571,Giresta,Giresta,Giresta 
+1572,Skeptham- mar,Skepthamarm,Skepthammar
+1573,Bjorn- lunda,Bjornunda,Bjornlunda 
+1574,Lid,Lidkoping,Lidkoping 
+1575,Uppsala-Nas,Uppsala-Nas,Uppsala-Nas 
+1576,Aspo,Aspo,Aspo 
+1577,Ofver-Enhorna,Over-Enhorna,Overenhorna 
+1578,Geer,Garde,Garde 
+1579,Husby Re- karne,Husby-Rekar,Husby-Rekarne 
+1580,Lanna,Lanna,"Kulltorp  (huvuddelen),  (Lanna)"
+1581,Strangnas s:n,Strangnas sock,
+1582,Taxinge,Taxinge,Taxinge 
+1583,Bergsham- mar,Bergshammar,Bergshammar 
+1584,Ludge,Ludge,Ludge
+1585,Satterslo,Saterslov,Sarslov 
+1586,Bitterna,Bitterna forsamling,Bitterna 
+1587,Okome,Okome,Okome 
+1588,Gasinge,Gavinge,Gasinge 
+1589,Long,Langserud,Langserud 
+1590,Goss- lunda,Gosslunda,Gosslunda 
+1591,"""Blacksta",Blacksta,Blacksta 
+1592,Harad,Harad,Harad 
+1593,Ytter-Enhorna,Ytter-Enhorna,Ytterenhorna 
+1594,Vesterljung,Vasterljung,Vasterljung 
+1595,Skorstorp,Skorstorp,Skorstorp 
+1596,Haby,Haby,Haby 
+1597,Vasterlanda,Vasterlanda,Vasterlanda 
+1598,Or- gryte,Argarde,Orgryte 
+1599,Ucklum,Ucklum,Ucklum 
+1600,Resterod,Resterods for,Resterod 
+1601,Grebbestad,Grebbestad,Grebbestads
+1602,Hummebostrand,Humlebostrand,Hummebostrand
+1603,Skanings- saka,Skanings-Ska,Skanings-Asaka 
+1604,Skee,Skee forsamling,Skee 
+1605,Halleviksstrand,Halleviksstrand,
+1606,Fared,Farde,Fared 
+1607,Os,Osby,Osby 
+1608,Harryda,Harryda,Harryda 
+1609,Lommelanda,Lommelanda,Lommeland 
+1610,G.;,Gustaf Wasa,
+1611,Akerby,Akerby,Akerby 
+1612,Bondkyko,Bondkyrko,Bondkyrka 
+1613,Alfkarelby,Alfkarelby,
+1614,Biskopskulla,Biskopskulla,Biskopskulla 
+1615,Aug.,Augusta,
+1616,Funbo,Funbo forsamling,Funbo 
+1617,Tensta,Tensta forsamling,Tensta 
+1618,Lyse,Lyse kyrka,Lyse 
+1619,Jarlasa,Jarlasa kvarn,Jarlasa 
+1620,Film.,Film,Film 
+1621,Rasbokil,Rasbokil,Rasbokil 
+1622,¿Kl.,Klara,Klara
+1623,Kl.;,Klara,Klara
+1624,Hallnas,Hallnas,Hallnas 
+1625,Danne- mora,Dala-Jarna,Dannemora 
+1626,\Kh.,Kungsholms,Kungsholm
+1627,M.;,Matteus,Matteus 
+1628,Myckleby,Myckleby,Myckleby 
+1629,Langelanda,Langelanda,Langelanda 
+1630,Nya varfvet,Nya Varvet,Nya Varvet 
+1631,IJ.,IJOBY,
+1632,Jorlanda,Jorlanda,Jorlanda 
+1633,'E.,Engelbrekts,Engelbrekt 
+1634,G..,Gustaf Wasa,
+1635,'M.,Matteus,Matteus 
+1636,N..,Nikolai,Nikolai
+1637,Mt..,Malarhoj,
+1638,Kville,Kville,Kville
+1639,Ofvan- aker,Ovanaker,Ovanaker 
+1640,Odsmal,Odeshog,Odeshog 
+1641,Fjallbacka,Fjallbacka,Fjallbacka
+1642,Folunda,Follounda,Frolunda
+1643,O..,Oscars,Oscarstad 
+1644,Svanskog,Svanskog forsam,Svanskog 
+1645,Frykerod,Frakenrod,Frykerod
+1646,Stafsnas,Stafsnas,Safsnas 
+1647,Trankil,Trankil,Trankil 
+1648,M..,Matteus,Matteus 
+1649,Gunnerskog,Gunnarskog,Gunnarskog 
+1650,Ad.,Adela parochi,
+1651,'J.,Jakobs o. Johannes,Jakob och Johannes 
+1652,Lunden,Lundens forsam,
+1653,Varfvet,Varvet,Gamla Varvet 
+1654,Rodbo,Rodbole,Rodbo 
+1655,Varvet,Varvet,Gamla Varvet 
+1656,Grytnas,Grytnas,Grytnas 
+1657,Svarteborg,Svarteborg,Svarteborg 
+1658,Fiskebacks- kil,Fiskebacksk,Fiskebackskil 
+1659,Gefle,Gavle,Gavle
+1660,Amot,Amot,Amot 
+1661,Farnebo,Farnbo,Farnebo 
+1662,Ljus- dal,Ljusdal,Ljusdal 
+1663,Lek- sand,Leksand,Leksand 
+1664,Soder- barke,Soderbark,Soderbarke 
+1665,Hogbo.,Hogbo.,Hogbo 
+1666,Boda,Boda,Boda 
+1667,Silboaal,Silboal,Silbodal 
+1668,Holmdal,Holmdal,Holmedal 
+1669,Grasmark,Grasmark,Grasmark 
+1670,Alster,Alsters forsamling,Alster 
+1671,Aspe- boda,Aspeboda,Aspeboda 
+1672,Grasmaark,Grasmark,Grasmark 
+1673,Enviken,Enviken,Enviken 
+1674,Skarke,Skarke,Skarke 
+1675,Klle,Kalle,Kallered 
+1676,Edsharad,Edsharad,Eksharad 
+1677,Ramen;,Ramen,Rammen 
+1678,Fagred,Fagreed,Fagered 
+1679,Skofde landss:n,Skovde landskommun,
+1680,Korsberga,Korsberga for,Korsberga 
+1681,Torso,Torso,Torso 
+1682,Frykerud,Frykerud,Frykerud 
+1683,Grebbe- stad,Grebbstads for,Grebbestads
+1684,Sunnemo,Sunnemo kyrk,Sunnemo 
+1685,Lindarfva,Lindarfva,Lindarva 
+1686,Varola,Varnamo,Varnamo 
+1687,Varmskog,Varmskog,Varmskog 
+1688,Hirtsand,Hirsjo samfall,Hvitsand
+1689,Onum,Onumsholm,Onum 
+1690,Sjogerstad,Sjogerstad,Sjogerstad 
+1691,Fleringe,Fleringe,Fleringe 
+1692,Masterby,Masterby,Masterby 
+1693,Lummelunda,Lummelunda,Lummelunda 
+1694,Hogran,Hogran,Hogran 
+1695,Vestergarn,Vastergarn,Vastergarn 
+1696,Hangvar,Hangvar,Hangvar 
+1697,Follingbo,Follingbo,Follingbo 
+1698,Soderhamn,Soderhamn,Soderhamn 
+1699,Baltak,Baltak,Baltak 
+1700,Spar- losa,Sparlosa,Sparlosa 
+1701,Sorsele,Sorsele,Sorsele
+1702,Tarna,Tarna,Tarna 
+1703,Lyck- sele,Lycksele,Lycksele
+1704,Nordma- ling,Nordmaling,Nordmaling 
+1705,Noramaling,Noramlings forsam,Nordmaling 
+1706,Tore- boda,Toreboda,Toreboda 
+1707,Woxna,Woxna forsam,Woxna
+1708,Nyskoga,Nyskoga,Nyskoga 
+1709,Alga,Alga,Alga 
+1710,Warnum,Varnum,Varnum 
+1711,Sillerud,Sillerud,Sillerud 
+1712,Holmedal,Holmedal,Holmedal 
+1713,Ofva,Ofva,Ova 
+1714,Skellefte&,Skelleftea,Skelleftea
+1715,Skara landss-n,Skara landskommun,
+1716,Rogsta,Rogsta,Rogsta 
+1717,Marka,Markaryd,Markaryd 
+1718,Norrbo,Norrbo,Norrbo 
+1719,Halsingtuna,Halsingtuna,Halsingtuna 
+1720,O. Farne- bo,O. Farnebo,
+1721,Hedesunda,Hedesunda,Hedesunda 
+1722,Istrum,Istrums forsam,Istrum 
+1723,Nordings,Nordingra,Nordingra 
+1724,Nordingra,Nordingra,Nordingra 
+1725,Gud- mundra,Gudmundra,Gudmundra 
+1726,Kors- berga,Korsberga,Korsberga 
+1727,tax. i Gud- mundra,Gudmundra,Gudmundra 
+1728,Solefte&,Solleftea,Solleftea 
+1729,Timro,Timra,Timra 
+1730,Sater,Saters kommun,Sater 
+1731,Rute,Rute forsamling,Rute 
+1732,Vallstena,Vallstena,Vallstena 
+1733,Hellvi,Hellvi forsamling,Hellvi 
+1734,Eskelhem,Eskelhems for,Eskelhem 
+1735,Fole,Fole,Fole 
+1736,Nysatra;,Nysatra,Nysatra 
+1737,S:II,Sigtuna,Sigtuna
+1738,Gidea,Gidea,Gidea 
+1739,Mofalla,Mofalla,Mofalla 
+1740,Gammalstorp,Gammalstorp,Gammalstorp 
+1741,Gokhem,Gokhem,Gokhem 
+1742,Brakne-Voby,Brakne-Va,Brakne-Hoby 
+1743,Solvesborg,Solvesborg,Solvesborg 
+1744,Vestkinde,Vastkinde,Vastkinde 
+1745,Vedum,Vedums forsamling,Kallands Vedum 
+1746,Endre,Endre forsamling,Endre 
+1747,Stanga,Stanga,Stanga 
+1748,Hassela,Hassela forsam,Hassela 
+1749,Hyringa,Hyringe,Hyringa 
+1750,Kyrkej- falla,Kyrkefalla,Kyrkefalla 
+1751,Ringamala,Ringamalasko,Ringamala 
+1752,Gammaltorp,Gammaltorp,Gammalstorp 
+1753,Hallaryd,Hallaryd forsam,Hallaryd 
+1754,Listerby,Listerby,Listerby 
+1755,Spisbrodsbageri,Spisbrodsb,
+1756,(Gafle),Gavle,Gavle
+1757,F.,Falkenberg,Falkenberg 
+1758,Jarnaffar,Jarna forsam,
+1759,Soners eftertr.,Soners eftertrad,
+1760,a,a,
+1761,Jarnv.-kamrer,Jarnvikens,
+1762,Bagerierna,Bagerierna,
+1763,(Sofielund),Sofielund,Sofielund 
+1764,Vasteras,Vasteras,Vasteras
+1765,Andersson),Andersson,
+1766,Verkstad),Verkstad,Verkstad
+1767,Nerb),Nerbo,
+1768,handels- O. kvarnidkare,Handels- och kvar,
+1769,inneh. fru A. Blom- qvist,innehavande fr,
+1770,e. O. hofr.- not.,Edefors hofd,
+1771,Nylund,Nylund,
+1772,Bogsjo,Bogsjo,Borgsjo
+1773,Sannarslof,Sannarslovs,Sonnarslov 
+1774,Barnarp),Barnarp,Barnarp 
+1775,Son),Sundbybergs for,
+1776,Fosie),Fosie,Fosie 
+1777,Burlof),Burlof,Burlof
+1778,Sederowsky),Sederowski,
+1779,Vanga,Vanga,Norra Vanga 
+1780,Ytter- lannas,Ytterlannas,Ytterlannas 
+1781,Bjorna,Bjorna,Bjorna 
+1782,Tamarp,Tamarps forsam,Tamarp
+1783,Ifveltofta,Iveltofta,Ivetofta 
+1784,Tyndero,Tyndero,Tyndero 
+1785,Nordingsra,Nordingra,Nordingra 
+1786,Kvi- dinge,Kvidinge,Kvidinge 
+1787,Simris,Simris forsamling,Simris 
+1788,Vasteras-Bar- karo,Vasteras-B,Vasteras-Barkaro 
+1789,Backebo,Backebo,Backebo 
+1790,Rumskulla,Rumskulla,Rumskulla 
+1791,Krist- dala,Kristdala,Kristdala 
+1792,Erraker,Ervalla,Ervalla 
+1793,Karrbo,Karbo,Karbole 
+1794,Gagnef,Gagnefs forsam,Gagnef 
+1795,Silfberg,Silfberg,Silvberg 
+1796,Grund- sunda,Grindsund,Grundsund 
+1797,Horup,Horup,Horup 
+1798,Ansas,Asnes,
+1799,Skinnskatte- berg,Skinnskatteberg,Skinnskatteberg 
+1800,Sollero,Sollera,Solleron 
+1801,Skinnskatteberg.,Skinnskattebergs,Skinnskatteberg 
+1802,Gustafs,Gustafs forsam,Gustafs 
+1803,Skarped,Skarpeds for,Skorped 
+1804,Al,Almby,Almby 
+1805,Sabr,Sabra,Sabra 
+1806,Bjorna;,Bjorna,Bjorna 
+1807,Ifo,Ivarsbjorka,
+1808,Vibyggera,Vibyggera,Vibyggera 
+1809,Kristdala,Kristdala,Kristdala 
+1810,Skon.,Skane.,Skon 
+1811,Gafle),Gavle,Gavle
+1812,Tybble),Tybble,
+1813,Gefle),Gavle,Gavle
+1814,O. h.,Ostergotlands,
+1815,Karlslunda,Karlslunda,Karlslunda 
+1816,Hellgums,Hellgum,Helgum 
+1817,Kramfors;,Kramfors,Kramfors 
+1818,Vim- merby s:n,Vimmerby socken,
+1819,Klackeberga),Klackeberga,Klackeberga 
+1820,Jarnv.-kontr.,Jarnvag,
+1821,Ring,Ringstade,Tingstade 
+1822,Verkst.,Verkstadsforsam,
+1823,(Karlsvik),Karlsvik,Kalvsvik 
+1824,Kopenhamn,Kopenhamn,
+1825,(Nasby- holm),Nasbyholm,
+1826,Kopenh.),Kopenhamn,
+1827,Lubeck,Lübeck,
+1828,(Kopenhamn),Kopenhamn,
+1829,(London),London,
+1830,Handl.,Handelsjo,
+1831,Visserum,Visserum,Virserum 
+1832,Rokulla,Rokulla,
+1833,Jonk.,Jonkopings lan,
+1834,Gota,Gota,Andra Gota artilleriregemente 
+1835,(i Slaps s:n),i Slap socken,
+1836,Gaso),Gavle,Gavle
+1837,(i Skallsjo s:n),Skallsjo socken,
+1838,Berlin),Berlin,
+1839,e. O. hofratts- notarie,Eslov hovr,
+1840,(i Par- tilled),i Partille,Partille
+1841,(i Als s:n),i Als socken,
+1842,Jarnh.,Jarnakrah,
+1843,Altuna,Altuna forsamling,Altuna 
+1844,Torstuna,Torstuna forsam,Torstuna 
+1845,Gunnilbo,Gunnilbo,Gunnilbo 
+1846,Norberg.,Norberg,Norberg 
+1847,Malma.,Malma,Malma
+1848,Rum- skulla,Rums-skulla,Rumskulla 
+1849,Engsjo,Engsjo,
+1850,Ed.,Edeby,
+1851,Forlosa,Forlosa,Forlosa 
+1852,Resmo,Rasmo,Resmo 
+1853,Klackesberga,Klackesbergab,Klackeberga 
+1854,Alingas landsf,Alinga landsforsam,Alingsas landsforsamling 
+1855,Repplinge,Repplinge,Repplinge
+1856,Kartlosa,Katrineholm,Katrineholm 
+1857,Figeholm,Figeholm,
+1858,Skalle- rud,Skallerud,Skallerud 
+1859,Vickleby,Vickleby,Vickleby 
+1860,Ryr,Ryr Soderh,Lane-Ryr 
+1861,Angered,Angered,Angered 
+1862,Hajom,Hajom,Hajom 
+1863,Ale-Skofde,Ale-Skovde,Ale-Skovde 
+1864,Magra,Magra forsamling,Magra 
+1865,Morby- langa,Morby langa,Morbylanga 
+1866,Mardakerf,Mardaklev,Mardaklev 
+1867,Odskoldt,Odskolten,Odskolt 
+1868,Brannhult,Bránnhult,Brannhult
+1869,Kalf,Kalvesta,Kalkesta 
+1870,Hammen- hog,Hammerhog,Hammenhog 
+1871,Bonerup,Bone Rups,Bonderup 
+1872,Harred,Harred,Harred
+1873,Sexdraga,Sexdraga,Sexdraga
+1874,Klnna- rumma,Karrbo for,
+1875,Svedala),Svedala,Svedala 
+1876,Raus),Raus,Raus 
+1877,Bjorksta,Bjorksta,Bjorksta 
+1878,Spjutstorp,Spjutstorp,Spjutstorp 
+1879,Nittorp,Nittorps for,Nittorp 
+1880,Hogsrum,Hogsrums for,Hogsrum 
+1881,Dalum,Dalums forsamling,Dalum 
+1882,Gam- leby,Gamleby,Gamleby 
+1883,Klaby,Klaby,Kolaby 
+1884,Istorp,Istorp,Istorp 
+1885,Tunhem.,Tunhem,Ostra Tunhem 
+1886,Grude,Gruddhyttan,Grude 
+1887,Kllanda,Kallanda,Kallands
+1888,Olsremma,Olsremma,Olsremma 
+1889,Langhem,Langhem,Langhem 
+1890,Finnekumla,Finnekumla,Finnekumla 
+1891,Rangedala,Rangedala,Rangedala 
+1892,Frandefors,Frandefors,Frandefors 
+1893,Romelle,Romelanda,Romelanda 
+1894,Fullestad,Fullestad,Fullestad 
+1895,Rodene,Rodené,Rodene 
+1896,Fuxerna;,Fuxerna,Fuxerna 
+1897,Fennekumla,Fennekumla,Finnekumla 
+1898,Rommele,Rommele,Rommele 
+1899,Surteby,Surteby,Surteby 
+1900,Bralanda,Bralanda,Bralanda 
+1901,Hemsjo,Hemsjo,Hemsjo 
+1902,Hvarnum,Hvarnemo,Hvarnum
+1903,Benestad,Benestad,Benestad 
+1904,Wassanda-Nag- lum,Vassanda-Na,Vassanda-Naglum 
+1905,Kvarrestad,Kvarrestad,Kverrestad 
+1906,Ullasjo,Ullaker sj,Ullasjo 
+1907,Hjarsas,Hjarsas,Hjarsas 
+1908,Ljushult,Ljushults forsam,Ljushult 
+1909,Klackeberga,Klackeberga,Klackeberga 
+1910,Marda- klef,Mardaklev,Mardaklev 
+1911,Mjoback,Mjobacka,Mjoback 
+1912,Grasgard,Grasgard,Grasgard 
+1913,Bjornhofda,Bjornhofta,
+1914,Sarn,Sarna,Sarna 
+1915,Manchester),Manchester,
+1916,T.,Toreboda,Toreboda 
+1917,Alingsas),Alingsas,Alingsas 
+1918,Club,Klubben,
+1919,(i Partil- led),Partille,Partille
+1920,Timmele,Timmele forsamling,Timmele 
+1921,Aminskog,Aminskogs for,
+1922,Odsborg,Odsborg,Odeborg 
+1923,S. Mockle- by,Sundby,Sundby 
+1924,Sthlm lan),Stockholms lan,
+1925,(i Askims s:n),Askim forsamling,
+1926,A:son,Ason,
+1927,Bjorboholm),Bjorboholm,
+1928,S.Vi,Sverige,
+1929,Norge),Norge,
+1930,Runsten,Runsten,Runsten 
+1931,Halmstad),Halmstad,Halmstad 
+1932,(Gunnebo),Gunnebo,
+1933,Hofas),Hofas,
+1934,Lundby),Lundby,Lundby
+1935,Askim),Askim,Askim 
+1936,Gualof,Gualov,Gualov 
+1937,Utbynas),Utbynas,
+1938,Smogen),Smogen,Smogen 
+1939,Tverred,Tverred,Tverred
+1940,Tunge,Tunge forsamling,Tunge 
+1941,Kalingared,Kallunge,Kallunge 
+1942,Amal),Amal,Amal 
+1943,Goteborg,Goteborg,Domkyrkoforsamlingen i Goteborg eller Gustavi och Kristine 
+1944,(i V. Frolunda s:n),i Vastra Frol,
+1945,(i Hofas As- kim),"i Hofas, Ask",
+1946,Skillinge,Skillinge,Skallinge 
+1947,Ljus- narsberg,Ljusnarsberg,Ljusnarsberg 
+1948,Eds- berg,Edsberg,Edsberg 
+1949,Mosjo,Moseby,Mosjo 
+1950,Glans- hammar,Glanshammar,Glanshammar 
+1951,Sabylund,Sabylund,
+1952,Rinkaby,Rinkaby,Rinkaby 
+1953,Klsta,Kallstadvik,
+1954,Askersund,Askersund,Askersund 
+1955,Glimakra,Glimakra,Glimakra 
+1956,Tyss- linge,Tysslinge,Tysslinge 
+1957,Kalskoga,Karlskoga,Karlskoga 
+1958,Rams- bergs,Ramsbergs,Ramsberg 
+1959,Degeberga,Degeberga,Degeberga 
+1960,Guldsmeds- hytte,Guldsmedsh,Guldsmedshyttan 
+1961,Guldsmeds- hyttan,Guldsmedsh,Guldsmedshyttan 
+1962,Krack- linge,Kracklinge,Kracklinge 
+1963,Norrbyas,Norrbyas,Norrbyas 
+1964,Odeby,Odeby,Lillkyrka-Odeby 
+1965,Loderup,Loderup,Loderup 
+1966,Wemmerlof,Vimmerby,Vimmerby
+1967,Gallersta,Gallersta,Gallersta 
+1968,Guld- smedshyttan,Guldsmedsh,Guldsmedshyttan 
+1969,Ervalla,Ervalla forsam,Ervalla 
+1970,Klvik,Klivik,
+1971,Hudene,Hudene forsamling,Hudene 
+1972,Hellerfors,Hellefors,Hellefors
+1973,Hallberg,Hallbergs forsamling,Hallsberg 
+1974,Laderup,Ladeby,Laderup
+1975,Lindes s:n,Lindesbergs sock,
+1976,Hjersa,Hjarsas,Hjarsas 
+1977,Hastveda,Hastveda,Hastveda 
+1978,Asker- sunds s:n.,Askersunds socken,
+1979,Orebro),Orebro,Orebro
+1980,(Orebro),Orebro,Orebro
+1981,Sagblads- O. redsk.-fabr.,Sagbladets och Red,
+1982,(Skiftinge),Skiftinge,
+1983,Gafle-Dala Jarnvags Anke- O. Pupillkas- sa,Gavle-Dala,
+1984,Ham- mar,Hammar,Hammar 
+1985,Tostarp,Tostarp,Tostarp 
+1986,Bjurkarns,Bjurkarns,Bjurkarns
+1987,Lom- maryd,Lomma forsam,Lommaryd 
+1988,Bondstorp,Bondstorp,Bondstorp 
+1989,Furu- sund,Furusund,
+1990,(Osterbodarne),Osterbodarne,
+1991,(Vikaryd),Vikaryd,
+1992,Molander,Molndal,Molndal 
+1993,(Engabo),Engabo,
+1994,(Stocklycke),Stocklycke,
+1995,Bringetofta,Brinetofta,Bringetofta 
+1996,Liljeholmen.,Liljeholmen,
+1997,Otverjarna,Otterjarna,Ytterjarna 
+1998,S:byberg,Sabyberg,
+1999,Ostham- mar,Osthammar,Osthammar 
+2000,Vermdo,Varmdo,Varmdo 
+2001,Dj;holm,Djursholm,Djursholm 
+2002,Horeda,Harda,Hara 
+2003,Khh,Kala harad,
+2004,Villastad,Villastad,Villstad 
+2005,Grythyt- te,Grythyttan,Grythyttan 
+2006,Brannkyrka.,Brannkyrka,Brannkyrka
+2007,Sol- lentuna,Sundbybergs for,Sollentuna 
+2008,Bolmso,Bolmso,Bolmso 
+2009,Va- sterhaninge,Vasterhaninge,Vasterhaninge 
+2010,Hjarn. arp,Hjarnarp,Hjarnarp 
+2011,Tosterup,Tosterup,Tosterup 
+2012,Ham- marby,Hammarby,Hammarby 
+2013,Broinsten,Brolindsten,
+2014,Riala,Riala forsamling,Riala 
+2015,Osterfof,Osterfarne,Osterfarnebo 
+2016,So- dertalje,Sodertalje,Sodertalje
+2017,Bredaryd,Bredaryd,Bredaryd 
+2018,Vallsjo,Vallsjo,Vallsjo 
+2019,Kalleryd,Kallered,Kallered 
+2020,Nvnashamn,Nynashamn,Nynashamn 
+2021,Svartarp,Svartarp,Svarta 
+2022,Djursh:olm,Djursholm,Djursholm 
+2023,Stock'sund,Stockholm-Sund,Stocksund 
+2024,Saltsjobad.en,Saltsjobaden,Saltsjobaden 
+2025,Lomma- ryd,Lommaryd,Lommaryd 
+2026,Forslof,Forslov,Forslov 
+2027,Ramun- deboda,Ramundeboda,Ramundeboda 
+2028,Motala;,Motala,Motala 
+2029,Herrberga,Herrberga,Herrberga 
+2030,Svanehals,Svanehals for,Svanehals
+2031,Kallstad,Kallstad,Kallstad 
+2032,Bastad.,Bastad.,Bastad 
+2033,Nymo,Nymo,Nymo 
+2034,Bollerup,Bollerup,Bollerup 
+2035,Tanger- asa,Tangerasa,Tangerasa 
+2036,Lang- bro,Langbro,Langbro 
+2037,Hackvad,Hackvad,Hackvad 
+2038,Ny- sund,Nysund,Nysund 
+2039,Olsboda,Olsboda,
+2040,Haradsahmmar,Harads hamn,Haradshammar 
+2041,Guldsmedshytte,Guldsmedsh,Guldsmedshyttan 
+2042,Axberg,Axbergs forsamling,Axberg 
+2043,Hud- dinge,Huddinge,Huddinge 
+2044,Drottning holm,Drottningholm,
+2045,Sicuris,Sigtuna,Sigtuna
+2046,Li- dingoo,Lidingo,Lidingo 
+2047,N. karp,Nykopings for,Nykopings ostra 
+2048,Vankiva,Vankiva,Vankiva 
+2049,Vittsjo,Vittsjo,Vittsjo 
+2050,Farslof,Farslov,Farlov 
+2051,Vankifva,Vankiva,Vankiva 
+2052,Bene- stad,Benestad,Benestad 
+2053,Tossjo,Tossjo,Tosjo 
+2054,Sollen- tuna,Sollentuna,Sollentuna 
+2055,Saltsjobaden.,Saltsjobaden,Saltsjobaden 
+2056,Skanelia,Skanelahamn,Skanela 
+2057,Gardsby,Gardsby,Gardsby 
+2058,Vada,Vada,Vada 
+2059,Roringe,Roringe,Rodinge 
+2060,Langasjo,Langasjo,Langasjo 
+2061,Styrestad,Styrestads forsam,Styrstad 
+2062,Vackelsang,Vackelsang,Vackelsang 
+2063,Revinge,Revinge,Revinge 
+2064,Vreta kloster,Vreta kloster,Vreta kloster 
+2065,Alf- vesta,Alfvesta,Alvesta 
+2066,Hamneda,Hamneda,Hamneda 
+2067,Dj:holm;,Djursholm,Djursholm 
+2068,Biad- akra,Bjaddakra,
+2069,Fasterna,Fasterna forsam,Fasterna 
+2070,Djurshoim,Djursholm,Djursholm 
+2071,Gustatsberg,Gustavsborg,Gustavsberg 
+2072,Bjorrater,Bjoraker,Bjuraker 
+2073,Annerstad,Annerstads for,Annerstad 
+2074,Bladinge,Bladinge,Bladinge 
+2075,Svinhult,Svinhult,Svinhult 
+2076,Pers,Persasen,Persnas 
+2077,Angelstad,Angelstad,Angelstad 
+2078,Tjureda,Tjureda kyr,Tjureda 
+2079,Kuddby,Kuddby,Kuddby 
+2080,Atved,Atveders forsam,
+2081,Simontorp,Simontorp,Simonstorp 
+2082,Horns,Hornsjo,Horns
+2083,Bjorsater,Bjorsaters for,Bjorsater 
+2084,Rok,Rokke,Roke 
+2085,Slatthog,Slattnas,Sattna 
+2086,Rogslosa,Rogslosa,Rogslosa 
+2087,Klfvelstad,Klevstad,Kestad 
+2088,Bjornsater,Bjornsater,Bjorsater 
+2089,Furingstad,Furingstad,Furingstad 
+2090,Arkeby,Arkeby,
+2091,Bjalbo,Bjalbo,Bjalbo 
+2092,Zvenneberga,Zvenneberga,Kvenneberga 
+2093,Hylletofta,Hylletofta,Hylletofta 
+2094,Oslunda,Oslunda forsam,Onslunda 
+2095,Per,Perstorp,Perstorp 
+2096,Balaryd,Bjarnum,Balaryd 
+2097,Tafvelsas,Tafvelsas,Tavelsas
+2098,S:t-Johannis,Sankt Johannes,Kalmar Sankt Johannes 
+2099,Forsas,Forsas,Forsa 
+2100,Agunnaryd,Agunnaryd,Agunnaryd 
+2101,Stroms- nas bruk,Stromsnas,
+2102,Vaxio s:n,Vaxjo sock,
+2103,Krakshult,Krakshult,Krakshult 
+2104,Oggestorp,Oggestorp,Oggestorp 
+2105,Vordsberg,Vordsberg,Vordsberg
+2106,Burseryd,Burseryd,Burseryd 
+2107,Ljunga,Ljunga forsamling,Ljunga 
+2108,Olmstad,Olmstad,Olmstad
+2109,Kallaryd,Kallaryd,Gallaryd 
+2110,Soderby- karl,Sorby-Karl,Soderby-Karl 
+2111,Brannkyrk'a,Brannkyrka,Brannkyrka
+2112,"""Djursholm",Djursholm,Djursholm 
+2113,Jarsnas,Jarsnas,Jarsnas 
+2114,Roslagskul- la,Roslagskulla,Roslags-Kulla 
+2115,Yxnerum,Yxnerum,Yxnerum 
+2116,Stjarnarp,Stjarnarp,Stjarnorp 
+2117,Osbo,Osbo,
+2118,Djursholn,Djursholm,Djursholm 
+2119,Jaluntofta,Jaluntofta,Jalluntofta 
+2120,Forsheda,Forsheda kyrka,Forsheda 
+2121,Gnosjo,Gnosjo,Gnosjo 
+2122,Borstil,Borstasen,Borstil 
+2123,Sya,Sya forsamling,Sya 
+2124,Fjarstad,Fjarstad,Fjarestad 
+2125,Medelby,Medelby,Medelby 
+2126,Kafsjo,Kafsjo,Kafsjo
+2127,Krokek,Krokek,Krokek 
+2128,Klttilstad,Klitttilstad,Kattilstad 
+2129,Bruseryd,Braseryd,Bruseryd
+2130,Eeneby,Eneby,Eneby 
+2131,Skeda,Skeda,Skeda 
+2132,Ato,Alvsborgs,Alvsborgs
+2133,Hogstad,Hogstad,Hogstad 
+2134,Svin- hult,Svinhult,Svinhult 
+2135,Ulrika,Ulrika,Ulrika
+2136,Tornevalla,Tornevalla,Tornevalla 
+2137,Bararyd,Bararyd,Bararyd 
+2138,Askeby,Askeby,Askeby 
+2139,Safvared,Saffle,Saffle 
+2140,Harene,Harene,Harene 
+2141,Djurshohm,Djursholm,Djursholm 
+2142,Mar- back,Marbacka,Marback 
+2143,Husby-Erling- hundra,Husby-Ersta,Husby-Arlinghundra 
+2144,Ore- grund,Aregrund,Oregrund 
+2145,Naum,Naums forsamling,Naum 
+2146,Tofteryd,Tofteryd,Tofteryd 
+2147,Frosved,Frosveds for,Frodsved 
+2148,Klnneved,Klinteved,Klnneved
+2149,Sunnersberg,Sunnersberg,Sunnersberg 
+2150,Versas,Versas,Versas
+2151,Ryda,Ryda forsamling,Ryda 
+2152,Ut- vangstorp,Utvangstorp,Utvangstorp 
+2153,Gotened,Gothenburg,Gotene 
+2154,Unnaryd,Unnaryd,Norra Unnaryd 
+2155,Atvidabergo,Atvidaberg,
+2156,Vamb,Vamberg,Varberg 
+2157,Bareberg,Bareborg,Bareberg 
+2158,Rackeby,Rackeby,Rackeby 
+2159,Finnerodja,Finnerodja,Finnerodja 
+2160,Friggeraker,Friggesund,Friggeraker 
+2161,Lyre- stad,Lyrestad,Lyrestad 
+2162,Nydala,Nydala forsam,Nydala 
+2163,Adelof,Adelovs for,
+2164,Roslagskulia,Roslagskulla,Roslags-Kulla 
+2165,Bot- kyrka,Botkyrka kyr,Botkyrka
+2166,Hofmanstorp,Hofmanstorp,Hofmanstorp
+2167,Hillersjo,Halsingtuna,Halsingtuna 
+2168,Regna,Regna,Regna 
+2169,Traheryd,Traryd,Traryd 
+2170,Kvanum,Kvanum,Kvanum 
+2171,Sil,Silvberg,Silvberg 
+2172,H.;,Hedvig Eleonora,Hedvig Eleonora 
+2173,S.,Skane,Skanela 
+2174,*O.,Oscars,Oscarstad 
+2175,U.,Uppsala,Uppsala
+2176,Ohr,Ohr,
+2177,Vaxjo,Vaxjo,Vaxjo
+2178,Djursholim,Djursholm,Djursholm 
+2179,Agnetorp,Agnetorp,Agnetorp 
+2180,Agne- torp,Agnetorp,Agnetorp 
+2181,N. kyrktorp,Norrkopings,Norrkopings
+2182,Grolanda,Grolanda,Grolanda 
+2183,Brevik,Brevik,Brevik 
+2184,Hokoping,Hokopinge,Hokopinge 
+2185,N. Lund- by,Norr Lundby,Norra Lundby 
+2186,Kyrke- falla,Kyrkefalla,Kyrkefalla 
+2187,Virestad,Virestad,Virestad 
+2188,Bjerka,Bjerka,
+2189,Tengened,Tengene,Grastorp i Tengene 
+2190,Kalsborg,Kallsborg,Karlsborg 
+2191,Skara lands- socken,Skara landsforsam,Skara landsforsamling 
+2192,Vartofta-Asaka,Vartofta-Asaka,Vartofta-Asaka 
+2193,Hvarf,Hvarf,
+2194,(Troheryd) Stromsnas bruk,"Trohede, Strom",
+2195,Berga,Berga,Berga 
+2196,Vanersnas,Vanerns na,Vanersnas 
+2197,Eggby,Aggby,Eggby 
+2198,Jat,Jamtland,Jat 
+2199,Skofde landssocken,Skovde landsocken,
+2200,Hangsdala,Hangsdala,Hangsdala 
+2201,Torsas.,Torsas,Ostra Torsas 
+2202,Sla- dene,Sladene,Sladene 
+2203,Seger- stad,Segerstad,Segerstad 
+2204,Haggum,Hagnum,Haggum 
+2205,Ljunghem,Ljunghems for,Ljunghem 
+2206,Skara landss:n,Skara landskommun,
+2207,Gref- back,Grefsback,Grefback
+2208,Sarestad,Sarestad,Sarestad 
+2209,Frigger- aker,Friggaaker,Friggeraker 
+2210,Borgunda,Borgunda forsam,Borgunda 
+2211,Ler- dala,Lerdala,Lerdala 
+2212,Sparlosa,Sparlosaholm,Sparlosa 
+2213,Acklinga,Acklinga socken,Acklinga 
+2214,Stromsnas bruk,Stromnsas bruk,
+2215,Gerds- lof,Gerdslof,
+2216,Glastorp,Glastorp,Glostorp 
+2217,Sveneby,Sveneby,Sveneby 
+2218,Bjorkang,Bjorkang,Bjorkang 
+2219,Holmby,Holmby forsam,Holmby 
+2220,Bjurum,Bjurum,Bjurum 
+2221,Grefback,Grefback,Grefback
+2222,Brunn- by,Brunnby,Brunnby 
+2223,Ohm,Omals for,
+2224,Tadened,Tadnedalens,Tadene 
+2225,Medelplana,Medelplana for,Medelplana 
+2226,Gerum,Gerums forsamling,Gerum 
+2227,Hu- saby,Husaby,Husaby
+2228,Me- delplana,Madelplana,Medelplana 
+2229,Medel- plana,Medelplana,Medelplana 
+2230,Hangelosa,Hangelosa,Hangelosa 
+2231,Frammestad,Frammestad,Frammestad 
+2232,Risekatslosa,Risekatslosa,Risekatslosa 
+2233,Oglunda,Oglunda forsam,Oglunda 
+2234,Borstig,Borgsjo,Borgsjo

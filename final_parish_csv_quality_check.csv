@@ -1,0 +1,2833 @@
+,parish,municipality,parish_old,matched_parish
+5,Mt.,Stockholm,Mt.,Matteus
+7,M,Stockholm,M,Maria
+9,J.,Stockholm,J.,Jakobs o. Johannes
+10,H.,Stockholm,H.,Hedvig Eleonora
+14,G,Stockholm,G,Gustaf Wasa
+17,Kl,Stockholm,Kl,Klara
+18,O,Stockholm,O,Oscars
+23,E,Stockholm,E,Engelbrekts
+31,Kh.,Stockholm,Kh.,Kungsholms
+34,J,Stockholm,J,Jakobs o. Johannes
+37,Kt,Stockholm,Kt,Katarina
+45,N.,Stockholm,N.,Nikolai
+53,Kt.,Stockholm,Kt.,Katarina
+54,A.,Stockholm,A.,Adolf Fredriks
+61,Mt,Stockholm,Mt,Matteus
+67,Kh,Stockholm,Kh,Kungsholms
+78,A,Stockholm,A,Adolf Fredriks
+82,H,Stockholm,H,Hedvig Eleonora
+94,G.,Stockholm,G.,Gustaf Wasa
+95,O.,Stockholm,O.,Oscars
+196,Kl.,Stockholm,Kl.,Klara
+201,M.,Stockholm,M.,Maria
+213,E.,Stockholm,E.,Engelbrekts
+754,Kt..,Stockholm,Kt..,Katarina
+947,N,Stockholm,N,Nikolai
+1386,J.,Stockholm,'J.,Jakobs o. Johannes
+2294,G..,Stockholm,G..,Gustaf Wasa
+2374,J..,Stockholm,J..,Jakobs o. Johannes
+4623,E..,Stockholm,E..,Engelbrekts
+5189,E.,Stockholm,'E.,Engelbrekts
+12131,M.,Stockholm,'M.,Maria
+12662,N..,Stockholm,N..,Nikolai
+15360,G.;,Stockholm,G.;,Gustaf Wasa
+17635,Kl.,Stockholm,¿Kl.,Klara
+17683,Kl.;,Stockholm,Kl.;,Klara
+17761,H.,Stockholm,'H.,Hedvig Eleonora
+17776,Kh.,Stockholm,\Kh.,Kungsholms
+20749,M.;,Stockholm,M.;,Maria
+22247,H.;,Stockholm,H.;,Hedvig Eleonora
+22678,Kl..,Stockholm,Kl..,Klara
+22922,O.,Stockholm,*O.,Oscars
+24645,Dj:holm,Stockholm,Dj:holm,Djursholm
+26838,Dj :holm,Stockholm,Dj :holm,Djursholm
+27752,Dj:holm;,Stockholm,Dj:holm;,Djursholm
+28720,Dj;holm,Stockholm,Dj;holm,Djursholm
+61036,Dj:holm,Stockholms lan,Dj:holm,Djursholm
+24370,Huddinge,Stockholm,Huddinge,Huddinge
+24372,Saltsjo- baden,Stockholm,Saltsjo- baden,Saltsjobaden
+24374,Brann- kyrka,Stockholm,Brann- kyrka,Brannkyrka
+24376,Botkyrka,Stockholm,Botkyrka,Botkyrka
+24379,Lidingoo,Stockholm,Lidingoo,Lidingo
+24380,Djursholm,Stockholm,Djursholm,Djursholm
+24386,Lidingo,Stockholm,Lidingo,Lidingo
+24393,Solna,Stockholm,Solna,Solna
+24394,Saltsjobaden,Stockholm,Saltsjobaden,Saltsjobaden
+24403,Sundbyberg,Stockholm,Sundbyberg,Sundbyberg
+24404,Brannkyrka,Stockholm,Brannkyrka,Brannkyrka
+24410,Nacka,Stockholm,Nacka,Nacka
+24411,Danderyd,Stockholm,Danderyd,Danderyd
+24413,Bromma,Stockholm,Bromma,Bromma
+24417,Gustafsberg,Stockholm,Gustafsberg,Gustavsberg
+24421,Edebo,Stockholm,Edebo,Edebo
+24427,Ingaro,Stockholm,Ingaro,Ingaro
+24428,Ostertalje,Stockholm,Ostertalje,Ostertalje
+24439,Sanga,Stockholm,Sanga,Sanga
+24441,Sund- byberg,Stockholm,Sund- byberg,Sundbyberg
+24445,Hammarby,Stockholm,Hammarby,Hammarby
+24452,Vastertalje,Stockholm,Vastertalje,Vastertalje
+24453,Sodertalje,Stockholm,Sodertalje,Sodertalje
+24456,Sollentuna,Stockholm,Sollentuna,Sollentuna
+24470,Vaxholm,Stockholm,Vaxholm,Vaxholm
+24472,Norr- talje,Stockholm,Norr- talje,Norrtalje
+24481,Norrtalje,Stockholm,Norrtalje,Norrtalje
+24482,Nynashamn,Stockholm,Nynashamn,Nynashamn
+24486,Varmdo,Stockholm,Varmdo,Varmdo
+24495,Salem,Stockholm,Salem,Salem
+24510,Blido,Stockholm,Blido,Blido
+24512,Rasunda,Stockholm,Rasunda,Rasunda
+24516,Djursholim,Stockholm,Djursholim,Djursholm
+24530,Stocksund,Stockholm,Stocksund,Stocksund
+24541,Fresta,Stockholm,Fresta,Fresta
+24543,Spanga,Stockholm,Spanga,Spanga
+24583,Tumba,Stockholm,Tumba,Tumba
+24585,Grodinge,Stockholm,Grodinge,Grodinge
+24588,Edsbro,Stockholm,Edsbro,Edsbro
+24590,Vaddo,Stockholm,Vaddo,Vaddo
+24616,Ed,Stockholm,Ed,Ed
+24618,Vidbo,Stockholm,Vidbo,Vidbo
+24626,Vato,Stockholm,Vato,Vato
+24630,Djurs- holm,Stockholm,Djurs- holm,Djursholm
+24643,Stock- sund,Stockholm,Stock- sund,Stocksund
+24648,Djurshohm,Stockholm,Djurshohm,Djursholm
+24669,Skederid,Stockholm,Skederid,Skederid
+24682,Osterhaninge,Stockholm,Osterhaninge,Osterhaninge
+24703,Husby-Erling- hundra,Stockholm,Husby-Erling- hundra,Husby-arlinghundra
+24740,Jarfalla,Stockholm,Jarfalla,Jarfalla
+24748,Osteraker,Stockholm,Osteraker,Osteraker
+24750,Vardinge,Stockholm,Vardinge,Vardinge
+24753,Dalaro,Stockholm,Dalaro,Dalaro
+24830,Djuro,Stockholm,Djuro,Djuro
+24837,Lanna,Stockholm,Lanna,Lanna
+24893,Ununge,Stockholm,Ununge,Ununge
+24901,Taby,Stockholm,Taby,Taby
+24902,Rimbo,Stockholm,Rimbo,Rimbo
+24960,Ekero,Stockholm,Ekero,Ekero
+24997,Roslagskulla,Stockholm,Roslagskulla,Roslags-Kulla
+25019,Oster- haninge,Stockholm,Oster- haninge,Osterhaninge
+25032,Karsta,Stockholm,Karsta,Karsta
+25041,Hafvero,Stockholm,Hafvero,Havero
+25043,Tveta,Stockholm,Tveta,Tveta
+25070,Saltsjoba- den,Stockholm,Saltsjoba- den,Saltsjobaden
+25121,Bot- kyrka,Stockholm,Bot- kyrka,Botkyrka
+25145,Adelso,Stockholm,Adelso,Adelso
+25179,Saltsjo+ baden,Stockholm,Saltsjo+ baden,Saltsjobaden
+25243,Gottrora,Stockholm,Gottrora,Gottrora
+25249,Salt- sjobaden,Stockholm,Salt- sjobaden,Saltsjobaden
+25347,Sigtuna,Stockholm,Sigtuna,Sigtuna
+25420,Djursholn,Stockholm,Djursholn,Djursholm
+25457,Estuna,Stockholm,Estuna,Estuna
+25483,Osmo,Stockholm,Osmo,Osmo
+25532,Namndo,Stockholm,Namndo,Namdo
+25555,Norrsunda,Stockholm,Norrsunda,Norrsunda
+25570,Vallentuna,Stockholm,Vallentuna,Vallentuna
+25589,Vasterhaninge,Stockholm,Vasterhaninge,Vasterhaninge
+25627,Soder- talje,Stockholm,Soder- talje,Sodertalje
+25636,Enskede,Stockholm,Enskede,Enskede
+25689,Soderbykarl,Stockholm,Soderbykarl,Soderby-Karl
+25713,Soderby- karl,Stockholm,Soderby- karl,Soderby-Karl
+25728,Brannkyrk'a,Stockholm,Brannkyrk'a,Brannkyrka
+25840,Djursholm,Stockholm,"""Djursholm",Djursholm
+25853,Odensala,Stockholm,Odensala,Odensala
+25862,Loharad,Stockholm,Loharad,Loharad
+25960,Li- dingo,Stockholm,Li- dingo,Lidingo
+25976,Vallen- tuna,Stockholm,Vallen- tuna,Vallentuna
+25985,Hammar- by,Stockholm,Hammar- by,Hammarby
+26009,Nartuna,Stockholm,Nartuna,Nartuna
+26053,Nack'a,Stockholm,Nack'a,Nacka
+26101,Skeptuna,Stockholm,Skeptuna,Skepptuna
+26116,Ytterjarna,Stockholm,Ytterjarna,Ytterjarna
+26141,Farentuna,Stockholm,Farentuna,Farentuna
+26247,Sollen- tuna,Stockholm,Sollen- tuna,Sollentuna
+26256,Saltsjobaden.,Stockholm,Saltsjobaden.,Saltsjobaden
+26351,Skanelia,Stockholm,Skanelia,Skanela
+26363,Vada,Stockholm,Vada,Vada
+26421,Frotuna,Stockholm,Frotuna,Frotuna
+26464,Husby-Langhundra,Stockholm,Husby-Langhundra,Husby-arlinghundra
+26609,Munso,Stockholm,Munso,Munso
+26614,Hud- dinge,Stockholm,Hud- dinge,Huddinge
+26636,Tyreso,Stockholm,Tyreso,Tyreso
+26762,Musko,Stockholm,Musko,Musko
+26764,Uto,Stockholm,Uto,Uto
+26866,Markim,Stockholm,Markim,Markim
+26868,Nvnashamn,Stockholm,Nvnashamn,Nynashamn
+26906,Garn,Stockholm,Garn,Garn
+26924,Djursh:olm,Stockholm,Djursh:olm,Djursholm
+26933,Stock'sund,Stockholm,Stock'sund,Stocksund
+27036,Saltsjobad.en,Stockholm,Saltsjobad.en,Saltsjobaden
+27065,Ossebygarn,Stockholm,Ossebygarn,Osseby-Garn
+27071,Husby-Lyhundra,Stockholm,Husby-Lyhundra,Husby-lyhundra
+27085,Lunda,Stockholm,Lunda,Lunda
+27147,Ska,Stockholm,Ska,Ska
+27151,Djursholm.,Stockholm,Djursholm.,Djursholm
+27159,Ofverjarna,Stockholm,Ofverjarna,Overjarna
+27229,Frosunda,Stockholm,Frosunda,Frosunda
+27301,Orkesta,Stockholm,Orkesta,Orkesta
+27347,Faren- tuna,Stockholm,Faren- tuna,Farentuna
+27409,Ro,Stockholm,Ro,Ro
+27469,Ham- marby,Stockholm,Ham- marby,Hammarby
+27532,Nynas- hamn,Stockholm,Nynas- hamn,Nynashamn
+27555,Riala,Stockholm,Riala,Riala
+27603,Ytter-Jarna,Stockholm,Ytter-Jarna,Ytterjarna
+27611,Sundby- berg,Stockholm,Sundby- berg,Sundbyberg
+27710,So- dertalje,Stockholm,So- dertalje,Sodertalje
+27736,Osterha- ninge,Stockholm,Osterha- ninge,Osterhaninge
+27852,Fasterna,Stockholm,Fasterna,Fasterna
+27854,Djurshoim,Stockholm,Djurshoim,Djursholm
+27859,Gustatsberg,Stockholm,Gustatsberg,Gustavsberg
+27901,Brannkyrka.,Stockholm,Brannkyrka.,Brannkyrka
+27931,Sol- lentuna,Stockholm,Sol- lentuna,Sollentuna
+28024,Radmanso,Stockholm,Radmanso,Radmanso
+28100,Va- sterhaninge,Stockholm,Va- sterhaninge,Vasterhaninge
+28112,Thuringe,Stockholm,Thuringe,Turinge
+28127,Lidingo.,Stockholm,Lidingo.,Lidingo
+28210,Brom- ma,Stockholm,Brom- ma,Bromma
+28282,Orno,Stockholm,Orno,Orno
+28335,Otverjarna,Stockholm,Otverjarna,Overjarna
+28612,Roslagsbro,Stockholm,Roslagsbro,Roslags-Bro
+28726,Osseby-Garn,Stockholm,Osseby-Garn,Osseby-Garn
+28834,Oster-Talje,Stockholm,Oster-Talje,Ostertalje
+28838,Skanella,Stockholm,Skanella,Skanela
+29074,Ljustero,Stockholm,Ljustero,Ljustero
+29076,Roslags- kulla,Stockholm,Roslags- kulla,Roslags-Kulla
+38724,Klackeberga,Kalmar ,Klackeberga),Klackeberga
+51129,Hjortsberga,Blekinge lan ,Hjortsberga,Hjortsberga
+51131,Jamshog,Blekinge lan ,Jamshog,Jamshog
+51133,Mjallby,Blekinge lan ,Mjallby,Mjallby
+51134,Ronneby,Blekinge lan ,Ronneby,Ronneby
+51136,Losen,Blekinge lan ,Losen,Losen
+51138,Angerum,Blekinge lan ,Angerum,Augerum
+51140,Rodeby,Blekinge lan ,Rodeby,Rodeby
+51141,Asarum,Blekinge lan ,Asarum,Asarum
+51142,Tving,Blekinge lan ,Tving,Tving
+51143,Nattraby,Blekinge lan ,Nattraby,Nattraby
+51147,Morrum,Blekinge lan ,Morrum,Morrum
+51154,Ringamala,Blekinge lan ,Ringamala,Ringamala
+51157,Aryd,Blekinge lan ,Aryd,Aryd
+51158,Sturko,Blekinge lan ,Sturko,Sturko
+51184,Ramdala,Blekinge lan ,Ramdala,Ramdala
+51199,Gammaltorp,Blekinge lan ,Gammaltorp,Gammalstorp
+51209,Kyrkhult,Blekinge lan ,Kyrkhult,Kyrkhult
+51211,Hallaryd,Blekinge lan ,Hallaryd,Hallaryd
+51214,Listerby,Blekinge lan ,Listerby,Listerby
+51232,Jamjo,Blekinge lan ,Jamjo,Jamjo
+51238,Brakne Hoby,Blekinge lan ,Brakne Hoby,Brakne-Hoby
+51247,Gammalstorp,Blekinge lan ,Gammalstorp,Gammalstorp
+51256,Brakne-Hoby,Blekinge lan ,Brakne-Hoby,Brakne-Hoby
+51282,Brakne-Voby,Blekinge lan ,Brakne-Voby,Brakne-Hoby
+51285,Tjurko,Blekinge lan ,Tjurko,Tjurko
+51288,Solvesborg,Blekinge lan ,Solvesborg,Solvesborg
+51306,Rone,Gotlands lan ,Rone,Rone
+51311,Dalhem,Gotlands lan ,Dalhem,Dalhem
+51313,Klinte,Gotlands lan ,Klinte,Klinte
+51314,Othem,Gotlands lan ,Othem,Othem
+51315,Hemse,Gotlands lan ,Hemse,Hemse
+51318,Bjorke,Gotlands lan ,Bjorke,Bjorke
+51322,Barlingbo,Gotlands lan ,Barlingbo,Barlingbo
+51324,Bunge,Gotlands lan ,Bunge,Bunge
+51327,Ardre,Gotlands lan ,Ardre,Ardre
+51328,Endre,Gotlands lan ,Endre,Endre
+51331,Rute,Gotlands lan ,Rute,Rute
+51338,Roma,Gotlands lan ,Roma,Roma
+51339,Hafdhem,Gotlands lan ,Hafdhem,Havdhem
+51343,Oja,Gotlands lan ,Oja,Oja
+51345,Vallstena,Gotlands lan ,Vallstena,Vallstena
+51354,Linde,Gotlands lan ,Linde,Linde
+51367,Hellvi,Gotlands lan ,Hellvi,Hellvi
+51368,Eskelhem,Gotlands lan ,Eskelhem,Eskelhem
+51369,Fole,Gotlands lan ,Fole,Fole
+51374,Vange,Gotlands lan ,Vange,Vange
+51376,Vesterhejde,Gotlands lan ,Vesterhejde,Vasterhejde
+51378,Fleringe,Gotlands lan ,Fleringe,Fleringe
+51379,Masterby,Gotlands lan ,Masterby,Masterby
+51380,Lummelunda,Gotlands lan ,Lummelunda,Lummelunda
+51382,Hogran,Gotlands lan ,Hogran),Hogran
+51384,Hogran,Gotlands lan ,Hogran,Hogran
+51385,Vestergarn,Gotlands lan ,Vestergarn,Vastergarn
+51390,Vate,Gotlands lan ,Vate,Vate
+51393,Hangvar,Gotlands lan ,Hangvar,Hangvar
+51399,Follingbo,Gotlands lan ,Follingbo,Follingbo
+51423,Soderhamn,Gafleborgs lan ,Soderhamn,Soderhamn
+51424,Hogbo,Gafleborgs lan ,Hogbo,Hogbo
+51425,Ockelbo,Gafleborgs lan ,Ockelbo,Ockelbo
+51427,Arbra,Gafleborgs lan ,Arbra,Arbra
+51428,Bergsjo,Gafleborgs lan ,Bergsjo,Bergsjo
+51430,Alfta,Gafleborgs lan ,Alfta,Alfta
+51431,Bollnas,Gafleborgs lan ,Bollnas,Bollnas
+51433,Ofvanaker,Gafleborgs lan ,Ofvanaker,Ovanaker
+51434,Ljusdal,Gafleborgs lan ,Ljusdal,Ljusdal
+51439,Hanebo,Gafleborgs lan ,Hanebo,Hanebo
+51441,Jarbo,Gafleborgs lan ,Jarbo,Jarbo
+51444,Forssa,Gafleborgs lan ,Forssa,Forsa
+51447,Njutanger,Gafleborgs lan ,Njutanger,Njutanger
+51453,Ofvansjo,Gafleborgs lan ,Ofvansjo,Ovansjo
+51455,Valbo,Gafleborgs lan ,Valbo,Valbo
+51469,Stanga,Gotlands lan ,Stanga,Stanga
+51474,Farila,Gafleborgs lan ,Farila,Farila
+51492,Hassela,Gafleborgs lan ,Hassela,Hassela
+51496,Trono,Gafleborgs lan ,Trono,Trono
+51497,Torsaker,Gafleborgs lan ,Torsaker,Torsaker
+51503,Voxna,Gafleborgs lan ,Voxna,Voxna
+51505,Lingbo,Gafleborgs lan ,Lingbo,Lingbo
+51506,Hofors,Gafleborgs lan ,Hofors,Hofors
+51508,Soderala,Gafleborgs lan ,Soderala,Soderala
+51518,Norrala,Gafleborgs lan ,Norrala,Norrala
+51521,Hamrange,Gafleborgs lan ,Hamrange,Hamrange
+51522,Ljusne,Gafleborgs lan ,Ljusne,Ljusne
+51529,Delsbo,Gafleborgs lan ,Delsbo,Delsbo
+51530,Hille,Gafleborgs lan ,Hille,Hille
+51536,Bjuraker,Gafleborgs lan ,Bjuraker,Bjuraker
+51537,Enanger,Gafleborgs lan ,Enanger,Enanger
+51548,Amot,Gafleborgs lan ,Amot,Amot
+51552,Hamranger,Gafleborgs lan ,Hamranger,Hamrange
+51573,Idenor,Gafleborgs lan ,Idenor,Idenor
+51650,Ramsjo,Gafleborgs lan ,Ramsjo,Ramsjo
+51691,Ljus- dal,Gafleborgs lan ,Ljus- dal,Ljusdal
+51701,Loos,Gafleborgs lan ,Loos,Los
+51722,Hedesunda,Gafleborgs lan ,Hedesunda,Hedesunda
+51724,Skog,Gafleborgs lan ,Skog,Skog
+51744,Arsunda,Gafleborgs lan ,Arsunda,Arsunda
+51750,Pergsjo,Gafleborgs lan ,Pergsjo,Bergsjo
+51781,Hog,Gafleborgs lan ,Hog,Hog
+51792,Norrbo,Gafleborgs lan ,Norrbo,Norrbo
+51801,Hogbo.,Gafleborgs lan ,Hogbo.,Hogbo
+51855,Ockel- bo,Gafleborgs lan ,Ockel- bo,Ockelbo
+51888,Rogsta,Gafleborgs lan ,Rogsta,Rogsta
+51939,Harmanger,Gafleborgs lan ,Harmanger,Harmanger
+51967,Mo,Gafleborgs lan ,Mo,Mo
+52094,Halsingtuna,Gafleborgs lan ,Halsingtuna,Halsingtuna
+52868,Harplinge,Hallands lan ,Harplinge,Harplinge
+52870,Torup,Hallands lan ,Torup,Torup
+52873,Getinge,Hallands lan ,Getinge,Getinge
+52875,Steninge,Hallands lan ,Steninge,Steninge
+52877,Slap,Hallands lan ,Slap,Slap
+52912,Kvibille,Hallands lan ,Kvibille,Kvibille
+52914,Tolo,Hallands lan ,Tolo,Tolo
+52915,Sloinge,Hallands lan ,Sloinge,Sloinge
+52916,Tronninge,Hallands lan ,Tronninge,Tronninge
+52918,Tvaaker,Hallands lan ,Tvaaker,Tvaaker
+52927,Veinge,Hallands lan ,Veinge,Veinge
+52931,Oskarstrom,Hallands lan ,Oskarstrom,Oskarstrom
+52933,Rolfstorp,Hallands lan ,Rolfstorp,Rolfstorp
+52934,Hasslof,Hallands lan ,Hasslof,Hasslov
+52937,Abild,Hallands lan ,Abild,Abild
+52940,Winberg,Hallands lan ,Winberg,Vinberg
+52942,Fjaras,Hallands lan ,Fjaras,Fjaras
+52949,Hanhals,Hallands lan ,Hanhals,Hanhals
+52953,Sondrum,Hallands lan ,Sondrum,Sondrum
+52957,Onsala,Hallands lan ,Onsala,Onsala
+52959,Tjarby,Hallands lan ,Tjarby,Tjarby
+52962,Eldsberga,Hallands lan ,Eldsberga,Eldsberga
+52965,Stafsinge,Hallands lan ,Stafsinge,Stafsinge
+52968,Vinberg,Hallands lan ,Vinberg,Vinberg
+52969,Arstad,Hallands lan ,Arstad,Arstad
+52971,Veddige,Hallands lan ,Veddige,Veddige
+52990,Voxtorp,Hallands lan ,Voxtorp,Vaxtorp
+52993,Snostorp,Hallands lan ,Snostorp,Snostorp
+52994,Morup,Hallands lan ,Morup,Morup
+52997,Tonnersjo,Hallands lan ,Tonnersjo,Tonnersjo
+53006,Alfshog,Hallands lan ,Alfshog,Alfshog
+53014,Grimeton,Hallands lan ,Grimeton,Grimeton
+53017,Okome,Hallands lan ,Okome,Okome
+53018,Breared,Hallands lan ,Breared,Breared
+53026,Skrea,Hallands lan ,Skrea,Skrea
+53036,Laholms landsfor- saml.,Hallands lan ,Laholms landsfor- saml.,Laholms landsforsamling
+53040,Grimeson,Hallands lan ,Grimeson,Grimeton
+53053,Lindberg,Hallands lan ,Lindberg,Lindberg
+53054,Drangsered,Hallands lan ,Drangsered,Drangsered
+53060,Ljungby,Hallands lan ,Ljungby,Ljungby
+53065,Vapno,Hallands lan ,Vapno,Vapno
+53067,Rafvinge,Hallands lan ,Rafvinge,Ravinge
+53110,Asige,Hallands lan ,Asige,Asige
+53113,Slattakra,Hallands lan ,Slattakra,Slattakra
+53133,Brackeby,Jamtlands lan ,Brackeby,Bracke
+53135,Alanaset,Jamtlands lan ,Alanaset,Alanas
+53142,Hasjo,Jamtlands lan ,Hasjo,Hasjo
+53288,Stugubyn,Jamtlands lan ,Stugubyn,Stugun
+53305,Lillherdal,Jamtlands lan ,Lillherdal,Lillhardal
+53333,Tassjo,Jamtlands lan ,Tassjo,Tasjo
+53380,Rodon,Jamtlands lan ,Rodon,Rodon
+53434,Asen,Jamtlands lan ,Asen,Alsen
+53455,Offerdal,Jamtlands lan ,Offerdal,Offerdal
+53557,Naskott,Jamtlands lan ,Naskott,Naskott
+53696,Stugun,Jamtlands lan ,Stugun,Stugun
+53708,Nas,Jamtlands lan ,Nas,Nas
+53714,Follinge,Jamtlands lan ,Follinge,Follinge
+53725,Sunne,Jamtlands lan ,Sunne,Sunne
+53739,Bracke,Jamtlands lan ,Bracke,Bracke
+53769,Varnamo,Jonkopings lan ,Varnamo,Varnamo
+53773,Gislaved,Jonkopings lan ,Gislaved,Gislaved
+53806,Strom,Jamtlands lan ,Strom,Strom
+53814,Gnosjo,Jonkopings lan ,Gnosjo,Gnosjo
+53817,Nassjo,Jonkopings lan ,Nassjo,Nassjo
+53819,Bankeryd,Jonkopings lan ,Bankeryd,Bankeryd
+53823,Barnarp,Jonkopings lan ,Barnarp,Barnarp
+53836,Saby,Jonkopings lan ,Saby,Saby
+53837,Hassleby,Jonkopings lan ,Hassleby,Hassleby
+53842,Orreryd,Jonkopings lan ,Orreryd,Oreryd
+53856,Rydaholm,Jonkopings lan ,Rydaholm,Rydaholm
+53863,Alsheda,Jonkopings lan ,Alsheda,Alseda
+53868,Hakarp,Jonkopings lan ,Hakarp,Hakarp
+53872,Ingatorp,Jonkopings lan ,Ingatorp,Ingatorp
+53874,Svenarum,Jonkopings lan ,Svenarum,Svenarum
+53883,Bjorko,Jonkopings lan ,Bjorko,Bjorko
+53884,Jarstorp,Jonkopings lan ,Jarstorp,Jarstorp
+53885,Malmback,Jonkopings lan ,Malmback,Malmback
+53886,Barkeryd,Jonkopings lan ,Barkeryd,Barkeryd
+53888,Visingso,Jonkopings lan ,Visingso,Visingso
+53891,Gallaryd,Jonkopings lan ,Gallaryd,Gallaryd
+53895,Refteled,Jonkopings lan ,Refteled,Reftele
+53899,Voxtorp,Jonkopings lan ,Voxtorp,Voxtorp
+53902,Mar- back,Jonkopings lan ,Mar- back,Marback
+53906,Vrigstad,Jonkopings lan ,Vrigstad,Vrigstad
+53911,Skiro,Jonkopings lan ,Skiro,Skiro
+53917,Nye,Jonkopings lan ,Nye,Nye
+53942,Tofteryd,Jonkopings lan ,Tofteryd,Tofteryd
+53947,Nasby,Jonkopings lan ,Nasby,Nasby
+53950,Forserum,Jonkopings lan ,Forserum,Forserum
+53956,Nydala,Jonkopings lan ,Nydala,Nydala
+53958,Anderstorp,Jonkopings lan ,Anderstorp,Anderstorp
+53961,Flisby,Jonkopings lan ,Flisby,Flisby
+53967,Aker,Jonkopings lan ,Aker,Aker
+53968,Bredestad,Jonkopings lan ,Bredestad,Bredestad
+53985,Rogberga,Jonkopings lan ,Rogberga,Rogberga
+54004,Skarstad,Jonkopings lan ,Skarstad,Skarstad
+54022,Forsheda,Jonkopings lan ,Forsheda,Forsheda
+54043,Lommaryd,Jonkopings lan ,Lommaryd,Lommaryd
+54052,Skede,Jonkopings lan ,Skede,Skede
+54059,Eksjo,Jonkopings lan ,Eksjo,Eksjo
+54065,Hagshult,Jonkopings lan ,Hagshult,Hagshult
+54079,Frinnaryd,Jonkopings lan ,Frinnaryd,Frinnaryd
+54081,Byarum,Jonkopings lan ,Byarum,Byarum
+54102,Bruseryd,Jonkopings lan ,Bruseryd,Burseryd
+54108,Lannaskede,Jonkopings lan ,Lannaskede,Lannaskede
+54118,Askeryd,Jonkopings lan ,Askeryd,Askeryd
+54139,Bararyd,Jonkopings lan ,Bararyd,Bararyd
+54143,Bredaryd,Jonkopings lan ,Bredaryd,Bredaryd
+54151,Vallsjo,Jonkopings lan ,Vallsjo,Vallsjo
+54161,Kalleryd,Jonkopings lan ,Kalleryd,Kalleryd
+54169,Karda,Jonkopings lan ,Karda,Karda
+54197,Lomma- ryd,Jonkopings lan ,Lomma- ryd,Lommaryd
+54203,Lom- maryd,Jonkopings lan ,Lom- maryd,Lommaryd
+54208,Bondstorp,Jonkopings lan ,Bondstorp,Bondstorp
+54231,Bringetofta,Jonkopings lan ,Bringetofta,Bringetofta
+54233,Horeda,Jonkopings lan ,Horeda,Horeda
+54242,Myresjo,Jonkopings lan ,Myresjo,Myresjo
+54254,Inga- torp,Jonkopings lan ,Inga- torp,Ingatorp
+54261,Villstad,Jonkopings lan ,Villstad,Villstad
+54263,Villastad,Jonkopings lan ,Villastad,Villstad
+54281,Krakshult,Jonkopings lan ,Krakshult,Krakshult
+54291,Oggestorp,Jonkopings lan ,Oggestorp,Oggestorp
+54302,Odestugu,Jonkopings lan ,Odestugu,Odestugu
+54315,Burseryd,Jonkopings lan ,Burseryd,Burseryd
+54326,Olmstad,Jonkopings lan ,Olmstad,Olmstad
+54330,Kallaryd,Jonkopings lan ,Kallaryd,Gallaryd
+54331,Jarsnas,Jonkopings lan ,Jarsnas,Jarsnas
+54358,Hylletofta,Jonkopings lan ,Hylletofta,Hylletofta
+54363,Mansarp,Jonkopings lan ,Mansarp,Mansarp
+54372,Balaryd,Jonkopings lan ,Balaryd,Balaryd
+54416,Marback,Jonkopings lan ,Marback,Marback
+54441,Monsteras,Kalmar lan ,Monsteras,Monsteras
+54443,Flisaryd,Kalmar lan ,Flisaryd,Fliseryd
+54444,Ed,Kalmar lan ,Ed,Ed
+54445,Hallingeberg,Kalmar lan ,Hallingeberg,Hallingeberg
+54447,Hogsby,Kalmar lan ,Hogsby,Hogsby
+54449,Morlunda,Kalmar lan ,Morlunda,Morlunda
+54450,Alem,Kalmar lan ,Alem,Alem
+54451,Lonne- berga,Kalmar lan ,Lonne- berga,Lonneberga
+54453,Morbylanga,Kalmar lan ,Morbylanga,Morbylanga
+54454,Modesjo,Kalmar lan ,Modesjo,Madesjo
+54462,Aby,Kalmar lan ,Aby,Aby
+54467,Dorby,Kalmar lan ,Dorby,Dorby
+54472,Nybro,Kalmar lan ,Nybro,Nybro
+54473,Gamleby,Kalmar lan ,Gamleby,Gamleby
+54478,Lofta,Kalmar lan ,Lofta,Lofta
+54479,Gardveda,Kalmar lan ,Gardveda,Gardveda
+54481,Kristvalla,Kalmar lan ,Kristvalla,Kristvalla
+54482,Rumskulla,Kalmar lan ,Rumskulla,Rumskulla
+54501,Loftahammar,Kalmar lan ,Loftahammar,Loftahammar
+54503,Hallingsberg,Kalmar lan ,Hallingsberg,Hallingeberg
+54514,Odensvi,Kalmar lan ,Odensvi,Odensvi
+54516,Doderhult,Kalmar lan ,Doderhult,Doderhult
+54517,Klackeberga,Kalmar lan ,Klackeberga,Klackeberga
+54519,Grasgard,Kalmar lan ,Grasgard,Grasgard
+54529,Nybro,Kalmar lan ,"""Nybro",Nybro
+54535,Vissefjarda,Kalmar lan ,Vissefjarda,Vissefjarda
+54537,Virserum,Kalmar lan ,Virserum,Virserum
+54543,Pelarne,Kalmar lan ,Pelarne,Pelarne
+54544,Misterhult,Kalmar lan ,Misterhult,Misterhult
+54548,Soderakra,Kalmar lan ,Soderakra,Soderakra
+54554,Ljungby,Kalmar lan ,Ljungby,Ljungby
+54558,Vastrum,Kalmar lan ,Vastrum,Vastrum
+54576,SMockleby,Kalmar lan ,S. Mockleby,Mockleby
+54589,Blackstad,Kalmar lan ,Blackstad,Blackstad
+54598,Glomminge,Kalmar lan ,Glomminge,Glomminge
+54610,Runsten,Kalmar lan ,Runsten,Runsten
+54619,Fogelfors,Kalmar lan ,Fogelfors,Fagelfors
+54631,Lonneberga,Kalmar lan ,Lonneberga,Lonneberga
+54643,As,Kalmar lan ,As,As
+54644,Hogsrum,Kalmar lan ,Hogsrum,Hogsrum
+54653,Hossmo,Kalmar lan ,Hossmo,Hossmo
+54654,Torsas,Kalmar lan ,Torsas,Torsas
+54655,Ukna,Kalmar lan ,Ukna,Ukna
+54665,Gladhammar,Kalmar lan ,Gladhammar,Gladhammar
+54667,Frodinge,Kalmar lan ,Frodinge,Frodinge
+54671,Fagerhult,Kalmar lan ,Fagerhult,Fagerhult
+54677,Tuna,Kalmar lan ,Tuna,Tuna
+54680,Gam- leby,Kalmar lan ,Gam- leby,Gamleby
+54701,Wirserum,Kalmar lan ,Wirserum,Virserum
+54706,Tornesfalla,Kalmar lan ,Tornesfalla,Tornsfall
+54711,Repplinge,Kalmar lan ,Repplinge,Rapplinge
+54720,Vimmerby,Kalmar lan ,Vimmerby,Vimmerby
+54725,Kartlosa,Kalmar lan ,Kartlosa,Kastlosa
+54731,Mockleby,Kalmar lan ,Mockleby,Mockleby
+54734,Vickleby,Kalmar lan ,Vickleby,Vickleby
+54746,Kraksmala,Kalmar lan ,Kraksmala,Kraksmala
+54750,Morby- langa,Kalmar lan ,Morby- langa,Morbylanga
+54752,Visserum,Kalmar lan ,Visserum,Virserum
+54784,Hogby,Kalmar lan ,Hogby,Hogby
+54807,Rum- skulla,Kalmar lan ,Rum- skulla,Rumskulla
+54815,Kristdala,Kalmar lan ,Kristdala,Kristdala
+54854,Dalhem,Kalmar lan ,Dalhem,Dalhem
+54859,Forlosa,Kalmar lan ,Forlosa,Forlosa
+54868,Resmo,Kalmar lan ,Resmo,Resmo
+54877,Madesjo,Kalmar lan ,Madesjo,Madesjo
+54881,Klackesberga,Kalmar lan ,Klackesberga,Klackeberga
+54889,Halltorp,Kalmar lan ,Halltorp,Halltorp
+54920,Langemala,Kalmar lan ,Langemala,Langemala
+54924,Tveta,Kalmar lan ,Tveta,Tveta
+54929,Karlslunda,Kalmar lan ,Karlslunda,Karlslunda
+54931,Jareda,Kalmar lan ,Jareda,Jareda
+55005,Ryssby,Kalmar lan ,Ryssby,Ryssby
+55016,Mortorp,Kalmar lan ,Mortorp,Mortorp
+55023,Backebo,Kalmar lan ,Backebo,Backebo
+55034,Locknevi,Kalmar lan ,Locknevi,Locknevi
+55070,Krisdala,Kalmar lan ,Krisdala,Kristdala
+55104,Hjorted,Kalmar lan ,Hjorted,Hjorted
+55165,Krist- dala,Kalmar lan ,Krist- dala,Kristdala
+56272,Hassleholm,Kristianstads lan ,Hassleholm,Hassleholm
+56273,Vinslof,Kristianstads lan ,Vinslof,Vinslov
+56275,Ljungby,Kristianstads lan ,Ljungby,Ljungby
+56277,Osterslof,Kristianstads lan ,Osterslof,Osterslov
+56278,Tomelilla,Kristianstads lan ,Tomelilla,Tomelilla
+56281,Bastad,Kristianstads lan ,Bastad,Bastad
+56287,Ahus,Kristianstads lan ,Ahus,Ahus
+56292,Klippan,Kristianstads lan ,Klippan,Klippan
+56294,Orkel- ljunga,Kristianstads lan ,Orkel- ljunga,Orkelljunga
+56296,Brosarp,Kristianstads lan ,Brosarp,Brosarp
+56297,Vrams,Kristianstads lan ,Vrams,Vram
+56302,Fjalkinge,Kristianstads lan ,Fjalkinge,Fjalkinge
+56322,Rebbelberga,Kristianstads lan ,Rebbelberga,Rebbelberga
+56325,Strofvelstorp,Kristianstads lan ,Strofvelstorp,Strovelstorp
+56327,Herrestad,Kristianstads lan ,Herrestad,Herrestad
+56328,Skepparslof,Kristianstads lan ,Skepparslof,Skepparslov
+56333,Ifveltofta,Kristianstads lan ,Ifveltofta,Ivetofta
+56340,Ousby,Kristianstads lan ,Ousby,Osby
+56342,Sorby,Kristianstads lan ,Sorby,Sorby
+56346,Gumlosa,Kristianstads lan ,Gumlosa,Gumlosa
+56360,Hjarnarp,Kristianstads lan ,Hjarnarp,Hjarnarp
+56362,Kvi- dinge,Kristianstads lan ,Kvi- dinge,Kvidinge
+56364,Barkakra,Kristianstads lan ,Barkakra,Barkakra
+56365,Orkened,Kristianstads lan ,Orkened,Orkened
+56369,Ossjo,Kristianstads lan ,Ossjo,Ossjo
+56377,Hoja,Kristianstads lan ,Hoja,Hoja
+56381,Simris,Kristianstads lan ,Simris,Simris
+56384,Riseberga,Kristianstads lan ,Riseberga,Riseberga
+56393,Borrby,Kristianstads lan ,Borrby,Borrby
+56394,Hammen- hog,Kristianstads lan ,Hammen- hog,Hammenhog
+56399,Lonshult,Kristianstads lan ,Lonshult,Loshult
+56412,Hammenhog,Kristianstads lan ,Hammenhog,Hammenhog
+56414,Karup,Kristianstads lan ,Karup,Karup
+56434,Degeberga,Kristianstads lan ,Degeberga,Degeberga
+56436,Kviinge,Kristianstads lan ,Kviinge,Kviinge
+56447,Smedstorp,Kristianstads lan ,Smedstorp,Smedstorp
+56448,Vanga,Kristianstads lan ,Vanga,Vanga
+56464,Brannestad,Kristianstads lan ,Brannestad,Bronnestad
+56470,Strovelstorp,Kristianstads lan ,Strovelstorp,Strovelstorp
+56483,Stoby,Kristianstads lan ,Stoby,Stoby
+56498,Efverod,Kristianstads lan ,Efverod,Everod
+56499,Hjarsa,Kristianstads lan ,Hjarsa,Hjarsas
+56500,Oppmanna,Kristianstads lan ,Oppmanna,Oppmanna
+56524,Glimakra,Kristianstads lan ,Glimakra,Glimakra
+56530,Grefvie,Kristianstads lan ,Grefvie,Grevie
+56542,Benestad,Kristianstads lan ,Benestad,Benestad
+56551,Kvarrestad,Kristianstads lan ,Kvarrestad,Kverrestad
+56553,Trane,Kristianstads lan ,Trane,Trane
+56556,Hjarsas,Kristianstads lan ,Hjarsas,Hjarsas
+56572,Kvidinge,Kristianstads lan ,Kvidinge,Kvidinge
+56576,Bjornekulla,Kristianstads lan ,Bjornekulla,Bjornekulla
+56580,Ifvetofta,Kristianstads lan ,Ifvetofta,Ivetofta
+56594,Torekow,Kristianstads lan ,Torekow,Torekov
+56657,Spjutstorp,Kristianstads lan ,Spjutstorp,Spjutstorp
+56680,Fjalkestad,Kristianstads lan ,Fjalkestad,Fjalkestad
+56688,Finja,Kristianstads lan ,Finja,Finja
+56709,Stiby,Kristianstads lan ,Stiby,Stiby
+56713,Knislinge,Kristianstads lan ,Knislinge,Knislinge
+56720,Hastveda,Kristianstads lan ,Hastveda,Hastveda
+56722,Kopinge,Kristianstads lan ,Kopinge,Kopinge
+56727,Anslunda,Kristianstads lan ,Anslunda,Onslunda
+56729,Tostarp,Kristianstads lan ,Tostarp,Tastarp
+56734,Orkelljunga,Kristianstads lan ,Orkelljunga,Orkelljunga
+56738,Vallby,Kristianstads lan ,Vallby,Vallby
+56753,Perstorp,Kristianstads lan ,Perstorp,Perstorp
+56770,Hoby,Kristianstads lan ,Hoby,Hoby
+56780,Gladsax,Kristianstads lan ,Gladsax,Gladsax
+56786,Onnestad,Kristianstads lan ,Onnestad,Onnestad
+56800,Nosaby,Kristianstads lan ,Nosaby,Nosaby
+56874,Verum,Kristianstads lan ,Verum,Verum
+56897,Rinkaby,Kristianstads lan ,Rinkaby,Rinkaby
+56905,Vankiva,Kristianstads lan ,Vankiva,Vankiva
+56917,Vittsjo,Kristianstads lan ,Vittsjo,Vittsjo
+56959,Vankifva,Kristianstads lan ,Vankifva,Vankiva
+56964,Bene- stad,Kristianstads lan ,Bene- stad,Benestad
+56981,Forslof,Kristianstads lan ,Forslof,Forslov
+56990,Bastad.,Kristianstads lan ,Bastad.,Bastad
+56991,Vram,Kristianstads lan ,Vram,Vram
+56996,Nymo,Kristianstads lan ,Nymo,Nymo
+56999,Glim- akra,Kristianstads lan ,Glim- akra,Glimakra
+57011,Fogeltofta,Kristianstads lan ,Fogeltofta,Fageltofta
+57043,Bollerup,Kristianstads lan ,Bollerup,Bollerup
+57078,VVram,Kristianstads lan ,V. Vram,Vram
+57088,Tranas,Kristianstads lan ,Tranas,Tranas
+57116,Grydt,Kristianstads lan ,Grydt,Gryt
+57139,Hjarnarp,Kristianstads lan ,Hjarn. arp,Hjarnarp
+57148,Tosterup,Kristianstads lan ,Tosterup,Tosterup
+57153,VKarup,Kristianstads lan ,V. Karup,Karup
+57190,Goteryd,Kronobergs lan ,Goteryd,Goteryd
+57191,Ryssby,Kronobergs lan ,Ryssby,Ryssby
+57193,Elghult,Kronobergs lan ,Elghult,Alghult
+57197,Ljungby,Kronobergs lan ,Ljungby,Ljungby
+57199,Hofmantorp,Kronobergs lan ,Hofmantorp,Hovmantorp
+57201,Ekeberga,Kronobergs lan ,Ekeberga,Ekeberga
+57202,Markaryd,Kronobergs lan ,Markaryd,Markaryd
+57203,Allmundsryd,Kronobergs lan ,Allmundsryd,Almundsryd
+57204,Hornaryd,Kronobergs lan ,Hornaryd,Hornaryd
+57206,Sjosas,Kronobergs lan ,Sjosas,Sjosas
+57207,Asheda,Kronobergs lan ,Asheda,Aseda
+57208,Notteback,Kronobergs lan ,Notteback,Notteback
+57212,Tingsas,Kronobergs lan ,Tingsas,Tingsas
+57214,Stenbrohult,Kronobergs lan ,Stenbrohult,Stenbrohult
+57231,Raflunda,Kristianstads lan ,Raflunda,Ravlunda
+57237,Moheda,Kronobergs lan ,Moheda,Moheda
+57239,Ojaby,Kronobergs lan ,Ojaby,Ojaby
+57242,Bergunda,Kronobergs lan ,Bergunda,Bergunda
+57243,Soraby,Kronobergs lan ,Soraby,Soraby
+57248,Alfvesta,Kronobergs lan ,Alfvesta,Alvesta
+57250,Elmhult,Kronobergs lan ,Elmhult,Almhult
+57252,Vislunda,Kronobergs lan ,Vislunda,Vislanda
+57254,Nobbeled,Kronobergs lan ,Nobbeled,Nobbele
+57258,Vislanda,Kronobergs lan ,Vislanda,Vislanda
+57260,Tafvelsas,Kronobergs lan ,Tafvelsas,Tavelsas
+57266,Lenhofda,Kronobergs lan ,Lenhofda,Lenhovda
+57279,Agunnaryd,Kronobergs lan ,Agunnaryd,Agunnaryd
+57280,Lekaryd,Kronobergs lan ,Lekaryd,Lekaryd
+57305,Vederslof,Kronobergs lan ,Vederslof,Vederslov
+57315,Hamneda,Kronobergs lan ,Hamneda,Hamneda
+57325,Annerstad,Kronobergs lan ,Annerstad,Annerstad
+57336,Elmeboda,Kronobergs lan ,Elmeboda,Almeboda
+57342,Bladinge,Kronobergs lan ,Bladinge,Bladinge
+57362,Herrakra,Kronobergs lan ,Herrakra,Herrakra
+57363,Hemmesjo,Kronobergs lan ,Hemmesjo,Hemmesjo
+57364,Angelstad,Kronobergs lan ,Angelstad,Angelstad
+57386,Tjureda,Kronobergs lan ,Tjureda,Tjureda
+57394,Slatthog,Kronobergs lan ,Slatthog,Slatthog
+57397,Aringsas,Kronobergs lan ,Aringsas,Aringsas
+57411,Skatelof,Kronobergs lan ,Skatelof,Skatelov
+57413,Zvenneberga,Kronobergs lan ,Zvenneberga,Kvenneberga
+57432,Gardsby,Kronobergs lan ,Gardsby,Gardsby
+57470,All- mundsryd,Kronobergs lan ,All- mundsryd,Almundsryd
+57479,Hemme- sjo,Kronobergs lan ,Hemme- sjo,Hemmesjo
+57483,Ljuder,Kronobergs lan ,Ljuder,Ljuder
+57521,Vackelsang,Kronobergs lan ,Vackelsang,Vackelsang
+57543,Linneryd,Kronobergs lan ,Linneryd,Linneryd
+57547,Virestad,Kronobergs lan ,Virestad,Virestad
+57561,Urshult,Kronobergs lan ,Urshult,Urshult
+57579,Berga,Kronobergs lan ,Berga,Berga
+57580,Dadesjo,Kronobergs lan ,Dadesjo,Dadesjo
+57590,Jat,Kronobergs lan ,Jat,Jat
+57594,Tutaryd,Kronobergs lan ,Tutaryd,Tutaryd
+57636,Traheryd,Kronobergs lan ,(Traheryd),Traryd
+57688,Hofmanstorp,Kronobergs lan ,Hofmanstorp,Hovmantorp
+57694,Traheryd,Kronobergs lan ,Traheryd,Traryd
+57729,Tegneby,Kronobergs lan ,Tegneby,Tegnaby
+59854,Jukkasjarvi,Norrbottens lan ,Jukkasjarvi,Jukkasjarvi
+59900,Gellivare,Norrbottens lan ,Gellivare,Gallivare
+59902,Hieta- niemi,Norrbottens lan ,Hieta- niemi,Hietaniemi
+59904,Jokkmokk,Norrbottens lan ,Jokkmokk,Jokkmokk
+59925,Nederkalix,Norrbottens lan ,Nederkalix,Nederkalix
+59931,Malmberget,Norrbottens lan ,Malmberget,Malmberget
+59934,Nederlulea,Norrbottens lan ,Nederlulea,Nederlulea
+59970,Arjeplog,Norrbottens lan ,Arjeplog,Arjeplog
+59976,Arvid- sjaur,Norrbottens lan ,Arvid- sjaur,Arvidsjaur
+59978,Tore,Norrbottens lan ,Tore,Tore
+59981,Nederlule&,Norrbottens lan ,Nederlule&,Nederlulea
+59983,Ofverlulea,Norrbottens lan ,Ofverlulea,Overlulea
+59985,Ofverkalix,Norrbottens lan ,Ofverkalix,Overkalix
+59986,Neder- lulea,Norrbottens lan ,Neder- lulea,Nederlulea
+59988,Porjus,Norrbottens lan ,Porjus,Porjus
+59999,Arvidsjaur,Norrbottens lan ,Arvidsjaur,Arvidsjaur
+60003,Korpi- lombolo,Norrbottens lan ,Korpi- lombolo,Korpilombolo
+60024,Edefors,Norrbottens lan ,Edefors,Edefors
+60038,Neder- kalix,Norrbottens lan ,Neder- kalix,Nederkalix
+60071,Tarendo,Norrbottens lan ,Tarendo,Tarendo
+60073,Korpilom- bolo,Norrbottens lan ,Korpilom- bolo,Korpilombolo
+60096,Jukkas- jarvi,Norrbottens lan ,Jukkas- jarvi,Jukkasjarvi
+60103,Juk- kasjarvi,Norrbottens lan ,Juk- kasjarvi,Jukkasjarvi
+60127,Karesuando,Norrbottens lan ,Karesuando,Karesuando
+60137,Hietaniemi,Norrbottens lan ,Hietaniemi,Hietaniemi
+60139,Ofvertornea,Norrbottens lan ,Ofvertornea,Overtornea
+60152,Ranea,Norrbottens lan ,Ranea,Ranea
+60256,Jokk- mokk,Norrbottens lan ,Jokk- mokk,Jokkmokk
+60307,Pajala,Norrbottens lan ,Pajala,Pajala
+60325,Ofver- lulea,Norrbottens lan ,Ofver- lulea,Overlulea
+60361,Huddinge,Stockholms lan,Huddinge,Huddinge
+60404,Saltsjobaden,Stockholms lan,Saltsjobaden,Saltsjobaden
+60409,Brannkyrka,Stockholms lan,Brannkyrka,Brannkyrka
+60411,Botkyrka,Stockholms lan,Botkyrka,Botkyrka
+60414,Lidingo,Stockholms lan,Lidingo,Lidingo
+60415,Djursholm,Stockholms lan,Djursholm,Djursholm
+60425,Solna,Stockholms lan,Solna,Solna
+60435,Sundbyberg,Stockholms lan,Sundbyberg,Sundbyberg
+60438,Nacka,Stockholms lan,Nacka,Nacka
+60439,Danderyd,Stockholms lan,Danderyd,Danderyd
+60441,Bromma,Stockholms lan,Bromma,Bromma
+60453,Ingaro,Stockholms lan,Ingaro,Ingaro
+60463,Ostertalje,Stockholms lan,Ostertalje,Ostertalje
+60469,Sanga,Stockholms lan,Sanga,Sanga
+60475,Hammarby,Stockholms lan,Hammarby,Hammarby
+60476,Vastertalje,Stockholms lan,Vastertalje,Vastertalje
+60477,Sodertalje,Stockholms lan,Sodertalje,Sodertalje
+60491,Vaxholm,Stockholms lan,Vaxholm,Vaxholm
+60492,Norrtalje,Stockholms lan,Norrtalje,Norrtalje
+60494,Sundby- berg,Stockholms lan,Sundby- berg,Sundbyberg
+60515,Salem,Stockholms lan,Salem,Salem
+60525,Rasunda,Stockholms lan,Rasunda,Rasunda
+60526,Blido,Stockholms lan,Blido,Blido
+60539,Stocksund,Stockholms lan,Stocksund,Stocksund
+60550,Fresta,Stockholms lan,Fresta,Fresta
+60565,Lidingoo,Stockholms lan,Lidingoo,Lidingo
+60585,Tumba,Stockholms lan,Tumba,Tumba
+60586,Grodinge,Stockholms lan,Grodinge,Grodinge
+60593,Vato,Stockholms lan,Vato,Vato
+60627,Ed,Stockholms lan,Ed,Ed
+60642,Osterhanninge,Stockholms lan,Osterhanninge,Osterhaninge
+60667,Husby-Erlinghundra,Stockholms lan,Husby-Erlinghundra,Husby-arlinghundra
+60684,Nynashamn,Stockholms lan,Nynashamn,Nynashamn
+60692,Gustafsberg,Stockholms lan,Gustafsberg,Gustavsberg
+60694,Vardinge,Stockholms lan,Vardinge,Vardinge
+60696,Dalaro,Stockholms lan,Dalaro,Dalaro
+60759,Jarfalla,Stockholms lan,Jarfalla,Jarfalla
+60786,Taby,Stockholms lan,Taby,Taby
+60787,Rimbo,Stockholms lan,Rimbo,Rimbo
+60801,Varmdo,Stockholms lan,Varmdo,Varmdo
+60830,Ekero,Stockholms lan,Ekero,Ekero
+60844,Spanga,Stockholms lan,Spanga,Spanga
+60880,Osterhaninge,Stockholms lan,Osterhaninge,Osterhaninge
+60885,Karsta,Stockholms lan,Karsta,Karsta
+60893,Hafvero,Stockholms lan,Hafvero,Havero
+60894,Tveta,Stockholms lan,Tveta,Tveta
+60926,Osteraker,Stockholms lan,Osteraker,Osteraker
+60989,Saltsjoba- den,Stockholms lan,Saltsjoba- den,Saltsjobaden
+61027,Gottroia,Stockholms lan,Gottroia,Gottrora
+61042,Syndbyberg,Stockholms lan,Syndbyberg,Sundbyberg
+61099,Sigtuna,Stockholms lan,Sigtuna,Sigtuna
+61135,Sollentuna,Stockholms lan,Sollentuna,Sollentuna
+61178,Djurs- holm,Stockholms lan,Djurs- holm,Djursholm
+61235,Vallentuna,Stockholms lan,Vallentuna,Vallentuna
+61265,Enskede,Stockholms lan,Enskede,Enskede
+61308,Soderbykarl,Stockholms lan,Soderbykarl,Soderby-Karl
+61355,Lanna,Stockholms lan,Lanna,Lanna
+61366,Vidbo,Stockholms lan,Vidbo,Vidbo
+61441,Odensala,Stockholms lan,Odensala,Odensala
+61443,Loharad,Stockholms lan,Loharad,Loharad
+61537,Lidingo.,Stockholms lan,Lidingo.,Lidingo
+61610,Gottrora,Stockholms lan,Gottrora,Gottrora
+61617,Skeptuna,Stockholms lan,Skeptuna,Skepptuna
+61628,Ytterjarna,Stockholms lan,Ytterjarna,Ytterjarna
+61641,Farentuna,Stockholms lan,Farentuna,Farentuna
+61669,Edebo,Stockholms lan,Edebo,Edebo
+61759,Vaddo,Stockholms lan,Vaddo,Vaddo
+61773,Skanella.,Stockholms lan,Skanella.,Skanela
+61843,Husby-Langhundra,Stockholms lan,Husby-Langhundra,Husby-arlinghundra
+61845,Edsbro,Stockholms lan,Edsbro,Edsbro
+61933,Ununge,Stockholms lan,Ununge,Ununge
+61961,Tyreso,Stockholms lan,Tyreso,Tyreso
+62014,Djursholm.,Stockholms lan,Djursholm.,Djursholm
+62032,Musko,Stockholms lan,Musko,Musko
+62034,Uto,Stockholms lan,Uto,Uto
+62053,Namndo,Stockholms lan,Namndo,Namdo
+62062,Hudddinge,Stockholms lan,Hudddinge,Huddinge
+62064,Adelso,Stockholms lan,Adelso,Adelso
+62080,Markim,Stockholms lan,Markim,Markim
+62109,Stock- sund,Stockholms lan,Stock- sund,Stocksund
+62223,Estuna,Stockholms lan,Estuna,Estuna
+62228,Frotuna,Stockholms lan,Frotuna,Frotuna
+62229,Ossebygarn,Stockholms lan,Ossebygarn,Osseby-Garn
+62232,Husby-Lyhundra,Stockholms lan,Husby-Lyhundra,Husby-lyhundra
+62241,Lunda,Stockholms lan,Lunda,Lunda
+62259,DjurshoIm,Stockholms lan,DjurshoIm,Djursholm
+62281,Ska,Stockholms lan,Ska,Ska
+62290,Ofverjarna,Stockholms lan,Ofverjarna,Overjarna
+62341,Frosunda,Stockholms lan,Frosunda,Frosunda
+62393,Orkesta,Stockholms lan,Orkesta,Orkesta
+62419,Nartuna,Stockholms lan,Nartuna,Nartuna
+62583,Ytter-Jarna,Stockholms lan,Ytter-Jarna,Ytterjarna
+62688,Djuro,Stockholms lan,Djuro,Djuro
+62701,Osmo,Stockholms lan,Osmo,Osmo
+62716,Hudinge,Stockholms lan,Hudinge,Huddinge
+62740,Munso,Stockholms lan,Munso,Munso
+62866,Nartuda,Stockholms lan,Nartuda,Nartuna
+62884,Vasterhanninge,Stockholms lan,Vasterhanninge,Vasterhaninge
+62932,Vasterhan- ninge,Stockholms lan,Vasterhan- ninge,Vasterhaninge
+62939,Thuringe,Stockholms lan,Thuringe,Turinge
+63059,Salt- sjobaden,Stockholms lan,Salt- sjobaden,Saltsjobaden
+63068,Orno,Stockholms lan,Orno,Orno
+63075,Saltsjo- baden,Stockholms lan,Saltsjo- baden,Saltsjobaden
+63148,Sund- byberg,Stockholms lan,Sund- byberg,Sundbyberg
+63295,Vasterhaninge,Stockholms lan,Vasterhaninge,Vasterhaninge
+63363,Lidigo.,Stockholms lan,Lidigo.,Lidingo
+63383,Osseby-Garn,Stockholms lan,Osseby-Garn,Osseby-Garn
+63448,Oster-Talje,Stockholms lan,Oster-Talje,Ostertalje
+63451,Skanella,Stockholms lan,Skanella,Skanela
+63610,Ro,Stockholms lan,Ro,Ro
+63619,Ljustero,Stockholms lan,Ljustero,Ljustero
+63622,Oxelosund,Sodermanlands lan ,Oxelosund,Oxelosund
+63624,Ardala,Sodermanlands lan ,Ardala,Ardala
+63625,Bjorkvik,Sodermanlands lan ,Bjorkvik,Bjorkvik
+63630,Roslagskulla,Stockholms lan,Roslagskulla,Roslags-Kulla
+63666,Roslagsbro,Stockholms lan,Roslagsbro,Roslags-Bro
+63677,Flen,Sodermanlands lan ,Flen,Flen
+63678,Mellosa,Sodermanlands lan ,Mellosa,Mellosa
+63680,Hyltinga,Sodermanlands lan ,Hyltinga,Hyltinge
+63684,Stigtomta,Sodermanlands lan ,Stigtomta,Stigtomta
+63685,Husby-Oppunda,Sodermanlands lan ,Husby-Oppunda,Husby-oppunda
+63696,Arila,Sodermanlands lan ,Arila,Arla
+63697,Katrineholm,Sodermanlands lan ,Katrineholm,Katrineholm
+63701,Bjornlunda,Sodermanlands lan ,Bjornlunda,Bjornlunda
+63709,Dunker,Sodermanlands lan ,Dunker,Dunker
+63710,Bettna,Sodermanlands lan ,Bettna,Bettna
+63711,Nashult,Sodermanlands lan ,Nashult,Nashulta
+63713,Nashulta,Sodermanlands lan ,Nashulta,Nashulta
+63715,Raby-Rono,Sodermanlands lan ,Raby-Rono,Raby-Rono
+63716,Lista,Sodermanlands lan ,Lista,Lista
+63717,Skoldinga,Sodermanlands lan ,Skoldinga,Skoldinge
+63729,Stenkvista,Sodermanlands lan ,Stenkvista,Stenkvista
+63732,Vadsbro,Sodermanlands lan ,Vadsbro,Vadsbro
+63733,Helgesta,Sodermanlands lan ,Helgesta,Helgesta
+63735,Gryt,Sodermanlands lan ,Gryt,Gryt
+63739,Sattersta,Sodermanlands lan ,Sattersta,Sattersta
+63748,Svarta,Sodermanlands lan ,Svarta,Svarta
+63751,Torshalla,Sodermanlands lan ,Torshalla,Torshalla
+63757,Julita,Sodermanlands lan ,Julita,Julita
+63762,Selo,Sodermanlands lan ,Selo,Selo
+63767,Helgona,Sodermanlands lan ,Helgona,Helgona
+63773,Barbo,Sodermanlands lan ,Barbo,Barbo
+63784,Husby-Opp- unda,Sodermanlands lan ,Husby-Opp- unda,Husby-oppunda
+63788,Runtuna,Sodermanlands lan ,Runtuna,Runtuna
+63790,Nykyrka,Sodermanlands lan ,Nykyrka,Nykyrka
+63792,Gillberga,Sodermanlands lan ,Gillberga,Gillberga
+63797,Barfva,Sodermanlands lan ,Barfva,Barva
+63798,Floda,Sodermanlands lan ,Floda,Floda
+63809,Ripsa,Sodermanlands lan ,Ripsa,Ripsa
+63818,Fogdo,Sodermanlands lan ,Fogdo,Fogdo
+63821,Vagnharad,Sodermanlands lan ,Vagnharad,Vagnharad
+63832,Skoldringe,Sodermanlands lan ,Skoldringe,Skoldinge
+63836,Tumbo,Sodermanlands lan ,Tumbo,Tumbo
+63840,Osteraker,Sodermanlands lan ,Osteraker,Osteraker
+63845,Ludgo,Sodermanlands lan ,Ludgo,Ludgo
+63856,Lerbo,Sodermanlands lan ,Lerbo,Lerbo
+63857,Forssa,Sodermanlands lan ,Forssa,Forssa
+63868,Bogsta,Sodermanlands lan ,Bogsta,Bogsta
+63870,Blacksta,Sodermanlands lan ,Blacksta,Blacksta
+63871,Bjorklunda,Sodermanlands lan ,Bjorklunda,Bjornlunda
+63886,Toresund,Sodermanlands lan ,Toresund,Toresund
+63890,Tystberga,Sodermanlands lan ,Tystberga,Tystberga
+63892,Tunaberg,Sodermanlands lan ,Tunaberg,Tunaberg
+63893,Balinge,Sodermanlands lan ,Balinge,Balinge
+63898,Katrine- holm,Sodermanlands lan ,Katrine- holm,Katrineholm
+63902,Nikolai,Sodermanlands lan ,Nikolai,Nikolai
+63954,Sundby,Sodermanlands lan ,Sundby,Sundby
+63964,Balinga,Sodermanlands lan ,Balinga,Balinge
+63965,Halla,Sodermanlands lan ,Halla,Halla
+63984,Tuna,Sodermanlands lan ,Tuna,Tuna
+63992,Vrena,Sodermanlands lan ,Vrena,Vrena
+63999,Skoldinge,Sodermanlands lan ,Skoldinge,Skoldinge
+64086,Karnbo,Sodermanlands lan ,Karnbo,Karnbo
+64091,Kjula,Sodermanlands lan ,Kjula,Kjula
+64114,Lastringe,Sodermanlands lan ,Lastringe,Lastringe
+64143,Blacksta,Sodermanlands lan ,"""Blacksta",Blacksta
+64145,Harad,Sodermanlands lan ,Harad,Harad
+64153,Vesterljung,Sodermanlands lan ,Vesterljung,Vasterljung
+64166,Lanna,Sodermanlands lan ,Lanna,Lanna
+64168,Hyltinge,Sodermanlands lan ,Hyltinge,Hyltinge
+64173,Tuna berg,Sodermanlands lan ,Tuna berg,Tunaberg
+64260,Bergsham- mar,Sodermanlands lan ,Bergsham- mar,Bergshammar
+64289,Hammarby,Sodermanlands lan ,Hammarby,Hammarby
+64341,Aker,Sodermanlands lan ,Aker,Aker
+64369,Bjorn- lunda,Sodermanlands lan ,Bjorn- lunda,Bjornlunda
+64376,Oja,Sodermanlands lan ,Oja,Oja
+64377,Lid,Sodermanlands lan ,Lid,Lid
+64411,Upsala,Uppsala lan ,Upsala,Uppsala
+64412,Rasbo,Uppsala lan ,Rasbo,Rasbo
+64416,Film,Uppsala lan ,Film,Film
+64417,Uppsala-Nas,Uppsala lan ,Uppsala-Nas,Uppsala-Nas
+64423,Tegelsmora,Uppsala lan ,Tegelsmora,Tegelsmora
+64428,Soderfors,Uppsala lan ,Soderfors,Soderfors
+64429,Vange,Uppsala lan ,Vange,Vange
+64442,Aspo,Sodermanlands lan ,Aspo,Aspo
+64458,Hagby,Uppsala lan ,Hagby,Hagby
+64460,Holm,Uppsala lan ,Holm,Holm
+64471,Alfkarleby,Uppsala lan ,Alfkarleby,Alvkarleby
+64474,Tolfta,Uppsala lan ,Tolfta,Tolfta
+64483,Gryta,Uppsala lan ,Gryta,Gryta
+64487,Uppsala,Uppsala lan ,Uppsala,Uppsala
+64489,Lena,Uppsala lan ,Lena,Lena
+64491,Giresta,Uppsala lan ,Giresta,Giresta
+64501,Jarlasa,Uppsala lan ,Jarlasa,Jarlasa
+64505,Film.,Uppsala lan ,Film.,Film
+64521,Rasbokil,Uppsala lan ,Rasbokil,Rasbokil
+64526,Vendel,Uppsala lan ,Vendel,Vendel
+64537,Borje,Uppsala lan ,Borje,Borje
+64539,Tierp,Uppsala lan ,Tierp,Tierp
+64544,Vaksala,Uppsala lan ,Vaksala,Vaksala
+64548,Dannemora,Uppsala lan ,Dannemora,Dannemora
+64560,Hallnas,Uppsala lan ,Hallnas,Hallnas
+64566,Danne- mora,Uppsala lan ,Danne- mora,Dannemora
+64574,Kulla,Uppsala lan ,Kulla,Kulla
+64577,Akerby,Uppsala lan ,Akerby,Akerby
+64606,Biskopskulla,Uppsala lan ,Biskopskulla,Biskopskulla
+64639,Bjorklinge,Uppsala lan ,Bjorklinge,Bjorklinge
+64645,Funbo,Uppsala lan ,Funbo,Funbo
+64647,Tensta,Uppsala lan ,Tensta,Tensta
+64660,Dan- nemora,Uppsala lan ,Dan- nemora,Dannemora
+64662,So- derfors,Uppsala lan ,So- derfors,Soderfors
+64677,Tuna,Uppsala lan ,Tuna,Tuna
+64705,Dalby,Uppsala lan ,Dalby,Dalby
+64707,Gillberga,Uppsala lan ,Gillberga,Villberga
+65436,Asele,Vasterbottens lan ,Asele,Asele
+65437,Bygdea,Vasterbottens lan ,Bygdea,Bygdea
+65479,Byske,Vasterbottens lan ,Byske,Byske
+65480,Lyck- sele,Vasterbottens lan ,Lyck- sele,Lycksele
+65489,Bjurholm,Vasterbottens lan ,Bjurholm,Bjurholm
+65492,Nordmaling,Vasterbottens lan ,Nordmaling,Nordmaling
+65498,Burtrask,Vasterbottens lan ,Burtrask,Burtrask
+65500,Lycksele,Vasterbottens lan ,Lycksele,Lycksele
+65503,Lofanger,Vasterbottens lan ,Lofanger,Lovanger
+65521,Skellefte&,Vasterbottens lan ,Skellefte&,Skelleftea
+65522,Jorn,Vasterbottens lan ,Jorn,Jorn
+65524,Vilhelmina,Vasterbottens lan ,Vilhelmina,Vilhelmina
+65530,Fredrika,Vasterbottens lan ,Fredrika,Fredrika
+65553,Dorotea,Vasterbottens lan ,Dorotea,Dorotea
+65566,Sorsele,Vasterbottens lan ,Sorsele,Sorsele
+65595,Tarna,Vasterbottens lan ,Tarna,Tarna
+65597,Norsjo,Vasterbottens lan ,Norsjo,Norsjo
+65621,Stensele,Vasterbottens lan ,Stensele,Stensele
+65657,Nordma- ling,Vasterbottens lan ,Nordma- ling,Nordmaling
+65671,Nysatra,Vasterbottens lan ,Nysatra,Nysatra
+65686,Noramaling,Vasterbottens lan ,Noramaling,Nordmaling
+65714,Nysatra;,Vasterbottens lan ,Nysatra;,Nysatra
+65808,Borgsjo,Vesternorrlands lan ,Borgsjo,Borgsjo
+65813,Alno,Vesternorrlands lan ,Alno,Alno
+65817,Hafvero,Vesternorrlands lan ,Hafvero,Havero
+65822,Skon,Vesternorrlands lan ,Skon,Skon
+65824,Torp,Vesternorrlands lan ,Torp,Torp
+65829,Hogsjo,Vesternorrlands lan ,Hogsjo,Hogsjo
+65833,Tre- horningsjo,Vesternorrlands lan ,Tre- horningsjo,Trehorningsjo
+65837,Helgerum,Vesternorrlands lan ,Helgerum,Helgum
+65853,Ramsele,Vesternorrlands lan ,Ramsele,Ramsele
+65855,Njurunda,Vesternorrlands lan ,Njurunda,Njurunda
+65857,Timra,Vesternorrlands lan ,Timra,Timra
+65864,Sollefte&,Vesternorrlands lan ,Sollefte&,Solleftea
+65867,Hellgum,Vesternorrlands lan ,Hellgum,Helgum
+65871,Anundsjo,Vesternorrlands lan ,Anundsjo,Anundsjo
+65876,Sabra,Vesternorrlands lan ,Sabra,Sabra
+65878,Resele,Vesternorrlands lan ,Resele,Resele
+65879,Gudmundra,Vesternorrlands lan ,Gudmundra,Gudmundra
+65892,Junsele,Vesternorrlands lan ,Junsele,Junsele
+65896,Ullanger,Vesternorrlands lan ,Ullanger,Ullanger
+65902,Tuna,Vesternorrlands lan ,Tuna,Tuna
+65908,Mo,Vesternorrlands lan ,Mo,Mo
+65910,Natra,Vesternorrlands lan ,Natra,Natra
+65911,Ljustorp,Vesternorrlands lan ,Ljustorp,Ljustorp
+65913,Indal,Vesternorrlands lan ,Indal,Indal
+65914,Sattna,Vesternorrlands lan ,Sattna,Sattna
+65916,Multra,Vesternorrlands lan ,Multra,Multra
+65920,Helgum,Vesternorrlands lan ,Helgum,Helgum
+65926,Sjalevad,Vesternorrlands lan ,Sjalevad,Sjalevad
+65929,Ed,Vesternorrlands lan ,Ed,Ed
+65931,Gidea,Vesternorrlands lan ,Gidea,Gidea
+65932,Bjartra,Vesternorrlands lan ,Bjartra,Bjartra
+65943,Ofverlannas,Vesternorrlands lan ,Ofverlannas,Overlannas
+65944,Ytterlannas,Vesternorrlands lan ,Ytterlannas,Ytterlannas
+65947,Langsele,Vesternorrlands lan ,Langsele,Langsele
+65949,Adals-Liden,Vesternorrlands lan ,Adals-Liden,Adals-Liden
+65961,Liden,Vesternorrlands lan ,Liden,Liden
+65980,Nordingra,Vesternorrlands lan ,Nordingra,Nordingra
+65983,Torsaker,Vesternorrlands lan ,Torsaker,Torsaker
+65996,Sidensjo,Vesternorrlands lan ,Sidensjo,Sidensjo
+65998,Bjertra,Vesternorrlands lan ,Bjertra,Bjartra
+66005,Holm,Vesternorrlands lan ,Holm,Holm
+66008,Dal,Vesternorrlands lan ,Dal,Dal
+66009,Hemso,Vesternorrlands lan ,Hemso,Hemso
+66012,Gud- mundra,Vesternorrlands lan ,Gud- mundra,Gudmundra
+66016,Hassjo,Vesternorrlands lan ,Hassjo,Hassjo
+66024,Edsele,Vesternorrlands lan ,Edsele,Edsele
+66048,Solleftea,Vesternorrlands lan ,Solleftea,Solleftea
+66058,Attmar,Vesternorrlands lan ,Attmar,Attmar
+66068,Indals-Liden,Vesternorrlands lan ,Indals-Liden,Adals-Liden
+66115,Nora,Vesternorrlands lan ,Nora,Nora
+66122,Styrnas,Vesternorrlands lan ,Styrnas,Styrnas
+66124,Graninge,Vesternorrlands lan ,Graninge,Graninge
+66150,Selanger,Vesternorrlands lan ,Selanger,Selanger
+66152,Stode,Vesternorrlands lan ,Stode,Stode
+66155,Skons,Vesternorrlands lan ,Skons,Skon
+66161,Ytter- lannas,Vesternorrlands lan ,Ytter- lannas,Ytterlannas
+66205,Bjorna,Vesternorrlands lan ,Bjorna,Bjorna
+66211,Arnas,Vesternorrlands lan ,Arnas,Arnas
+66212,Grundsunda,Vesternorrlands lan ,Grundsunda,Grundsunda
+66221,Tyndero,Vesternorrlands lan ,Tyndero,Tyndero
+66283,Nordingsra,Vesternorrlands lan ,Nordingsra,Nordingra
+66299,Sanga,Vesternorrlands lan ,Sanga,Sanga
+66330,Bogsjo,Vesternorrlands lan ,Bogsjo,Borgsjo
+66357,Gudmundr,Vesternorrlands lan ,Gudmundr,Gudmundra
+66366,Skog,Vesternorrlands lan ,Skog,Skog
+66425,Hellgums,Vesternorrlands lan ,Hellgums,Helgum
+66446,Skarped,Vesternorrlands lan ,Skarped,Skorped
+66455,Botea,Vesternorrlands lan ,Botea,Botea
+66546,Sabr,Vesternorrlands lan ,Sabr,Sabra
+66548,Bjorna;,Vesternorrlands lan ,Bjorna;,Bjorna
+66576,Torp.,Vesternorrlands lan ,Torp.,Torp
+66635,Vibyggera,Vesternorrlands lan ,Vibyggera,Vibyggera
+66639,Sundsvall,Vesternorrlands lan ,Sundsvall,Sundsvall
+66689,Skon.,Vesternorrlands lan ,Skon.,Skon
+66697,Stigsjo,Vesternorrlands lan ,Stigsjo,Stigsjo
+66709,Torup,Vesternorrlands lan ,Torup,Torp
+66805,Grund- sunda,Vesternorrlands lan ,Grund- sunda,Grundsunda
+66820,Malma,Vastmanlands lan ,Malma,Malma
+66821,Kolback,Vastmanlands lan ,Kolback,Kolback
+66826,Vastanfors,Vastmanlands lan ,Vastanfors,Vastanfors
+66827,Norberg,Vastmanlands lan ,Norberg,Norberg
+66831,Skultuna,Vastmanlands lan ,Skultuna,Skultuna
+66834,Kumla,Vastmanlands lan ,Kumla,Kumla
+66836,Hed,Vastmanlands lan ,Hed,Hed
+66840,Hubbo,Vastmanlands lan ,Hubbo,Hubbo
+66843,Karbenning,Vastmanlands lan ,Karbenning,Karbenning
+66845,Skinnskatte- berg,Vastmanlands lan ,Skinnskatte- berg,Skinnskatteberg
+66848,Koping,Vastmanlands lan ,Koping,Koping
+66867,Bjorskog,Vastmanlands lan ,Bjorskog,Bjorskog
+66869,Sura,Vastmanlands lan ,Sura,Sura
+66870,Skinnskatteberg.,Vastmanlands lan ,Skinnskatteberg.,Skinnskatteberg
+66890,Ramnas,Vastmanlands lan ,Ramnas,Ramnas
+66891,Satterbo,Vastmanlands lan ,Satterbo,Saterbo
+66895,Skinnskatteberg,Vastmanlands lan ,Skinnskatteberg,Skinnskatteberg
+66897,Dingtuna,Vastmanlands lan ,Dingtuna,Dingtuna
+66901,Saby,Vastmanlands lan ,Saby,Saby
+66907,Odensvi,Vastmanlands lan ,Odensvi,Odensvi
+66910,Vasteras-Bar- karo,Vastmanlands lan ,Vasteras-Bar- karo,Vasteras-Barkaro
+66916,Torpa,Vastmanlands lan ,Torpa,Torpa
+66919,Munktorp,Vastmanlands lan ,Munktorp,Munktorp
+66932,Norrby,Vastmanlands lan ,Norrby,Norrby
+66941,Ryttern,Vastmanlands lan ,Ryttern,Rytterne
+66957,Gunnilbo,Vastmanlands lan ,Gunnilbo,Gunnilbo
+66969,Harbo,Vastmanlands lan ,Harbo,Harbo
+66972,Wittinge,Vastmanlands lan ,Wittinge,Vittinge
+66979,Tillberga,Vastmanlands lan ,Tillberga,Tillberga
+67024,Karrbo,Vastmanlands lan ,Karrbo,Karrbo
+67058,Skinn- skatteberg,Vastmanlands lan ,Skinn- skatteberg,Skinnskatteberg
+67071,Irsta,Vastmanlands lan ,Irsta,Irsta
+67093,Torstuna,Vastmanlands lan ,Torstuna,Tortuna
+67119,Norberg.,Vastmanlands lan ,Norberg.,Norberg
+67123,Malma.,Vastmanlands lan ,Malma.,Malma
+67134,Haraker,Vastmanlands lan ,Haraker,Haraker
+67142,Nora,Vastmanlands lan ,Nora,Nora
+67236,Sala,Vastmanlands lan ,Sala,Sala
+67247,Artemark,Alfsborgs lan ,Artemark,Artemark
+67248,Lerum,Alfsborgs lan ,Lerum,Lerum
+67250,Orsas,Alfsborgs lan ,Orsas,Orsas
+67251,Skallerud,Alfsborgs lan ,Skallerud,Skallerud
+67256,Bjorksta,Vastmanlands lan ,Bjorksta,Bjorksta
+67289,Nodinge,Alfsborgs lan ,Nodinge,Nodinge
+67291,Fritsla,Alfsborgs lan ,Fritsla,Fritsla
+67292,Backe,Alfsborgs lan ,Backe,Backe
+67296,Svenljunga,Alfsborgs lan ,Svenljunga,Svenljunga
+67301,Tranemo,Alfsborgs lan ,Tranemo,Tranemo
+67303,Herr- ljunga,Alfsborgs lan ,Herr- ljunga,Herrljunga
+67305,Kullings-Skofde,Alfsborgs lan ,Kullings-Skofde,Kullings-Skovde
+67308,Dals Ed,Alfsborgs lan ,Dals Ed,Dals-Ed
+67309,Stensby,Alfsborgs lan ,Stensby,Steneby
+67311,Toarp,Alfsborgs lan ,Toarp,Toarp
+67313,Wassanda-Naglum,Alfsborgs lan ,Wassanda-Naglum,Vassanda-Naglum
+67316,Gallstad,Alfsborgs lan ,Gallstad,Gallstad
+67319,Starrkarr,Alfsborgs lan ,Starrkarr,Starrkarr
+67331,Ostad,Alfsborgs lan ,Ostad,Ostad
+67338,Trollhattan,Alfsborgs lan ,Trollhattan,Trollhattan
+67342,Fargelanda,Alfsborgs lan ,Fargelanda,Fargelanda
+67355,Fristad,Alfsborgs lan ,Fristad,Fristad
+67359,Torpa,Alfsborgs lan ,Torpa,Torpa
+67360,Nittorp,Alfsborgs lan ,Nittorp,Nittorp
+67365,Hyssna,Alfsborgs lan ,Hyssna,Hyssna
+67372,Seglora,Alfsborgs lan ,Seglora,Seglora
+67379,Dalum,Alfsborgs lan ,Dalum,Dalum
+67391,Laxarby,Alfsborgs lan ,Laxarby,Laxarby
+67392,Odskoldt,Alfsborgs lan ,Odskoldt,Odskolt
+67397,Skallsjo,Alfsborgs lan ,Skallsjo,Skallsjo
+67399,Herrljunga,Alfsborgs lan ,Herrljunga,Herrljunga
+67411,Or,Alfsborgs lan ,Or,Or
+67424,Satila,Alfsborgs lan ,Satila,Satila
+67427,Orby,Alfsborgs lan ,Orby,Orby
+67440,Fuxerna,Alfsborgs lan ,Fuxerna,Fuxerna
+67462,Sexdraga,Alfsborgs lan ,Sexdraga,Sexdrega
+67471,Gallestad,Alfsborgs lan ,Gallestad,Gallstad
+67472,Grude,Alfsborgs lan ,Grude,Grude
+67482,Fors,Alfsborgs lan ,Fors,Fors
+67490,Hajom,Alfsborgs lan ,Hajom,Hajom
+67514,Bollebygd,Alfsborgs lan ,Bollebygd,Bollebygd
+67520,Ale-Skofde,Alfsborgs lan ,Ale-Skofde,Ale-Skovde
+67539,Magra,Alfsborgs lan ,Magra,Magra
+67547,Hogsater,Alfsborgs lan ,Hogsater,Hogsater
+67550,Klnnarumma,Alfsborgs lan ,Klnnarumma,Kinnarumma
+67563,Skepplanda,Alfsborgs lan ,Skepplanda,Skepplanda
+67564,Dalskog,Alfsborgs lan ,Dalskog,Dalskog
+67569,Bralanda,Alfsborgs lan ,Bralanda,Bralanda
+67596,Bone,Alfsborgs lan ,Bone,Bone
+67598,Froskog,Alfsborgs lan ,Froskog,Froskog
+67599,Eriksberg,Alfsborgs lan ,Eriksberg,Eriksberg
+67602,Bolstad,Alfsborgs lan ,Bolstad,Bolstad
+67629,Torrskog,Alfsborgs lan ,Torrskog,Torrskog
+67671,Erska,Alfsborgs lan ,Erska,Erska
+67685,Siene,Alfsborgs lan ,Siene,Siene
+67700,Balinge,Alfsborgs lan ,Balinge,Balinge
+67720,Skalle- rud,Alfsborgs lan ,Skalle- rud,Skallerud
+67723,Hossna,Alfsborgs lan ,Hossna,Hossna
+67726,Ljushult,Alfsborgs lan ,Ljushult,Ljushult
+67728,Refvesjo,Alfsborgs lan ,Refvesjo,Revesjo
+67734,Mjoback,Alfsborgs lan ,Mjoback,Mjoback
+67745,Rolanda,Alfsborgs lan ,Rolanda,Rolanda
+67746,Lagmansered,Alfsborgs lan ,Lagmansered,Lagmansered
+67805,Hemsjo,Alfsborgs lan ,Hemsjo,Hemsjo
+67810,Habol,Alfsborgs lan ,Habol,Habol
+67824,Wassanda-Nag- lum,Alfsborgs lan ,Wassanda-Nag- lum,Vassanda-Naglum
+67827,Brunn,Alfsborgs lan ,Brunn,Brunn
+67831,Ullasjo,Alfsborgs lan ,Ullasjo,Ullasjo
+67846,Rangedala,Alfsborgs lan ,Rangedala,Rangedala
+67854,Frandefors,Alfsborgs lan ,Frandefors,Frandefors
+67883,Mo,Alfsborgs lan ,Mo,Mo
+67886,Romelle,Alfsborgs lan ,Romelle,Rommele
+67887,Fullestad,Alfsborgs lan ,Fullestad,Fullestad
+67891,Rodene,Alfsborgs lan ,Rodene,Rodene
+67895,Steneby,Alfsborgs lan ,Steneby,Steneby
+67923,Fuxerna;,Alfsborgs lan ,Fuxerna;,Fuxerna
+67944,Fennekumla,Alfsborgs lan ,Fennekumla,Finnekumla
+67946,Varvik,Alfsborgs lan ,Varvik,Varvik
+67976,Rommele,Alfsborgs lan ,Rommele,Rommele
+67991,Gingri,Alfsborgs lan ,Gingri,Gingri
+68000,Istorp,Alfsborgs lan ,Istorp,Istorp
+68004,Algutstorp,Alfsborgs lan ,Algutstorp,Algutstorp
+68014,Marback,Alfsborgs lan ,Marback,Marback
+68034,Kllanda,Alfsborgs lan ,Kllanda,Kilanda
+68040,Olsremma,Alfsborgs lan ,Olsremma,Olsremma
+68046,Holm,Alfsborgs lan ,Holm,Holm
+68050,Langhem,Alfsborgs lan ,Langhem,Langhem
+68051,Finnekumla,Alfsborgs lan ,Finnekumla,Finnekumla
+68066,Tverred,Alfsborgs lan ,Tverred,Tvarred
+68087,Tunge,Alfsborgs lan ,Tunge,Tunge
+68100,Kalingared,Alfsborgs lan ,Kalingared,Kolingared
+68125,Timmele,Alfsborgs lan ,Timmele,Timmele
+68145,Odsborg,Alfsborgs lan ,Odsborg,Odeborg
+68183,Hudene,Alfsborgs lan ,Hudene,Hudene
+68194,Naglum,Alfsborgs lan ,Naglum,Naglum
+68206,Odeborg,Alfsborgs lan ,Odeborg,Odeborg
+68223,Hammar,Orebro lan ,Hammar,Hammar
+68225,Karlskoga,Orebro lan ,Karlskoga,Karlskoga
+68230,Ljusnarsberg,Orebro lan ,Ljusnarsberg,Ljusnarsberg
+68233,Hallsberg,Orebro lan ,Hallsberg,Hallsberg
+68239,Svenne- vad,Orebro lan ,Svenne- vad,Svennevad
+68251,Nasby,Orebro lan ,Nasby,Nasby
+68253,Viker,Orebro lan ,Viker,Viker
+68258,Kumla,Orebro lan ,Kumla,Kumla
+68262,Knista,Orebro lan ,Knista,Knista
+68266,Hallberg,Orebro lan ,Hallberg,Hallsberg
+68272,Fellings- bro,Orebro lan ,Fellings- bro,Fellingsbro
+68282,Fel- lingsbro,Orebro lan ,Fel- lingsbro,Fellingsbro
+68284,Viby,Orebro lan ,Viby,Viby
+68285,Ljusnars- berg,Orebro lan ,Ljusnars- berg,Ljusnarsberg
+68289,Hellefors,Orebro lan ,Hellefors,Hallefors
+68291,Tysslinge,Orebro lan ,Tysslinge,Tysslinge
+68293,Ljus- narsberg,Orebro lan ,Ljus- narsberg,Ljusnarsberg
+68301,Lerback,Orebro lan ,Lerback,Lerback
+68305,Hjulsjo,Orebro lan ,Hjulsjo,Hjulsjo
+68329,Ramsberg,Orebro lan ,Ramsberg,Ramsberg
+68343,Ham- mar,Orebro lan ,Ham- mar,Hammar
+68359,Ler- back,Orebro lan ,Ler- back,Lerback
+68392,Fellingsbro,Orebro lan ,Fellingsbro,Fellingsbro
+68396,Linde,Orebro lan ,Linde,Linde
+68407,Langbro,Orebro lan ,Langbro,Langbro
+68409,Norrbyas,Orebro lan ,Norrbyas,Norrbyas
+68426,Odeby,Orebro lan ,Odeby,Odeby
+68439,Rams- berg,Orebro lan ,Rams- berg,Ramsberg
+68445,Kracklinge,Orebro lan ,Kracklinge,Kracklinge
+68449,Snaflunda,Orebro lan ,Snaflunda,Snavlunda
+68455,Ansta,Orebro lan ,Ansta,Ansta
+68475,Gallersta,Orebro lan ,Gallersta,Gallersta
+68480,Guld- smedshyttan,Orebro lan ,Guld- smedshyttan,Guldsmedshyttan
+68514,Ervalla,Orebro lan ,Ervalla,Ervalla
+68525,Asker,Orebro lan ,Asker,Asker
+68530,Guldsmedshytte,Orebro lan ,Guldsmedshytte,Guldsmedshyttan
+68534,Hidinge,Orebro lan ,Hidinge,Hidinge
+68539,Karl- skoga,Orebro lan ,Karl- skoga,Karlskoga
+68543,Jarnboas,Orebro lan ,Jarnboas,Jarnboas
+68544,Skol- lersta,Orebro lan ,Skol- lersta,Skollersta
+68554,Tyss- linge,Orebro lan ,Tyss- linge,Tysslinge
+68560,Kalskoga,Orebro lan ,Kalskoga,Karlskoga
+68562,Skagers- hult,Orebro lan ,Skagers- hult,Skagershult
+68564,Rammdeboda,Orebro lan ,Rammdeboda,Ramundeboda
+68609,Guldsmeds- hyttan,Orebro lan ,Guldsmeds- hyttan,Guldsmedshyttan
+68631,Skollersta,Orebro lan ,Skollersta,Skollersta
+68653,Almby,Orebro lan ,Almby,Almby
+68661,Krack- linge,Orebro lan ,Krack- linge,Kracklinge
+68703,Mosjo,Orebro lan ,Mosjo,Mosjo
+68716,Eds- berg,Orebro lan ,Eds- berg,Edsberg
+68746,Glans- hammar,Orebro lan ,Glans- hammar,Glanshammar
+68806,Lannas,Orebro lan ,Lannas,Lannas
+68808,Ekeby,Orebro lan ,Ekeby,Ekeby
+68825,Skagershult,Orebro lan ,Skagershult,Skagershult
+68840,Axberg,Orebro lan ,Axberg,Axberg
+68875,Askersund,Orebro lan ,Askersund,Askersund
+68893,Edsberg,Orebro lan ,Edsberg,Edsberg
+68926,Sven- nevad,Orebro lan ,Sven- nevad,Svennevad
+68968,Glanshammar,Orebro lan ,Glanshammar,Glanshammar
+68993,Ska- gershult,Orebro lan ,Ska- gershult,Skagershult
+69003,Grafve,Orebro lan ,Grafve,Grave
+69068,Tanger- asa,Orebro lan ,Tanger- asa,Tangerasa
+69070,Ramundeboda,Orebro lan ,Ramundeboda,Ramundeboda
+69096,NLjus- narsberg,Orebro lan ,N. Ljus- narsberg,Ljusnarsberg
+69108,Lang- bro,Orebro lan ,Lang- bro,Langbro
+69122,Hackvad,Orebro lan ,Hackvad,Hackvad
+69149,Nysund,Orebro lan ,Nysund,Nysund
+69151,Ny- sund,Orebro lan ,Ny- sund,Nysund
+69157,Klmstad,Ostergotlands lan ,Klmstad,Kimstad
+69158,Haradsahmmar,Ostergotlands lan ,Haradsahmmar,Haradshammar
+69162,Kullerstad,Ostergotlands lan ,Kullerstad,Kullerstad
+69166,Skedevi,Ostergotlands lan ,Skedevi,Skedevi
+69169,Risinge,Ostergotlands lan ,Risinge,Risinge
+69174,Mjolby,Ostergotlands lan ,Mjolby,Mjolby
+69196,Ramun- deboda,Orebro lan ,Ramun- deboda,Ramundeboda
+69202,Motala,Ostergotlands lan ,Motala,Motala
+69205,Nasby,Ostergotlands lan ,Nasby,Nasby
+69211,Motala;,Ostergotlands lan ,Motala;,Motala
+69213,Qvillinge,Ostergotlands lan ,Qvillinge,Kvillinge
+69217,Tjallmo,Ostergotlands lan ,Tjallmo,Tjallmo
+69223,Herrberga,Ostergotlands lan ,Herrberga,Herrberga
+69225,Odeshog,Ostergotlands lan ,Odeshog,Odeshog
+69236,Asbo,Ostergotlands lan ,Asbo,Asbo
+69242,Orberga,Ostergotlands lan ,Orberga,Orberga
+69244,Tornevalla,Ostergotlands lan ,Tornevalla,Tornevalla
+69247,Brunneby,Ostergotlands lan ,Brunneby,Brunneby
+69251,Svanehals,Ostergotlands lan ,Svanehals,Svanshals
+69258,Kallstad,Ostergotlands lan ,Kallstad,Kallstad
+69260,Vasterlosa,Ostergotlands lan ,Vasterlosa,Vasterlosa
+69270,Torpa,Ostergotlands lan ,Torpa,Torpa
+69271,Dagsberg,Ostergotlands lan ,Dagsberg,Dagsberg
+69273,Bjorrater,Ostergotlands lan ,Bjorrater,Bjorsater
+69277,Vikingstad,Ostergotlands lan ,Vikingstad,Vikingstad
+69279,Nykil,Ostergotlands lan ,Nykil,Nykil
+69280,Ekeby,Ostergotlands lan ,Ekeby,Ekeby
+69286,Sjogestad,Ostergotlands lan ,Sjogestad,Sjogestad
+69288,Ledberg,Ostergotlands lan ,Ledberg,Ledberg
+69293,Hallestad,Ostergotlands lan ,Hallestad,Hallestad
+69295,Rystad,Ostergotlands lan ,Rystad,Rystad
+69299,Vinnerstad,Ostergotlands lan ,Vinnerstad,Vinnerstad
+69305,Skarkind,Ostergotlands lan ,Skarkind,Skarkind
+69307,Kaga,Ostergotlands lan ,Kaga,Kaga
+69309,Husby,Ostergotlands lan ,Husby,Husby
+69312,Styrestad,Ostergotlands lan ,Styrestad,Styrstad
+69318,Normlosa,Ostergotlands lan ,Normlosa,Normlosa
+69323,Ortomta,Ostergotlands lan ,Ortomta,Ortomta
+69324,Bankekind,Ostergotlands lan ,Bankekind,Bankekind
+69328,Kettilstad,Ostergotlands lan ,Kettilstad,Kattilstad
+69334,Vreta kloster,Ostergotlands lan ,Vreta kloster,Vreta kloster
+69338,Slaka,Ostergotlands lan ,Slaka,Slaka
+69343,Vallerstad,Ostergotlands lan ,Vallerstad,Vallerstad
+69345,Kristberg,Ostergotlands lan ,Kristberg,Kristberg
+69363,Rappestad,Ostergotlands lan ,Rappestad,Rappestad
+69370,Skallvik,Ostergotlands lan ,Skallvik,Skallvik
+69392,Ljung,Ostergotlands lan ,Ljung,Ljung
+69406,Lonsas,Ostergotlands lan ,Lonsas,Lonsas
+69416,Ekebyborna,Ostergotlands lan ,Ekebyborna,Ekebyborna
+69418,Klockrike,Ostergotlands lan ,Klockrike,Klockrike
+69452,Herrestad,Ostergotlands lan ,Herrestad,Herrestad
+69470,Horn,Ostergotlands lan ,Horn,Horn
+69472,A,Ostergotlands lan ,A,A
+69474,Fornas,Ostergotlands lan ,Fornas,Fornasa
+69478,Konungsund,Ostergotlands lan ,Konungsund,Konungsund
+69480,Sund,Ostergotlands lan ,Sund,Sund
+69507,Rono,Ostergotlands lan ,Rono,Rono
+69521,Godegard,Ostergotlands lan ,Godegard,Godegard
+69533,Svanhals,Ostergotlands lan ,Svanhals,Svanshals
+69544,Tingstad,Ostergotlands lan ,Tingstad,Tingstad
+69553,Skonberga,Ostergotlands lan ,Skonberga,Skonberga
+69557,Taby,Ostergotlands lan ,Taby,Taby
+69559,Odehog,Ostergotlands lan ,Odehog,Odeshog
+69565,Vordsberg,Ostergotlands lan ,Vordsberg,Vardsberg
+69575,Oppeby,Ostergotlands lan ,Oppeby,Oppeby
+69576,Bjalbo,Ostergotlands lan ,Bjalbo,Bjalbo
+69595,Stra,Ostergotlands lan ,Stra,Stra
+69602,Veta,Ostergotlands lan ,Veta,Veta
+69604,Gryt,Ostergotlands lan ,Gryt,Gryt
+69606,Oslunda,Ostergotlands lan ,Oslunda,Orlunda
+69610,Lillkyrka,Ostergotlands lan ,Lillkyrka,Lillkyrka
+69621,Valdemarsvik,Ostergotlands lan ,Valdemarsvik,Valdemarsvik
+69628,Aby,Ostergotlands lan ,Aby,Aby
+69655,Sya,Ostergotlands lan ,Sya,Sya
+69669,Haradshammar,Ostergotlands lan ,Haradshammar,Haradshammar
+69673,Vardnas,Ostergotlands lan ,Vardnas,Vardnas
+69681,Bjorsater,Ostergotlands lan ,Bjorsater,Bjorsater
+69687,Bjorkeberg,Ostergotlands lan ,Bjorkeberg,Bjorkeberg
+69688,Ringarum,Ostergotlands lan ,Ringarum,Ringarum
+69694,Landeryd,Ostergotlands lan ,Landeryd,Landeryd
+69697,Rok,Ostergotlands lan ,Rok,Rok
+69713,Fjallmo,Ostergotlands lan ,Fjallmo,Tjallmo
+69715,Dagberg,Ostergotlands lan ,Dagberg,Dagsberg
+69721,Gardeby,Ostergotlands lan ,Gardeby,Gardeby
+69724,Rogslosa,Ostergotlands lan ,Rogslosa,Rogslosa
+69743,Hogby,Ostergotlands lan ,Hogby,Hogby
+69749,Barkekind,Ostergotlands lan ,Barkekind,Bankekind
+69757,Kuddby,Ostergotlands lan ,Kuddby,Kuddby
+69767,Karna,Ostergotlands lan ,Karna,Karna
+69780,Harg,Ostergotlands lan ,Harg,Harg
+69797,Bjornsater,Ostergotlands lan ,Bjornsater,Bjorsater
+69819,Furingstad,Ostergotlands lan ,Furingstad,Furingstad
+69856,Svinhult,Ostergotlands lan ,Svinhult,Svinhult
+69863,Fifvelstad,Ostergotlands lan ,Fifvelstad,Fivelstad
+69880,Valde- marsvik,Ostergotlands lan ,Valde- marsvik,Valdemarsvik
+69898,Skeppsas,Ostergotlands lan ,Skeppsas,Skeppsas
+69925,Flistad,Ostergotlands lan ,Flistad,Flistad
+69954,Simontorp,Ostergotlands lan ,Simontorp,Simonstorp
+69979,Horns,Ostergotlands lan ,Horns,Horn
+69981,Skeda,Ostergotlands lan ,Skeda,Skeda
+70011,Hogstad,Ostergotlands lan ,Hogstad,Hogstad
+70013,Svin- hult,Ostergotlands lan ,Svin- hult,Svinhult
+70015,Ulrika,Ostergotlands lan ,Ulrika,Ulrika
+70043,Mogata,Ostergotlands lan ,Mogata,Mogata
+70066,Askeby,Ostergotlands lan ,Askeby,Askeby
+70075,Grebo,Ostergotlands lan ,Grebo,Grebo
+70081,Fjarstad,Ostergotlands lan ,Fjarstad,Tjarstad
+70133,Krokek,Ostergotlands lan ,Krokek,Krokek
+70142,Klttilstad,Ostergotlands lan ,Klttilstad,Kattilstad
+70166,Atvid,Ostergotlands lan ,Atvid,Atvid
+70180,Jonsberg,Ostergotlands lan ,Jonsberg,Jonsberg
+70212,Yxnerum,Ostergotlands lan ,Yxnerum,Yxnerum
+70219,Stjarnarp,Ostergotlands lan ,Stjarnarp,Stjarnorp
+70286,Regna,Ostergotlands lan ,Regna,Regna
+70289,Tidersrum,Ostergotlands lan ,Tidersrum,Tidersrum
+70341,Sater,Skaraborgs lan ,Sater,Sater
+70345,Vamb,Skaraborgs lan ,Vamb,Vamb
+70347,Bareberg,Skaraborgs lan ,Bareberg,Bareberg
+70348,Vara,Skaraborgs lan ,Vara,Vara
+70353,Forshem,Skaraborgs lan ,Forshem,Forshem
+70355,Rackeby,Skaraborgs lan ,Rackeby,Rackeby
+70357,Leksberg,Skaraborgs lan ,Leksberg,Leksberg
+70361,Undenas,Skaraborgs lan ,Undenas,Undenas
+70363,Friggeraker,Skaraborgs lan ,Friggeraker,Friggeraker
+70365,Lyre- stad,Skaraborgs lan ,Lyre- stad,Lyrestad
+70367,Toreboda,Skaraborgs lan ,Toreboda,Toreboda
+70370,Harene,Skaraborgs lan ,Harene,Harene
+70372,Vattlosa,Skaraborgs lan ,Vattlosa,Vattlosa
+70373,Sunnersberg,Skaraborgs lan ,Sunnersberg,Sunnersberg
+70376,Frojered,Skaraborgs lan ,Frojered,Frojered
+70379,Karlsborg,Skaraborgs lan ,Karlsborg,Karlsborg
+70380,Levene,Skaraborgs lan ,Levene,Levene
+70381,Halna,Skaraborgs lan ,Halna,Halna
+70383,Un- denas,Skaraborgs lan ,Un- denas,Undenas
+70385,Frosved,Skaraborgs lan ,Frosved,Frosve
+70387,Klnneved,Skaraborgs lan ,Klnneved,Kinneved
+70402,Essunga,Skaraborgs lan ,Essunga,Essunga
+70405,Ryda,Skaraborgs lan ,Ryda,Ryda
+70406,Ut- vangstorp,Skaraborgs lan ,Ut- vangstorp,Utvangstorp
+70408,Gotened,Skaraborgs lan ,Gotened,Gotene
+70409,Dimbo,Skaraborgs lan ,Dimbo,Dimbo
+70411,Safvared,Skaraborgs lan ,Safvared,Savare
+70413,Lyrestad,Skaraborgs lan ,Lyrestad,Lyrestad
+70415,Stenstorp,Skaraborgs lan ,Stenstorp,Stenstorp
+70418,Horn,Skaraborgs lan ,Horn,Horn
+70419,Fagelas,Skaraborgs lan ,Fagelas,Fagelas
+70431,Naum,Skaraborgs lan ,Naum,Naum
+70432,Husaby,Skaraborgs lan ,Husaby,Husaby
+70434,Lerdala,Skaraborgs lan ,Lerdala,Lerdala
+70436,Marum,Skaraborgs lan ,Marum,Marum
+70451,Varing,Skaraborgs lan ,Varing,Varing
+70459,Sandhem,Skaraborgs lan ,Sandhem,Sandhem
+70465,Eggby,Skaraborgs lan ,Eggby,Eggby
+70482,Nykyrke,Skaraborgs lan ,Nykyrke,Nykyrke
+70486,Hangsdala,Skaraborgs lan ,Hangsdala,Hangsdala
+70494,Fredsberg,Skaraborgs lan ,Fredsberg,Fredsberg
+70500,Sla- dene,Skaraborgs lan ,Sla- dene,Sladene
+70508,Ransberg,Skaraborgs lan ,Ransberg,Ransberg
+70511,Fagred,Skaraborgs lan ,Fagred,Fagre
+70512,Tengened,Skaraborgs lan ,Tengened,Tengene
+70514,Kalsborg,Skaraborgs lan ,Kalsborg,Karlsborg
+70517,Berg,Skaraborgs lan ,Berg,Berg
+70521,Vartofta-Asaka,Skaraborgs lan ,Vartofta-Asaka,Vartofta-Asaka
+70527,Agnetorp,Skaraborgs lan ,Agnetorp,Agnetorp
+70529,Agne- torp,Skaraborgs lan ,Agne- torp,Agnetorp
+70531,Karleby,Skaraborgs lan ,Karleby,Karleby
+70536,Grolanda,Skaraborgs lan ,Grolanda,Grolanda
+70538,Brevik,Skaraborgs lan ,Brevik,Brevik
+70544,Amne- harad,Skaraborgs lan ,Amne- harad,Amneharad
+70549,Fullosa,Skaraborgs lan ,Fullosa,Fullosa
+70576,Sil,Skaraborgs lan ,Sil,Sil
+70579,Hu- saby,Skaraborgs lan ,Hu- saby,Husaby
+70581,Me- delplana,Skaraborgs lan ,Me- delplana,Medelplana
+70583,Medel- plana,Skaraborgs lan ,Medel- plana,Medelplana
+70591,Hangelosa,Skaraborgs lan ,Hangelosa,Hangelosa
+70593,Medelplana,Skaraborgs lan ,Medelplana,Medelplana
+70603,Osterplana,Skaraborgs lan ,Osterplana,Osterplana
+70605,Hofva,Skaraborgs lan ,Hofva,Hova
+70606,Frammestad,Skaraborgs lan ,Frammestad,Frammestad
+70608,Fram- mestad,Skaraborgs lan ,Fram- mestad,Frammestad
+70612,Acklinga,Skaraborgs lan ,Acklinga,Acklinga
+70616,Holmestad,Skaraborgs lan ,Holmestad,Holmestad
+70618,Hassled,Skaraborgs lan ,Hassled,Hassle
+70622,Lindarfva,Skaraborgs lan ,Lindarfva,Lindarva
+70628,Mo,Skaraborgs lan ,Mo,Mo
+70630,Ryd,Skaraborgs lan ,Ryd,Ryd
+70631,Ullervad,Skaraborgs lan ,Ullervad,Ullervad
+70632,Oglunda,Skaraborgs lan ,Oglunda,Oglunda
+70636,Grefback,Skaraborgs lan ,Grefback,Grevback
+70640,Molltorp,Skaraborgs lan ,Molltorp,Molltorp
+70642,Borstig,Skaraborgs lan ,Borstig,Borstig
+70645,Back,Skaraborgs lan ,Back,Back
+70658,Bjurum,Skaraborgs lan ,Bjurum,Bjurum
+70664,Suntak,Skaraborgs lan ,Suntak,Suntak
+70668,Habo,Skaraborgs lan ,Habo,Habo
+70670,Velinga,Skaraborgs lan ,Velinga,Velinga
+70672,Skjalfvum,Skaraborgs lan ,Skjalfvum,Skalvum
+70676,Tadened,Skaraborgs lan ,Tadened,Tadene
+70678,Skarstad,Skaraborgs lan ,Skarstad,Skarstad
+70698,Ler- dala,Skaraborgs lan ,Ler- dala,Lerdala
+70703,Torso,Skaraborgs lan ,Torso,Torso
+70715,Stentorp,Skaraborgs lan ,Stentorp,Stenstorp
+70717,Sparlosa,Skaraborgs lan ,Sparlosa,Sparlosa
+70730,Fyrunga,Skaraborgs lan ,Fyrunga,Fyrunga
+70740,Edasa,Skaraborgs lan ,Edasa,Edasa
+70744,Rada,Skaraborgs lan ,Rada,Rada
+70750,Bellefors,Skaraborgs lan ,Bellefors,Ballefors
+70751,Sveneby,Skaraborgs lan ,Sveneby,Sveneby
+70762,Seger- stad,Skaraborgs lan ,Seger- stad,Segerstad
+70764,Haggum,Skaraborgs lan ,Haggum,Haggum
+70771,Ljunghem,Skaraborgs lan ,Ljunghem,Ljunghem
+70773,Amneharad,Skaraborgs lan ,Amneharad,Amneharad
+70778,Bitterna,Skaraborgs lan ,Bitterna,Bitterna
+70780,Long,Skaraborgs lan ,Long,Long
+70782,Gudhem,Skaraborgs lan ,Gudhem,Gudhem
+70784,Goss- lunda,Skaraborgs lan ,Goss- lunda,Gosslunda
+70805,Trastena,Skaraborgs lan ,Trastena,Trastena
+70806,Skorstorp,Skaraborgs lan ,Skorstorp,Skorstorp
+70808,Mellby,Skaraborgs lan ,Mellby,Mellby
+70813,Skanings- saka,Skaraborgs lan ,Skanings- saka,Skanings-Asaka
+70817,Kestad,Skaraborgs lan ,Kestad,Kestad
+70819,Fared,Skaraborgs lan ,Fared,Fared
+70821,Kors- berga,Skaraborgs lan ,Kors- berga,Korsberga
+70836,Fridened,Skaraborgs lan ,Fridened,Fridene
+70839,Mofalla,Skaraborgs lan ,Mofalla,Mofalla
+70847,Gokhem,Skaraborgs lan ,Gokhem,Gokhem
+70861,Ny- kyrke,Skaraborgs lan ,Ny- kyrke,Nykyrke
+70865,Vedum,Skaraborgs lan ,Vedum,Vedum
+70867,Hyringa,Skaraborgs lan ,Hyringa,Hyringa
+70871,Sjogerstad,Skaraborgs lan ,Sjogerstad,Sjogerstad
+70885,Baltak,Skaraborgs lan ,Baltak,Baltak
+70887,Spar- losa,Skaraborgs lan ,Spar- losa,Sparlosa
+70896,Tore- boda,Skaraborgs lan ,Tore- boda,Toreboda
+70901,Ofva,Skaraborgs lan ,Ofva,Ova
+70912,Trevattna,Skaraborgs lan ,Trevattna,Travattna
+70918,Marka,Skaraborgs lan ,Marka,Marka
+70921,Istrum,Skaraborgs lan ,Istrum,Istrum
+70923,Sorby,Skaraborgs lan ,Sorby,Sorby
+70937,Kallby,Skaraborgs lan ,Kallby,Kallby
+70939,SFagelas,Skaraborgs lan ,S. Fagelas,Fagelas
+70941,Floby,Skaraborgs lan ,Floby,Floby
+70945,Korsberga,Skaraborgs lan ,Korsberga,Korsberga
+70950,Varola,Skaraborgs lan ,Varola,Varola
+70952,Yllestad,Skaraborgs lan ,Yllestad,Yllestad
+70959,Onum,Skaraborgs lan ,Onum,Onum
+70962,Hjarpas,Skaraborgs lan ,Hjarpas,Hjarpas
+70992,Sarestad,Skaraborgs lan ,Sarestad,Sarestad
+70996,Frigger- aker,Skaraborgs lan ,Frigger- aker,Friggeraker
+71002,Borgunda,Skaraborgs lan ,Borgunda,Borgunda
+71008,Jung,Skaraborgs lan ,Jung,Jung
+71010,Sventorp,Skaraborgs lan ,Sventorp,Sventorp
+24414,Forsmark,Stockholm,Forsmark,Forsmark
+24419,Oregrund,Stockholm,Oregrund,Oregrund
+24424,Knifsta,Stockholm,Knifsta,Knista
+24535,Bo,Stockholm,Bo,Bo
+24542,Bladaker,Stockholm,Bladaker,Bladaker
+24724,Harg,Stockholm,Harg,Harg
+24730,Ore- grund,Stockholm,Ore- grund,Oregrund
+24802,Osthammar,Stockholm,Osthammar,Osthammar
+24819,Svartsjo,Stockholm,Svartsjo,Svardsjo
+24848,Hastholmen,Stockholm,Hastholmen,Hastholmen
+25003,Ryd,Stockholm,Ryd,Ryd
+25190,Alsike,Stockholm,Alsike,Alsike
+25222,Valo,Stockholm,Valo,Valo
+25543,Knutby,Stockholm,Knutby,Knutby
+25581,Sorunda,Stockholm,Sorunda,Sorunda
+25626,Almunge,Stockholm,Almunge,Almunge
+25632,Borstil,Stockholm,Borstil,Borstil
+25709,Hokhufvud,Stockholm,Hokhufvud,Hokhuvud
+25717,Vassunda,Stockholm,Vassunda,Vassunda
+25790,Ranas,Stockholm,Ranas,Ramnas
+26610,Lagga,Stockholm,Lagga,Lagga
+26858,Graso,Stockholm,Graso,Graso
+27431,Ostuna,Stockholm,Ostuna,Ostuna
+28614,Ostham- mar,Stockholm,Ostham- mar,Osthammar
+28625,Faringe,Stockholm,Faringe,Faringe
+30206,Karnbo,Boras ,Karnbo),Karnbo
+31060,Berg,Falun ,Berg,Berg
+31663,Amal,Gafle ,Amal),Amal
+32065,Partilled,Goteborg ,Partilled),Partille
+32071,Frolunda,Goteborg ,Frolunda),Froslunda
+32391,Orgryte,Goteborg ,Orgryte),Orgryte
+33036,Lerum,Goteborg ,Lerum),Lerum
+33062,Halmstad,Goteborg ,Halmstad),Halmstad
+33288,Lundby,Goteborg ,Lundby),Lundby
+33303,Askim,Goteborg ,Askim),Askim
+33467,Fassberg,Goteborg ,Fassberg),Fassberg
+34099,Smogen,Goteborg ,Smogen),Smogen
+35162,Varfvet,Goteborg ,Varfvet),Varvet
+35883,Alingsas,Goteborg ,Alingsas),Alingsas
+36302,Gaso,Goteborg ,Gaso),Graso
+37053,Tarnan,Haparanda ,Tarnan,Tarna
+38084,i Halsingborg,Halsingborg ,i Halsingborg,Halsingborg
+38214,Halsingborg,Halsingborg ,Halsingborg,Halsingborg
+38259,Nordsjon,Halsingborg ,Nordsjon,Norsjo
+41628,Karlsvik,Lulea ,(Karlsvik),Kalvsvik
+42329,Anderslof,Malmo ,Anderslof,Anderslov
+42760,Svedala,Malmo ,Svedala),Svedala
+42790,Limhamn,Malmo ,Limhamn),Limhamn
+42980,Raus,Malmo ,Raus),Raus
+43203,Barnarp,Malmo ,Barnarp),Barnarp
+43219,Son,Malmo ,Son),Skon
+43322,Fosie,Malmo ,Fosie),Fosie
+44320,Sofielund,Mariestad ,(Sofielund),Sofielund
+44478,Gamleby.,Norrkoping ,Gamleby.,Gamleby
+45505,i Kalmar,Oskarshamn ,(i Kalmar),Kalmar
+46657,Norrland,Sundsvall ,Norrland,Norrlanda
+49018,Gamleby,Vastervik  ,Gamleby,Gamleby
+49924,i Ronneby,Orebro ,(i Ronneby),Ronneby
+51127,Asarum,Hjo ,Asarum,Asarum
+51622,Farnebo,Gafleborgs lan ,Farnebo,Farnebo
+51748,Fernebo,Gafleborgs lan ,Fernebo,Farnebo
+52269,Ljung,Goteborgs och Bohus lan ,Ljung,Ljung
+52271,Partilled,Goteborgs och Bohus lan ,Partilled,Partille
+52272,Kville,Goteborgs och Bohus lan ,Kville,Kville
+52274,Ockero,Goteborgs och Bohus lan ,Ockero,Ockero
+52277,Backa,Goteborgs och Bohus lan ,Backa,Backa
+52315,Lommelanda,Goteborgs och Bohus lan ,Lommelanda,Lommeland
+52318,Orgryte,Goteborgs och Bohus lan ,Orgryte,Orgryte
+52320,Norum,Goteborgs och Bohus lan ,Norum,Norum
+52321,Smogen,Goteborgs och Bohus lan ,Smogen,Smogen
+52325,Fassberg,Goteborgs och Bohus lan ,Fassberg,Fassberg
+52340,Gull- holmen,Goteborgs och Bohus lan ,Gull- holmen,Gullholmen
+52344,VFrolunda,Goteborgs och Bohus lan ,V. Frolunda,Froslunda
+52347,Odsmal,Goteborgs och Bohus lan ,Odsmal,Odsmal
+52348,Brastad,Goteborgs och Bohus lan ,Brastad,Brastad
+52350,Stenkyrka,Goteborgs och Bohus lan ,Stenkyrka,Stenkyrka
+52352,Lycke,Goteborgs och Bohus lan ,Lycke,Lycke
+52354,Safve,Goteborgs och Bohus lan ,Safve,Save
+52357,Bokenas,Goteborgs och Bohus lan ,Bokenas,Bokenas
+52362,Frolunda,Goteborgs och Bohus lan ,Frolunda,Froslunda
+52363,Folunda,Goteborgs och Bohus lan ,Folunda,Froslunda
+52365,Morlanda,Goteborgs och Bohus lan ,Morlanda,Morlanda
+52367,Skee,Goteborgs och Bohus lan ,Skee,Skee
+52368,Tossene,Goteborgs och Bohus lan ,Tossene,Tossene
+52379,Svenneby,Goteborgs och Bohus lan ,Svenneby,Svenneby
+52391,Stala,Goteborgs och Bohus lan ,Stala,Stala
+52392,Myckleby,Goteborgs och Bohus lan ,Myckleby,Myckleby
+52396,Langelanda,Goteborgs och Bohus lan ,Langelanda,Langelanda
+52398,Nya varfvet,Goteborgs och Bohus lan ,Nya varfvet,Nya Varvet
+52400,Askim,Goteborgs och Bohus lan ,Askim,Askim
+52402,Foss,Goteborgs och Bohus lan ,Foss,Foss
+52412,Malmon,Goteborgs och Bohus lan ,Malmon,Malmon
+52415,Jorlanda,Goteborgs och Bohus lan ,Jorlanda,Jorlanda
+52419,Ytterby,Goteborgs och Bohus lan ,Ytterby,Ytterby
+52460,Rada,Goteborgs och Bohus lan ,Rada,Rada
+52465,Tanum,Goteborgs och Bohus lan ,Tanum,Tanum
+52470,Askum,Goteborgs och Bohus lan ,Askum,Askum
+52488,Tegneby,Goteborgs och Bohus lan ,Tegneby,Tegneby
+52494,Lyse,Goteborgs och Bohus lan ,Lyse,Lyse
+52508,Or- gryte,Goteborgs och Bohus lan ,Or- gryte,Orgryte
+52544,Hjartrum,Goteborgs och Bohus lan ,Hjartrum,Hjartum
+52548,Styrso,Goteborgs och Bohus lan ,Styrso,Styrso
+52554,Harryda,Goteborgs och Bohus lan ,Harryda,Harryda
+52562,Kungshamn,Goteborgs och Bohus lan ,Kungshamn,Kungshamn
+52589,Fass- berg,Goteborgs och Bohus lan ,Fass- berg,Fassberg
+52593,Skafto,Goteborgs och Bohus lan ,Skafto,Skafto
+52597,Kallered,Goteborgs och Bohus lan ,Kallered,Kallered
+52598,Landvetter,Goteborgs och Bohus lan ,Landvetter,Landvetter
+52609,Haby,Goteborgs och Bohus lan ,Haby,Haby
+52623,Vasterlanda,Goteborgs och Bohus lan ,Vasterlanda,Vasterlanda
+52638,Ucklum,Goteborgs och Bohus lan ,Ucklum,Ucklum
+52653,Resterod,Goteborgs och Bohus lan ,Resterod,Resterod
+52684,Hjartum,Goteborgs och Bohus lan ,Hjartum,Hjartum
+52700,Tufve,Goteborgs och Bohus lan ,Tufve,Tuve
+52716,Hede,Goteborgs och Bohus lan ,Hede,Hede
+52745,Varfvet,Goteborgs och Bohus lan ,Varfvet,Varvet
+52746,Bafve,Goteborgs och Bohus lan ,Bafve,Bave
+52754,Rodbo,Goteborgs och Bohus lan ,Rodbo,Rodbo
+52757,Varvet,Goteborgs och Bohus lan ,Varvet,Varvet
+52772,Forshalla,Goteborgs och Bohus lan ,Forshalla,Forshalla
+52810,Svarteborg,Goteborgs och Bohus lan ,Svarteborg,Svarteborg
+52812,Klofvedal,Goteborgs och Bohus lan ,Klofvedal,Klovedal
+52829,Herrestad,Goteborgs och Bohus lan ,Herrestad,Herrestad
+52842,Fiskebacks- kil,Goteborgs och Bohus lan ,Fiskebacks- kil,Fiskebackskil
+52920,Hall,Hallands lan ,Hall,Hall
+52951,Lindome,Hallands lan ,Lindome,Lindome
+53129,Mo,Hallands lan ,Mo,Mo
+53144,Viken,Jamtlands lan ,Viken,Viken
+53186,Mallbyn,Jamtlands lan ,Mallbyn,Mjallby
+53188,Mallby,Jamtlands lan ,Mallby,Mjallby
+53192,Oden- sala,Jamtlands lan ,Oden- sala,Odensala
+53194,Bredgard,Jamtlands lan ,Bredgard,Bredared
+53197,Mo,Jamtlands lan ,Mo,Mo
+53248,Hammaren,Jamtlands lan ,Hammaren,Hammar
+53286,Borgsjo,Jamtlands lan ,Borgsjo,Borgsjo
+53294,Lund,Jamtlands lan ,Lund,Lunda
+53298,By,Jamtlands lan ,By,By
+53335,Borglunda,Jamtlands lan ,Borglunda,Borgunda
+53365,Holmsjon,Jamtlands lan ,Holmsjon,Holmon
+53395,Eriksberg,Jamtlands lan ,Eriksberg,Eriksberg
+53402,Boggsjo,Jamtlands lan ,Boggsjo,Borgsjo
+53421,Valla,Jamtlands lan ,Valla,Valla
+53439,Gardnas,Jamtlands lan ,Gardnas,Gargnas
+53460,Backen,Jamtlands lan ,Backen,Backe
+53470,Uppland,Jamtlands lan ,Uppland,Uplanda
+53474,Hagrad,Jamtlands lan ,Hagrad,Harad
+53490,Roma,Jamtlands lan ,Roma,Roma
+53496,Odensala,Jamtlands lan ,Odensala,Odensala
+53537,Sund,Jamtlands lan ,Sund,Sund
+53612,Ang,Jamtlands lan ,Ang,Anga
+53676,Bispgarden,Jamtlands lan ,Bispgarden,Biskopsgarden
+53757,Nacksta,Jamtlands lan ,Nacksta,Hacksta
+53763,Almesakra,Jamtlands lan ,Almesakra,Almesakra
+53767,Hessleby,Jamtlands lan ,Hessleby,Hassleby
+53771,Tranas,Jonkopings lan ,Tranas,Tranas
+53774,Langaryd,Jonkopings lan ,Langaryd,Langaryd
+53859,Sandsjo,Jonkopings lan ,Sandsjo,Sundsjo
+53871,Fargaryd,Jonkopings lan ,Fargaryd,Fargaryd
+53894,Solberga,Jonkopings lan ,Solberga,Solberga
+54163,Svartarp,Jonkopings lan ,Svartarp,Svarta
+54278,Bolmso,Jonkopings lan ,Bolmso,Bolmso
+54316,Ljunga,Jonkopings lan ,Ljunga,Ljung
+54356,Jaluntofta,Jonkopings lan ,Jaluntofta,Jalluntofta
+54456,Hannas,Kalmar lan ,Hannas,Hannas
+54490,Gardserum,Kalmar lan ,Gardserum,Gardserum
+54499,Tryserum,Kalmar lan ,Tryserum,Tryserum
+54530,Tryserum,Kalmar lan ,/Tryserum,Tryserum
+54973,Eksjo,Kalmar lan ,Eksjo,Eksjo
+55170,Tuna,Kopparbergs lan ,Tuna,Tuna
+55171,Leksand,Kopparbergs lan ,Leksand,Leksand
+55172,Norrbarke,Kopparbergs lan ,Norrbarke,Norrbarke
+55174,Avesta,Kopparbergs lan ,Avesta,Avesta
+55175,Orsa,Kopparbergs lan ,Orsa,Orsa
+55182,Transtrand,Kopparbergs lan ,Transtrand,Transtrand
+55183,Ludvika,Kopparbergs lan ,Ludvika,Ludvika
+55184,Grangarde,Kopparbergs lan ,Grangarde,Grangarde
+55189,Mockfjard,Kopparbergs lan ,Mockfjard,Mockfjard
+55214,Hannas,Kopparbergs lan ,Hannas,Hannas
+55216,Monsteras,Kopparbergs lan ,Monsteras,Monsteras
+55224,Jarna,Kopparbergs lan ,Jarna,Jarna
+55226,Lima,Kopparbergs lan ,Lima,Lima
+55228,Ore,Kopparbergs lan ,Ore,Ore
+55230,Rattvik,Kopparbergs lan ,Rattvik,Rattvik
+55231,Alfdalen,Kopparbergs lan ,Alfdalen,Alvdalen
+55236,Safsnas,Kopparbergs lan ,Safsnas,Safsnas
+55239,Husby,Kopparbergs lan ,Husby,Husby
+55250,Soderbarke,Kopparbergs lan ,Soderbarke,Soderbarke
+55255,Svardsjo,Kopparbergs lan ,Svardsjo,Svardsjo
+55260,Malung,Kopparbergs lan ,Malung,Malung
+55262,Gagnef,Kopparbergs lan ,Gagnef,Gagnef
+55284,Silfberg,Kopparbergs lan ,Silfberg,Silvberg
+55304,Folkarna,Kopparbergs lan ,Folkarna,Folkarna
+55321,By,Kopparbergs lan ,By,By
+55322,Sarna,Kopparbergs lan ,Sarna,Sarna
+55363,Aspeboda,Kopparbergs lan ,Aspeboda,Aspeboda
+55366,Mora,Kopparbergs lan ,Mora,Mora
+55368,Garpenberg,Kopparbergs lan ,Garpenberg,Garpenberg
+55370,Vika,Kopparbergs lan ,Vika,Vika
+55371,Torsang,Kopparbergs lan ,Torsang,Torsang
+55378,Grytnas,Kopparbergs lan ,Grytnas,Grytnas
+55415,Bjursas,Kopparbergs lan ,Bjursas,Bjursas
+55424,Sundborn,Kopparbergs lan ,Sundborn,Sundborn
+55427,Lek- sand,Kopparbergs lan ,Lek- sand,Leksand
+55432,Nas,Kopparbergs lan ,Nas,Nas
+55467,Floda,Kopparbergs lan ,Floda,Floda
+55549,Grangarde,Kopparbergs lan ,. Grangarde,Grangarde
+55565,Skedvi,Kopparbergs lan ,Skedvi,Skedevi
+55612,Vansbro,Kopparbergs lan ,Vansbro,Vadsbro
+55670,Soder- barke,Kopparbergs lan ,Soder- barke,Soderbarke
+55678,Enviken,Kopparbergs lan ,Enviken,Enviken
+55709,Boda,Kopparbergs lan ,Boda,Boda
+55739,Appelbo,Kopparbergs lan ,Appelbo,Appelbo
+55765,Norr- barke,Kopparbergs lan ,Norr- barke,Norrbarke
+55790,Aspe- boda,Kopparbergs lan ,Aspe- boda,Aspeboda
+55835,A,Kopparbergs lan ,A,A
+55964,Gran- garde,Kopparbergs lan ,Gran- garde,Grangarde
+56145,Gustaf,Kopparbergs lan ,Gustaf,Gustafs
+56149,Sater,Kopparbergs lan ,Sater,Sater
+56163,Sollero,Kopparbergs lan ,Sollero,Solleron
+56198,Gustafs,Kopparbergs lan ,Gustafs,Gustafs
+56236,Lud- vika,Kopparbergs lan ,Lud- vika,Ludvika
+56248,Al,Kopparbergs lan ,Al,Al
+56298,Glemminge,Kristianstads lan ,Glemminge,Glemminge
+56320,Horup,Kristianstads lan ,Horup,Horup
+56335,Mellby,Kristianstads lan ,Mellby,Mellby
+56367,Broby,Kristianstads lan ,Broby,Broby
+56415,Asum,Kristianstads lan ,Asum,Askum
+56432,Stroo,Kristianstads lan ,Stroo,Stro
+56476,Tjornarp,Kristianstads lan ,Tjornarp,Tjornarp
+56491,Klaby,Kristianstads lan ,Klaby,Kolaby
+56536,Ansa,Kristianstads lan ,Ansa,Ansta
+56601,VBroby,Kristianstads lan ,V. Broby,Broby
+56649,Bonerup,Kristianstads lan ,Bonerup,Bonderup
+56671,Laderup,Kristianstads lan ,Laderup,Loderup
+56778,Loderup,Kristianstads lan ,Loderup,Loderup
+56793,Ingelstorp,Kristianstads lan ,Ingelstorp,Ingelstorp
+56858,Skillinge,Kristianstads lan ,Skillinge,Skallinge
+57186,Notteback,Kristianstads lan ,Notteback,Notteback
+57188,Allmundsryd,Kristianstads lan ,Allmundsryd,Almundsryd
+57226,OBroby,Kristianstads lan ,O. Broby,Broby
+57238,Helleberga,Kronobergs lan ,Helleberga,Halleberga
+57244,Torsas,Kronobergs lan ,Torsas,Torsas
+57262,Sandsjo,Kronobergs lan ,Sandsjo,Sundsjo
+57277,Forsas,Kronobergs lan ,Forsas,Forsa
+57356,Algutsboda,Kronobergs lan ,Algutsboda,Algutsboda
+57455,Langasjo,Kronobergs lan ,Langasjo,Langasjo
+57601,Torsas.,Kronobergs lan ,Torsas.,Torsas
+57702,Tygelsjo,Malmohus lan ,Tygelsjo,Tygelsjo
+57703,Billinge,Malmohus lan ,Billinge,Billinge
+57704,Brunnby,Malmohus lan ,Brunnby,Brunnby
+57705,Raus,Malmohus lan ,Raus,Raus
+57706,Asum,Malmohus lan ,Asum,Askum
+57708,Ingelstad,Malmohus lan ,Ingelstad,Ingelstad
+57710,Vasby,Malmohus lan ,Vasby,Vasby
+57713,Dalby,Malmohus lan ,Dalby,Dalby
+57714,Limhamn,Malmohus lan ,Limhamn,Limhamn
+57716,Harlosa,Malmohus lan ,Harlosa,Harlosa
+57717,Husie,Malmohus lan ,Husie,Husie
+57747,Hogserod,Malmohus lan ,Hogserod,Hogserod
+57749,Fosie,Malmohus lan ,Fosie,Fosie
+57750,Anderslof,Malmohus lan ,Anderslof,Anderslov
+57754,Horby,Malmohus lan ,Horby,Horby
+57755,Sku- rup,Malmohus lan ,Sku- rup,Skurup
+57761,OVemmen- hog,Malmohus lan ,O. Vemmen- hog,Vemmenhog
+57763,Kvistofta,Malmohus lan ,Kvistofta,Kvistofta
+57779,Lofvestad,Malmohus lan ,Lofvestad,Lovestad
+57788,Hor,Malmohus lan ,Hor,Hor
+57789,Farhult,Malmohus lan ,Farhult,Farhult
+57794,Hokoping,Malmohus lan ,Hokoping,Hokopinge
+57795,Flackarp,Malmohus lan ,Flackarp,Flackarp
+57797,Hogestad,Malmohus lan ,Hogestad,Hogestad
+57798,Bara,Malmohus lan ,Bara,Bara
+57804,Hoby,Malmohus lan ,Hoby,Hoby
+57806,Tirup,Malmohus lan ,Tirup,Tirup
+57807,Trollenas,Malmohus lan ,Trollenas,Trollenas
+57808,Upp- akra,Malmohus lan ,Upp- akra,Uppakra
+57810,Kellstorp,Malmohus lan ,Kellstorp,Kallstorp
+57812,Skurup,Malmohus lan ,Skurup,Skurup
+57814,Skifarp,Malmohus lan ,Skifarp,Skivarp
+57827,Alstad,Malmohus lan ,Alstad,Alstad
+57828,Ha- stad,Malmohus lan ,Ha- stad,Hastad
+57838,Sallerup,Malmohus lan ,Sallerup,Sallerup
+57844,Hammar,Malmohus lan ,Hammar,Hammar
+57848,Hem- mesdynge,Malmohus lan ,Hem- mesdynge,Hemmesdynge
+57856,Hemmes- dynge,Malmohus lan ,Hemmes- dynge,Hemmesdynge
+57858,Harrie,Malmohus lan ,Harrie,Harrie
+57861,Hokopinge,Malmohus lan ,Hokopinge,Hokopinge
+57863,Slagarp,Malmohus lan ,Slagarp,Slagarp
+57866,Nobbelof,Malmohus lan ,Nobbelof,Nobbelov
+57879,Sandby,Malmohus lan ,Sandby,Sandby
+57880,SSandby,Malmohus lan ,S. Sandby,Sandby
+57882,Tofta,Malmohus lan ,Tofta,Tofta
+57883,Glastorp,Malmohus lan ,Glastorp,Glostorp
+57888,Kattarp,Malmohus lan ,Kattarp,Kattarp
+57890,Holmby,Malmohus lan ,Holmby,Holmby
+57899,Ostraby,Malmohus lan ,Ostraby,Ostraby
+57900,Brunn- by,Malmohus lan ,Brunn- by,Brunnby
+57904,Eskilstorp,Malmohus lan ,Eskilstorp,Eskilstorp
+57911,Risekatslosa,Malmohus lan ,Risekatslosa,Risekatslosa
+57917,Hyby,Malmohus lan ,Hyby,Hyby
+57922,Veberod,Malmohus lan ,Veberod,Veberod
+57930,Stro,Malmohus lan ,Stro,Stro
+57931,Lackalanga,Malmohus lan ,Lackalanga,Lackalanga
+57937,Bunkeflo,Malmohus lan ,Bunkeflo,Bunkeflo
+57939,Hoganas,Malmohus lan ,Hoganas,Hoganas
+57946,Branstad,Malmohus lan ,Branstad,Brandstad
+57949,Kopinge,Malmohus lan ,Kopinge,Kopinge
+57951,Lomma,Malmohus lan ,Lomma,Lomma
+57953,Skarhult,Malmohus lan ,Skarhult,Skarhult
+57954,Fleninge,Malmohus lan ,Fleninge,Fleninge
+57959,Uppakra,Malmohus lan ,Uppakra,Uppakra
+57962,Morarp,Malmohus lan ,Morarp,Morarp
+57968,Kropp,Malmohus lan ,Kropp,Kropp
+57970,Balkakra,Malmohus lan ,Balkakra,Balkakra
+57977,Ortofta,Malmohus lan ,Ortofta,Ortofta
+57978,Allerum,Malmohus lan ,Allerum,Allerum
+57988,Halmstad,Malmohus lan ,Halmstad,Halmstad
+57992,Kagerod,Malmohus lan ,Kagerod,Kagerod
+57994,Ask,Malmohus lan ,Ask,Ask
+57998,Bjeresjo,Malmohus lan ,Bjeresjo,Bjaresjo
+58000,Brundby,Malmohus lan ,Brundby,Brunnby
+58001,Oved,Malmohus lan ,Oved,Oved
+58004,Vasterstad,Malmohus lan ,Vasterstad,Vasterstad
+58005,Billeberga,Malmohus lan ,Billeberga,Billeberga
+58007,Vrams,Malmohus lan ,Vrams,Vram
+58011,Bille- berga,Malmohus lan ,Bille- berga,Billeberga
+58014,Wollsjo,Malmohus lan ,Wollsjo,Tollsjo
+58015,Tottarp,Malmohus lan ,Tottarp,Tottarp
+58040,Fjarrestad,Malmohus lan ,Fjarrestad,Fjarestad
+58042,Bosjokloster,Malmohus lan ,Bosjokloster,Bosjokloster
+58051,Saby,Malmohus lan ,Saby,Saby
+58059,Frenninge,Malmohus lan ,Frenninge,Franninge
+58062,Munkarp,Malmohus lan ,Munkarp,Munkarp
+58063,Valinge,Malmohus lan ,Valinge,Valinge
+58064,Hede- skoga,Malmohus lan ,Hede- skoga,Hedeskoga
+58068,Karrstorp,Malmohus lan ,Karrstorp,Karlstorp
+58072,Skabersjo,Malmohus lan ,Skabersjo,Skabersjo
+58073,Nefvitshog,Malmohus lan ,Nefvitshog,Nevishog
+58095,Vram,Malmohus lan ,Vram,Vram
+58106,Loddekoping,Malmohus lan ,Loddekoping,Loddekopinge
+58108,Gessie,Malmohus lan ,Gessie,Gessie
+58109,Loddekopinge,Malmohus lan ,Loddekopinge,Loddekopinge
+58115,Trillestad,Malmohus lan ,Trillestad,Frillestad
+58135,Sirekopinge,Malmohus lan ,Sirekopinge,Sirekopinge
+58141,Fulltofta,Malmohus lan ,Fulltofta,Fulltofta
+58153,Torp,Malmohus lan ,Torp,Torp
+58157,Halsingborg,Malmohus lan ,Halsingborg,Halsingborg
+58159,Hesingborg,Malmohus lan ,Hesingborg,Helsingborg
+58163,Jonstorp,Malmohus lan ,Jonstorp,Jonstorp
+58165,Lim- hamn,Malmohus lan ,Lim- hamn,Limhamn
+58190,Odarslof,Malmohus lan ,Odarslof,Odarslov
+58194,Stafvie,Malmohus lan ,Stafvie,Stavie
+58200,Asmundtorp,Malmohus lan ,Asmundtorp,Asmundtorp
+58201,Viken,Malmohus lan ,Viken,Viken
+58207,Rostanga,Malmohus lan ,Rostanga,Rostanga
+58212,Sirekoping,Malmohus lan ,Sirekoping,Sirekopinge
+58218,Vanstad,Malmohus lan ,Vanstad,Vanstad
+58219,Soderhvidinge,Malmohus lan ,Soderhvidinge,Sodervidinge
+58222,Vadensjo,Malmohus lan ,Vadensjo,Vadensjo
+58225,Lund,Malmohus lan ,Lund,Lunda
+58253,Frillestad,Malmohus lan ,Frillestad,Frillestad
+58275,Borlunda,Malmohus lan ,Borlunda,Borlunda
+58278,Gudmundstorp,Malmohus lan ,Gudmundstorp,Gudmuntorp
+58294,Gronby,Malmohus lan ,Gronby,Gronby
+58305,Ekby,Malmohus lan ,Ekby,Ekby
+58309,Kvisttofta,Malmohus lan ,Kvisttofta,Kvistofta
+58312,Godelof,Malmohus lan ,Godelof,Godelov
+58317,Glumslof,Malmohus lan ,Glumslof,Glumslov
+58320,Ottarp,Malmohus lan ,Ottarp,Ottarp
+58326,Bosarp,Malmohus lan ,Bosarp,Bosarp
+58340,Barseback,Malmohus lan ,Barseback,Barseback
+58344,Up akra,Malmohus lan ,Up akra,Uppakra
+58349,Aby,Malmohus lan ,Aby,Aby
+58358,Remmarlof,Malmohus lan ,Remmarlof,Remmarlov
+58359,Fuglie,Malmohus lan ,Fuglie,Fuglie
+58364,Gylle,Malmohus lan ,Gylle,Gylle
+58365,Gard stanga,Malmohus lan ,Gard stanga,Gardstanga
+58373,Gudmuntorp,Malmohus lan ,Gudmuntorp,Gudmuntorp
+58376,Lyngby,Malmohus lan ,Lyngby,Lyngby
+58397,Hastad,Malmohus lan ,Hastad,Hastad
+58399,Bjellerup,Malmohus lan ,Bjellerup,Bjallerup
+58423,Refvinge,Malmohus lan ,Refvinge,Revinge
+58427,Dalkopinge,Malmohus lan ,Dalkopinge,Dalkopinge
+58432,Knas- torp,Malmohus lan ,""" Knas- torp",Knastorp
+58447,Torlosa,Malmohus lan ,Torlosa,Torrlosa
+58458,SVram,Malmohus lan ,S. Vram,Vram
+58469,Hammarlunda,Malmohus lan ,Hammarlunda,Hammarlunda
+58480,Ste- hag,Malmohus lan ,Ste- hag,Stehag
+58512,Stangby,Malmohus lan ,Stangby,Stangby
+58513,Vallkarra,Malmohus lan ,Vallkarra,Vallkarra
+58514,Lacka- langa,Malmohus lan ,Lacka- langa,Lackalanga
+58517,Halsigborg,Malmohus lan ,Halsigborg,Halsingborg
+58521,Hardeberga,Malmohus lan ,Hardeberga,Hardeberga
+58525,Kyrkokopinge,Malmohus lan ,Kyrkokopinge,Kyrkokopinge
+58568,Blentarp,Malmohus lan ,Blentarp,Blentarp
+58570,Annelof,Malmohus lan ,Annelof,Annelov
+58592,Grefvie,Malmohus lan ,Grefvie,Grevie
+58629,Karaby,Malmohus lan ,Karaby,Karaby
+58630,Asmunds- torp,Malmohus lan ,Asmunds- torp,Asmundtorp
+58632,Orsjo,Malmohus lan ,Orsjo,Orsjo
+58652,Brunneby,Malmohus lan ,Brunneby,Brunneby
+58659,Hasslunda,Malmohus lan ,Hasslunda,Hasslunda
+58676,Norrkvidinge,Malmohus lan ,Norrkvidinge,Norrvidinge
+58681,Bonderup,Malmohus lan ,Bonderup,Bonderup
+58701,Ekeby,Malmohus lan ,Ekeby,Ekeby
+58702,Gardstanga,Malmohus lan ,Gardstanga,Gardstanga
+58705,Hoj,Malmohus lan ,Hoj,Hoj
+58721,Bunke- flo,Malmohus lan ,Bunke- flo,Bunkeflo
+58725,Svenstorp,Malmohus lan ,Svenstorp,Svenstorp
+58726,Snare- stad,Malmohus lan ,Snare- stad,Snarestad
+58730,Sjorup,Malmohus lan ,Sjorup,Sjorup
+58747,VKaraby,Malmohus lan ,V. Karaby,Karaby
+58766,Hurfva,Malmohus lan ,Hurfva,Hurva
+58776,Skegrie,Malmohus lan ,Skegrie,Skegrie
+58786,Hemmesdynge,Malmohus lan ,Hemmesdynge,Hemmesdynge
+58797,Glostorp,Malmohus lan ,Glostorp,Glostorp
+58803,Slimminge,Malmohus lan ,Slimminge,Slimminge
+58812,Knastorp,Malmohus lan ,Knastorp,Knastorp
+58817,Baldringe,Malmohus lan ,Baldringe,Baldringe
+58819,Oja,Malmohus lan ,Oja,Oja
+58822,Bodarp,Malmohus lan ,Bodarp,Bodarp
+58851,Barat,Malmohus lan ,Barat,Bara
+58852,Sofvestad,Malmohus lan ,Sofvestad,Sovestad
+58854,Igellosa,Malmohus lan ,Igellosa,Igelosa
+58873,Silfakra,Malmohus lan ,Silfakra,Silvakra
+58893,Torringe,Malmohus lan ,Torringe,Torringe
+58908,Tottorp,Malmohus lan ,Tottorp,Tottarp
+58910,Orja,Malmohus lan ,Orja,Orja
+58913,Herrestad,Malmohus lan ,Herrestad,Herrestad
+58919,Stehag,Malmohus lan ,Stehag,Stehag
+58933,Oxie,Malmohus lan ,Oxie,Oxie
+58959,Bosjoklosters,Malmohus lan ,Bosjoklosters,Bosjokloster
+58960,Hammarlof,Malmohus lan ,Hammarlof,Hammarlov
+58972,Katslosa,Malmohus lan ,Katslosa,Katslosa
+58976,OStro,Malmohus lan ,O. Stro,Stro
+58981,Norrhvidinge,Malmohus lan ,Norrhvidinge,Norrvidinge
+58988,Mellan-Grefvie,Malmohus lan ,Mellan-Grefvie,Mellan-Grevie
+59006,Maglarp,Malmohus lan ,Maglarp,Maglarp
+59010,Virke,Malmohus lan ,Virke,Virke
+59071,Simlinge,Malmohus lan ,Simlinge,Simlinge
+59074,Tullstorp,Malmohus lan ,Tullstorp,Tullstorp
+59089,Rau,Malmohus lan ,Rau,Raus
+59097,Kattorp,Malmohus lan ,Kattorp,Kattarp
+59133,Hoga- nas,Malmohus lan ,Hoga- nas,Hoganas
+59144,Arrie,Malmohus lan ,Arrie,Arrie
+59158,VSallerup,Malmohus lan ,V. Sallerup,Sallerup
+59194,Limhamn.,Malmohus lan ,Limhamn.,Limhamn
+59196,Saxtorp,Malmohus lan ,Saxtorp,Saxtorp
+59228,Barslof,Malmohus lan ,Barslof,Barslov
+59238,Flackharp,Malmohus lan ,Flackharp,Flackarp
+59241,Vemmenhog,Malmohus lan ,Vemmenhog,Vemmenhog
+59325,Forhult,Malmohus lan ,Forhult,Farhult
+59342,Hellestad,Malmohus lan ,Hellestad,Hallestad
+59415,Borgeby,Malmohus lan ,Borgeby,Borgeby
+59436,Bramstad,Malmohus lan ,Bramstad,Brastad
+59438,Rorum,Malmohus lan ,Rorum,Rorum
+59442,Hesslunda,Malmohus lan ,Hesslunda,Hasslunda
+59461,Konga,Malmohus lan ,Konga,Konga
+59462,Felestad,Malmohus lan ,Felestad,Felestad
+59476,Hedeskoga,Malmohus lan ,Hedeskoga,Hedeskoga
+59479,Lyby,Malmohus lan ,Lyby,Lyby
+59492,Moglarp,Malmohus lan ,Moglarp,Maglarp
+59532,Lilla Slagarp,Malmohus lan ,Lilla Slagarp,Lilla Slagarp
+59538,Roddinge,Malmohus lan ,Roddinge,Roddinge
+59551,Hoge- stad,Malmohus lan ,Hoge- stad,Hogestad
+59593,Stora Kopinge,Malmohus lan ,Stora Kopinge,Stora Kopinge
+59663,Skaber- sjo,Malmohus lan ,Skaber- sjo,Skabersjo
+59691,OGrefvie,Malmohus lan ,O. Grefvie,Grevie
+59697,Fladie,Malmohus lan ,Fladie,Fladie
+59721,Sire- kopinge,Malmohus lan ,Sire- kopinge,Sirekopinge
+59725,Solberga,Malmohus lan ,Solberga,Solberga
+59819,Genarp,Malmohus lan ,Genarp,Genarp
+59830,StKopinge,Malmohus lan ,St. Kopinge,Kopinge
+59850,Gellivare,Malmohus lan ,Gellivare,Gallivare
+60442,Forsmark,Stockholms lan,Forsmark,Forsmark
+60447,Oregrund,Stockholms lan,Oregrund,Oregrund
+60450,Knifsta,Stockholms lan,Knifsta,Knista
+60544,Bo,Stockholms lan,Bo,Bo
+60551,Bladaker,Stockholms lan,Bladaker,Bladaker
+60680,Harg,Stockholms lan,Harg,Harg
+60738,Svartsjo,Stockholms lan,Svartsjo,Svardsjo
+60753,Hastholmen,Stockholms lan,Hastholmen,Hastholmen
+60871,Ryd,Stockholms lan,Ryd,Ryd
+60994,Alsike,Stockholms lan,Alsike,Alsike
+61012,Valo,Stockholms lan,Valo,Valo
+61221,Knutby,Stockholms lan,Knutby,Knutby
+61242,Sorunda,Stockholms lan,Sorunda,Sorunda
+61261,Almunge,Stockholms lan,Almunge,Almunge
+61317,Hokhufvud,Stockholms lan,Hokhufvud,Hokhuvud
+61332,Vassunda,Stockholms lan,Vassunda,Vassunda
+61391,Ranas,Stockholms lan,Ranas,Ramnas
+62079,Graso,Stockholms lan,Graso,Graso
+62413,Fortmark,Stockholms lan,Fortmark,Forsmark
+62467,Lagga,Stockholms lan,Lagga,Lagga
+62496,Ostuna,Stockholms lan,Ostuna,Ostuna
+62749,Bladakra,Stockholms lan,Bladakra,Bladaker
+63308,Faringe,Stockholms lan,Faringe,Faringe
+63326,Fors- mark,Stockholms lan,Fors- mark,Forsmark
+63447,Salma,Stockholms lan,Salma,Sala
+63707,Malm,Sodermanlands lan ,Malm,Malma
+63758,Morko,Sodermanlands lan ,Morko,Morko
+63947,Kolback,Sodermanlands lan ,Kolback,Kolback
+63962,Holo,Sodermanlands lan ,Holo,Holo
+64087,Gasinge,Sodermanlands lan ,Gasinge,Nasinge
+64108,Malma,Sodermanlands lan ,Malma,Malma
+64155,Klla,Sodermanlands lan ,Klla,Kalla
+64243,Taxinge,Sodermanlands lan ,Taxinge,Taxinge
+64426,Lofsta,Uppsala lan ,Lofsta,Lofta
+64685,Finnskoga,Uppsala lan ,Finnskoga,Finnskoga
+64686,Forshaga,Uppsala lan ,Forshaga,Forshaga
+64688,Nor,Uppsala lan ,Nor,Nor
+64689,Nyed,Uppsala lan ,Nyed,Nyed
+64690,Fernebo,Uppsala lan ,Fernebo,Farnebo
+64691,Ostervallskog,Uppsala lan ,Ostervallskog,Ostervallskog
+64692,Tocksmark,Uppsala lan ,Tocksmark,Tocksmark
+64693,Eda,Uppsala lan ,Eda,Eda
+64694,Bogen,Uppsala lan ,Bogen,Bogen
+64697,NUllerud,Uppsala lan ,N. Ullerud,Ullerud
+64699,Ramen,Uppsala lan ,Ramen,Rammen
+64701,Ullerud,Uppsala lan ,Ullerud,Ullerud
+64703,Blomskog,Uppsala lan ,Blomskog,Blomskog
+64711,Brunskog,Uppsala lan ,Brunskog,Brunskog
+64712,Svanskog,Uppsala lan ,Svanskog,Svanskog
+64714,Frykerod,Uppsala lan ,Frykerod,Frykerud
+64715,Mengskog,Uppsala lan ,Mengskog,Mangskog
+64717,Stafsnas,Uppsala lan ,Stafsnas,Safsnas
+64735,Grafva,Uppsala lan ,Grafva,Grava
+64736,Bro,Uppsala lan ,Bro,Bro
+64737,Visnum,Uppsala lan ,Visnum,Visnum
+64743,Rada,Uppsala lan ,Rada,Rada
+64748,Glafva,Uppsala lan ,Glafva,Glava
+64749,Kroppa,Uppsala lan ,Kroppa,Kroppa
+64764,Trankil,Uppsala lan ,Trankil,Trankil
+64782,Botilsater,Uppsala lan ,Botilsater,Botilsater
+64783,Gunnerskog,Uppsala lan ,Gunnerskog,Gunnarskog
+64784,Nordmark,Uppsala lan ,Nordmark,Nordmark
+64786,Fryksanda,Uppsala lan ,Fryksanda,Fryksande
+64787,Fryksande,Uppsala lan ,Fryksande,Fryksande
+64790,Ny,Uppsala lan ,Ny,Ny
+64791,Ransater,Uppsala lan ,Ransater,Ransater
+64792,Borgvik,Uppsala lan ,Borgvik,Borgvik
+64794,Silbodal,Uppsala lan ,Silbodal,Silbodal
+64795,Kll,Uppsala lan ,Kll,Kall
+64796,Olme,Uppsala lan ,Olme,Olme
+64804,Langserud,Uppsala lan ,Langserud,Langserud
+64815,Jernskog,Uppsala lan ,Jernskog,Jarnskog
+64826,Lungsund,Uppsala lan ,Lungsund,Lungsund
+64827,Emtervik,Uppsala lan ,Emtervik,Emtervik
+64834,Sunnemo,Uppsala lan ,Sunnemo,Sunnemo
+64839,Sunne,Uppsala lan ,Sunne,Sunne
+64840,Langsered,Uppsala lan ,Langsered,Langserud
+64849,Varnum,Uppsala lan ,Varnum,Varnum
+64856,Stafnas,Uppsala lan ,Stafnas,Safsnas
+64867,Varmskog,Uppsala lan ,Varmskog,Varmskog
+64871,Eksharad,Uppsala lan ,Eksharad,Eksharad
+64876,Grums,Uppsala lan ,Grums,Grums
+64884,Karlanda,Uppsala lan ,Karlanda,Karlanda
+64939,Edsharad,Uppsala lan ,Edsharad,Eksharad
+64948,StFinnskoga,Uppsala lan ,St. Finnskoga,Finnskoga
+64989,Vase,Uppsala lan ,Vase,Vase
+65012,Saffle,Uppsala lan ,Saffle,Saffle
+65027,Ed,Uppsala lan ,Ed,Ed
+65072,Ostmark,Uppsala lan ,Ostmark,Ostmark
+65087,Kola,Uppsala lan ,Kola,Kola
+65088,By,Uppsala lan ,By,By
+65112,Brattfors,Uppsala lan ,Brattfors,Brattfors
+65155,Gunnarskog,Uppsala lan ,Gunnarskog,Gunnarskog
+65176,Frykerud,Uppsala lan ,Frykerud,Frykerud
+65180,Silboaal,Uppsala lan ,Silboaal,Silbodal
+65200,Lysvik,Uppsala lan ,Lysvik,Lysvik
+65201,Nysund,Uppsala lan ,Nysund,Nysund
+65210,Nord- mark,Uppsala lan ,Nord- mark,Nordmark
+65221,Holmdal,Uppsala lan ,Holmdal,Holmedal
+65243,Skillingmark,Uppsala lan ,Skillingmark,Skillingmark
+65247,Grasmark,Uppsala lan ,Grasmark,Grasmark
+65248,Alster,Uppsala lan ,Alster,Alster
+65272,Grasmaark,Uppsala lan ,Grasmaark,Grasmark
+65275,Nyskoga,Uppsala lan ,Nyskoga,Nyskoga
+65301,Alga,Uppsala lan ,Alga,Alga
+65382,Sillerud,Uppsala lan ,Sillerud,Sillerud
+65384,NRada,Uppsala lan ,N. Rada,Rada
+65386,Hammard,Uppsala lan ,Hammard,Hammar
+65404,Hammaro,Uppsala lan ,Hammaro,Hammaro
+65431,Nordmaling,Uppsala lan ,Nordmaling,Nordmaling
+65435,Dergerfors,Vasterbottens lan ,Dergerfors,Degerfors
+65469,Holmedal,Uppsala lan ,Holmedal,Holmedal
+65472,Frankil,Uppsala lan ,Frankil,Trankil
+65532,Degerfors,Vasterbottens lan ,Degerfors,Degerfors
+65854,Arno,Vesternorrlands lan ,Arno,Arno
+65858,Fjallsjo,Vesternorrlands lan ,Fjallsjo,Fjallsjo
+66025,Tasjo,Vesternorrlands lan ,Tasjo,Tasjo
+66256,Bodum,Vesternorrlands lan ,Bodum,Bodum
+66818,Norberg,Vesternorrlands lan ,Norberg,Norberg
+66829,Vala,Vastmanlands lan ,Vala,Vala
+66830,Lofsta,Vastmanlands lan ,Lofsta,Lofta
+66915,Bro,Vastmanlands lan ,Bro,Bro
+66926,Altuna,Vastmanlands lan ,Altuna,Altuna
+66962,Skedvi,Vastmanlands lan ,Skedvi,Skedevi
+67117,Klla,Vastmanlands lan ,Klla,Kalla
+67172,Fernebo,Vastmanlands lan ,Fernebo,Farnebo
+67243,Stensby,Vastmanlands lan ,Stensby,Steneby
+67244,Bollebygd,Vastmanlands lan ,Bollebygd,Bollebygd
+67245,Lundby,Alfsborgs lan ,Lundby,Lundby
+67318,Alfsered,Alfsborgs lan ,Alfsered,Alvsered
+67334,Mellby,Alfsborgs lan ,Mellby,Mellby
+67377,Bergum,Alfsborgs lan ,Bergum,Bergum
+67434,Ed,Alfsborgs lan ,Ed,Ed
+67459,Bjorke,Alfsborgs lan ,Bjorke,Bjorke
+67488,Angered,Alfsborgs lan ,Angered,Angered
+67640,Bjorketorp,Alfsborgs lan ,Bjorketorp,Bjorketorp
+67669,Frolunda,Alfsborgs lan ,Frolunda,Froslunda
+67750,Sarn,Alfsborgs lan ,Sarn,Sarna
+68192,Alfvered,Alfsborgs lan ,Alfvered,Alvsered
+68237,Hork,Orebro lan ,Hork,Hor
+68255,Boo,Orebro lan ,Boo,Boo
+68295,Gotlunda,Orebro lan ,Gotlunda,Gotlunda
+68323,Got- lunda,Orebro lan ,Got- lunda,Gotlunda
+68339,Mellosa,Orebro lan ,Mellosa,Mellosa
+68401,Viken,Orebro lan ,Viken,Viken
+68592,Lillkyrka,Orebro lan ,Lillkyrka,Lillkyrka
+68872,Kll,Orebro lan ,Kll,Kall
+69207,Almby,Ostergotlands lan ,Almby,Almby
+69267,Johannis,Ostergotlands lan ,Johannis,Johannes
+69269,Hageby,Ostergotlands lan ,Hageby,Haggeby
+69297,Stenby,Ostergotlands lan ,Stenby,Steneby
+69322,Revinge,Ostergotlands lan ,Revinge,Revinge
+69326,Borg,Ostergotlands lan ,Borg,Borga
+69373,Ny,Ostergotlands lan ,Ny,Ny
+69468,Berg,Ostergotlands lan ,Berg,Berg
+69513,Ryd,Ostergotlands lan ,Ryd,Ryd
+70116,Osby,Ostergotlands lan ,Osby,Osby
+70292,Kvanum,Ostergotlands lan ,Kvanum,Kvanum
+70293,Lugnas,Ostergotlands lan ,Lugnas,Lugnas
+70340,SLundby,Skaraborgs lan ,S. Lundby,Lundby
+70359,Finnerodja,Skaraborgs lan ,Finnerodja,Finnerodja
+70457,Vanersnas,Skaraborgs lan ,Vanersnas,Vanersnas
+70685,Gerum,Skaraborgs lan ,Gerum,Gerum
+70756,Bjorkang,Skaraborgs lan ,Bjorkang,Bjorka
+24991,Roslagskul- la,Stockholm,Roslagskul- la,Roslags-Kulla
+26788,Li- dingoo,Stockholm,Li- dingoo,Lidingo
+26922,Gustafs- berg,Stockholm,Gustafs- berg,Gustavsberg
+28827,Gu- stafsberg,Stockholm,Gu- stafsberg,Gustavsberg
+31183,"A.,",Falun ,"A.,",A
+34350,A.,Goteborg ,A.,A
+36125,i Partil- led,Goteborg ,(i Partil- led),Partille
+36559,i Par- tilled,Goteborg ,(i Par- tilled),Partille
+38263,i Hal- singborg,Halsingborg ,(i Hal- singborg),Halsingborg
+39162,A.,Karlskrona ,A.,A
+40858,A.,Landskrona ,A.,A
+51531,Bollnas s:n,Gafleborgs lan ,Bollnas s:n,Bollnas
+52104,OFarne- bo,Gafleborgs lan ,O. Farne- bo,Farnebo
+52157,Of- vansjo,Gafleborgs lan ,Of- vansjo,Ovansjo
+52289,Ofvan- aker,Gafleborgs lan ,Ofvan- aker,Ovanaker
+52883,VFro- lunda,Goteborgs och Bohus lan ,V. Fro- lunda,Froslunda
+52995,Skum- meslof,Hallands lan ,Skum- meslof,Skummeslov
+53131,Bred- gard,Jamtlands lan ,Bred- gard,Bredared
+53413,Ham- maren,Jamtlands lan ,Ham- maren,Hammar
+53712,Ytter- an,Jamtlands lan ,Ytter- an,Yttergran
+53800,Bracke- by,Jamtlands lan ,Bracke- by,Bracke
+53904,Granna s:n,Jonkopings lan ,Granna s:n,Granna
+54578,SMockle- by,Kalmar lan ,S. Mockle- by,Mockleby
+54617,Wir- serum,Kalmar lan ,Wir- serum,Virserum
+54660,Kalmar s:n,Kalmar lan ,Kalmar s:n,Kalmar
+54810,Ed.,Kalmar lan ,Ed.,Ed
+54936,Vim- merby s:n,Kalmar lan ,Vim- merby s:n,Vimmerby
+55157,Vimmerby s:n,Kalmar lan ,Vimmerby s:n,Vimmerby
+55332,Hedemora s:n,Kopparbergs lan ,Hedemora s:n,Hedemora
+55604,Alf- dalen,Kopparbergs lan ,Alf- dalen,Alvdalen
+57481,Hofmans- torp,Kronobergs lan ,Hofmans- torp,Hovmantorp
+57503,Hofman- torp,Kronobergs lan ,Hofman- torp,Hovmantorp
+57528,Alf- vesta,Kronobergs lan ,Alf- vesta,Alvesta
+57786,Anders- lof,Malmohus lan ,Anders- lof,Anderslov
+57800,Gu- stafs s:n,Malmohus lan ,Gu- stafs s:n,Gustafs
+57802,H- stad,Malmohus lan ,H- stad,Hastad
+58255,L:a Har- rie,Malmohus lan ,L:a Har- rie,Harrie
+58334,Nefvits- hog,Malmohus lan ,Nefvits- hog,Nevishog
+58573,Halsingborgs s:n,Malmohus lan ,Halsingborgs s:n,Halsingborg
+58579,Helsingborgs s:n,Malmohus lan ,Helsingborgs s:n,Helsingborg
+58596,Gors- lof,Malmohus lan ,Gors- lof,Gorslov
+58683,Kells- torp,Malmohus lan ,Kells- torp,Kallstorp
+58724,Gustafs s:n,Malmohus lan ,Gustafs s:n,Gustafs
+58889,Bjere- sjo,Malmohus lan ,Bjere- sjo,Bjaresjo
+58990,Fren- ninge,Malmohus lan ,Fren- ninge,Franninge
+59239,Uppakra s:n,Malmohus lan ,Uppakra s:n,Uppakra
+59602,Lom- ma,Malmohus lan ,Lom- ma,Lomma
+59803,Blen- torp,Malmohus lan ,Blen- torp,Blentarp
+60382,Arje- plogs,Norrbottens lan ,Arje- plogs,Arjeplog
+60445,Gustaf- berg,Stockholms lan,Gustaf- berg,Gustavsberg
+63443,Gustafs- berg,Stockholms lan,Gustafs- berg,Gustavsberg
+63764,Ofver-Enhorna,Sodermanlands lan ,Ofver-Enhorna,Overenhorna
+63863,L:a Mellosa,Sodermanlands lan ,L:a Mellosa,Mellosa
+63931,Torshalla s:n,Sodermanlands lan ,Torshalla s:n,Torshalla
+63935,Ytter-Selo,Sodermanlands lan ,Ytter-Selo,Ytterselo
+64156,Husby Re- karne,Sodermanlands lan ,Husby Re- karne,Husby-rekarne
+64485,Frojes- lunda,Uppsala lan ,Frojes- lunda,Froslunda
+64664,Alf- karleby,Uppsala lan ,Alf- karleby,Alvkarleby
+65001,Ramen;,Uppsala lan ,Ramen;,Rammen
+65495,Skelleftea s:n,Vasterbottens lan ,Skelleftea s:n,Skelleftea
+65696,Skellefte& s:n,Vasterbottens lan ,Skellefte& s:n,Skelleftea
+65818,Solleftea s:n,Vesternorrlands lan ,Solleftea s:n,Solleftea
+66096,Solefte&,Vesternorrlands lan ,Solefte&,Solleftea
+66996,Satter- bo,Vastmanlands lan ,Satter- bo,Saterbo
+67451,Wassanda- Naglum,Alfsborgs lan ,Wassanda- Naglum,Vassanda-Naglum
+67474,Klnna- rumma,Alfsborgs lan ,Klnna- rumma,Kinnarumma
+67730,Marda- klef,Alfsborgs lan ,Marda- klef,Mardaklev
+68357,Askersunds s:n,Orebro lan ,Askersunds s:n,Askersund
+68386,Asker- sunds s:n.,Orebro lan ,Asker- sunds s:n.,Askersund
+68496,Guldsmeds- hytte,Orebro lan ,Guldsmeds- hytte,Guldsmedshyttan
+68532,Helle- fors,Orebro lan ,Helle- fors,Hallefors
+68579,Rams- bergs,Orebro lan ,Rams- bergs,Ramsberg
+68685,Guld- smedshytte,Orebro lan ,Guld- smedshytte,Guldsmedshyttan
+69430,Vreta Kloster,Ostergotlands lan ,Vreta Kloster,Vreta kloster
+70555,NLund- by,Skaraborgs lan ,N. Lund- by,Lundby
+70973,Gref- back,Skaraborgs lan ,Gref- back,Grevback
+13843,Os,Stockholm,Os,Os
+14248,Stureplan,Stockholm,Stureplan,Stureplan
+24377,Almare-Staket,Stockholm,Almare-Staket,Almare-Staket
+24388,S:talje,Stockholm,S:talje,S:talje
+24390,Norrviken,Stockholm,Norrviken,Norrviken
+24435,Liljeholmen,Stockholm,Liljeholmen,Liljeholmen
+24478,Brannk:a,Stockholm,Brannk:a,Brannk:a
+24487,S:byberg,Stockholm,S:byberg,S:byberg
+24538,Storangen,Stockholm,Storangen,Storangen
+24587,Solhem,Stockholm,Solhem,Solhem
+24636,Dufbo,Stockholm,Dufbo,Dufbo
+24672,Liljehol- men,Stockholm,Liljehol- men,Liljeholmen
+24684,Rotebro,Stockholm,Rotebro,Rotebro
+24743,Oscar Fredriks- borg,Stockholm,Oscar Fredriks- borg,Oscar Fredriks- borg
+24844,Finnboda,Stockholm,Finnboda,Finnboda
+24884,Rindo,Stockholm,Rindo,Rindo
+24911,Drott- ningholm,Stockholm,Drott- ningholm,Drott- ningholm
+24913,Tureberg,Stockholm,Tureberg,Tureberg
+25053,Lofo,Stockholm,Lofo,Lofo
+25090,Roslagskulia,Stockholm,Roslagskulia,Roslagskulia
+25217,Fredriksborg,Stockholm,Fredriksborg,Fredriksborg
+25284,Stor- angen,Stockholm,Stor- angen,Storangen
+25393,Hillersjo,Stockholm,Hillersjo,Hillersjo
+25419,Olof,Stockholm,Olof,Olof
+25426,Barkarby,Stockholm,Barkarby,Barkarby
+25502,Grisslehamn,Stockholm,Grisslehamn,Grisslehamn
+25559,Lilje- holmen,Stockholm,Lilje- holmen,Liljeholmen
+25679,Riddersvik,Stockholm,Riddersvik,Riddersvik
+25693,Furusund,Stockholm,Furusund,Furusund
+25721,Schebo bruk,Stockholm,Schebo bruk,Schebo bruk
+25776,Tynningso,Stockholm,Tynningso,Tynningso
+25780,Gillbo,Stockholm,Gillbo,Gillbo
+25882,Gaddviken,Stockholm,Gaddviken,Gaddviken
+25931,Bromsten,Stockholm,Bromsten,Bromsten
+25966,Ekensbergs varf,Stockholm,Ekensbergs varf,Ekensbergs varf
+26353,Pehr,Stockholm,Pehr,Pehr
+26545,Rosersberg,Stockholm,Rosersberg,Rosersberg
+26658,Drottning holm,Stockholm,Drottning holm,Drottning- holm
+26886,Almarestaket,Stockholm,Almarestaket,Almarstaket
+27515,Broinsten,Stockholm,Broinsten,Broinsten
+27723,Oscar Fred- riksborg,Stockholm,Oscar Fred- riksborg,Oscar Fred- riksborg
+27799,Drottningholm,Stockholm,Drottningholm,Drottningholm
+27848,Biad- akra,Stockholm,Biad- akra,Biad- akra
+28085,Drottning- holm,Stockholm,Drottning- holm,Drottning- holm
+28132,Liljeholmen.,Stockholm,Liljeholmen.,Liljeholmen
+28683,Vermdo,Stockholm,Vermdo,Vermdo
+28785,Ofver-Jarna,Stockholm,Ofver-Jarna,Ofver-Jarna
+29125,Furu- sund,Stockholm,Furu- sund,Furusund
+29729,Osterbodarne,Alingsas ,(Osterbodarne),(Osterbodarne)
+29731,Vikaryd,Alingsas ,(Vikaryd),(Vikaryd)
+29783,Engabo,Alingsas ,(Engabo),(Engabo)
+29804,Stocklycke,Alingsas ,(Stocklycke),(Stocklycke)
+29820,Orebro,Arboga ,Orebro),Orebro)
+29844,Sthlm,Arboga ,Sthlm),Sthlm)
+30025,Sthlm,Borgholm ,Sthlm),Sthlm)
+30366,Orebro,Eksjo ,(Orebro),Orebro)
+30768,Skiftinge,Eskilstuna ,(Skiftinge),(Skiftinge)
+31159,Nedre Dalalfven,Falun ,Nedre Dalalfven,Nedre Dalalfven
+31631,Gafle stads Gasverk,Gafle ,Gafle stads Gasverk,Gafle stads Gasverk
+31750,Sthlm,Gafle ,(Sthlm),Sthlm)
+32223,Goteborg,Goteborg ,Goteborg,Goteborg
+32249,i Malmo,Goteborg ,(i Malmo),i Malmo
+32265,Stockholm,Goteborg ,Stockholm,Stockholm
+32505,i VFrolunda s:n,Goteborg ,(i V. Frolunda s:n),i VFrolunda s:n
+32548,i Hofas As- kim,Goteborg ,(i Hofas As- kim),i Hofas As- kim
+33117,Gunnebo,Goteborg ,(Gunnebo),Gunnebo
+33486,Utbynas,Goteborg ,Utbynas),Utbynas
+33830,Stockholm,Goteborg ,Stockholm),Stockholm
+34103,Hindas,Goteborg ,Hindas),Hindas
+34377,Sthlm lan,Goteborg ,Sthlm lan),Sthlm lan)
+34538,i Askims s:n,Goteborg ,(i Askims s:n),i Askims s:n
+34896,Bjorboholm,Goteborg ,Bjorboholm),Bjorboholm
+36174,i Slaps s:n,Goteborg ,(i Slaps s:n),i Slaps s:n
+36340,i Skallsjo s:n,Goteborg ,(i Skallsjo s:n),i Skallsjo s:n
+36407,Sthlm,Goteborg ,Sthlm),Sthlm)
+37147,Sthlm,Hernosand ,(Sthlm),Sthlm)
+37261,"H:sand,",Hernosand ,"H:sand,","H:sand,"
+37865,Sthlm,Halsingborg ,(Sthlm),Sthlm)
+38072,i Tyrin- ge,Halsingborg ,(i Tyrin- ge),i Tyrin- ge
+38134,Sodra Sverige,Halsingborg ,Sodra Sverige,Sodra Sverige
+39007,Kalmar Sund,Kalmar ,Kalmar Sund,Kalmar Sund
+39167,Sodra,Karlskrona ,Sodra,Sodra
+39275,Warnoparken,Karlskrona ,Warnoparken,Warnoparken
+39439,Stockholm,Karlskrona ,Stockholm,Stockholm
+39700,Lofed,Karlstad ,Lofed,Lofed
+40445,i Karl- stad,Kristinehamn ,(i Karl- stad),i Karl- stad
+40465,Gtbg,Kungsbacka ,Gtbg),Gtbg)
+40826,Gtbg,Lidkoping ,Gtbg),Gtbg)
+41258,L:kopings Gasverk,Linkoping ,L:kopings Gasverk,L:kopings Gasverk
+41948,Eskilstunaboden,Lund ,Eskilstunaboden,Eskilstunaboden
+42442,Sthlm,Malmo ,(Sthlm),Sthlm)
+42498,Nasby- holm,Malmo ,(Nasby- holm),(Nasby- holm)
+42868,Sthlm,Malmo ,Sthlm),Sthlm)
+42902,i Sthlm,Malmo ,(i Sthlm),i Sthlm
+43052,Gtbg,Malmo ,Gtbg),Gtbg)
+43662,Burlof,Malmo ,Burlof),Burlof
+43884,i Gtbg,Malmo ,(i Gtbg),i Gtbg
+43887,Skane,Malmo ,Skane,Skane
+44522,Vasteras,Norrkoping ,Vasteras,Vasteras
+44984,Nkpgs stads Gasverk,Norrkoping ,Nkpgs stads Gasverk,Nkpgs stads Gasverk
+45101,Gtbg,Norrkoping ,(Gtbg),Gtbg)
+45266,i Linkop.,Norrkoping ,(i Linkop.),i Linkop.
+46286,Enkop.,Strangnas ,Enkop.),Enkop.
+46328,Sthlm,Strangnas ,Sthlm),Sthlm)
+46448,Svanbridge,Stromstad ,Svanbridge,Svanbridge
+46498,"S:vall,",Sundsvall ,"S:vall,",S:vall
+46718,Sjomanshemmet i S:vall,Sundsvall ,Sjomanshemmet i S:vall,Sjomanshemmet i S:vall
+46817,Gafle,Sater ,(Gafle),Gafle
+46952,S:hamns Sjomanshus,Sater ,S:hamns Sjomanshus,S:hamns Sjomanshus
+47578,Uddevalla stads Gasverk,Uddevalla ,Uddevalla stads Gasverk,Uddevalla stads Gasverk
+48182,Sthlm,Uppsala ,(Sthlm),Sthlm)
+48460,sate i Vastervik,Vimmerby ,(sate i Vastervik),sate i Vastervik
+48467,sate i Sthlm,Visby ,(sate i Sthlm),sate i Sthlm
+48901,Vanersborgs stads Gasverk,Vanersborg ,Vanersborgs stads Gasverk,Vanersborgs stads Gasverk
+49725,Ystads Gasverk,Ystad ,Ystads Gasverk,Ystads Gasverk
+50088,Gafle,Orebro ,Gafle),Gafle
+50175,Tybble,Orebro ,Tybble),Tybble
+50270,Sthlm,Orebro ,(Sthlm),Sthlm)
+50274,Gefle,Orebro ,Gefle),Gefle
+50491,Orebro stads Gasverk,Orebro ,Orebro stads Gasverk,Orebro stads Gasverk
+51316,Vestkinde,Gotlands lan ,Vestkinde,Vestkinde
+51440,Jarfso,Gafleborgs lan ,Jarfso,Jarfso
+51539,Gefle,Gafleborgs lan ,Gefle,Gefle
+51752,Jarfsoo,Gafleborgs lan ,Jarfsoo,Jarfso
+52186,Woxna,Gafleborgs lan ,Woxna,Woxna
+52275,Garda,Goteborgs och Bohus lan ,Garda,Garda
+52314,Bjornerod,Goteborgs och Bohus lan ,Bjornerod,Bjornerod
+52319,Grebbestad,Goteborgs och Bohus lan ,Grebbestad,Grebbestad
+52360,Fjallbacka,Goteborgs och Bohus lan ,Fjallbacka,Fjallbacka
+52369,Kroken,Goteborgs och Bohus lan ,Kroken,Kroken
+52492,Grebbe- stad,Goteborgs och Bohus lan ,Grebbe- stad,Grebbestad
+52533,Halleviksstrand,Goteborgs och Bohus lan ,Halleviksstrand,Halleviksstrand
+52678,Hummebostrand,Goteborgs och Bohus lan ,Hummebostrand,Hummebostrand
+52739,Lunden,Goteborgs och Bohus lan ,Lunden,Lunden
+52878,Wallda,Hallands lan ,Wallda,Wallda
+52929,Laholms landsfors.,Hallands lan ,Laholms landsfors.,Laholms landsfors.
+52986,Ebsra,Hallands lan ,Ebsra,Ebsra
+53042,Ofraby,Hallands lan ,Ofraby,Ofraby
+53063,Skummerlof,Hallands lan ,Skummerlof,Skummerlof
+53098,Renneslof,Hallands lan ,Renneslof,Renneslof
+53117,Enslof,Hallands lan ,Enslof,Enslof
+53125,Naset,Hallands lan ,Naset,Naset
+53127,Ulbyn,Hallands lan ,Ulbyn,Ubyn
+53137,Vastgard,Jamtlands lan ,Vastgard,Vastgard
+53139,Bye,Jamtlands lan ,Bye,Bye
+53141,Odenslund,Jamtlands lan ,Odenslund,Odenslund
+53146,Ronningsberg,Jamtlands lan ,Ronningsberg,Ronningsberg
+53148,Bynom,Jamtlands lan ,Bynom,Bynom
+53149,Hoxang,Jamtlands lan ,Hoxang,Hoxang
+53151,Stafre,Jamtlands lan ,Stafre,Stafre
+53154,Svedje,Jamtlands lan ,Svedje,Svedje
+53158,Brannbodarna,Jamtlands lan ,Brannbodarna,Brannbodarna
+53160,Ofsjo,Jamtlands lan ,Ofsjo,Ofsjo
+53164,Vij,Jamtlands lan ,Vij,Vij
+53166,Korsta,Jamtlands lan ,Korsta,Korsta
+53178,Ottsjon,Jamtlands lan ,Ottsjon,Ottsjon
+53180,Nyland,Jamtlands lan ,Nyland,Nyland
+53182,Prastbor- det,Jamtlands lan ,Prastbor- det,Prastbordet
+53184,Hoglunda,Jamtlands lan ,Hoglunda,Hoglunda
+53190,Verkon,Jamtlands lan ,Verkon,Verkon
+53195,Klappe,Jamtlands lan ,Klappe,Klappe
+53201,Farjestor- den,Jamtlands lan ,Farjestor- den,Farjestor- den
+53205,Hog- lunda,Jamtlands lan ,Hog- lunda,Hoglunda
+53207,Bohle,Jamtlands lan ,Bohle,Bohle
+53209,Brackesby,Jamtlands lan ,Brackesby,Brackebyn
+53211,Hardgard,Jamtlands lan ,Hardgard,Hardgard
+53215,Svegsmon,Jamtlands lan ,Svegsmon,Svegsmon
+53217,Pal- gard,Jamtlands lan ,Pal- gard,Pal- gard
+53219,Grotingsjo,Jamtlands lan ,Grotingsjo,Grotingsjo
+53229,Haxas,Jamtlands lan ,Haxas,Haxas
+53239,Stromsund,Jamtlands lan ,Stromsund,Stromsund
+53243,Byn,Jamtlands lan ,Byn,Byn
+53246,Krokvag,Jamtlands lan ,Krokvag,Krokvag
+53252,Ede,Jamtlands lan ,Ede,Ede
+53254,Sikas,Jamtlands lan ,Sikas,Sikas
+53256,Ostberg,Jamtlands lan ,Ostberg,Ostberg
+53258,Osterede,Jamtlands lan ,Osterede,Osterede
+53260,Ammer,Jamtlands lan ,Ammer,Ammer
+53262,Katrine- hill,Jamtlands lan ,Katrine- hill,Katrine- hill
+53266,Sore,Jamtlands lan ,Sore,Sore
+53268,Holje,Jamtlands lan ,Holje,Holje
+53270,Skyttmon,Jamtlands lan ,Skyttmon,Skyttemon
+53272,Husa,Jamtlands lan ,Husa,Husa
+53280,Skjor,Jamtlands lan ,Skjor,Skjor
+53282,Kullsta,Jamtlands lan ,Kullsta,Kullsta
+53284,Lungre,Jamtlands lan ,Lungre,Lungre
+53290,Bleka,Jamtlands lan ,Bleka,Bleka
+53292,Gorvik,Jamtlands lan ,Gorvik,Gorvik
+53296,Prastbordet,Jamtlands lan ,Prastbordet,Prastbordet
+53300,Risselas,Jamtlands lan ,Risselas,Risselas
+53302,Barken,Jamtlands lan ,Barken,Barken
+53303,Bensjo,Jamtlands lan ,Bensjo,Bensjo
+53308,Hofdsjo,Jamtlands lan ,Hofdsjo,Hofdsjo
+53310,Ansjo,Jamtlands lan ,Ansjo,Ansjo
+53316,Stroms- nas,Jamtlands lan ,Stroms- nas,Stroms- nas
+53327,Prisgard,Jamtlands lan ,Prisgard,Prisgard
+53329,Bergsbyn,Jamtlands lan ,Bergsbyn,Bergsbyn
+53331,Byvallen,Jamtlands lan ,Byvallen,Byvallen
+53337,Ratansbyn,Jamtlands lan ,Ratansbyn,Ratansbyn
+53341,Vaster- skucku,Jamtlands lan ,Vaster- skucku,Vaster- skucku
+53345,Kjosta,Jamtlands lan ,Kjosta,Kjosta
+53349,Johannisnas,Jamtlands lan ,Johannisnas,Johannisnas
+53351,Tomasgard,Jamtlands lan ,Tomasgard,Tomasgard
+53353,Tomas- gard,Jamtlands lan ,Tomas- gard,Tomasgard
+53359,Slatten,Jamtlands lan ,Slatten,Slatten
+53361,Skarvangen,Jamtlands lan ,Skarvangen,Skarvangen
+53369,Am- mer,Jamtlands lan ,Am- mer,Ammer
+53381,Jonsgard,Jamtlands lan ,Jonsgard,Jonsgard
+53391,Myckelgard,Jamtlands lan ,Myckelgard,Myckelgard
+53393,Osterasen,Jamtlands lan ,Osterasen,Osterasen
+53397,Ohn,Jamtlands lan ,Ohn,Ohn
+53403,Dvarsatt,Jamtlands lan ,Dvarsatt,Dvarsatt
+53405,Onet,Jamtlands lan ,Onet,Onet
+53407,Faxalfven,Jamtlands lan ,Faxalfven,Faxalfven
+53409,Smedsasen,Jamtlands lan ,Smedsasen,Smedsasen
+53411,Westerasen,Jamtlands lan ,Westerasen,Westerasen
+53415,Gevag,Jamtlands lan ,Gevag,Gevag
+53417,Grimnas,Jamtlands lan ,Grimnas,Grimnas
+53437,Strand,Jamtlands lan ,Strand,Strand
+53441,Oppne,Jamtlands lan ,Oppne,Oppne
+53445,Naset,Jamtlands lan ,Naset,Naset
+53449,Faviken,Jamtlands lan ,Faviken,Faviken
+53478,Oppasen,Jamtlands lan ,Oppasen,Oppasen
+53483,Halasen,Jamtlands lan ,Halasen,Halasen
+53485,Klosta,Jamtlands lan ,Klosta,Klosta
+53487,Haxang,Jamtlands lan ,Haxang,Haxang
+53495,Trusta,Jamtlands lan ,Trusta,Trusta
+53498,Morviken,Jamtlands lan ,Morviken,Morviken
+53506,Espnas,Jamtlands lan ,Espnas,Espnas
+53515,Munsaker,Jamtlands lan ,Munsaker,Munsaker
+53517,Samsta,Jamtlands lan ,Samsta,Samsta
+53519,Bynilsvallen,Jamtlands lan ,Bynilsvallen,Bynilsvallen
+53521,Tullus,Jamtlands lan ,Tullus,Tullus
+53523,Kolen,Jamtlands lan ,Kolen,Kolen
+53526,Fjallsta,Jamtlands lan ,Fjallsta,Fjallsta
+53531,Stam- garde,Jamtlands lan ,Stam- garde,Stam- garde
+53533,Tafnas,Jamtlands lan ,Tafnas,Tafnas
+53535,Marsatt,Jamtlands lan ,Marsatt,Marsatt
+53543,Ange,Jamtlands lan ,Ange,Ange
+53545,Annedal,Jamtlands lan ,Annedal,Annedal
+53547,Utanede,Jamtlands lan ,Utanede,Utanede
+53549,Sveg- mon,Jamtlands lan ,Sveg- mon,Sveg- mon
+53553,Ismundlandet,Jamtlands lan ,Ismundlandet,Ismundlandet
+53559,Stromsnas,Jamtlands lan ,Stromsnas,Stromsnas
+53561,Ahn,Jamtlands lan ,Ahn,Ahn
+53574,Krim- nas,Jamtlands lan ,Krim- nas,Krim- nas
+53585,Grim- nas-Backen,Jamtlands lan ,Grim- nas-Backen,Grim- nas-Backen
+53591,Digernas,Jamtlands lan ,Digernas,Digernas
+53593,Tullingsas,Jamtlands lan ,Tullingsas,Tullingsas
+53596,Norr- gard,Jamtlands lan ,Norr- gard,Norr- gard
+53600,Haste,Jamtlands lan ,Haste,Haste
+53602,Undrom,Jamtlands lan ,Undrom,Undrom
+53604,Sundbacken,Jamtlands lan ,Sundbacken,Sundbacken
+53610,Walsjon,Jamtlands lan ,Walsjon,Walsjon
+53613,Lagden,Jamtlands lan ,Lagden,Lagden
+53623,Esp- nas,Jamtlands lan ,Esp- nas,Esp- nas
+53626,Haggesta,Jamtlands lan ,Haggesta,Haggesta
+53641,Vejmon,Jamtlands lan ,Vejmon,Vejmon
+53642,Ofverocke,Jamtlands lan ,Ofverocke,Ofverocke
+53644,Soderhogen,Jamtlands lan ,Soderhogen,Soderhogen
+53648,Sunnera,Jamtlands lan ,Sunnera,Sunnera
+53650,Skyttemon,Jamtlands lan ,Skyttemon,Skyttemon
+53652,Landsom,Jamtlands lan ,Landsom,Landsom
+53654,Skarvan- gen,Jamtlands lan ,Skarvan- gen,Skarvan- gen
+53656,Gallon,Jamtlands lan ,Gallon,Gallon
+53666,Ubyn,Jamtlands lan ,Ubyn,Ubyn
+53670,Glissjoberg,Jamtlands lan ,Glissjoberg,Glissjoberg
+53672,Ora- vattnet,Jamtlands lan ,Ora- vattnet,Ora- vattnet
+53678,Kyrkbyn,Jamtlands lan ,Kyrkbyn,Kyrkbyn
+53680,Backs- gard,Jamtlands lan ,Backs- gard,Backs- gard
+53694,Ostervigge,Jamtlands lan ,Ostervigge,Ostervigge
+53707,Ulo,Jamtlands lan ,Ulo,Ulo
+53723,Brackebyn,Jamtlands lan ,Brackebyn,Brackebyn
+53741,Hvitvatts- krogen,Jamtlands lan ,Hvitvatts- krogen,Hvitvatts- krogen
+53743,Svegs- mon,Jamtlands lan ,Svegs- mon,Svegs- mon
+53755,Skanderasen,Jamtlands lan ,Skanderasen,Skanderasen
+53762,Safsjo,Jamtlands lan ,Safsjo,Safsjo
+53765,Hvetlanda,Jamtlands lan ,Hvetlanda,Hvetlanda
+53786,Kank- backe,Jamtlands lan ,Kank- backe,Kank- backe
+53792,Totten,Jamtlands lan ,Totten,Totten
+53796,Lidsjoberg,Jamtlands lan ,Lidsjoberg,Lidsjoberg
+53809,Aggen,Jamtlands lan ,Aggen,Aggen
+53811,Ostansjo,Jamtlands lan ,Ostansjo,Ostansjo
+53815,SUnnaryd,Jonkopings lan ,S. Unnaryd,Unnaryd
+53821,Tranaskvarn,Jonkopings lan ,Tranaskvarn,Tranaskvarn
+53825,Sandseryd,Jonkopings lan ,Sandseryd,Sandseryd
+53847,Safsjo,Jonkopings lan ,Safsjo,Safsjo
+53852,Adelof,Jonkopings lan ,Adelof,Adelof
+53865,Hvetlanda,Jonkopings lan ,Hvetlanda,Hvetlanda
+53876,Skillingaryd,Jonkopings lan ,Skillingaryd,Skillingaryd
+53900,NSand- sjo,Jonkopings lan ,N. Sand- sjo,N. Sand- sjo
+53952,Unnaryd,Jonkopings lan ,Unnaryd,Unnaryd
+53998,Skillinga- ryd,Jonkopings lan ,Skillinga- ryd,Skillingaryd
+54047,Hvet- landa,Jonkopings lan ,Hvet- landa,Hvetlanda
+54077,Medelby,Jonkopings lan ,Medelby,Medelby
+54094,Kafsjo,Jonkopings lan ,Kafsjo,Kafsjo
+54099,Benseryd,Jonkopings lan ,Benseryd,Benseryd
+54111,Bexheda,Jonkopings lan ,Bexheda,Bexheda
+54343,Waggeryd,Jonkopings lan ,Waggeryd,Waggeryd
+54459,SVi,Kalmar lan ,S. Vi,S.Vi
+54460,Hvena,Kalmar lan ,Hvena,Hvena
+54475,VEd.,Kalmar lan ,V. Ed.,VEd.
+54476,Malilla,Kalmar lan ,Malilla,Malilla
+54495,Vi,Kalmar lan ,Vi,Vi
+54546,Bjornhofda,Kalmar lan ,Bjornhofda,Bjornhofda
+54608,S.Vi,Kalmar lan ,S.Vi,S.Vi
+54727,Figeholm,Kalmar lan ,Figeholm,Figeholm
+54755,Rokulla,Kalmar lan ,Rokulla,Rokulla
+55042,Brantestad,Kalmar lan ,Brantestad,Brantestad
+55176,Koppar- berg,Kopparbergs lan ,Koppar- berg,Koppar- berg
+55191,Morastrand,Kopparbergs lan ,Morastrand,Morastrand
+55219,Borlange,Kopparbergs lan ,Borlange,Borlange
+55246,Kopparberg,Kopparbergs lan ,Kopparberg,Koppar- berg
+55252,Skattungbyn,Kopparbergs lan ,Skattungbyn,Skattungbyn
+55269,Krylbo,Kopparbergs lan ,Krylbo,Krylbo
+55315,StTuna,Kopparbergs lan ,St. Tuna,St. Tuna
+55330,Saters s:n,Kopparbergs lan ,Saters s:n,Saters s:n
+55426,Vanjan,Kopparbergs lan ,Vanjan,Vanjan
+55506,Mora- strand,Kopparbergs lan ,Mora- strand,Morastrand
+55915,Kop- parberg,Kopparbergs lan ,Kop- parberg,Koppar- berg
+56173,Grangesberg-Oxelosund,Kopparbergs lan ,Grangesberg-Oxelosund,Grangesberg-Oxelosund
+56271,Ifo,Kristianstads lan ,Ifo,Ifo
+56283,Hvilan,Kristianstads lan ,Hvilan,Hvilan
+56285,Sosdala,Kristianstads lan ,Sosdala,Sosdala
+56286,Astorp,Kristianstads lan ,Astorp,Astorp
+56301,Gramanstorp,Kristianstads lan ,Gramanstorp,Gramanstorp
+56329,Ansas,Kristianstads lan ,Ansas,Ansas
+56336,Kellna,Kristianstads lan ,Kellna,Kellna
+56349,Farlof,Kristianstads lan ,Farlof,Farlof
+56441,Sannarslof,Kristianstads lan ,Sannarslof,Sonnarslof
+56468,Tamarp,Kristianstads lan ,Tamarp,Tamarp
+56481,Hjalm,Kristianstads lan ,Hjalm,Hjalm
+56494,Sonnarslof,Kristianstads lan ,Sonnarslof,Sonnarslof
+56534,OVemmerlof,Kristianstads lan ,O. Vemmerlof,Vemmerlof
+56547,Olof,Kristianstads lan ,Olof,Olof
+56686,VSonnarslof,Kristianstads lan ,V. Sonnarslof,Sonnarslof
+56719,Hjersa,Kristianstads lan ,Hjersa,Hjersa
+56782,Wemmerlof,Kristianstads lan ,Wemmerlof,Vemmerlof
+56791,Klvik,Kristianstads lan ,Klvik,Klvik
+56808,Gualof,Kristianstads lan ,Gualof,Gualof
+56811,Osterlof,Kristianstads lan ,Osterlof,Osterlof
+56828,Kldby,Kristianstads lan ,Kldby,Kldby
+56846,Vidtskofle,Kristianstads lan ,Vidtskofle,Vidtskofle
+56908,Torekows,Kristianstads lan ,Torekows,Torekows
+56910,Vemmerlof,Kristianstads lan ,Vemmerlof,Vemmerlof
+56940,Farslof,Kristianstads lan ,Farslof,Farslof
+56966,Tossjo,Kristianstads lan ,Tossjo,Tossjo
+57070,up.aTryde,Kristianstads lan ,u. p.a. Tryde,up.aTryde
+57101,Nkarp,Kristianstads lan ,N. karp,Nkarp
+57184,Osterfof,Kristianstads lan ,Osterfof,Osterlof
+57234,OTomarp,Kristianstads lan ,O. Tomarp,Tommarp
+57256,Troheryd,Kronobergs lan ,(Troheryd),(Troheryd)
+57286,Vaxjo s:n,Kronobergs lan ,Vaxjo s:n,Vaxjo s:n
+57288,Stroms- nas bruk,Kronobergs lan ,Stroms- nas bruk,Stromsnas bruk
+57292,Vaxio s:n,Kronobergs lan ,Vaxio s:n,Vaxjo s:n
+57302,Traheryd Stromsnas bruk,Kronobergs lan ,(Traheryd) Stromsnas bruk,(Traheryd) Stromsnas bruk
+57401,Stromsnas bruk,Kronobergs lan ,Stromsnas bruk,Stromsnas bruk
+57446,Hvittaryd,Kronobergs lan ,Hvittaryd,Hvittaryd
+57492,SSandsjo,Kronobergs lan ,S. Sandsjo,S. Sandsjo
+57500,Aringsas Alf- vesta,Kronobergs lan ,(Aringsas) Alf- vesta,(Aringsas) Alf- vesta
+57548,Troheryd Stromsnas bruk,Kronobergs lan ,(Troheryd) Stromsnas bruk,(Traheryd) Stromsnas bruk
+57631,Ljuda,Kronobergs lan ,Ljuda,Ljuda
+57698,Vaxjo,Kronobergs lan ,Vaxjo,Vaxjo
+57719,Fjalie,Malmohus lan ,Fjalie,Fjalie
+57721,Kjeflinge,Malmohus lan ,Kjeflinge,Kjef- linge
+57733,Wrasa,Kronobergs lan ,Wrasa,Wrasa
+57745,VKlagstorp,Malmohus lan ,V. Klagstorp,VKlagstorp
+57748,NSkraflinge,Malmohus lan ,N. Skraflinge,NSkraf- linge
+57752,Hvellinge,Malmohus lan ,Hvellinge,Hyellinge
+57757,SAsum,Malmohus lan ,S. Asum,SAsum
+57770,Bunkafla,Malmohus lan ,Bunkafla,Bunkafla
+57777,NSvalof,Malmohus lan ,N. Svalof,N.Svalof
+57780,Ibb,Malmohus lan ,Ibb,Ibb
+57782,Burlof,Malmohus lan ,Burlof,Burlof
+57792,Vemmerslof,Malmohus lan ,Vemmerslof,Vemmerlof
+57839,i Ese- rup,Malmohus lan ,i Ese- rup,Eserup
+57841,Reng,Malmohus lan ,Reng,Reng
+57842,Eserup,Malmohus lan ,Eserup,Eserup
+57846,Bunkafle,Malmohus lan ,Bunkafle,Bunkafla
+57850,Haslof,Malmohus lan ,Haslof,Haslof
+57851,Reslof,Malmohus lan ,Reslof,Res- lof
+57868,Gerds- lof,Malmohus lan ,Gerds- lof,Gerdslof
+57886,Gislof,Malmohus lan ,Gislof,Gislof
+57909,Gerdslof,Malmohus lan ,Gerdslof,Gerdslof
+57929,Stofvie,Malmohus lan ,Stofvie,Stofvie
+57934,Fjerrestad,Malmohus lan ,Fjerrestad,Fjarrestad
+57956,Klagstorp,Malmohus lan ,Klagstorp,VKlagstorp
+57967,Valluf,Malmohus lan ,Valluf,Valluf
+57990,Svalof,Malmohus lan ,Svalof,N.Svalof
+58009,SVrams,Malmohus lan ,S. Vrams,S. Vrams
+58013,Bjuf,Malmohus lan ,Bjuf,Bjuf
+58034,Sofde,Malmohus lan ,Sofde,Sofde
+58043,Skraflinge,Malmohus lan ,Skraflinge,NSkraf- linge
+58085,Bragarp,Malmohus lan ,Bragarp,Bragarp
+58089,VVemmer- lof,Malmohus lan ,V. Vemmer- lof,VVemmer- lof
+58096,Raslof,Malmohus lan ,Raslof,Raslof
+58111,Karrtorp,Malmohus lan ,Karrtorp,Karrtorp
+58149,Lunds,Malmohus lan ,Lunds,Lunds
+58188,Efverlof,Malmohus lan ,Efverlof,Efverlof
+58203,Kells,Malmohus lan ,Kells,Kells
+58250,Raby,Malmohus lan ,Raby,Raby
+58310,Res- lof,Malmohus lan ,Res- lof,Res- lof
+58343,Herslof,Malmohus lan ,Herslof,Herslof
+58350,Gerd lof,Malmohus lan ,Gerd lof,Gerdslof
+58354,Vemmerlo,Malmohus lan ,Vemmerlo,Vemmerlo
+58394,OKlags- torp,Malmohus lan ,O. Klags- torp,OKlags- torp
+58404,Nabbelof,Malmohus lan ,Nabbelof,Nabbelof
+58416,Bur- lof,Malmohus lan ,Bur- lof,Bur- lof
+58454,Gars- lof,Malmohus lan ,Gars- lof,Gars- lof
+58558,NSkraf- linge,Malmohus lan ,N. Skraf- linge,NSkraf- linge
+58586,Hammarslof,Malmohus lan ,Hammarslof,Hammarslof
+58620,Tommarp,Malmohus lan ,Tommarp,Tommarp
+58723,N.Svalof,Malmohus lan ,N.Svalof,N.Svalof
+58741,Kjef- linge,Malmohus lan ,Kjef- linge,Kjef- linge
+58780,Bedinge,Malmohus lan ,Bedinge,Bedinge
+58784,Vemmerlof,Malmohus lan ,Vemmerlof,Vemmerlof
+58806,Anneslof,Malmohus lan ,Anneslof,Anneslof
+58830,Hbg,Malmohus lan ,Hbg,Hbg
+58832,Hyellinge,Malmohus lan ,Hyellinge,Hyellinge
+58915,Asums,Malmohus lan ,Asums,Asums
+58923,Espo,Malmohus lan ,Espo,Espo
+59012,Eksholm,Malmohus lan ,Eksholm,Eksholm
+59025,fran Stramsnas i Barse- back,Malmohus lan ,fran Stramsnas i Barse- back,fran Stramsnas i Barse- back
+59067,Lilla Uppakra Upp- akra,Malmohus lan ,Lilla Uppakra Upp- akra,Lilla Uppakra Upp- akra
+59150,Asltad,Malmohus lan ,Asltad,Asltad
+59244,Lunds s:n,Malmohus lan ,Lunds s:n,Lunds s:n
+59351,Womb,Malmohus lan ,Womb,Womb
+59360,Hogestads sateri i Hoge- stad,Malmohus lan ,Hogestads sateri i Hoge- stad,Hogestads sateri i Hoge- stad
+59390,Commercial Vasby,Malmohus lan ,Commercial Vasby,Commercial Vasby
+59518,Brohus i Lomma,Malmohus lan ,Brohus i Lomma,Brohus i Lomma
+59549,Hafgard,Malmohus lan ,Hafgard,Hafgard
+59581,Brag- arp,Malmohus lan ,Brag- arp,Bragarp
+59585,Jordberga,Malmohus lan ,Jordberga,Jordberga
+59723,Hoganas bruksfors.,Malmohus lan ,Hoganas bruksfors.,Hoganas bruksfors.
+59851,Nedertornea,Norrbottens lan ,Nedertornea,Nedertornea
+59852,Pitea s:n,Norrbottens lan ,Pitea s:n,Pitea s:n
+59897,Klruna,Norrbottens lan ,Klruna,Klruna
+59901,Pite& s:n,Norrbottens lan ,Pite& s:n,Pite& s:n
+59918,Boden,Norrbottens lan ,Boden,Boden
+59930,Kalix,Norrbottens lan ,Kalix,Kalix
+59965,Gellivara,Norrbottens lan ,Gellivara,Gellivara
+59972,Bergnaset,Norrbottens lan ,Bergnaset,Bergnaset
+60034,Alfsby,Norrbottens lan ,Alfsby,Alfsby
+60053,Ojeby,Norrbottens lan ,Ojeby,Ojeby
+60150,Nedertorne&,Norrbottens lan ,Nedertorne&,Nedertornea
+60223,Munksund,Norrbottens lan ,Munksund,Munksund
+60275,Ranea s:n,Norrbottens lan ,Ranea s:n,Ranea s:n
+60412,Almare-Staket,Stockholms lan,Almare-Staket,Almare-Staket
+60422,Norrviken,Stockholms lan,Norrviken,Norrviken
+60467,Liljeholmen,Stockholms lan,Liljeholmen,Liljeholmen
+60504,S:byberg,Stockholms lan,S:byberg,S:byberg
+60547,Storangen,Stockholms lan,Storangen,Storangen
+60588,Solhem,Stockholms lan,Solhem,Solhem
+60602,Dufbo,Stockholms lan,Dufbo,Dufbo
+60644,Rotebro,Stockholms lan,Rotebro,Rotebro
+60750,Finnboda,Stockholms lan,Finnboda,Finnboda
+60778,Rindo,Stockholms lan,Rindo,Rindo
+60794,Drottning- holm,Stockholms lan,Drottning- holm,Drottning- holm
+60796,Tureberg,Stockholms lan,Tureberg,Tureberg
+60851,Roslagskullen,Stockholms lan,Roslagskullen,Roslagskullen
+60891,Fredriksborg,Stockholms lan,Fredriksborg,Fredriksborg
+60901,Lofo,Stockholms lan,Lofo,Lofo
+61074,Lilje- holmen,Stockholms lan,Lilje- holmen,Liljeholmen
+61157,Olof,Stockholms lan,Olof,Olof
+61162,Barkarby,Stockholms lan,Barkarby,Barkarby
+61200,Grisslehamn,Stockholms lan,Grisslehamn,Grisslehamn
+61302,Riddersvik,Stockholms lan,Riddersvik,Riddersvik
+61336,Schebo bruk,Stockholms lan,Schebo bruk,Schebo bruk
+61374,Tynningo,Stockholms lan,Tynningo,Tynningo
+61383,Gillbo,Stockholms lan,Gillbo,Gillbo
+61460,Gaddviken,Stockholms lan,Gaddviken,Gaddviken
+61498,Bromsten,Stockholms lan,Bromsten,Bromsten
+61519,Ekensbergs varf,Stockholms lan,Ekensbergs varf,Ekensbergs varf
+61551,Finaboda,Stockholms lan,Finaboda,Finnboda
+61774,Pehr,Stockholms lan,Pehr,Pehr
+61815,Oscar Fredriks borg,Stockholms lan,Oscar Fredriks borg,Oscar Fredriks- borg
+61901,Rosersberg,Stockholms lan,Rosersberg,Rosersberg
+61911,Solhem.,Stockholms lan,Solhem.,Solhem
+61975,Drottningholm,Stockholms lan,Drottningholm,Drottningholm
+62031,Stockholm,Stockholms lan,Stockholm,Stockholm
+62107,Almarestaket,Stockholms lan,Almarestaket,Almarstaket
+62186,Storanggen,Stockholms lan,Storanggen,Storangen
+62631,Tynningso,Stockholms lan,Tynningso,Tynningso
+62738,Stockholm-Varmdo,Stockholms lan,Stockholm-Varmdo,Stockholm-Varmdo
+62858,Oscar Fredriks- borg,Stockholms lan,Oscar Fredriks- borg,Oscar Fredriks- borg
+62980,Al- marestaket,Stockholms lan,Al- marestaket,Almarstaket
+63415,Ofver-Jarna,Stockholms lan,Ofver-Jarna,Ofver-Jarna
+63594,Almarstaket,Stockholms lan,Almarstaket,Almarstaket
+63662,Furusund,Stockholms lan,Furusund,Furusund
+63668,Frustuna,Sodermanlands lan ,Frustuna,Frustuna
+63670,VVing- aker,Sodermanlands lan ,V. Ving- aker,Vingaker
+63675,OVingaker,Sodermanlands lan ,O. Vingaker,Vingaker
+63686,Vingaker,Sodermanlands lan ,Vingaker,Vingaker
+63688,Ofver-Selo,Sodermanlands lan ,Ofver-Selo,Ofver-Selo
+63689,Malmkoping,Sodermanlands lan ,Malmkoping,Malmkoping
+63692,Gasinga,Sodermanlands lan ,Gasinga,Gasinga
+63693,Bondestad,Sodermanlands lan ,Bondestad,Bondestad
+63695,Wallby,Sodermanlands lan ,Wallby,Wallby
+63747,Trosa s:n,Sodermanlands lan ,Trosa s:n,Trosa s:n
+63794,Rekarne,Sodermanlands lan ,Rekarne,Rekarne
+64022,Remtuna,Sodermanlands lan ,Remtuna,Remtuna
+64069,Vinoaker,Sodermanlands lan ,Vinoaker,Vingaker
+64103,Oppunda,Sodermanlands lan ,Oppunda,Oppunda
+64151,Ytter-Enhorna,Sodermanlands lan ,Ytter-Enhorna,Ytter-Enhorna
+64241,Strangnas s:n,Sodermanlands lan ,Strangnas s:n,Strangnas s:n
+64244,StMalm,Sodermanlands lan ,St. Malm,StMalm
+64294,Ludge,Sodermanlands lan ,Ludge,Ludge
+64307,Satterslo,Sodermanlands lan ,Satterslo,Satterslo
+64414,Skepthammar,Uppsala lan ,Skepthammar,Skepthammar
+64419,Bondkyrko,Uppsala lan ,Bondkyrko,Bondkyrko
+64427,Norra Sverige,Uppsala lan ,Norra Sverige,Norra Sverige
+64459,Geer,Uppsala lan ,Geer,Geer
+64467,Skept- hammar,Uppsala lan ,Skept- hammar,Skepthammar
+64472,O.Lofsta,Uppsala lan ,O.Lofsta,O.Lofsta
+64490,Danmarks s:n,Uppsala lan ,Danmarks s:n,Danmarks s:n
+64492,Vessland,Uppsala lan ,Vessland,Vessland
+64495,Skeptham- mar,Uppsala lan ,Skeptham- mar,Skepthammar
+64589,Bondkyko,Uppsala lan ,Bondkyko,Bondkyrko
+64597,Alfkarelby,Uppsala lan ,Alfkarelby,Alfkarelby
+64700,Seffle,Uppsala lan ,Seffle,Seffle
+64718,Elga,Uppsala lan ,Elga,Elga
+64741,Arvika,Uppsala lan ,Arvika,Arvika
+64754,StKll,Uppsala lan ,St. Kll,StKll
+64765,Ry,Uppsala lan ,Ry,Ry
+64859,NNy,Uppsala lan ,N. Ny,NNy
+64886,Hirtsand,Uppsala lan ,Hirtsand,Hirtsand
+64916,Karlstads s:n,Uppsala lan ,Karlstads s:n,Karlstads s:n
+64920,Klle,Uppsala lan ,Klle,Klle
+65043,Hvitsand,Uppsala lan ,Hvitsand,Hvitsand
+65252,Fogelvik,Uppsala lan ,Fogelvik,Fogelvik
+65322,Selfle,Uppsala lan ,Selfle,Selfle
+65357,Warnum,Uppsala lan ,Warnum,Warnum
+65433,Umea,Vasterbottens lan ,Umea,Umea
+65526,Wannas,Vasterbottens lan ,Wannas,Wannas
+65554,Umea s:n,Vasterbottens lan ,Umea s:n,Umea s:n
+65815,Nora s:n,Vesternorrlands lan ,Nora s:n,Nora s:n
+65826,Hassja,Vesternorrlands lan ,Hassja,Hassja
+65827,Nyland,Vesternorrlands lan ,Nyland,Nyland
+65948,Nordings,Vesternorrlands lan ,Nordings,Nordings
+66081,taxi Gud- mundra,Vesternorrlands lan ,tax. i Gud- mundra,taxi Gud- mundra
+66112,Timro,Vesternorrlands lan ,Timro,Timro
+66430,Kramfors;,Vesternorrlands lan ,Kramfors;,Kramfors;
+66586,Indals Liden,Vesternorrlands lan ,Indals Liden,Indals Liden
+66822,Kungsor,Vastmanlands lan ,Kungsor,Kungsor
+66833,Svedvi,Vastmanlands lan ,Svedvi,Svedvi
+66850,Badelunda,Vastmanlands lan ,Badelunda,Badelunda
+66892,Arboga,Vastmanlands lan ,Arboga,Arboga
+66917,Ilian,Vastmanlands lan ,Ilian,Ilian
+67015,Simterno,Vastmanlands lan ,Simterno,Simterno
+67016,Erraker,Vastmanlands lan ,Erraker,Erraker
+67144,Engsjo,Vastmanlands lan ,Engsjo,Engsjo
+67249,Mellerud,Alfsborgs lan ,Mellerud,Mellerud
+67290,SAsarp,Alfsborgs lan ,S. Asarp,Asarp
+67295,Klnna,Alfsborgs lan ,Klnna,Klnna
+67323,Alingsas landsf.,Alfsborgs lan ,Alingsas landsf.,Alingsas landsf.
+67340,Edet,Alfsborgs lan ,Edet,Edet
+67374,Tunhem,Alfsborgs lan ,Tunhem,Tunhem
+67393,Brannhult,Alfsborgs lan ,Brannhult,Brannhult
+67396,Kalf,Alfsborgs lan ,Kalf,Kalf
+67430,Harred,Alfsborgs lan ,Harred,Harred
+67441,Lilla Edet,Alfsborgs lan ,Lilla Edet,Lilla Edet
+67483,Asarp,Alfsborgs lan ,Asarp,Asarp
+67486,Ryr,Alfsborgs lan ,Ryr,Ryr
+67548,Mardakerf,Alfsborgs lan ,Mardakerf,Mardakerf
+67600,Alingas landsf,Alfsborgs lan ,Alingas landsf,Alingsas landsf.
+67722,Warvik,Alfsborgs lan ,Warvik,Warvik
+67795,Surteby,Alfsborgs lan ,Surteby,Surteby
+67809,Hvarnum,Alfsborgs lan ,Hvarnum,Hvarnum
+68029,Tunhem.,Alfsborgs lan ,Tunhem.,Tunhem
+68139,Aminskog,Alfsborgs lan ,Aminskog,Aminskog
+68157,VTunhem,Alfsborgs lan ,V. Tunhem,Tunhem
+68162,Fjugesta,Alfsborgs lan ,Fjugesta,Fjugesta
+68214,Kopparberg,Orebro lan ,Kopparberg,Koppar- berg
+68244,Koppar- berg,Orebro lan ,Koppar- berg,Koppar- berg
+68248,Hellerfors,Orebro lan ,Hellerfors,Hellerfors
+68250,Bjurkarn,Orebro lan ,Bjurkarn,Bjurkarn
+68274,Bjorkhyttan Linde s:n,Orebro lan ,Bjorkhyttan Linde s:n,Bjorkhyttan Linde s:n
+68307,Nora s:n,Orebro lan ,Nora s:n,Nora s:n
+68309,Lindes s:n,Orebro lan ,Lindes s:n,Linde s:n
+68311,Qvissbro,Orebro lan ,Qvissbro,Qvissbro
+68313,Grythytte,Orebro lan ,Grythytte,Grythytte
+68498,Linde s:n,Orebro lan ,Linde s:n,Linde s:n
+68582,Mellan-Karlskoga,Orebro lan ,Mellan-Karlskoga,Mellan-Karlskoga
+68585,Gryt- hytte,Orebro lan ,Gryt- hytte,Grythytte
+68791,Sabylund,Orebro lan ,Sabylund,Sabylund
+68852,Klsta,Orebro lan ,Klsta,Klosta
+68857,Elfvestorp,Orebro lan ,Elfvestorp,Elfvestorp
+68965,Grythyt- te,Orebro lan ,Grythyt- te,Grythytte
+69046,Bjurkarns,Orebro lan ,Bjurkarns,Bjurkarn
+69094,Kop- parberg,Orebro lan ,Kop- parberg,Koppar- berg
+69153,Olsboda,Orebro lan ,Olsboda,Olsboda
+69160,Atvidaberg,Ostergotlands lan ,Atvidaberg,Atvidaberg
+69164,Tollstad,Ostergotlands lan ,Tollstad,Tollstad
+69171,VTollstad,Ostergotlands lan ,V. Tollstad,Tollstad
+69210,Kanikegard,Ostergotlands lan ,Kanikegard,Kanikegard
+69216,Eneby,Ostergotlands lan ,Eneby,Eneby
+69238,Klsa,Ostergotlands lan ,Klsa,Klsa
+69291,Roringe,Ostergotlands lan ,Roringe,Roringe
+69354,Veit,Ostergotlands lan ,Veit,Veit
+69471,Tangarp,Ostergotlands lan ,Tangarp,Tangarp
+69501,Wanga,Ostergotlands lan ,Wanga,Wanga
+69619,Per,Ostergotlands lan ,Per,Per
+69678,S:t-Johannis,Ostergotlands lan ,S:t-Johannis,S:t-Johannis
+69709,Kloster,Ostergotlands lan ,Kloster,Kloster
+69732,Klfvelstad,Ostergotlands lan ,Klfvelstad,Klfvelstad
+69849,Arkeby,Ostergotlands lan ,Arkeby,Arkeby
+69859,Pers,Ostergotlands lan ,Pers,Pers
+69920,VNy,Ostergotlands lan ,V. Ny,VNy
+69934,Annx,Ostergotlands lan ,Annx,Annx
+69946,Atved,Ostergotlands lan ,Atved,Atved
+69987,Ato,Ostergotlands lan ,Ato,Ato
+70091,Vi,Ostergotlands lan ,Vi,Vi
+70103,Hof,Ostergotlands lan ,Hof,Hof
+70190,Eeneby,Ostergotlands lan ,Eeneby,Eneby
+70231,Osbo,Ostergotlands lan ,Osbo,Osbo
+70329,Atvidabergo,Ostergotlands lan ,Atvidabergo,Atvidaberg
+70334,VEneby,Ostergotlands lan ,V. Eneby,Eneby
+70351,Ving,Skaraborgs lan ,Ving,NVing
+70404,Versas,Skaraborgs lan ,Versas,Versas
+70422,Grastorp,Skaraborgs lan ,Grastorp,Grastorp
+70442,Skarf,Skaraborgs lan ,Skarf,Skarf
+70468,Larf,Skaraborgs lan ,Larf,Larf
+70484,Skofde landssocken,Skaraborgs lan ,Skofde landssocken,Skofde landssocken
+70488,Asaka,Skaraborgs lan ,Asaka,Asaka
+70509,Bjerka,Skaraborgs lan ,Bjerka,Bjerka
+70518,Skara lands- socken,Skaraborgs lan ,Skara lands- socken,Skara lands- socken
+70523,Hvarf,Skaraborgs lan ,Hvarf,Hvarf
+70534,Nkyrktorp,Skaraborgs lan ,N. kyrktorp,N. kyrktorp
+70553,Kyrkefalla,Skaraborgs lan ,Kyrkefalla,Kyrkefalla
+70566,Kyrke- falla,Skaraborgs lan ,Kyrke- falla,Kyrkefalla
+70568,Nfagelas,Skaraborgs lan ,N. fagelas,N. fagelas
+70713,NVing,Skaraborgs lan ,N. Ving,NVing
+70845,Kallandso,Skaraborgs lan ,Kallandso,Kallandso
+70869,Kyrkej- falla,Skaraborgs lan ,Kyrkej- falla,Kyrkefalla
+70910,Skara landss-n,Skaraborgs lan ,Skara landss-n,Skara landss-n
+70934,Skarke,Skaraborgs lan ,Skarke,Skarke
+70943,Skofde landss:n,Skaraborgs lan ,Skofde landss:n,Skofde landss:n
+70969,Skara landss:n,Skaraborgs lan ,Skara landss:n,Skara landss-n
+22,o,Stockholm,o,o
+699,Ad.,Stockholm,Ad.,Ad.
+2916,V.,Stockholm,V.,V.
+4852,Q.,Stockholm,Q.,Q.
+4941,IJ.,Stockholm,IJ.,IJ.
+5801,K.,Stockholm,K.,K.
+7818,j.,Stockholm,j.,j.
+12369,D.,Stockholm,D.,D.
+17038,F.,Stockholm,F.,F.
+21268,Khh,Stockholm,Khh,Khh
+23212,U.,Stockholm,U.,U.
+35790,T.,Goteborg ,T.,T.
+36775,K.,Halmstad ,K.,K.
+47543,F.,Uddevalla ,F.,F.
+56423,Wa,Kristianstads lan ,Wa,Wa
+56737,Adolf,Kristianstads lan ,Adolf,Adolf
+57195,Lenhofer,Kronobergs lan ,Lenhofer,Lenhofer
+57523,Dref,Kronobergs lan ,Dref,Dref
+57697,Ohr,Kronobergs lan ,Ohr,Ohr
+66326,Nylund,Vesternorrlands lan ,Nylund,Nylund
+66445,Kronofors,Vesternorrlands lan ,Kronofors,Kronofors
+70674,Ohm,Skaraborgs lan ,Ohm,Ohm
