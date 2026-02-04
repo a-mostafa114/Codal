@@ -42,13 +42,11 @@ def main():
     surname_list = data_loader.build_surname_list(main_dataframe)
 
     # ================================================================
-    # STEP 2 – Last-name matching (A1 → A5)
+    # STEP 2 – Last-name matching (A1 → A5)  [parallelised]
     # ================================================================
     print("[Step 2/14] Running last-name matching (A1-A5) ...")
-    surname_list = surname_list.apply(
-        lambda row: last_name_matching.alt_algorithm(
-            row, df_death_reg_unacc, dirty_last_names_list),
-        axis=1,
+    surname_list = last_name_matching.parallel_alt_algorithm(
+        surname_list, df_death_reg_unacc, dirty_last_names_list,
     )
 
     surname_list["unique_key"] = (
