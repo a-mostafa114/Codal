@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-main.py – Master orchestration script for the DPSK OCR data pipeline.
+main.py – Master orchestration script for the OCR data pipeline.
 
 Run with:
     python main.py
@@ -14,20 +14,20 @@ import pandas as pd
 from rapidfuzz import fuzz
 
 # ── Import sub-modules ──────────────────────────────────────────────────
-from dpsk_modules.config import (
+from ocr_modules.config import (
     FIRM_PATTERN, INITIALS_PATTERN, PARISH_DICT_KNOWN, CITIES_PAR,
 )
-from dpsk_modules.utils import remove_accents, fuzzy_match_rapidfuzz
-from dpsk_modules import data_loader
-from dpsk_modules import last_name_matching
-from dpsk_modules import line_processing
-from dpsk_modules import initials_names
-from dpsk_modules import occupation
-from dpsk_modules import income
-from dpsk_modules import parish
-from dpsk_modules import location
-from dpsk_modules import firm_estate
-from dpsk_modules import classification
+from ocr_modules.utils import remove_accents, fuzzy_match_rapidfuzz
+from ocr_modules import data_loader
+from ocr_modules import last_name_matching
+from ocr_modules import line_processing
+from ocr_modules import initials_names
+from ocr_modules import occupation
+from ocr_modules import income
+from ocr_modules import parish
+from ocr_modules import location
+from ocr_modules import firm_estate
+from ocr_modules import classification
 
 
 def main():
@@ -61,8 +61,8 @@ def main():
     surname_list = surname_list[surname_list["line"] != "-"]
 
     # Checkpoint
-    surname_list.to_csv("alt_alg_dpsk_whole.csv", index=False)
-    surname_list = pd.read_csv("alt_alg_dpsk_whole.csv")
+    surname_list.to_csv("alt_alg_checkpoint.csv", index=False)
+    surname_list = pd.read_csv("alt_alg_checkpoint.csv")
 
     # ================================================================
     # STEP 3 – V. / dash last-name handling + line cleaning
@@ -416,7 +416,7 @@ def main():
     # STEP 12 – Double-count resolution
     # ================================================================
     print("[Step 12/14] Resolving double-counts ...")
-    from dpsk_modules.parish import cleaned_parish as _cleaned_parish
+    from ocr_modules.parish import cleaned_parish as _cleaned_parish
 
     double_count_in = surname_list[
         (surname_list["parish"] == surname_list["initials"])
@@ -565,8 +565,8 @@ def main():
         "occ_reg", "occ_reg_2", "municipality", "parish", "matched_parish",
         "unique_key", "income", "income_1", "income_2",
     ]]
-    final_set.to_csv("final_set_1912_dpsk_whole.csv", index=False)
-    print("Done! Output written to: final_set_1912_dpsk_whole.csv")
+    final_set.to_csv("final_output.csv", index=False)
+    print("Done! Output written to: final_output.csv")
 
 
 if __name__ == "__main__":
