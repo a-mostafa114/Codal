@@ -56,7 +56,7 @@ def _ind_FT(df, df_death_reg_unacc, surname_list):
     ]
 
     def get_ind_with_FT(row):
-        last_name = row["last_name"]
+        last_name = str(row["last_name"])
         line = row["line"]
         line_complete = row["line_complete"]
 

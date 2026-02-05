@@ -344,7 +344,7 @@ def adj_sec_lowercase_LN(df):
         line = df.at[idx, "line"]
         prv_line = None
         nxt_line = None
-        last_name = df.at[idx, "last_name"]
+        last_name = str(df.at[idx, "last_name"])
         if pos - 1 >= 0:
             prv = idx_list[pos - 1]
             prv_line = df.at[prv, "line"]
