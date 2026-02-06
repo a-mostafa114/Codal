@@ -1,0 +1,14 @@
+# Data files not stored in git
+Burial_names.dta
+
+# Pipeline checkpoints / outputs
+alt_alg_checkpoint.csv
+a_4.csv
+aaa_5.csv
+aaa_6_final.csv
+final_output.csv
+final_output.dta
+
+# Python cache
+__pycache__/
+*.pyc

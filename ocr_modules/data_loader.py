@@ -12,6 +12,7 @@ build_surname_list(main_df)   – Construct the initial ``surname_list`` frame.
 load_occupation_list(path)    – Occupation reference CSV.
 """
 
+import os
 import pandas as pd
 import pyreadstat
 
@@ -37,6 +38,11 @@ def load_death_register(path="Updated_DR.csv"):
 
 # ── First names ─────────────────────────────────────────────────────────
 def load_first_names(path="Burial_names.dta"):
+    if not os.path.exists(path):
+        raise FileNotFoundError(
+            f"Missing required file: {path}. "
+            "Place Burial_names.dta in the repo root (or pass a custom path)."
+        )
     first_names, _meta = pyreadstat.read_dta(path)
     first_names = first_names["firstname"].drop_duplicates()
     replacements = {

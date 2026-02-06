@@ -51,6 +51,9 @@ Place these files in the **same directory** as `main.py`:
 | `final_parish_csv_quality_check.csv` | Parish quality-check reference |
 | `df_extra_parish_iterative_check.csv` | Iteratively improved parish list |
 
+**Note:** `Burial_names.dta` is not stored in git (file is too large for GitHub).  
+Place it in the repository root before running the pipeline.
+
 ---
 
 ## How to Run
