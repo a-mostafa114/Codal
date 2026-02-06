@@ -62,6 +62,7 @@ def get_the_residual_line(row):
         for i, ch in enumerate(residual_line):
             if not ch.isalpha():
                 residual_line = residual_line[i:]
+            else:
                 break
         residual_line = residual_line.strip()
     row["residual_line"] = residual_line
@@ -77,6 +78,7 @@ def update_residual_after_initials(row):
         for i, ch in enumerate(residual_line):
             if not ch.isalpha():
                 residual_line = residual_line[i:]
+            else:
                 break
         residual_line = residual_line.strip()
     row["residual_line"] = residual_line
@@ -96,6 +98,7 @@ def update_residual_after_second_last_name(row):
         for i, ch in enumerate(residual_line):
             if not ch.isalpha():
                 residual_line = residual_line[i:]
+            else:
                 break
         residual_line = residual_line.strip()
     row["residual_line"] = residual_line
@@ -121,6 +124,7 @@ def update_residual_after_occupation(row):
         for i, ch in enumerate(residual_line):
             if not ch.isalpha():
                 residual_line = residual_line[i:]
+            else:
                 break
         residual_line = residual_line.strip()
 

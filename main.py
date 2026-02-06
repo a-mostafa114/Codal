@@ -486,6 +486,56 @@ def main():
     double_count_in = double_count_in.apply(double_count_init_par, axis=1)
     surname_list.update(double_count_in)
 
+    # Further double-count passes (cut part + 3-comma heuristic)
+    double_count_in = double_count_in[
+        (double_count_in["parish"] == double_count_in["initials"])
+        & (double_count_in.apply(
+            lambda x: str(x["line_complete"]).count(str(x["initials"])), axis=1) == 1)
+        & (double_count_in["initials"] != "")
+        & (double_count_in["firm_dummy"] == 0)
+    ]
+
+    def cut_part(row):
+        init_ = row["initials"]
+        line = row["line_complete"]
+        last_name = row["last_name"]
+        pos_init = line.index(init_)
+        pos = pos_init + len(init_)
+        line_cut = line[pos:]
+        pos_init_split = [x for x in line.split(",") if init_ in x]
+        pos_init_split = pos_init_split[0]
+        pos_init_split = line.split(",").index(pos_init_split)
+        if (any(word.strip().islower() for word in line_cut.split())
+                or any(word.strip().islower() for word in line_cut.split(","))):
+            row["parish"] = ""
+        else:
+            row["initials"] = ""
+            line_split_space = line.split()
+            line_split_space = [ch.replace(",", "").strip() for ch in line_split_space]
+            candidate = [word for word in line_split_space
+                         if word in first_names.values and word != last_name and len(word) > 2]
+            if candidate:
+                row["initials"] = candidate[0]
+        return row
+
+    double_count_in = double_count_in.apply(cut_part, axis=1)
+    surname_list.update(double_count_in)
+
+    double_count_in = double_count_in[
+        (double_count_in["parish"] == double_count_in["initials"])
+        & (double_count_in.apply(
+            lambda x: str(x["line_complete"]).count(str(x["initials"])), axis=1) == 1)
+        & (double_count_in["initials"] != "")
+        & (double_count_in["firm_dummy"] == 0)
+    ]
+    double_count_in["parish"] = double_count_in.apply(
+        lambda x: ""
+        if len(x["line_complete"].split(",")) == 3 and x["last_name"] != ""
+        else x["parish"],
+        axis=1,
+    )
+    surname_list.update(double_count_in)
+
     # avoid_double_count_init
     def avoid_double_count_init(row):
         init_ = row["initials"]
@@ -564,7 +614,11 @@ def main():
         "unique_key", "income", "income_1", "income_2",
     ]]
     final_set.to_csv("final_output.csv", index=False)
-    print("Done! Output written to: final_output.csv")
+    try:
+        final_set.to_stata("final_output.dta", version=118, write_index=False)
+        print("Done! Output written to: final_output.csv and final_output.dta")
+    except Exception as exc:
+        print(f"Done! Output written to: final_output.csv (Stata export skipped: {exc})")
 
 
 if __name__ == "__main__":
