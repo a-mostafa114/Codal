@@ -28,9 +28,12 @@ from ocr_modules import parish
 from ocr_modules import location
 from ocr_modules import firm_estate
 from ocr_modules import classification
+from ocr_modules import reporting
 
 
 def main():
+    reporter = reporting.ReportCollector()
+
     # ================================================================
     # STEP 1 – Load all input data
     # ================================================================
@@ -40,6 +43,12 @@ def main():
     first_names = data_loader.load_first_names()
     main_dataframe = data_loader.load_main_dataframe()
     surname_list = data_loader.build_surname_list(main_dataframe)
+    reporter.capture(1, "Load data", surname_list, extra={
+        "main_dataframe_rows": int(len(main_dataframe)),
+        "death_register_rows": int(len(df_death_reg_unacc)),
+        "dirty_last_names_rows": int(len(dirty_last_names_list)),
+        "first_names_rows": int(len(first_names)),
+    })
 
     # ================================================================
     # STEP 2 – Last-name matching (A1 → A5)  [parallelised]
@@ -57,6 +66,7 @@ def main():
     )
     df_dash = surname_list[surname_list["line"] == "-"]
     surname_list = surname_list[surname_list["line"] != "-"]
+    reporter.capture(2, "Last-name matching", surname_list)
 
     # Checkpoint
     surname_list.to_csv("alt_alg_checkpoint.csv", index=False)
@@ -71,6 +81,7 @@ def main():
 
     surname_list = surname_list.apply(line_processing.clean_dot_num, axis=1)
     surname_list = line_processing.fix_initials_and_dots(surname_list)
+    reporter.capture(3, "Line cleaning", surname_list)
 
     # ================================================================
     # STEP 4 – Main processing loop (pass 0 & 1)
@@ -126,6 +137,7 @@ def main():
             surname_list = surname_list.drop(columns={"level_2"})
             surname_list = income.find_income(
                 surname_list, line_processing.third_line, occ_list)
+            reporter.capture(4, "Main loop pass 0", surname_list)
 
         # ── Pass-1-only: income re-extraction + parish + firm/estate ──
         if loop_i == 1:
@@ -189,6 +201,7 @@ def main():
 
             surname_list["estate_dummy"] = 0
             surname_list = surname_list.apply(firm_estate.estate_token, axis=1)
+            reporter.capture(4, "Main loop pass 1", surname_list)
 
     # ================================================================
     # STEP 5 – Location assignment
@@ -199,6 +212,9 @@ def main():
     location_list = location.build_location_list(surname_list)
     surname_list = location.extract_location(surname_list, location_list)
     surname_list = location.location_limit_case(surname_list)
+    reporter.capture(5, "Location assignment", surname_list, extra={
+        "location_list_rows": int(len(location_list)),
+    })
 
     # ================================================================
     # STEP 6 – Suspect-occupation adjustment
@@ -206,6 +222,7 @@ def main():
     print("[Step 6/14] Adjusting suspect occupations ...")
     surname_list = surname_list.apply(
         lambda row: occupation.adj_suspect_occ(row, occ_list), axis=1)
+    reporter.capture(6, "Suspect occupation adjustment", surname_list)
 
     # Checkpoint
     surname_list.to_csv("a_4.csv", index=False)
@@ -221,6 +238,9 @@ def main():
     print("[Step 7/14] Extra adjustments & page filtering ...")
     surname_list = line_processing.adj_extra_FH(surname_list)
     pages_to_cut = classification.find_pages_to_cut(surname_list)
+    reporter.capture(7, "Extra line adjustments", surname_list, extra={
+        "pages_to_cut_count": int(len(pages_to_cut)),
+    })
 
     # ================================================================
     # STEP 8 – Certain-lines classification loop (pass 0 & 1)
@@ -232,6 +252,9 @@ def main():
             surname_list, pages_to_cut, occ_list)
         surname_list, certain = classification.potential_sec_lines(
             surname_list, certain)
+        reporter.capture(8, f"Classification pass {class_i}", surname_list, extra={
+            "certain_counts": {k: int(len(v)) for k, v in certain.items() if isinstance(v, pd.DataFrame)},
+        })
 
         if class_i == 0:
             surname_list = classification.adj_sec_lines(surname_list, certain)
@@ -298,6 +321,7 @@ def main():
     surname_list["occ_reg_2"] = surname_list.apply(
         lambda row: row["occ_reg"] if row["occ_reg"] == ""
         else occupation.sec_occup(row, occ_list), axis=1)
+    reporter.capture(9, "Fuzzy occupation matching", surname_list)
 
     # ================================================================
     # STEP 10 – Final parish adjustments
@@ -325,6 +349,7 @@ def main():
     df_subset = df_subset.apply(parish.extract_parish_no_init, axis=1)
     df_subset = df_subset.apply(parish.extra_parish_residual_cases, axis=1)
     surname_list.update(df_subset)
+    reporter.capture(10, "Final parish adjustments", surname_list)
 
     # ================================================================
     # STEP 11 – Parish mapping + proper parish merge
@@ -363,6 +388,7 @@ def main():
     parish_num = parish_num[~parish_num[0].isin(parish_firm[0])]
     surname_list = surname_list.apply(
         lambda row: parish.remove_firms_from_parish(row, parish_num, parish_firm), axis=1)
+    reporter.capture(11, "Parish mapping", surname_list)
 
     # Firm parish extraction
     surname_list = surname_list.apply(
@@ -575,6 +601,7 @@ def main():
                 row["parish"] = ""
         return row
     surname_list = surname_list.apply(manage_wrong_parish, axis=1)
+    reporter.capture(12, "Double-count resolution", surname_list)
 
     # Checkpoint
     surname_list.to_csv("aaa_6_final.csv", index=False)
@@ -602,6 +629,7 @@ def main():
     surname_list = parish.run_parish_quality_check(
         surname_list, parish_mapped, parish_only_matched,
         df_parish_added_year_by_year)
+    reporter.capture(13, "Parish quality check", surname_list)
 
     # ================================================================
     # STEP 14 – Final output
@@ -613,12 +641,15 @@ def main():
         "occ_reg", "occ_reg_2", "municipality", "parish", "matched_parish",
         "unique_key", "income", "income_1", "income_2",
     ]]
+    reporter.capture(14, "Final output", final_set)
     final_set.to_csv("final_output.csv", index=False)
     try:
         final_set.to_stata("final_output.dta", version=118, write_index=False)
         print("Done! Output written to: final_output.csv and final_output.dta")
     except Exception as exc:
         print(f"Done! Output written to: final_output.csv (Stata export skipped: {exc})")
+
+    reporter.write_reports()
 
 
 if __name__ == "__main__":
