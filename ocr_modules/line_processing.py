@@ -196,6 +196,9 @@ def split_line(df, occ_list):
                 nxt = idx_list[pos + 1]
                 next_line = str(df.at[nxt, "line"]) if pd.notna(df.at[nxt, "line"]) else ""
                 combined = line + next_line
+            else:
+                df.at[idx, "split"] = 3
+                continue
             if (not re.search(r'[A-Za-z]', next_line)
                     and len(re.findall(r'\d+', next_line)) == 1
                     and all(n > 1000 for n in [int(x) for x in re.findall(r'\d+', next_line)])
