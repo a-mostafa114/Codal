@@ -9,7 +9,9 @@ The pipeline proceeds through numbered steps (printed to stdout).
 Intermediate CSVs are saved at checkpoints so you can resume / inspect.
 """
 
+import argparse
 import re
+from pathlib import Path
 import pandas as pd
 from rapidfuzz import fuzz
 
@@ -31,7 +33,24 @@ from ocr_modules import classification
 from ocr_modules import reporting
 
 
-def main():
+def run_pipeline(
+    input_csv: str = "ocr_input.csv",
+    out_dir: str = ".",
+    output_prefix: str = "final_output",
+    checkpoint_prefix: str | None = None,
+    report_dir: str | None = None,
+) -> None:
+    out_path = Path(out_dir)
+    out_path.mkdir(parents=True, exist_ok=True)
+
+    def _out(name: str) -> Path:
+        return out_path / name
+
+    def _ckpt(name: str) -> Path:
+        if checkpoint_prefix:
+            return out_path / f"{checkpoint_prefix}_{name}"
+        return out_path / name
+
     reporter = reporting.ReportCollector()
 
     # ================================================================
@@ -41,7 +60,7 @@ def main():
     dirty_last_names_list, dirty_last_names_dict = data_loader.load_dirty_last_names()
     df_death_reg_unacc = data_loader.load_death_register()
     first_names = data_loader.load_first_names()
-    main_dataframe = data_loader.load_main_dataframe()
+    main_dataframe = data_loader.load_main_dataframe(path=input_csv)
     surname_list = data_loader.build_surname_list(main_dataframe)
     reporter.capture(1, "Load data", surname_list, extra={
         "main_dataframe_rows": int(len(main_dataframe)),
@@ -69,8 +88,9 @@ def main():
     reporter.capture(2, "Last-name matching", surname_list)
 
     # Checkpoint
-    surname_list.to_csv("alt_alg_checkpoint.csv", index=False)
-    surname_list = pd.read_csv("alt_alg_checkpoint.csv")
+    alt_alg_checkpoint = _ckpt("alt_alg_checkpoint.csv")
+    surname_list.to_csv(alt_alg_checkpoint, index=False)
+    surname_list = pd.read_csv(alt_alg_checkpoint)
 
     # ================================================================
     # STEP 3 – V. / dash last-name handling + line cleaning
@@ -225,8 +245,9 @@ def main():
     reporter.capture(6, "Suspect occupation adjustment", surname_list)
 
     # Checkpoint
-    surname_list.to_csv("a_4.csv", index=False)
-    surname_list = pd.read_csv("a_4.csv")
+    a_4_checkpoint = _ckpt("a_4.csv")
+    surname_list.to_csv(a_4_checkpoint, index=False)
+    surname_list = pd.read_csv(a_4_checkpoint)
     cols = ["second_last_name", "occ_reg", "income", "income_1", "income_2",
             "last_name", "best_match", "initials"]
     for col in cols:
@@ -433,8 +454,9 @@ def main():
     surname_list.loc[mask, "initials"] = ""
 
     # Checkpoint
-    surname_list.to_csv("aaa_5.csv", index=False)
-    surname_list = pd.read_csv("aaa_5.csv").fillna("")
+    aaa_5_checkpoint = _ckpt("aaa_5.csv")
+    surname_list.to_csv(aaa_5_checkpoint, index=False)
+    surname_list = pd.read_csv(aaa_5_checkpoint).fillna("")
 
     # ================================================================
     # STEP 12 – Double-count resolution
@@ -604,8 +626,9 @@ def main():
     reporter.capture(12, "Double-count resolution", surname_list)
 
     # Checkpoint
-    surname_list.to_csv("aaa_6_final.csv", index=False)
-    surname_list = pd.read_csv("aaa_6_final.csv").fillna("")
+    aaa_6_checkpoint = _ckpt("aaa_6_final.csv")
+    surname_list.to_csv(aaa_6_checkpoint, index=False)
+    surname_list = pd.read_csv(aaa_6_checkpoint).fillna("")
 
     # ================================================================
     # STEP 13 – Parish quality check
@@ -642,14 +665,42 @@ def main():
         "unique_key", "income", "income_1", "income_2",
     ]]
     reporter.capture(14, "Final output", final_set)
-    final_set.to_csv("final_output.csv", index=False)
-    try:
-        final_set.to_stata("final_output.dta", version=118, write_index=False)
-        print("Done! Output written to: final_output.csv and final_output.dta")
-    except Exception as exc:
-        print(f"Done! Output written to: final_output.csv (Stata export skipped: {exc})")
+    final_csv = _out(f"{output_prefix}.csv")
+    final_set.to_csv(final_csv, index=False)
+    print(f"Done! Output written to: {final_csv}")
 
-    reporter.write_reports()
+    reporter.write_reports(out_dir=report_dir or str(_out("reports")))
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Run the OCR processing pipeline on an input CSV."
+    )
+    parser.add_argument("--input", default="ocr_input.csv", help="Path to OCR input CSV.")
+    parser.add_argument("--out-dir", default=".", help="Output directory.")
+    parser.add_argument(
+        "--output-prefix",
+        default="final_output",
+        help="Base filename for final outputs (without extension).",
+    )
+    parser.add_argument(
+        "--checkpoint-prefix",
+        default=None,
+        help="Optional prefix for checkpoint files.",
+    )
+    parser.add_argument(
+        "--report-dir",
+        default=None,
+        help="Optional reports directory (default: <out-dir>/reports).",
+    )
+    args = parser.parse_args()
+    run_pipeline(
+        input_csv=args.input,
+        out_dir=args.out_dir,
+        output_prefix=args.output_prefix,
+        checkpoint_prefix=args.checkpoint_prefix,
+        report_dir=args.report_dir,
+    )
 
 
 if __name__ == "__main__":
