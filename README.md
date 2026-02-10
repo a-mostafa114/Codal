@@ -14,6 +14,7 @@ row, and line-level text data.
 ```
 Codal/
 ├── main.py                        # Master orchestration script (run this)
+├── run_ocr_batch.py               # Generate 6 OCR inputs + run pipeline per provider
 ├── legacy_monolithic.py           # Original monolithic script (archived)
 ├── README.md                      # This file
 │
@@ -30,7 +31,8 @@ Codal/
     ├── parish.py                  # Parish extraction, mapping, quality check
     ├── location.py                # Location / municipality assignment
     ├── classification.py          # Certain-lines classification
-    └── firm_estate.py             # Firm & estate token detection
+    ├── firm_estate.py             # Firm & estate token detection
+    └── ocr_input_builder.py       # Build OCR inputs from providers
 ```
 
 ---
@@ -61,13 +63,19 @@ Place it in the repository root before running the pipeline.
 ### 1. Install dependencies
 
 ```bash
-pip install pandas rapidfuzz python-Levenshtein pyreadstat tqdm tiktoken regex
+pip install pandas rapidfuzz python-Levenshtein pyreadstat tqdm tiktoken regex beautifulsoup4
 ```
 
 ### 2. Run the pipeline
 
 ```bash
 python main.py
+```
+
+You can also pass input/output paths:
+
+```bash
+python main.py --input ocr_input.csv --out-dir . --output-prefix final_output
 ```
 
 The script prints progress for each of 14 steps:
@@ -90,6 +98,30 @@ Done! Output written to: final_output.csv
 | `a_4.csv` | Checkpoint after occupation adjustment |
 | `aaa_5.csv` | Checkpoint after parish mapping |
 | `aaa_6_final.csv` | Checkpoint after double-count resolution |
+
+---
+
+## Batch Run (6 OCR Providers)
+
+Use `run_ocr_batch.py` to build OCR inputs for Amazon, Deepseek, Qwen,
+Nanonet, NVIDIA (Nemotron), and MinerU, then run the pipeline for each.
+
+1. Edit the paths at the top of `run_ocr_batch.py`.
+2. Run:
+
+```bash
+python run_ocr_batch.py
+```
+
+Outputs are written to:
+
+```
+runs/1912/ocr_inputs/<provider>.csv
+runs/1912/outputs/<provider>/final_output_<provider>.csv
+runs/1912/outputs/<provider>/reports/
+```
+
+Providers: `amazon`, `deepseek`, `qwen`, `nano`, `nvidia`, `mineru`.
 
 ---
 
@@ -284,7 +316,8 @@ main.py
  ├── location.py          (Step 5)
  ├── firm_estate.py       (Step 4)      → uses config
  ├── classification.py    (Step 8)      → uses config
- └── parish.py            (Steps 10-13) → uses config, utils
+ ├── parish.py            (Steps 10-13) → uses config, utils
+ └── ocr_input_builder.py (Pre-step)    → builds OCR inputs from providers
 ```
 
 ---
