@@ -15,6 +15,7 @@ row, and line-level text data.
 Codal/
 ├── main.py                        # Master orchestration script (run this)
 ├── run_ocr_batch.py               # Generate 6 OCR inputs + run pipeline per provider
+├── run_dashboard_prep.py          # Dashboard prep: match provider outputs
 ├── legacy_monolithic.py           # Original monolithic script (archived)
 ├── README.md                      # This file
 │
@@ -32,7 +33,8 @@ Codal/
     ├── location.py                # Location / municipality assignment
     ├── classification.py          # Certain-lines classification
     ├── firm_estate.py             # Firm & estate token detection
-    └── ocr_input_builder.py       # Build OCR inputs from providers
+    ├── ocr_input_builder.py       # Build OCR inputs from providers
+    └── dashboard_prep.py          # Dashboard prep: match provider outputs
 ```
 
 ---
@@ -63,7 +65,7 @@ Place it in the repository root before running the pipeline.
 ### 1. Install dependencies
 
 ```bash
-pip install pandas rapidfuzz python-Levenshtein pyreadstat tqdm tiktoken regex beautifulsoup4
+pip install pandas numpy rapidfuzz python-Levenshtein pyreadstat tqdm tiktoken regex beautifulsoup4
 ```
 
 ### 2. Run the pipeline
@@ -122,6 +124,32 @@ runs/1912/outputs/<provider>/reports/
 ```
 
 Providers: `amazon`, `deepseek`, `qwen`, `nano`, `nvidia`, `mineru`.
+
+---
+
+## Dashboard Prep (Provider Matching)
+
+Use `run_dashboard_prep.py` to match each provider’s output lines against
+all other providers (page-by-page) and write dashboard-ready CSVs.
+
+1. Edit `input_paths` in `run_dashboard_prep.py`.
+2. Run:
+
+```bash
+python run_dashboard_prep.py
+```
+
+If you used `run_ocr_batch.py`, point inputs to:
+`runs/1912/outputs/<provider>/final_output_<provider>.csv`.
+
+Outputs are written to:
+
+```
+dashboard_outputs/df_<provider>_all_types.csv
+dashboard_outputs/df_<provider>_number_char_excluded.csv
+dashboard_outputs/match_stats_all_types.csv
+dashboard_outputs/match_stats_number_char_excluded.csv
+```
 
 ---
 
@@ -317,7 +345,8 @@ main.py
  ├── firm_estate.py       (Step 4)      → uses config
  ├── classification.py    (Step 8)      → uses config
  ├── parish.py            (Steps 10-13) → uses config, utils
- └── ocr_input_builder.py (Pre-step)    → builds OCR inputs from providers
+ ├── ocr_input_builder.py (Pre-step)    → builds OCR inputs from providers
+ └── dashboard_prep.py    (Post-step)   → matches outputs for dashboarding
 ```
 
 ---
