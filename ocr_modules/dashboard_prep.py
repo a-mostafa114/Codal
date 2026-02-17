@@ -33,12 +33,28 @@ class DashboardPrepConfig:
     output_dir: str
     n_workers: int | None = None
     threshold: int = 5
+    filter_completed_lines: bool = False
+    valid_split_values: Tuple[int, ...] = (1, 3)
 
 
-def load_provider_outputs(input_paths: Dict[str, str]) -> Dict[str, pd.DataFrame]:
+def _filter_valid_splits(df: pd.DataFrame, valid_split_values: Iterable[int]) -> pd.DataFrame:
+    if "split" not in df.columns:
+        return df
+    valid_splits = set(valid_split_values)
+    split_num = pd.to_numeric(df["split"], errors="coerce")
+    return df[split_num.isin(valid_splits)].copy()
+
+
+def load_provider_outputs(
+    input_paths: Dict[str, str],
+    filter_completed_lines: bool = False,
+    valid_split_values: Iterable[int] = (1, 3),
+) -> Dict[str, pd.DataFrame]:
     dfs: Dict[str, pd.DataFrame] = {}
     for name, path in input_paths.items():
         df = pd.read_csv(path)
+        if filter_completed_lines:
+            df = _filter_valid_splits(df, valid_split_values)
         dfs[name] = df
     return dfs
 
@@ -321,7 +337,11 @@ def run_dashboard_prep(
     cleaned_variant: bool = True,
     apply_hustru: bool = True,
 ) -> None:
-    dfs = load_provider_outputs(cfg.input_paths)
+    dfs = load_provider_outputs(
+        cfg.input_paths,
+        filter_completed_lines=cfg.filter_completed_lines,
+        valid_split_values=cfg.valid_split_values,
+    )
     set_line_from_complete(dfs)
     dfs = {name: ensure_sorted(df) for name, df in dfs.items()}
 
@@ -335,7 +355,11 @@ def run_dashboard_prep(
         return
 
     print("Running matches: number_char_excluded")
-    dfs_clean = load_provider_outputs(cfg.input_paths)
+    dfs_clean = load_provider_outputs(
+        cfg.input_paths,
+        filter_completed_lines=cfg.filter_completed_lines,
+        valid_split_values=cfg.valid_split_values,
+    )
     set_line_from_complete(dfs_clean)
     clean_and_normalize_lines(dfs_clean)
     drop_empty_and_recompute_rows(dfs_clean)

@@ -20,11 +20,16 @@ def main() -> None:
         "nano": "final_output_nano.csv",
     }
 
+    # Keep only completed OCR lines when enabled (split values 1 and 3).
+    filter_completed_lines = True
+
     cfg = DashboardPrepConfig(
         input_paths=input_paths,
         output_dir="dashboard_outputs",
         n_workers=None,
         threshold=5,
+        filter_completed_lines=filter_completed_lines,
+        valid_split_values=(1, 3),
     )
 
     run_dashboard_prep(cfg, cleaned_variant=True, apply_hustru=True)

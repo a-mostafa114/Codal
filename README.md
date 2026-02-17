@@ -142,6 +142,18 @@ python run_dashboard_prep.py
 If you used `run_ocr_batch.py`, point inputs to:
 `runs/1912/outputs/<provider>/final_output_<provider>.csv`.
 
+### Completed-line split filter
+
+`run_dashboard_prep.py` now supports filtering to completed lines only.
+When `filter_completed_lines = True`, input rows are filtered to `split` values
+`1` and `3` before matching across providers.
+
+This excludes garbage/incomplete rows such as second-part-only lines (`split = 2`).
+
+- Default in `run_dashboard_prep.py`: `filter_completed_lines = True`
+- Allowed split values are configurable via: `valid_split_values=(1, 3)`
+- To disable filtering, set: `filter_completed_lines = False`
+
 Outputs are written to:
 
 ```
