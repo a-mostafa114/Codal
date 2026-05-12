@@ -304,8 +304,8 @@ def parallel_alt_algorithm(surname_list, df_death_reg_unacc,
             axis=1,
         )
 
-    chunks = np.array_split(surname_list, n_workers)
-    chunks = [c for c in chunks if len(c) > 0]
+    indices = np.array_split(np.arange(n_rows), n_workers)
+    chunks = [surname_list.iloc[idx] for idx in indices if len(idx) > 0]
 
     args = [
         (chunk, df_death_reg_unacc, dirty_last_names_list)
