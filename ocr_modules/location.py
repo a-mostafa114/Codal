@@ -10,23 +10,41 @@ import pandas as pd
 # ── Find locations (inv.) ───────────────────────────────────────────────
 
 def find_locations(row):
-    """Extract location strings from lines containing ``inv.)``."""
+    """Extract location strings from lines containing ``inv.)`` or mineru title entries."""
     line = row["line"]
+    source = row.get("source", "")
 
     def extr_until_brackets(s):
         s_fin = []
-        for i in range(0, len(s)):
+        for i in range(len(s)):
             if s[i] not in ["(", ")"]:
                 s_fin.append(s[i])
             else:
                 break
         return ''.join(s_fin)
 
+    # Pattern 1: classic inv.) form — "Goteborg (170,173 inv.)"
     if re.search(r'inv\.\)', line):
         row["location"] = extr_until_brackets(row["line"])
         row["location"] = re.sub(r'\d+', "", row["location"])
         row["location"] = re.sub(r'inv\.', "", row["location"])
         row["location"] = re.sub(r',', "", row["location"])
+        return row
+
+    # Pattern 2: mineru title entries — bare city names or "City (population)"
+    if source == "title":
+        stripped = line.strip()
+        if not stripped or stripped.isupper():
+            return row
+        # "CityA—CityB" divider: take the last segment (the new city)
+        if re.search(r'[—–]', stripped) and not re.search(r'\d', stripped):
+            city = re.split(r'[—–]', stripped)[-1].strip()
+        else:
+            city = re.split(r'\s*\(', stripped)[0].strip()
+        city = re.sub(r'[,\.]+$', '', city).strip()
+        if city and len(city.split()) <= 5 and re.search(r'[A-Za-z]', city):
+            row["location"] = city
+
     return row
 
 
@@ -65,44 +83,25 @@ def build_location_list(surname_list):
 # ── Assign municipality ─────────────────────────────────────────────────
 
 def extract_location(df, location_list):
-    """Assign a ``municipality`` to every row based on the location list."""
-    df["municipality"] = ""
-    i = 0
-    index_list_ = df.index.to_list()
-    start_value = location_list.iloc[0]["location"]
+    """Assign a ``municipality`` to every row using binary search on location markers."""
+    import numpy as np
 
-    for pos, idx in enumerate(index_list_):
-        page = int(df.at[idx, "page"])
-        row = int(df.at[idx, "row"])
+    df = df.copy()
 
-        if page < location_list["page"].min():
-            df.at[idx, "municipality"] = start_value
-            continue
+    loc = location_list[
+        location_list["location"].notna() & (location_list["location"] != "")
+    ].sort_values(["page", "row"])
 
-        if page not in location_list["page"].values:
-            df.at[idx, "municipality"] = location_list.iloc[i]["location"]
-            continue
+    # Composite key: page * 100_000 + row (rows are always < 100_000)
+    loc_keys = (loc["page"].astype(int) * 100_000 + loc["row"].astype(int)).values
+    loc_vals = loc["location"].tolist()
 
-        municipalities = location_list[location_list["page"] == page]
-        n_ = len(municipalities)
+    df_keys = (df["page"].astype(int) * 100_000 + df["row"].astype(int)).values
 
-        if pos + 1 < len(df):
-            nxt = index_list_[pos + 1]
-            if df.at[idx, "page"] != df.at[nxt, "page"]:
-                i += n_
-
-        if row < municipalities["row"].min():
-            df.at[idx, "municipality"] = location_list.iloc[i]["location"]
-            continue
-
-        if row > municipalities["row"].min():
-            iter_ = pd.concat([df.loc[[idx]], municipalities], axis=0)
-            iter_ = iter_.sort_values(by="row").reset_index(drop=True)
-            pos_2 = iter_[iter_["row"] == row].index[0]
-            prev_row = iter_.iloc[pos_2 - 1] if pos_2 > 0 else None
-            if prev_row is not None:
-                df.at[idx, "municipality"] = prev_row["location"]
-            continue
+    # For each data row find the last location marker at or before (page, row)
+    idx = np.searchsorted(loc_keys, df_keys, side="right") - 1
+    idx = np.clip(idx, 0, len(loc_vals) - 1)
+    df["municipality"] = [loc_vals[i] for i in idx]
 
     return df
 

@@ -109,7 +109,7 @@ def parse_mineru_page(filepath: Path) -> List[Dict[str, Any]]:
         entries: List[Dict[str, Any]] = []
         for entry in data:
             entry_type = entry.get("type")
-            if entry_type not in ["text", "ref_text"]:
+            if entry_type not in ["text", "ref_text", "title"]:
                 continue
 
             bbox = entry.get("bbox")

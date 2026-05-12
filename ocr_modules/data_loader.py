@@ -65,7 +65,12 @@ def build_surname_list(main_df):
     import re
 
     main_df["no_occ"] = 0
-    surname_list = main_df[["page", "column", "row", "line"]].copy()
+    base_cols = ["page", "column", "row", "line"]
+    if "source" in main_df.columns:
+        base_cols.append("source")
+    surname_list = main_df[base_cols].copy()
+    if "source" not in surname_list.columns:
+        surname_list["source"] = ""
     surname_list["line"] = surname_list["line"].apply(remove_accents)
     surname_list["matched"] = False
     surname_list = surname_list[surname_list["line"].apply(lambda x: isinstance(x, str))]
