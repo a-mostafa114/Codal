@@ -14,13 +14,14 @@ from main import run_pipeline
 
 def main() -> None:
     cfg = OcrInputConfig(
-        amazon_csv="taxeringskalender_1912_02.csv",
-        deepseek_dir="/home7/becomingsweden/output/taxeringskalender_1912/splits/deepseek_ocr/",
-        qwen_dir="/home7/becomingsweden/output/taxeringskalender_1912/splits/qwen_ocr_results/",
-        nanonet_dir="/home7/becomingsweden/output/taxeringskalender_1912/splits/nanonet_ocr_results/",
-        nvidia_nemotron_dir="/home7/becomingsweden/data/taxeringskalender_1912/1912/nemotron_ocr_results/",
-        mineru_dir="/home7/becomingsweden/data/taxeringskalender_1912/1912/miner_ocr_results/",
-        out_dir="runs/1912",
+        amazon_csv="voted_lines_1913.csv",
+        # deepseek_dir="/home7/becomingsweden/output/taxeringskalender_1912/splits/deepseek_ocr/",
+        # qwen_dir="/home7/becomingsweden/output/taxeringskalender_1912/splits/qwen_ocr_results/",
+        # nanonet_dir="/home7/becomingsweden/output/taxeringskalender_1913/splits/nanonet_ocr_results/",
+        # nvidia_nemotron_dir="/home7/becomingsweden/data/taxeringskalender_1913/1913/nemotron_ocr_results/",
+        # mineru_dir="/home7/becomingsweden/data/taxeringskalender_1913/1913/miner_ocr_results/",
+        # glm_dir="/home7/becomingsweden/data/taxeringskalender_1913/1913/glm_ocr_results/",
+        out_dir="runs/voted_lines_1913",
     )
 
     frames = build_ocr_inputs(cfg)

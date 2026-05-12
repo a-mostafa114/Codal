@@ -32,6 +32,7 @@ class OcrInputConfig:
     nanonet_dir: Optional[str] = None
     nvidia_nemotron_dir: Optional[str] = None
     mineru_dir: Optional[str] = None
+    glm_dir: Optional[str] = None
     out_dir: str = "."
     side_regex: re.Pattern[str] = DEFAULT_SIDE_REGEX
 
@@ -130,6 +131,41 @@ def parse_mineru_page(filepath: Path) -> List[Dict[str, Any]]:
     except Exception:
         return []
 
+def parse_glm_page(filepath: Path) -> List[Dict[str, Any]]:
+    """Parse a single GLM JSON file."""
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        raw_output = data.get("output", "")
+        raw_output = re.sub(r"<\|[^|]+\|>\s*$", "", raw_output).strip()
+
+        entries: List[Dict[str, Any]] = []
+        for line in raw_output.splitlines():
+            clean_text = line.strip()
+            if not clean_text:
+                continue
+            
+            source = "class_List-item"
+            # if re.search(r"\d+—[\d]*", clean_text) and re.search(r",\s*[A-ZÅÄÖ][a-zåäö]*\.,", clean_text):
+            #     source = "class_List-item"
+            # else:
+            #     source = "class_Bibliography"
+
+            entries.append({
+                "column": None,
+                "line": clean_text,
+                "source": source,
+            })
+
+        midpoint = len(entries) // 2
+        for i, entry in enumerate(entries):
+            entry["column"] = 1 if i < midpoint else 2
+
+        return entries
+
+    except Exception:
+        return []
 
 def load_nvidia_results(nemotron_dir: str) -> pd.DataFrame:
     """Load Nemotron results into a DataFrame."""
@@ -137,7 +173,7 @@ def load_nvidia_results(nemotron_dir: str) -> pd.DataFrame:
     records: List[Dict[str, Any]] = []
 
     for filepath in sorted(nemotron_folder.glob("*.txt")):
-        page = int(filepath.stem)
+        page = int(filepath.stem.split("_")[-1])
         entries = parse_nemotron_page(filepath)
         page_score = score_page_quality(entries)
 
@@ -159,8 +195,31 @@ def load_mineru_results(mineru_dir: str) -> pd.DataFrame:
     records: List[Dict[str, Any]] = []
 
     for filepath in sorted(mineru_folder.glob("*.json")):
-        page = int(filepath.stem.replace("_extracted", ""))
+        # page = int(filepath.stem.replace("_extracted", ""))
+        page = int(filepath.stem.replace("_extracted", "").split("_")[-1])
         entries = parse_mineru_page(filepath)
+        page_score = score_page_quality(entries)
+
+        for entry in entries:
+            records.append({
+                "page": page,
+                "column": entry["column"],
+                "line": entry["line"],
+                "source": entry["source"],
+                "page_score": page_score,
+            })
+
+    return pd.DataFrame(records)
+    
+def load_glm_results(glm_dir: str) -> pd.DataFrame:
+    """Load glm results into a DataFrame."""
+    glm_folder = Path(glm_dir)
+    records: List[Dict[str, Any]] = []
+
+    for filepath in sorted(glm_folder.glob("*.json")):
+        # page = int(filepath.stem.replace("_extracted", ""))
+        page = int(filepath.stem.replace("_extracted", "").split("_")[-1])
+        entries = parse_glm_page(filepath)
         page_score = score_page_quality(entries)
 
         for entry in entries:
@@ -470,6 +529,8 @@ def build_provider_frames(cfg: OcrInputConfig) -> Dict[str, pd.DataFrame]:
         frames["nvidia"] = load_nvidia_results(cfg.nvidia_nemotron_dir)
     if cfg.mineru_dir:
         frames["mineru"] = load_mineru_results(cfg.mineru_dir)
+    if cfg.glm_dir:
+        frames["glm"] = load_glm_results(cfg.glm_dir)
     if cfg.deepseek_dir:
         frames["deepseek"] = load_side_files(cfg.deepseek_dir, cfg.side_regex)
     if cfg.qwen_dir:

@@ -21,7 +21,7 @@ def main() -> None:
     }
 
     # Keep only completed OCR lines when enabled (split values 1 and 3).
-    filter_completed_lines = True
+    filter_completed_lines = False
 
     cfg = DashboardPrepConfig(
         input_paths=input_paths,

@@ -36,15 +36,23 @@ def build_location_list(surname_list):
     """Build the reference ``location_list`` from extracted locations."""
     location_list = surname_list[surname_list["location"] != ""].copy()
     location_list = location_list[["page", "column", "row", "line", "line_complete", "split", "location"]]
-    location_list["location"] = location_list.apply(
-        lambda x: surname_list.loc[
-            (surname_list["page"] == x["page"])
-            & (surname_list["column"] == x["column"])
-            & (surname_list["row"] == int(x["row"]) - 1),
-            "line"
-        ].values[0] if x["location"] == " " else x["location"],
-        axis=1,
-    )
+
+    def resolve_location(x):
+        if x["location"] != " ":
+            return x["location"]
+        try:
+            matches = surname_list.loc[
+                (surname_list["page"] == x["page"])
+                & (surname_list["column"] == x["column"])
+                & (surname_list["row"] == int(x["row"]) - 1),
+                "line"
+            ]
+            return matches.values[0]
+        except IndexError:
+            return x["location"]  # fallback: keep original value
+
+    location_list["location"] = location_list.apply(resolve_location, axis=1)
+
     header = pd.DataFrame({
         "page": [0], "column": [0], "row": [0],
         "line": ["Stockholm"], "line_complete": ["Stockholm"],

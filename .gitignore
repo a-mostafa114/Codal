@@ -9,6 +9,9 @@ aaa_6_final.csv
 final_output.csv
 final_output.dta
 
+# Reports
+reports/
+
 # Python cache
 __pycache__/
 *.pyc
