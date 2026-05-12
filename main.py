@@ -38,7 +38,7 @@ from ocr_modules import reporting
 
 # ── Step-4 parallel infrastructure ──────────────────────────────────────
 
-_N_WORKERS = min(os.cpu_count() or 1, 16)
+_N_WORKERS = os.cpu_count() or 1
 
 
 def _par(pool, df, func, *extra_args):

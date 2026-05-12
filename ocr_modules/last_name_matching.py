@@ -305,7 +305,7 @@ def parallel_alt_algorithm(surname_list, df_death_reg_unacc,
     """
     n_rows = len(surname_list)
     if n_workers is None:
-        n_workers = min(os.cpu_count() or 1, 16)
+        n_workers = os.cpu_count() or 1
     n_workers = max(1, min(n_workers, n_rows))
 
     if n_workers <= 1:
