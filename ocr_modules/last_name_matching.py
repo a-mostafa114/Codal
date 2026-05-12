@@ -268,11 +268,22 @@ def _boundary_ok(line, compare_part):
 
 # ── parallel helpers ──────────────────────────────────────────────────
 
-def _worker_apply_alt_algorithm(args):
-    """Process a chunk of the DataFrame (runs in a child process)."""
-    chunk, df_death_reg_unacc, dirty_last_names_list = args
+# Module-level globals used by pool workers (set once via initializer).
+_pool_death_reg = None
+_pool_dirty_names = None
+
+
+def _init_pool_worker(death_reg, dirty_names):
+    """Load shared reference data into each worker once at pool creation."""
+    global _pool_death_reg, _pool_dirty_names
+    _pool_death_reg = death_reg
+    _pool_dirty_names = dirty_names
+
+
+def _worker_apply_alt_algorithm(chunk):
+    """Process a chunk using the pre-loaded shared reference data."""
     return chunk.apply(
-        lambda row: alt_algorithm(row, df_death_reg_unacc, dirty_last_names_list),
+        lambda row: alt_algorithm(row, _pool_death_reg, _pool_dirty_names),
         axis=1,
     )
 
@@ -290,11 +301,11 @@ def parallel_alt_algorithm(surname_list, df_death_reg_unacc,
     dirty_last_names_list : DataFrame
         Dirty-name → clean-name mapping (read-only).
     n_workers : int, optional
-        Number of parallel workers.  Defaults to ``os.cpu_count()``.
+        Number of parallel workers.  Defaults to ``min(os.cpu_count(), 16)``.
     """
     n_rows = len(surname_list)
     if n_workers is None:
-        n_workers = os.cpu_count() or 1
+        n_workers = min(os.cpu_count() or 1, 16)
     n_workers = max(1, min(n_workers, n_rows))
 
     if n_workers <= 1:
@@ -307,14 +318,13 @@ def parallel_alt_algorithm(surname_list, df_death_reg_unacc,
     indices = np.array_split(np.arange(n_rows), n_workers)
     chunks = [surname_list.iloc[idx] for idx in indices if len(idx) > 0]
 
-    args = [
-        (chunk, df_death_reg_unacc, dirty_last_names_list)
-        for chunk in chunks
-    ]
-
     print(f"  → Distributing {n_rows:,} rows across {len(chunks)} workers ...")
 
-    with mp.Pool(processes=len(chunks)) as pool:
-        results = pool.map(_worker_apply_alt_algorithm, args)
+    with mp.Pool(
+        processes=len(chunks),
+        initializer=_init_pool_worker,
+        initargs=(df_death_reg_unacc, dirty_last_names_list),
+    ) as pool:
+        results = pool.map(_worker_apply_alt_algorithm, chunks)
 
     return pd.concat(results)

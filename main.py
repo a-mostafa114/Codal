@@ -10,8 +10,11 @@ Intermediate CSVs are saved at checkpoints so you can resume / inspect.
 """
 
 import argparse
+import os
 import re
+import multiprocessing as mp
 from pathlib import Path
+import numpy as np
 import pandas as pd
 from rapidfuzz import fuzz
 
@@ -31,6 +34,96 @@ from ocr_modules import location
 from ocr_modules import firm_estate
 from ocr_modules import classification
 from ocr_modules import reporting
+
+
+# ── Step-4 parallel infrastructure ──────────────────────────────────────
+
+_N_WORKERS = min(os.cpu_count() or 1, 16)
+
+
+def _par(pool, df, func, *extra_args):
+    """Map func over N equal-sized chunks of df using an open pool."""
+    n = pool._processes
+    indices = np.array_split(np.arange(len(df)), n)
+    chunks = [df.iloc[idx] for idx in indices if len(idx) > 0]
+    work = [(c,) + extra_args for c in chunks]
+    return pd.concat(pool.map(func, work))
+
+
+# ── Step-4 module-level batch workers (must be picklable) ────────────────
+
+def _s4_batch_a(args):
+    """Batch A (both passes): residual line → get_initials."""
+    (chunk,) = args
+    chunk = chunk.apply(line_processing.get_the_residual_line, axis=1)
+    chunk = chunk.apply(initials_names.get_initials, axis=1)
+    return chunk
+
+
+def _s4_first_name(args):
+    """first_name applied to a chunk (reads prefix_dict + first_names)."""
+    chunk, first_names_s, prefix_dict = args
+    return initials_names.first_name(chunk, first_names_s, prefix_dict)
+
+
+def _s4_batch_b(args):
+    """Batch B (both passes): update_residual → 2nd_LN → f.d. → occ → update_after_occ."""
+    chunk, occ_list = args
+    chunk = chunk.apply(line_processing.update_residual_after_initials, axis=1)
+    chunk["second_last_name"] = ""
+    chunk = chunk.apply(initials_names.second_last_name, axis=1)
+    chunk = chunk.apply(line_processing.update_residual_after_second_last_name, axis=1)
+    # f.d. removal (vectorized within chunk)
+    mask_fd = chunk["residual_line"].str.contains(r'\bf\.\s*d\.', regex=True, na=False)
+    chunk["f_d_"] = mask_fd.astype(int)
+    chunk.loc[mask_fd, "residual_line"] = (
+        chunk.loc[mask_fd, "residual_line"].str.replace(r'\bf\.\s*d\.', "", regex=True))
+    lead_comma = mask_fd & chunk["residual_line"].str.startswith(",")
+    chunk.loc[lead_comma, "residual_line"] = (
+        chunk.loc[lead_comma, "residual_line"].str[1:].str.strip())
+    chunk["occ_reg"] = ""
+    chunk = chunk.apply(lambda row: occupation.extract_occ(row, occ_list), axis=1)
+    chunk = chunk.apply(line_processing.update_residual_after_occupation, axis=1)
+    return chunk
+
+
+def _s4_batch_income(args):
+    """Pass-1 income extraction."""
+    (chunk,) = args
+    chunk = chunk.apply(income.extr_inc, axis=1)
+    chunk["income_1"] = ""
+    chunk["income_2"] = ""
+    chunk = chunk.apply(income.split_income, axis=1)
+    return chunk
+
+
+def _s4_batch_parish(args):
+    """Pass-1 parish extraction + spot_wrong_occ + adj_initials_dupl."""
+    chunk, occ_list = args
+    chunk["parish"] = ""
+    chunk = chunk.apply(parish.extract_parish, axis=1)
+    chunk = chunk.apply(parish.extract_parish_no_init, axis=1)
+    chunk = chunk.apply(parish.extra_parish_residual_cases, axis=1)
+    chunk["change_occ"] = 0
+    chunk = chunk.apply(lambda row: parish.spot_wrong_occ(row, occ_list), axis=1)
+    chunk = chunk.apply(initials_names.adj_initials_dupl, axis=1)
+    return chunk
+
+
+def _s4_batch_firm_only(args):
+    """Pass-1 firm_token (estate_token is a separate batch after _ind_FT)."""
+    (chunk,) = args
+    chunk["firm_dummy"] = 0
+    chunk = chunk.apply(firm_estate.firm_token, axis=1)
+    return chunk
+
+
+def _s4_batch_estate_only(args):
+    """Pass-1 estate_token."""
+    (chunk,) = args
+    chunk["estate_dummy"] = 0
+    chunk = chunk.apply(firm_estate.estate_token, axis=1)
+    return chunk
 
 
 def run_pipeline(
@@ -109,119 +202,83 @@ def run_pipeline(
     occ_list = data_loader.load_occupation_list()
     prefix_dict = initials_names.build_prefix_dict(first_names)
 
+    occ_set = set(occ_list["occ_llm"].values)
+
     for loop_i in range(2):
         print(f"[Step 4/14] Main processing loop – pass {loop_i} ...")
 
-        # 4a – Residual line
-        surname_list["residual_line"] = ""
-        surname_list = surname_list.apply(line_processing.get_the_residual_line, axis=1)
+        with mp.Pool(processes=_N_WORKERS) as pool:
+            # ── Batch A (parallel): residual → initials ──────────────────
+            surname_list["residual_line"] = ""
+            surname_list["initials"] = ""
+            surname_list = _par(pool, surname_list, _s4_batch_a)
 
-        # 4b – Initials
-        surname_list["initials"] = ""
-        surname_list = surname_list.apply(initials_names.get_initials, axis=1)
-        surname_list = initials_names.first_name(surname_list, first_names, prefix_dict)
+            # first_name: df-level but trivially parallel by independent rows
+            surname_list = _par(pool, surname_list, _s4_first_name,
+                                first_names, prefix_dict)
 
-        # 4c – Update residual after initials
-        surname_list = surname_list.apply(line_processing.update_residual_after_initials, axis=1)
+            # ── Batch B (parallel): update_residual → 2nd_LN → f.d. → occ ─
+            surname_list = _par(pool, surname_list, _s4_batch_b, occ_list)
 
-        # 4d – Second last name
-        surname_list["second_last_name"] = ""
-        surname_list = surname_list.apply(initials_names.second_last_name, axis=1)
-        surname_list = surname_list.apply(
-            line_processing.update_residual_after_second_last_name, axis=1)
+            # ── Pass-0-only: line splitting + income ──────────────────────
+            if loop_i == 0:
+                # split_line needs within-group row context; keep sequential
+                surname_list = surname_list.groupby(["page", "column"]).apply(
+                    lambda g: line_processing.split_line(g, occ_list))
+                surname_list = surname_list.drop(columns=["column", "page"], errors="ignore").reset_index()
+                surname_list = surname_list.drop(columns=["level_2"], errors="ignore")
+                surname_list = income.find_income(
+                    surname_list, line_processing.third_line, occ_list)
+                reporter.capture(4, "Main loop pass 0", surname_list)
 
-        # 4e – f.d. removal + Occupation extraction
-        surname_list["f_d_"] = surname_list["residual_line"].apply(
-            lambda x: 1 if re.search(r'\bf\.\s*d\.', x) else 0)
-        surname_list["residual_line"] = surname_list.apply(
-            lambda x: re.sub(r'\bf\.\s*d\.', "", str(x["residual_line"]))
-            if x["f_d_"] == 1 else x["residual_line"], axis=1)
-        surname_list["residual_line"] = surname_list.apply(
-            lambda x: x["residual_line"][1:].strip()
-            if x["f_d_"] == 1 and x["residual_line"] and x["residual_line"][0] == ","
-            else x["residual_line"], axis=1)
+            # ── Pass-1-only: income + parish + firm/estate ────────────────
+            if loop_i == 1:
+                surname_list["income"] = 0
+                surname_list = _par(pool, surname_list, _s4_batch_income)
+                # Vectorized: keep income only when it contains a digit
+                surname_list["income"] = surname_list["income"].where(
+                    surname_list["income"].astype(str).str.contains(r'\d', regex=True, na=False), "")
 
-        surname_list["occ_reg"] = ""
-        surname_list = surname_list.apply(
-            lambda row: occupation.extract_occ(row, occ_list), axis=1)
+                # df-level lowercase last-name fix (sequential)
+                surname_list = line_processing.adj_sec_lowercase_LN(surname_list)
 
-        # 4f – Update residual after occupation
-        surname_list = surname_list.apply(
-            line_processing.update_residual_after_occupation, axis=1)
+                # Parish batch (parallel): 3× extract + spot_wrong_occ + adj_initials_dupl
+                surname_list = _par(pool, surname_list, _s4_batch_parish, occ_list)
 
-        # ── Pass-0-only: line splitting + income ──
-        if loop_i == 0:
-            surname_list = surname_list.groupby(["page", "column"]).apply(
-                lambda g: line_processing.split_line(g, occ_list))
-            surname_list = surname_list.drop(columns=["column", "page"], errors="ignore").reset_index()
-            surname_list = surname_list.drop(columns=["level_2"], errors="ignore")
-            surname_list = income.find_income(
-                surname_list, line_processing.third_line, occ_list)
-            reporter.capture(4, "Main loop pass 0", surname_list)
+                # Vectorized parish post-processing
+                surname_list.loc[surname_list["index"] == "A1", "parish"] = ""
+                surname_list["parish"] = (
+                    surname_list["parish"].astype(str).str.replace(r'\d+', "", regex=True))
+                mask_firm = surname_list["parish"].str.contains(
+                    FIRM_PATTERN, regex=True, na=False)
+                surname_list.loc[mask_firm, "parish"] = ""
+                par_arr = surname_list["parish"].to_numpy(dtype=str)
+                occ_arr = surname_list["occ_reg"].to_numpy(dtype=str)
+                ends_occ = np.array(
+                    [p.endswith(o) and o != "" for p, o in zip(par_arr, occ_arr)])
+                surname_list.loc[ends_occ, "parish"] = ""
+                surname_list["parish"] = surname_list["parish"].where(
+                    ~surname_list["parish"].apply(
+                        lambda p: (
+                            p.lower() in occ_set
+                            or re.search(FIRM_PATTERN, p) is not None
+                            or any(w in occ_set for w in p.lower().split())
+                        ) and len(re.findall(r'[a-z]', p)) > 4 and "-" not in p
+                    ),
+                    other="",
+                )
 
-        # ── Pass-1-only: income re-extraction + parish + firm/estate ──
-        if loop_i == 1:
-            surname_list["income"] = 0
-            surname_list = surname_list.apply(income.extr_inc, axis=1)
-            surname_list["income_1"] = ""
-            surname_list["income_2"] = ""
-            surname_list = surname_list.apply(income.split_income, axis=1)
-            surname_list["income"] = surname_list["income"].apply(
-                lambda x: x if bool(re.search(r'\d', str(x))) else "")
+                # Firm token (parallel), then _ind_FT (df-level), then estate (parallel)
+                surname_list = _par(pool, surname_list, _s4_batch_firm_only)
+                surname_list = firm_estate._ind_FT(
+                    surname_list, df_death_reg_unacc, surname_list)
+                # Vectorized: clear initials for firm rows with >3 lowercase chars
+                n_lower = surname_list["initials"].astype(str).str.count(r'[a-z]')
+                surname_list.loc[
+                    (surname_list["firm_dummy"] == 1) & (n_lower > 3), "initials"] = ""
+                surname_list = _par(pool, surname_list, _s4_batch_estate_only)
 
-            # Secondary lowercase last-name adjustment
-            surname_list = line_processing.adj_sec_lowercase_LN(surname_list)
-
-            # Parish extraction (3 passes)
-            surname_list["parish"] = ""
-            surname_list = surname_list.apply(parish.extract_parish, axis=1)
-            surname_list = surname_list.apply(parish.extract_parish_no_init, axis=1)
-            surname_list = surname_list.apply(parish.extra_parish_residual_cases, axis=1)
-
-            # Spot wrong occupation
-            surname_list["change_occ"] = 0
-            surname_list = surname_list.apply(
-                lambda row: parish.spot_wrong_occ(row, occ_list), axis=1)
-            surname_list["parish"] = surname_list.apply(
-                lambda x: "" if x["parish"] == x["parish"] and x["index"] == "A1"
-                else x["parish"], axis=1)
-
-            # Initials duplicate adjustment
-            surname_list = surname_list.apply(initials_names.adj_initials_dupl, axis=1)
-
-            # Parish post-processing
-            surname_list["parish"] = surname_list["parish"].apply(
-                lambda x: re.sub(r'\d+', "", str(x)))
-            surname_list["parish"] = surname_list["parish"].apply(
-                lambda x: "" if re.search(FIRM_PATTERN, x) else x)
-            surname_list["parish"] = surname_list.apply(
-                lambda x: "" if x["parish"].endswith(x["occ_reg"]) else x["parish"], axis=1)
-            surname_list["parish"] = surname_list.apply(
-                lambda row: ""
-                if ((row["parish"].lower() in occ_list["occ_llm"].values
-                     or re.search(FIRM_PATTERN, row["parish"])
-                     or any(word in occ_list["occ_llm"].values
-                            for word in row["parish"].lower().split()))
-                    and len(re.findall(r'[a-z]', row["parish"])) > 4
-                    and "-" not in row["parish"])
-                else row["parish"], axis=1)
-
-            # Firm & estate tokens
-            surname_list["firm_dummy"] = 0
-            surname_list = surname_list.apply(firm_estate.firm_token, axis=1)
-            surname_list = firm_estate._ind_FT(
-                surname_list, df_death_reg_unacc, surname_list)
-
-            surname_list["initials"] = surname_list.apply(
-                lambda row: ""
-                if (row["firm_dummy"] == 1
-                    and isinstance(row["initials"], str)
-                    and len(re.findall(r'[a-z]', row["initials"])) > 3)
-                else row["initials"], axis=1)
-
-            surname_list["estate_dummy"] = 0
-            surname_list = surname_list.apply(firm_estate.estate_token, axis=1)
-            reporter.capture(4, "Main loop pass 1", surname_list)
+                reporter.capture(4, "Main loop pass 1", surname_list)
 
     # ================================================================
     # STEP 5 – Location assignment
