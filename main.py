@@ -153,8 +153,8 @@ def run_pipeline(
         if loop_i == 0:
             surname_list = surname_list.groupby(["page", "column"]).apply(
                 lambda g: line_processing.split_line(g, occ_list))
-            surname_list = surname_list.drop(columns={"column", "page"}).reset_index()
-            surname_list = surname_list.drop(columns={"level_2"})
+            surname_list = surname_list.drop(columns=["column", "page"], errors="ignore").reset_index()
+            surname_list = surname_list.drop(columns=["level_2"], errors="ignore")
             surname_list = income.find_income(
                 surname_list, line_processing.third_line, occ_list)
             reporter.capture(4, "Main loop pass 0", surname_list)
