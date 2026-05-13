@@ -340,7 +340,12 @@ def run_parish_quality_check(surname_list, parish_mapped, parish_only_matched,
                     return value
         return ""
 
-    stockholm_known_par["matched_parish"] = stockholm_known_par.apply(_match_stk_parish, axis=1)
+    _mp = stockholm_known_par.apply(_match_stk_parish, axis=1)
+    # pandas 3.0 can return a DataFrame when a row-wise function returns scalars
+    # in certain edge cases; coerce to a Series of strings.
+    if isinstance(_mp, pd.DataFrame):
+        _mp = _mp.iloc[:, 0]
+    stockholm_known_par["matched_parish"] = _mp.astype(str)
     stockholm_known_par = stockholm_known_par[stockholm_known_par["matched_parish"] != ""]
     parish_only_matched = pd.concat([parish_only_matched, stockholm_known_par], axis=0)
 
