@@ -24,13 +24,21 @@ from ocr_modules import location, parish
 # Each entry: (year, provider, out_dir, checkpoint_prefix, output_prefix, mineru_dir)
 # mineru_dir: path to MinerU *_extracted.json files, or None for non-MinerU runs.
 RUNS = [
-    ("1912", "amazon",  "runs/1912/outputs/amazon",  "amazon",  "final_output_amazon",  None),
-    ("1912", "mineru",  "runs/1912/outputs/mineru",  "mineru",  "final_output_mineru",  None),
-    ("1913", "amazon",  "runs/1913/outputs/amazon",  "amazon",  "final_output_amazon",  None),
-    ("1913", "mineru",  "runs/1913/outputs/mineru",  "mineru",  "final_output_mineru",  None),
-    ("1920", "mineru",  "runs/1920/outputs/mineru",  "mineru",  "final_output_mineru",
+    # 1911-1914: headers contain ads, not city names → mineru_dir=None
+    ("1911", "mineru",  "runs/1911/outputs/mineru",  "mineru",   "final_output_mineru",  None),
+    ("1912", "amazon",  "runs/1912/outputs/amazon",  "amazon",   "final_output_amazon",  None),
+    ("1912", "mineru",  "runs/1912/outputs/mineru",  "mineru",   "final_output_mineru",  None),
+    ("1912", "deepseek","runs/1912/outputs/deepseek","deepseek", "final_output_deepseek",None),
+    ("1913", "amazon",  "runs/1913/outputs/amazon",  "amazon",   "final_output_amazon",  None),
+    ("1913", "mineru",  "runs/1913/outputs/mineru",  "mineru",   "final_output_mineru",  None),
+    ("1913", "nano",    "runs/1913/outputs/nano",    "nano",     "final_output_nano",    None),
+    ("1913", "nvidia",  "runs/1913/outputs/nvidia",  "nvidia",   "final_output_nvidia",  None),
+    ("1913", "glm",     "runs/1913/outputs/glm",     "glm",      "final_output_glm",     None),
+    ("1914", "mineru",  "runs/1914/outputs/mineru",  "mineru",   "final_output_mineru",  None),
+    # 1920-1921: MinerU headers contain municipality names
+    ("1920", "mineru",  "runs/1920/outputs/mineru",  "mineru",   "final_output_mineru",
      "/home7/becomingsweden/data/taxeringskalender_1920/1920/miner_ocr_results/"),
-    ("1921", "mineru",  "runs/1921/outputs/mineru",  "mineru",  "final_output_mineru",
+    ("1921", "mineru",  "runs/1921/outputs/mineru",  "mineru",   "final_output_mineru",
      "/home7/becomingsweden/data/taxeringskalender_1921/1921/miner_ocr_results/"),
 ]
 
