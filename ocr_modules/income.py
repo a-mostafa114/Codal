@@ -56,10 +56,18 @@ def extr_inc(row):
 # ── Split income into two parts ─────────────────────────────────────────
 
 def split_income(row):
-    """Split a raw income string into ``income_1`` and ``income_2``."""
+    """Split a raw income string into ``income_1`` and ``income_2``.
+
+    A dash *before* the first digit means the first column is empty in the
+    book ('—4800' = no income_1, income_2=4800); the single number must land
+    in income_2, not income_1.
+    """
     income = row.get("income")
     if not isinstance(income, str):
         income = ""
+
+    leading = re.match(r'^[^\d]*', income).group(0)
+    leading_dash = bool(re.search(r'[-‒–—―−]', leading))
 
     income_1 = ""
     income_2 = ""
@@ -90,6 +98,9 @@ def split_income(row):
         income_1 = ''.join(buffer)
     elif first_end and buffer:
         income_2 = ''.join(buffer)
+
+    if leading_dash and income_1 != "" and income_2 == "":
+        income_1, income_2 = "", income_1
 
     row["income_1"] = income_1
     row["income_2"] = income_2
