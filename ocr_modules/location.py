@@ -82,7 +82,7 @@ def find_locations(df):
         city = re.sub(r',', "", city)
         return city.strip()
 
-    mask_inv = lines.str.contains(r'inv\.\)', regex=True, na=False)
+    mask_inv = lines.str.contains(r'inv\.?\)', regex=True, na=False)
     df.loc[mask_inv, "location"] = lines[mask_inv].apply(_city_from_inv)
 
     # Pattern 1 fallback: when the city name was on the previous row
@@ -356,17 +356,30 @@ def _resolve_range_first_mun(page_num, first_mun, all_headers, lookback=10):
     return first_mun
 
 
-def _alpha_transitions_by_col(df_page, threshold=8):
+_NOBLE_PREFIX_RE = re.compile(
+    r'^(af|von|v\.|de|van|ter|zu|du|le|la)\s+', re.IGNORECASE
+)
+
+
+def _alpha_transitions_by_col(df_page, threshold=8, pos_limit=2):
     """Detect the last section-boundary alphabet drop per column on a page.
 
     Processes rows in ascending row order within each column. Tracks a running
     maximum first letter. A drop of ``threshold`` or more positions is treated
-    as a boundary only when it lands in the A–D range (positions 0–3), which
-    distinguishes genuine municipality transitions (drop to A) from within-
+    as a boundary only when it lands in the A–``pos_limit`` range, which
+    distinguishes genuine municipality transitions (drop to A/B/C) from within-
     section noise (e.g. Å→Ö rendered as A→O after ``remove_accents``).
 
-    Drops that land outside A–D are silently skipped without resetting the
-    maximum, so that a later true drop (to A) can still be detected.
+    Drops that land outside the accepted range are silently skipped without
+    resetting the maximum, so that a later true drop (to A) can still be
+    detected.
+
+    Noble particles ("af", "von", "de", …) are stripped before the alphabetical
+    comparison so "af Klintberg" sorts as K, not A — preventing false drops in
+    the middle of a single-municipality K-section.
+
+    Entries whose last_name contains digits are skipped (ad text such as
+    "Allm Tel. 9269" that bleeds into the last_name column).
 
     Returns the LAST qualifying drop per column: ``{col: row}``.  The "last"
     semantics correctly handles county-level pages where Swedish Å/Ä/Ö names
@@ -384,17 +397,24 @@ def _alpha_transitions_by_col(df_page, threshold=8):
 
         for _, r in group.iterrows():
             name = str(r.get('last_name', '')).strip()
-            if not name or not name[0].isalpha():
+            if not name:
                 continue
-            pos = ord(name[0].upper()) - ord('A')  # 0–25
+            # Skip ad-text entries that contain digits (e.g. "Allm Tel. 9269")
+            if re.search(r'\d', name):
+                continue
+            # Strip noble particles so "af Klintberg" sorts as K, not A
+            sort_name = _NOBLE_PREFIX_RE.sub('', name).strip()
+            if not sort_name or not sort_name[0].isalpha():
+                continue
+            pos = ord(sort_name[0].upper()) - ord('A')  # 0–25
             if current_max < 0:
                 current_max = pos
             elif current_max - pos >= threshold:
-                if pos <= 3:
-                    # Real section boundary: drop lands in A–D
+                if pos <= pos_limit:
+                    # Real section boundary: drop lands in A–pos_limit
                     last_drop_row = int(r['row'])
                     current_max = pos
-                # else: within-section noise (e.g. Z→O); ignore and keep current_max
+                # else: within-section noise; ignore and keep current_max
             elif pos > current_max:
                 current_max = pos
 
@@ -404,83 +424,213 @@ def _alpha_transitions_by_col(df_page, threshold=8):
     return transitions
 
 
-def build_location_list_with_headers(df, mineru_dir=None):
-    """Build location list augmented with MinerU page-header municipality data.
+def _city_from_inv_line(line):
+    """Extract city name from a raw inv.) line (e.g. 'Göteborg (170173 inv.)')."""
+    city = ""
+    for ch in line:
+        if ch in "()":
+            break
+        city += ch
+    city = re.sub(r'\d+', "", city)
+    city = re.sub(r'inv\.', "", city, flags=re.IGNORECASE)
+    city = re.sub(r',', "", city)
+    return _remove_accents_simple(city.strip())
+
+
+def load_inv_from_mineru_json(mineru_dir, df):
+    """Read ALL MinerU JSON types for inv.) content missed by the pipeline.
+
+    The standard pipeline filters to types=['text','ref_text','title'].
+    Some inv.) city headers are emitted as 'table_caption' or other types
+    and are silently dropped.  This function scans all types, keeps only
+    entries whose content matches an inv.) pattern, and returns a DataFrame
+    of synthetic location rows that can be merged into the base location_list.
+
+    Column and row are estimated from the bbox and the actual row distribution
+    already present in ``df`` for each (page, column) pair.
+    """
+    _INV_RE = re.compile(r'inv\.?\)', re.IGNORECASE)
+    _PIPELINE_TYPES = {'text', 'ref_text', 'title'}
+
+    rows = []
+    pattern = os.path.join(mineru_dir, '*_extracted.json')
+    for filepath in sorted(glob.glob(pattern)):
+        m = re.search(r'_(\d+)_extracted', os.path.basename(filepath))
+        if not m:
+            continue
+        page_num = int(m.group(1))
+        try:
+            with open(filepath, encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception:
+            continue
+
+        for entry in data:
+            if entry.get('type', '') in _PIPELINE_TYPES:
+                continue  # already handled by the main pipeline
+            content = (entry.get('content') or '').strip()
+            if not content or not _INV_RE.search(content):
+                continue
+
+            city = _city_from_inv_line(content)
+            if not city:
+                continue
+
+            bbox = entry.get('bbox', [])
+            if len(bbox) >= 4:
+                # City-section headers span full page width; use col=1 so the
+                # marker propagates into col=2 via binary-search key ordering.
+                y_center = (bbox[1] + bbox[3]) / 2
+                col = 1
+            else:
+                y_center = 0.5
+                col = 1
+
+            # Map y_center (0–1) to an approximate row using the actual row
+            # distribution for this (page, col) in the pipeline data.
+            page_col_rows = df[
+                (df['page'] == page_num) & (df['column'] == col)
+            ]['row']
+            if not page_col_rows.empty:
+                row = max(1, int(y_center * int(page_col_rows.max())))
+            else:
+                row = max(1, int(y_center * 100))
+
+            rows.append({
+                'page': page_num, 'column': col, 'row': row,
+                'line': city, 'line_complete': city, 'split': 0,
+                'location': city,
+            })
+
+    if not rows:
+        return pd.DataFrame()
+    return pd.DataFrame(rows)
+
+
+def build_location_list_with_headers(df, mineru_dir=None, threshold=8, pos_limit=2):
+    """Build location list augmented with MinerU page-header and alphabet-
+    transition municipality data.
 
     Calls ``build_location_list`` first (existing ``inv.)`` detection), then
-    injects additional location markers from MinerU ``type=header`` elements:
+    injects additional location markers in two passes:
 
-    * Single-municipality headers (e.g. "Örebro län"): inserts a marker at the
-      start of pages not already covered by ``inv.)`` detection.
-    * Range headers (e.g. "Gävleborgs—Göteborgs"): inserts the first
-      municipality at page start, then uses alphabet-drop detection
-      (``_alpha_transitions_by_col``) to position the second municipality
-      within each column.
+    Pass 1 – single-mun MinerU headers (1920/1921 only): inserts a start-of-
+    page marker for pages beyond the last ``inv.)``-covered page.
 
-    Falls back to plain ``build_location_list(df)`` when ``mineru_dir`` is
-    ``None`` or no matching JSON files are found.
+    Pass 2 – alphabet transitions (ALL books): for each page that has no
+    existing ``inv.)`` marker, ``_alpha_transitions_by_col`` is run to detect
+    mid-page municipality boundaries.  The municipality name after the
+    transition comes from:
+
+    * MinerU range headers (1920/1921) when the page header lists two names, or
+    * The next distinct ``inv.)`` entry (1911-1914 and fallback for 1920/1921).
+
+    Range-header pages always get a start-of-page marker for the first
+    municipality even when alphabet detection finds no transition.
     """
+    import numpy as np
+
     location_list = build_location_list(df)
 
-    if not mineru_dir:
-        return location_list
+    # Supplement with inv.) entries that were filtered out by type in the
+    # pipeline (e.g. table_caption city headers in 1920/1921).
+    # A single page can carry more than one transition, so we add all
+    # supplementary entries regardless of whether the page already has an
+    # inv.) marker from the pipeline.
+    if mineru_dir:
+        extra_inv = load_inv_from_mineru_json(mineru_dir, df)
+        if not extra_inv.empty:
+            location_list = pd.concat(
+                [location_list, extra_inv], axis=0, ignore_index=True
+            ).sort_values(['page', 'column', 'row']).reset_index(drop=True)
 
-    page_headers = load_mineru_headers(mineru_dir)
-    if not page_headers:
-        return location_list
+    page_headers = load_mineru_headers(mineru_dir) if mineru_dir else {}
 
-    # Last page that has an explicit inv.) location marker.  Pages up to and
-    # including this boundary are already served by the existing location list
-    # (either directly or via binary-search inheritance).  Only pages BEYOND
-    # this boundary may be missing municipality assignments.
+    # Pages with existing inv.) markers (exclude synthetic page-0 header)
     inv_pages = location_list.loc[location_list['page'] > 0, 'page']
     max_covered_page = int(inv_pages.max()) if len(inv_pages) > 0 else 0
+    # First real content page: skip everything before (ad / front-matter pages)
+    first_inv_page = int(inv_pages.min()) if len(inv_pages) > 0 else 0
+    pages_with_markers = set(inv_pages.astype(int))
+
+    # Binary-search arrays built from the BASE location_list for municipality
+    # look-ups at arbitrary (page, col, row) positions.
+    loc_sorted = location_list.sort_values(['page', 'column', 'row'])
+
+    def _read_key(frame):
+        return (
+            (frame['page'].astype(int) * 1_000 + frame['column'].astype(int))
+            * 100_000 + frame['row'].astype(int)
+        ).values
+
+    loc_keys = _read_key(loc_sorted)
+    loc_vals = loc_sorted['location'].tolist()
+
+    def _mun_at(page, col=0, row=0):
+        key = int((int(page) * 1_000 + int(col)) * 100_000 + int(row))
+        idx = int(np.searchsorted(loc_keys, key, side='right')) - 1
+        return loc_vals[max(0, min(idx, len(loc_vals) - 1))]
+
+    _fwd_pages = [int(p) for p in loc_sorted['page'].values]
+
+    # Maximum number of pages between a detected alpha transition and the next
+    # inv.) marker for the transition to be considered real.  Transitions where
+    # the next municipality is further away are almost certainly within-
+    # municipality alphabet noise and are silently skipped.
+    _MAX_ALPHA_DIST = 3
+
+    def _next_mun_after(page_num, current_mun):
+        """First inv.) municipality distinct from current_mun after page_num.
+
+        Returns ``(municipality, distance)`` where distance is the number of
+        pages between page_num and the inv.) entry.  Returns ``(None, 9999)``
+        when no such entry exists.
+        """
+        cur = current_mun.strip().lower()
+        for pg, mun in zip(_fwd_pages, loc_vals):
+            if pg > page_num and mun.strip().lower() != cur:
+                return mun, pg - page_num
+        return None, 9999
 
     new_rows = []
 
     def _make_row(page, col, row, mun):
         return {
             'page': page, 'column': col, 'row': row,
-            'line': mun, 'line_complete': mun,
-            'split': 0, 'location': mun,
+            'line': mun, 'line_complete': mun, 'split': 0, 'location': mun,
         }
 
+    # ── Pass 1: single-mun MinerU headers beyond inv.) coverage ─────────
     for page_num, mun_names in sorted(page_headers.items()):
-        first_mun = mun_names[0]
+        if len(mun_names) == 1 and page_num > max_covered_page:
+            new_rows.append(_make_row(page_num, 0, 0, mun_names[0]))
 
-        if len(mun_names) == 1:
-            # Single municipality: only add markers for pages beyond the last
-            # inv.) detection boundary (earlier pages inherit correctly).
-            if page_num > max_covered_page:
-                new_rows.append(_make_row(page_num, 0, 0, first_mun))
-
-        else:
-            # Range header — always inject (these pages never have inv.) markers)
-            # Normalize first_mun: range headers sometimes omit "lan" from first part
-            first_mun = _resolve_range_first_mun(page_num, first_mun, page_headers)
-            second_mun = mun_names[1]
-            new_rows.append(_make_row(page_num, 0, 0, first_mun))
-
-            df_page = df[df['page'] == page_num]
-            col_transitions = _alpha_transitions_by_col(df_page)
-            page_cols = sorted(df_page['column'].unique()) if len(df_page) > 0 else []
-
-            has_col1_transition = 1 in col_transitions
-
-            for col in page_cols:
-                col_has_transition = col in col_transitions
-
-                if col_has_transition:
-                    # Col 1 transition spills into col 2+; reset col 2+ back to
-                    # first_mun ONLY when the col itself also has a transition
-                    # (meaning it starts with first_mun entries).  If col 2 has
-                    # NO transition, it is entirely in second_mun territory and
-                    # the col 1 spillover already assigns it correctly.
-                    if has_col1_transition and col > 1:
-                        new_rows.append(_make_row(page_num, col, 0, first_mun))
-                    new_rows.append(
-                        _make_row(page_num, col, col_transitions[col], second_mun)
-                    )
+    # ── Pass 2: range-header anchors (Method 3) ──────────────────────────
+    # For pages whose MinerU header lists two municipalities, insert a
+    # start-of-page marker for the first municipality.  This covers any
+    # remaining gap where the inv.) entry and the range page are not on
+    # the same page (rare after the type-filter and regex fixes above).
+    #
+    # ── Method 2 (alpha-transitions) — DISABLED ──────────────────────────
+    # _alpha_transitions_by_col detects Z→A alphabet drops in last_name to
+    # locate municipality boundaries mid-page.  Grid-search on 1920/1921
+    # MinerU ground truth (threshold=8, pos_limit=2) achieved recall=0.978,
+    # precision=0.587, F1=0.734.  However, enabling it on pages that already
+    # carry inv.) markers caused a regression (alpha can fire before the inv.)
+    # row, moving the boundary earlier than it should be).  Left disabled
+    # until Method 1 quality is fully validated on all years.
+    for page_num in sorted(page_headers.keys()):
+        page_num = int(page_num)
+        if page_num < first_inv_page:
+            continue
+        if len(page_headers[page_num]) < 2:
+            continue  # single-mun pages handled by Pass 1
+        if page_num in pages_with_markers:
+            continue  # inv.) already anchors this page
+        first_mun = _resolve_range_first_mun(
+            page_num, page_headers[page_num][0], page_headers
+        )
+        new_rows.append(_make_row(page_num, 0, 0, first_mun))
 
     if not new_rows:
         return location_list

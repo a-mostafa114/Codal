@@ -284,8 +284,7 @@ def run_pipeline(
     # STEP 5 – Location assignment
     # ================================================================
     print("[Step 5/14] Assigning locations / municipalities ...")
-    surname_list["location"] = ""
-    surname_list = surname_list.apply(location.find_locations, axis=1)
+    surname_list = location.find_locations(surname_list)
     location_list = location.build_location_list(surname_list)
     surname_list = location.extract_location(surname_list, location_list)
     surname_list = location.location_limit_case(surname_list)
@@ -359,25 +358,29 @@ def run_pipeline(
             surname_list["change_occ"] = 0
             surname_list = surname_list.apply(
                 lambda row: parish.spot_wrong_occ(row, occ_list), axis=1)
-            surname_list["parish"] = surname_list.apply(
-                lambda x: "" if x["parish"] == x["parish"] and x["index"] == "A1"
-                else x["parish"], axis=1)
+            surname_list.loc[surname_list["index"] == "A1", "parish"] = ""
             surname_list = surname_list.apply(initials_names.adj_initials_dupl, axis=1)
-            surname_list["parish"] = surname_list["parish"].apply(
-                lambda x: re.sub(r'\d+', "", str(x)))
-            surname_list["parish"] = surname_list["parish"].apply(
-                lambda x: "" if re.search(FIRM_PATTERN, x) else x)
-            surname_list["parish"] = surname_list.apply(
-                lambda x: "" if x["parish"].endswith(x["occ_reg"]) else x["parish"], axis=1)
-            surname_list["parish"] = surname_list.apply(
-                lambda row: ""
-                if ((row["parish"].lower() in occ_list["occ_llm"].values
-                     or re.search(FIRM_PATTERN, row["parish"])
-                     or any(word in occ_list["occ_llm"].values
-                            for word in row["parish"].lower().split()))
-                    and len(re.findall(r'[a-z]', row["parish"])) > 4
-                    and "-" not in row["parish"])
-                else row["parish"], axis=1)
+            surname_list["parish"] = (
+                surname_list["parish"].astype(str).str.replace(r'\d+', "", regex=True))
+            mask_firm_par = surname_list["parish"].str.contains(
+                FIRM_PATTERN, regex=True, na=False)
+            surname_list.loc[mask_firm_par, "parish"] = ""
+            par_arr = surname_list["parish"].to_numpy(dtype=str)
+            occ_arr = surname_list["occ_reg"].to_numpy(dtype=str)
+            ends_occ8 = np.array(
+                [p.endswith(o) and o != "" for p, o in zip(par_arr, occ_arr)])
+            surname_list.loc[ends_occ8, "parish"] = ""
+            occ_set8 = set(occ_list["occ_llm"].values)
+            surname_list["parish"] = surname_list["parish"].where(
+                ~surname_list["parish"].apply(
+                    lambda p: (
+                        p.lower() in occ_set8
+                        or re.search(FIRM_PATTERN, p) is not None
+                        or any(w in occ_set8 for w in p.lower().split())
+                    ) and len(re.findall(r'[a-z]', p)) > 4 and "-" not in p
+                ),
+                other="",
+            )
 
             surname_list = surname_list.apply(
                 lambda row: occupation.adj_suspect_occ(row, occ_list), axis=1)
@@ -392,13 +395,19 @@ def run_pipeline(
     # STEP 9 – Fuzzy occupation matching + secondary occupation
     # ================================================================
     print("[Step 9/14] Fuzzy occupation matching ...")
-    surname_list["occ_reg"] = surname_list.apply(
+    _occ = surname_list.apply(
         lambda row: row["occ_reg"] if row["occ_reg"] != ""
         else occupation.occ_fuzz(row, occ_list), axis=1)
+    if isinstance(_occ, pd.DataFrame):
+        _occ = _occ.iloc[:, 0]
+    surname_list["occ_reg"] = _occ.astype(str)
 
-    surname_list["occ_reg_2"] = surname_list.apply(
+    _occ2 = surname_list.apply(
         lambda row: row["occ_reg"] if row["occ_reg"] == ""
         else occupation.sec_occup(row, occ_list), axis=1)
+    if isinstance(_occ2, pd.DataFrame):
+        _occ2 = _occ2.iloc[:, 0]
+    surname_list["occ_reg_2"] = _occ2.astype(str)
     reporter.capture(9, "Fuzzy occupation matching", surname_list)
 
     # ================================================================
@@ -444,12 +453,15 @@ def run_pipeline(
     surname_list = surname_list.merge(
         proper_parish[["parish", "mapped_parish", "parish_cleaned"]],
         on="parish", how="left")
-    surname_list["parish_cleaned_"] = surname_list.apply(
+    _pc = surname_list.apply(
         lambda row: row["mapped_parish"]
         if pd.notna(row["mapped_parish"]) and row["mapped_parish"] != ""
         else (row["parish_cleaned"]
               if pd.notna(row["parish_cleaned"]) and row["parish_cleaned"] != ""
               else row["parish"]), axis=1)
+    if isinstance(_pc, pd.DataFrame):
+        _pc = _pc.iloc[:, 0]
+    surname_list["parish_cleaned_"] = _pc.astype(str)
     surname_list = surname_list.fillna("")
     surname_list = surname_list.apply(parish.cleaned_parish, axis=1)
     surname_list = surname_list.drop(columns={"parish_cleaned", "mapped_parish"})
@@ -483,22 +495,31 @@ def run_pipeline(
     surname_list = surname_list.apply(
         lambda row: parish.remove_firms_from_parish(row, parish_num, parish_firm), axis=1)
 
-    # Parish vs occupation/initials/second-last-name conflicts
-    surname_list["parish"] = surname_list.apply(
-        lambda x: "" if x["parish"].lower() == x["occ_reg"].lower() else x["parish"], axis=1)
-    surname_list["parish"] = surname_list.apply(
-        lambda x: ""
-        if (x["parish"] == x["initials"] and not re.search(r'\.', x["initials"])
-            and any(name == x["initials"] for name in first_names.values))
-        else x["parish"], axis=1)
-    surname_list["parish"] = surname_list.apply(
-        lambda x: ""
-        if x["parish"] == x["second_last_name"] and x["parish"] not in PARISH_DICT_KNOWN
-        else x["parish"], axis=1)
-    surname_list["second_last_name"] = surname_list.apply(
-        lambda x: ""
-        if x["parish"] == x["second_last_name"] and x["parish"] in PARISH_DICT_KNOWN
-        else x["second_last_name"], axis=1)
+    # Parish vs occupation/initials/second-last-name conflicts (vectorized)
+    mask_par_occ = (
+        surname_list["parish"].str.lower() == surname_list["occ_reg"].str.lower()
+    )
+    surname_list.loc[mask_par_occ, "parish"] = ""
+
+    fn_vals = set(first_names.values)
+    mask_par_init = (
+        (surname_list["parish"] == surname_list["initials"])
+        & (~surname_list["initials"].str.contains(r'\.', regex=True, na=False))
+        & surname_list["initials"].isin(fn_vals)
+    )
+    surname_list.loc[mask_par_init, "parish"] = ""
+
+    mask_par_sln_clear = (
+        (surname_list["parish"] == surname_list["second_last_name"])
+        & ~surname_list["parish"].isin(PARISH_DICT_KNOWN)
+    )
+    surname_list.loc[mask_par_sln_clear, "parish"] = ""
+
+    mask_sln_clear = (
+        (surname_list["parish"] == surname_list["second_last_name"])
+        & surname_list["parish"].isin(PARISH_DICT_KNOWN)
+    )
+    surname_list.loc[mask_sln_clear, "second_last_name"] = ""
 
     # Double-check firm initials/parishes
     mask = (
@@ -633,12 +654,10 @@ def run_pipeline(
         & (double_count_in["initials"] != "")
         & (double_count_in["firm_dummy"] == 0)
     ]
-    double_count_in["parish"] = double_count_in.apply(
-        lambda x: ""
-        if len(x["line_complete"].split(",")) == 3 and x["last_name"] != ""
-        else x["parish"],
-        axis=1,
-    )
+    mask_3c = (
+        double_count_in["line_complete"].str.split(",").str.len() == 3
+    ) & (double_count_in["last_name"] != "")
+    double_count_in.loc[mask_3c, "parish"] = ""
     surname_list.update(double_count_in)
 
     # avoid_double_count_init
@@ -653,7 +672,10 @@ def run_pipeline(
                 and row["split"] == 3 and row["firm_dummy"] == 0
                 and not re.search(r'\bfru|anke|froken', line)
                 and row["estate_dummy"] == 0):
-            pos_init = line.index(init_)
+            try:
+                pos_init = line.index(init_)
+            except ValueError:
+                return row
             line_cut = line[pos_init: pos_init + len(init_) - 1]
             row["parish"] = "" if not re.search(r',', line_cut) else row["parish"]
         return row
