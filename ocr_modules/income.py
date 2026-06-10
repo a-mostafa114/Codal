@@ -66,6 +66,10 @@ def split_income(row):
     if not isinstance(income, str):
         income = ""
 
+    # OCR noise inside a number ("20'000", "1053:0", "9: 50") would otherwise
+    # split it into two incomes; merge the digit run before parsing.
+    income = re.sub(r"(?<=\d)\s*[''‘′´`:;]\s*(?=\d)", "", income)
+
     leading = re.match(r'^[^\d]*', income).group(0)
     leading_dash = bool(re.search(r'[-‒–—―−]', leading))
 
