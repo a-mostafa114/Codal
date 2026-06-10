@@ -20,6 +20,23 @@ from .config import FIRM_PATTERN, INITIALS_PATTERN
 
 # ── Number / punctuation cleaning ───────────────────────────────────────
 
+_UNICODE_DASH_RE = re.compile(r'[‒–—―−]')  # ‒ – — ― −
+
+
+def normalize_dashes(df):
+    """Replace unicode dash variants with ASCII '-' in line / line_complete.
+
+    OCR engines emit the income pair as '5410—4800' (em-dash) while every
+    split/income regex in this module matches only ASCII '-'. A complete
+    person line then reaches split=3 only via condition 1-bis, which needs
+    the *next* line to start with an uppercase letter — whenever it doesn't,
+    the line silently stays split=0 and the person is dropped.
+    """
+    for col in ("line", "line_complete"):
+        df[col] = df[col].astype(str).str.replace(_UNICODE_DASH_RE, '-', regex=True)
+    return df
+
+
 def clean_comma_num(row):
     line = str(row["line_complete"])
     if (re.search(r'\d,\d\d', line)

@@ -194,6 +194,7 @@ def run_pipeline(
 
     surname_list = surname_list.apply(line_processing.clean_dot_num, axis=1)
     surname_list = line_processing.fix_initials_and_dots(surname_list)
+    surname_list = line_processing.normalize_dashes(surname_list)
     reporter.capture(3, "Line cleaning", surname_list)
 
     # ================================================================
