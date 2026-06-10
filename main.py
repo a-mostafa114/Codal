@@ -289,6 +289,7 @@ def run_pipeline(
     location_list = location.build_location_list(surname_list)
     surname_list = location.extract_location(surname_list, location_list)
     surname_list = location.location_limit_case(surname_list)
+    surname_list = location.normalize_municipality(surname_list)
     reporter.capture(5, "Location assignment", surname_list, extra={
         "location_list_rows": int(len(location_list)),
     })

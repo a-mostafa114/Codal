@@ -276,6 +276,24 @@ def location_limit_case(df):
     return df
 
 
+# ── Municipality normalization ──────────────────────────────────────────
+
+def normalize_municipality(df):
+    """Unify municipality spelling: trim/collapse whitespace, capitalize.
+
+    OCR renders some section headers in lowercase, splitting one
+    municipality into two spellings ('Ostergotlands lan' 13 rows /
+    'ostergotlands lan' 654 rows in the 1913 book) that downstream
+    matching treats as different places.
+    """
+    mun = df["municipality"].astype(str)
+    mun = mun.str.strip().str.replace(r"\s+", " ", regex=True)
+    nonempty = mun != ""
+    mun.loc[nonempty] = mun[nonempty].str[0].str.upper() + mun[nonempty].str[1:]
+    df["municipality"] = mun
+    return df
+
+
 # ── MinerU header-based municipality detection ──────────────────────────────
 
 def _remove_accents_simple(s):
