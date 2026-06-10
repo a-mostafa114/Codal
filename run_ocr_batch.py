@@ -26,11 +26,15 @@ from ocr_modules.ocr_input_builder import OcrInputConfig, build_ocr_inputs, writ
 from main import run_pipeline
 
 # ── Run selection ────────────────────────────────────────────────────────
-YEARS: List[str] = ["1912", "1913"]          # years to process
-PROVIDERS: Optional[List[str]] = ["amazon", "mineru"]  # None = all in config
+YEARS: List[str] = ["1930"]          # years to process
+PROVIDERS: Optional[List[str]] = ["mineru"]  # None = all in config
 
 # ── Per-year full configurations ─────────────────────────────────────────
 CONFIGS = {
+    "1911": OcrInputConfig(
+        mineru_dir="/home7/becomingsweden/data/taxeringskalender_1911/1911/miner_ocr_results/",
+        out_dir="runs/1911",
+    ),
     "1912": OcrInputConfig(
         amazon_csv="final_set_1912.csv",
         deepseek_dir="/home7/becomingsweden/output/taxeringskalender_1912/splits/deepseek_ocr/",
@@ -47,6 +51,26 @@ CONFIGS = {
         mineru_dir="/home7/becomingsweden/data/taxeringskalender_1913/1913/miner_ocr_results/",
         glm_dir="/home7/becomingsweden/data/taxeringskalender_1913/1913/glm_ocr_results/",
         out_dir="runs/1913",
+    ),
+    "1914": OcrInputConfig(
+        mineru_dir="/home7/becomingsweden/data/taxeringskalender_1914/1914/miner_ocr_results/",
+        out_dir="runs/1914",
+    ),
+    "1920": OcrInputConfig(
+        mineru_dir="/home7/becomingsweden/data/taxeringskalender_1920/1920/miner_ocr_results/",
+        out_dir="runs/1920",
+    ),
+    "1921": OcrInputConfig(
+        mineru_dir="/home7/becomingsweden/data/taxeringskalender_1921/1921/miner_ocr_results/",
+        out_dir="runs/1921",
+    ),
+    "1922": OcrInputConfig(
+        mineru_dir="/home7/becomingsweden/data/taxeringskalender_1922/1922/miner_ocr_results/",
+        out_dir="runs/1922",
+    ),
+    "1930": OcrInputConfig(
+        mineru_dir="/home7/becomingsweden/data/taxeringskalender_1930/1930/miner_ocr_results/",
+        out_dir="runs/1930",
     ),
 }
 

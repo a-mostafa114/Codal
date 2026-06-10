@@ -109,8 +109,12 @@ def parse_mineru_page(filepath: Path) -> List[Dict[str, Any]]:
         entries: List[Dict[str, Any]] = []
         for entry in data:
             entry_type = entry.get("type")
+            content_raw = entry.get("content", "")
             if entry_type not in ["text", "ref_text", "title"]:
-                continue
+                # Keep any entry whose content contains an inv.) marker
+                # regardless of type (e.g. table_caption city headers).
+                if "inv" not in content_raw.lower():
+                    continue
 
             bbox = entry.get("bbox")
             if not bbox or len(bbox) < 4:
