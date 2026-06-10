@@ -392,6 +392,32 @@ def take_out_fake_sec_lines(df):
     return df
 
 
+# ── Hustru (wife) line fill ─────────────────────────────────────────────
+
+def fill_hustru_lines(df):
+    """Turn A1 wife lines into matchable person rows.
+
+    A1 lines ('hustru, E. A. E., —11800') carry the wife's initials and
+    income but no surname of her own — the husband is the closest preceding
+    entry. Fill last_name/best_match from that entry, record
+    occ_reg='hustru', and promote the index to A2 so the standard person
+    filter (index != 'A1') keeps the row. Also unifies the 1930-style
+    'hustr' occupation spelling so wife rows are comparable across books.
+    """
+    df.loc[df["occ_reg"] == "hustr", "occ_reg"] = "hustru"
+
+    a1 = df["index"] == "A1"
+    if not a1.any():
+        return df
+    ln = df["last_name"].replace("", pd.NA).ffill()
+    bm = df["best_match"].replace("", pd.NA).ffill()
+    df.loc[a1, "last_name"] = ln[a1].fillna("")
+    df.loc[a1, "best_match"] = bm[a1].fillna("")
+    df.loc[a1, "occ_reg"] = "hustru"
+    df.loc[a1, "index"] = "A2"
+    return df
+
+
 # ── Spellout helpers ────────────────────────────────────────────────────
 
 def df_FH_SH_FUNCT(df):
