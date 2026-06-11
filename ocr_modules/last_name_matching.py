@@ -47,13 +47,66 @@ def adj_unmatch(row, df_death_reg_unacc):
     return row
 
 
+# ── Precomputed register index ──────────────────────────────────────────
+
+def build_register_index(df_death_reg_unacc):
+    """Precompute the per-row lookup structures of perf_match / fuzzy_alt.
+
+    The originals re-derived these from the 467k-name register for every
+    row (a full Python scan in perf_match, a filter+sort in each fuzzy
+    pass) — ~330 ms/row, the dominant cost of the whole pipeline. Building
+    them once preserves the exact iteration orders:
+
+    - ``name_pos``: first register position per name; the minimum over
+      candidate tokens reproduces perf_match's first-hit-in-register-order.
+    - ``sorted_names``: the same ``sort_values`` call pass 2 ran per row.
+    - ``prefix_buckets``: pass 1 filtered *then* sorted, so each bucket is
+      built with that exact expression (filter-then-sort, default sort
+      kind) rather than sliced from ``sorted_names``, keeping tie order
+      identical.
+    """
+    names = df_death_reg_unacc["last_name"].dropna()
+    name_pos = {}
+    for pos, name in enumerate(names.values):
+        if name not in name_pos:
+            name_pos[name] = pos
+
+    sorted_names = names.sort_values(
+        key=lambda x: x.str.len(), ascending=False).tolist()
+
+    prefix_buckets = {}
+    prefixes = {n[:2] for n in names.values if isinstance(n, str) and n}
+    for cut in prefixes:
+        bucket = names[names.str.startswith(cut)]
+        bucket = bucket.sort_values(key=lambda x: x.str.len(), ascending=False)
+        prefix_buckets[cut] = bucket.tolist()
+
+    return {
+        "name_pos": name_pos,
+        "sorted_names": sorted_names,
+        "prefix_buckets": prefix_buckets,
+    }
+
+
 # ── A2: perfect match ──────────────────────────────────────────────────
 
-def perf_match(row, df_death_reg_unacc):
+def perf_match(row, df_death_reg_unacc, reg_idx=None):
     """Exact-token match of the line start against the death register."""
     if isinstance(row["line"], str):
         tokens = row["line"].split(",") + row["line"].split() + row["line"].split(".")
         line = row["line"]
+        if reg_idx is not None:
+            name_pos = reg_idx["name_pos"]
+            hits = [t for t in set(tokens)
+                    if len(t) > 2 and t in name_pos and line.startswith(t)]
+            name = min(hits, key=name_pos.__getitem__) if hits else None
+            if name is not None:
+                row["best_match"] = name
+                row["last_name"] = name
+                row["similarity"] = 100
+                row["index"] = "A2"
+                row["matched"] = True
+            return row
         for name in df_death_reg_unacc["last_name"].dropna().values:
             if name in tokens and line.startswith(name) and len(name) > 2:
                 row["best_match"] = name
@@ -68,19 +121,23 @@ def perf_match(row, df_death_reg_unacc):
 # ── A3 / A4: fuzzy match ───────────────────────────────────────────────
 
 def fuzzy_alt(row, df_death_reg_unacc, dirty_last_names_list,
-              min_score=85, mid_score=90):
+              min_score=85, mid_score=90, reg_idx=None):
     """Two-pass fuzzy match (prefix-filtered, then full scan)."""
     line = row["line"]
     cut = line[:2] if isinstance(line, str) else ""
-    pairings = df_death_reg_unacc[df_death_reg_unacc["last_name"].notna()]
-    pairings = pairings[pairings["last_name"].str.startswith(cut)]
-    pairings = pairings.sort_values(by="last_name", key=lambda x: x.str.len(), ascending=False)
+    if reg_idx is not None and len(cut) == 2:
+        pass1_names = reg_idx["prefix_buckets"].get(cut, [])
+    else:
+        pairings = df_death_reg_unacc[df_death_reg_unacc["last_name"].notna()]
+        pairings = pairings[pairings["last_name"].str.startswith(cut)]
+        pairings = pairings.sort_values(by="last_name", key=lambda x: x.str.len(), ascending=False)
+        pass1_names = pairings["last_name"]
 
     best_score = 0
     best_name = None
 
     # --- first pass: prefix-filtered ---
-    for last_name in pairings["last_name"]:
+    for last_name in pass1_names:
         if len(last_name) > len(line):
             continue
         compare_part = line[:len(last_name)]
@@ -102,8 +159,12 @@ def fuzzy_alt(row, df_death_reg_unacc, dirty_last_names_list,
         # --- second pass: full scan ---
         best_score = 0
         best_name = None
-        for last_name in df_death_reg_unacc["last_name"].dropna().sort_values(
-                key=lambda x: x.str.len(), ascending=False):
+        if reg_idx is not None:
+            pass2_names = reg_idx["sorted_names"]
+        else:
+            pass2_names = df_death_reg_unacc["last_name"].dropna().sort_values(
+                key=lambda x: x.str.len(), ascending=False)
+        for last_name in pass2_names:
             if len(last_name) > len(line):
                 continue
             compare_part = line[:len(last_name)]
@@ -172,7 +233,7 @@ def fuzzy_alt(row, df_death_reg_unacc, dirty_last_names_list,
 
 # ── A1 → A4 orchestrator ───────────────────────────────────────────────
 
-def alt_algorithm(row_, df_death_reg_unacc, dirty_last_names_list):
+def alt_algorithm(row_, df_death_reg_unacc, dirty_last_names_list, reg_idx=None):
     """Run the full last-name matching cascade (A1→A2→A3/A4)."""
     # A1: non-occupation word
     if any(row_["line"].startswith(word) for word in NO_OCC_LIST):
@@ -182,11 +243,12 @@ def alt_algorithm(row_, df_death_reg_unacc, dirty_last_names_list):
 
     # A2: perfect match
     if not row_["matched"]:
-        row_ = perf_match(row_, df_death_reg_unacc)
+        row_ = perf_match(row_, df_death_reg_unacc, reg_idx=reg_idx)
 
     # A3 / A4: fuzzy match
     if not row_["matched"]:
-        row_ = fuzzy_alt(row_, df_death_reg_unacc, dirty_last_names_list)
+        row_ = fuzzy_alt(row_, df_death_reg_unacc, dirty_last_names_list,
+                         reg_idx=reg_idx)
 
     return row_
 
@@ -271,19 +333,22 @@ def _boundary_ok(line, compare_part):
 # Module-level globals used by pool workers (set once via initializer).
 _pool_death_reg = None
 _pool_dirty_names = None
+_pool_reg_idx = None
 
 
-def _init_pool_worker(death_reg, dirty_names):
+def _init_pool_worker(death_reg, dirty_names, reg_idx=None):
     """Load shared reference data into each worker once at pool creation."""
-    global _pool_death_reg, _pool_dirty_names
+    global _pool_death_reg, _pool_dirty_names, _pool_reg_idx
     _pool_death_reg = death_reg
     _pool_dirty_names = dirty_names
+    _pool_reg_idx = reg_idx
 
 
 def _worker_apply_alt_algorithm(chunk):
     """Process a chunk using the pre-loaded shared reference data."""
     return chunk.apply(
-        lambda row: alt_algorithm(row, _pool_death_reg, _pool_dirty_names),
+        lambda row: alt_algorithm(row, _pool_death_reg, _pool_dirty_names,
+                                  reg_idx=_pool_reg_idx),
         axis=1,
     )
 
@@ -308,10 +373,13 @@ def parallel_alt_algorithm(surname_list, df_death_reg_unacc,
         n_workers = os.cpu_count() or 1
     n_workers = max(1, min(n_workers, n_rows))
 
+    reg_idx = build_register_index(df_death_reg_unacc)
+
     if n_workers <= 1:
         return surname_list.apply(
             lambda row: alt_algorithm(
-                row, df_death_reg_unacc, dirty_last_names_list),
+                row, df_death_reg_unacc, dirty_last_names_list,
+                reg_idx=reg_idx),
             axis=1,
         )
 
@@ -321,9 +389,9 @@ def parallel_alt_algorithm(surname_list, df_death_reg_unacc,
     print(f"  → Distributing {n_rows:,} rows across {len(chunks)} workers ...")
 
     with mp.Pool(
-        processes=len(chunks),
+        processes=min(n_workers, len(chunks)),
         initializer=_init_pool_worker,
-        initargs=(df_death_reg_unacc, dirty_last_names_list),
+        initargs=(df_death_reg_unacc, dirty_last_names_list, reg_idx),
     ) as pool:
         results = pool.map(_worker_apply_alt_algorithm, chunks)
 
