@@ -109,7 +109,8 @@ def parse_mineru_page(filepath: Path) -> List[Dict[str, Any]]:
         entries: List[Dict[str, Any]] = []
         for entry in data:
             entry_type = entry.get("type")
-            content_raw = entry.get("content", "")
+            # image entries carry content=None; .get default doesn't apply
+            content_raw = entry.get("content") or ""
             if entry_type not in ["text", "ref_text", "title"]:
                 # Keep any entry whose content contains an inv.) marker
                 # regardless of type (e.g. table_caption city headers).
@@ -122,7 +123,7 @@ def parse_mineru_page(filepath: Path) -> List[Dict[str, Any]]:
 
             x_value = bbox[0]
             column = 1 if x_value < 0.25 else 2
-            clean_text = entry.get("content", "").strip()
+            clean_text = content_raw.strip()
 
             if clean_text:
                 entries.append({
@@ -141,7 +142,7 @@ def parse_glm_page(filepath: Path) -> List[Dict[str, Any]]:
         with open(filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
 
-        raw_output = data.get("output", "")
+        raw_output = data.get("output") or ""
         raw_output = re.sub(r"<\|[^|]+\|>\s*$", "", raw_output).strip()
 
         entries: List[Dict[str, Any]] = []
