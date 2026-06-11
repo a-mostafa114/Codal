@@ -51,6 +51,15 @@ def _par(pool, df, func, *extra_args):
     return pd.concat(pool.map(func, work))
 
 
+def _papply(df, func, *extra_args):
+    """Run a row-local chunk worker over df with a short-lived pool."""
+    if _N_WORKERS <= 1 or len(df) < 2 * _N_WORKERS:
+        (out,) = [func((df,) + extra_args)]
+        return out
+    with mp.Pool(processes=_N_WORKERS) as pool:
+        return _par(pool, df, func, *extra_args)
+
+
 # ── Step-4 module-level batch workers (must be picklable) ────────────────
 
 def _s4_batch_a(args):
@@ -125,6 +134,35 @@ def _s4_batch_estate_only(args):
     chunk["estate_dummy"] = 0
     chunk = chunk.apply(firm_estate.estate_token, axis=1)
     return chunk
+
+
+def _w_suspect_occ(args):
+    """adj_suspect_occ over a chunk (steps 6 and 8)."""
+    chunk, occ_list = args
+    return chunk.apply(
+        lambda row: occupation.adj_suspect_occ(row, occ_list), axis=1)
+
+
+def _w_occ_fuzz(args):
+    """Step-9 fuzzy occupation over a chunk (returns the occ_reg Series)."""
+    chunk, occ_list = args
+    out = chunk.apply(
+        lambda row: row["occ_reg"] if row["occ_reg"] != ""
+        else occupation.occ_fuzz(row, occ_list), axis=1)
+    if isinstance(out, pd.DataFrame):
+        out = out.iloc[:, 0]
+    return out
+
+
+def _w_sec_occup(args):
+    """Step-9 secondary occupation over a chunk (returns a Series)."""
+    chunk, occ_list = args
+    out = chunk.apply(
+        lambda row: row["occ_reg"] if row["occ_reg"] == ""
+        else occupation.sec_occup(row, occ_list), axis=1)
+    if isinstance(out, pd.DataFrame):
+        out = out.iloc[:, 0]
+    return out
 
 
 def run_pipeline(
@@ -299,8 +337,7 @@ def run_pipeline(
     # STEP 6 – Suspect-occupation adjustment
     # ================================================================
     print("[Step 6/14] Adjusting suspect occupations ...")
-    surname_list = surname_list.apply(
-        lambda row: occupation.adj_suspect_occ(row, occ_list), axis=1)
+    surname_list = _papply(surname_list, _w_suspect_occ, occ_list)
     reporter.capture(6, "Suspect occupation adjustment", surname_list)
 
     # Checkpoint
@@ -385,8 +422,7 @@ def run_pipeline(
                 other="",
             )
 
-            surname_list = surname_list.apply(
-                lambda row: occupation.adj_suspect_occ(row, occ_list), axis=1)
+            surname_list = _papply(surname_list, _w_suspect_occ, occ_list)
 
         if class_i == 0:
             surname_list = surname_list.apply(
@@ -398,18 +434,10 @@ def run_pipeline(
     # STEP 9 – Fuzzy occupation matching + secondary occupation
     # ================================================================
     print("[Step 9/14] Fuzzy occupation matching ...")
-    _occ = surname_list.apply(
-        lambda row: row["occ_reg"] if row["occ_reg"] != ""
-        else occupation.occ_fuzz(row, occ_list), axis=1)
-    if isinstance(_occ, pd.DataFrame):
-        _occ = _occ.iloc[:, 0]
+    _occ = _papply(surname_list, _w_occ_fuzz, occ_list)
     surname_list["occ_reg"] = _occ.astype(str)
 
-    _occ2 = surname_list.apply(
-        lambda row: row["occ_reg"] if row["occ_reg"] == ""
-        else occupation.sec_occup(row, occ_list), axis=1)
-    if isinstance(_occ2, pd.DataFrame):
-        _occ2 = _occ2.iloc[:, 0]
+    _occ2 = _papply(surname_list, _w_sec_occup, occ_list)
     surname_list["occ_reg_2"] = _occ2.astype(str)
     reporter.capture(9, "Fuzzy occupation matching", surname_list)
 
