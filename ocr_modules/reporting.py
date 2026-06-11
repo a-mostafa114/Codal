@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from datetime import datetime
 from typing import Any, Dict, List
 
@@ -21,14 +22,20 @@ class ReportCollector:
 
     def __init__(self):
         self.records: List[Dict[str, Any]] = []
+        self._last_capture = time.perf_counter()
 
     def capture(self, step_id: int, step_name: str, df: pd.DataFrame,
                 extra: Dict[str, Any] | None = None) -> None:
         """Capture metrics for the current step."""
+        now = time.perf_counter()
+        elapsed = now - self._last_capture
+        self._last_capture = now
+        print(f"    [{step_name}] {elapsed:.1f}s")
         metrics: Dict[str, Any] = {
             "timestamp": datetime.utcnow().isoformat(timespec="seconds") + "Z",
             "step_id": step_id,
             "step_name": step_name,
+            "elapsed_s": round(elapsed, 1),
             "rows": int(len(df)) if df is not None else 0,
         }
 
