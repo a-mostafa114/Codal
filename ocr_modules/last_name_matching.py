@@ -370,7 +370,7 @@ def parallel_alt_algorithm(surname_list, df_death_reg_unacc,
     """
     n_rows = len(surname_list)
     if n_workers is None:
-        n_workers = os.cpu_count() or 1
+        n_workers = int(os.environ.get("CODAL_WORKERS", 0)) or os.cpu_count() or 1
     n_workers = max(1, min(n_workers, n_rows))
 
     reg_idx = build_register_index(df_death_reg_unacc)
@@ -383,10 +383,15 @@ def parallel_alt_algorithm(surname_list, df_death_reg_unacc,
             axis=1,
         )
 
-    indices = np.array_split(np.arange(n_rows), n_workers)
+    # Many small chunks: per-row cost is wildly uneven (an unmatched row
+    # costs ~1000x an exact match, and hard rows cluster on ad pages), so
+    # worker-sized chunks leave the pool idling on stragglers.
+    n_chunks = min(n_rows, n_workers * 16)
+    indices = np.array_split(np.arange(n_rows), n_chunks)
     chunks = [surname_list.iloc[idx] for idx in indices if len(idx) > 0]
 
-    print(f"  → Distributing {n_rows:,} rows across {len(chunks)} workers ...")
+    print(f"  → Distributing {n_rows:,} rows across {n_workers} workers "
+          f"({len(chunks)} chunks) ...")
 
     with mp.Pool(
         processes=min(n_workers, len(chunks)),

@@ -38,7 +38,8 @@ from ocr_modules import reporting
 
 # ── Step-4 parallel infrastructure ──────────────────────────────────────
 
-_N_WORKERS = os.cpu_count() or 1
+# Cap with CODAL_WORKERS to leave cores for others on a shared server.
+_N_WORKERS = int(os.environ.get("CODAL_WORKERS", 0)) or os.cpu_count() or 1
 
 
 def _par(pool, df, func, *extra_args):
