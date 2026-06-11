@@ -111,11 +111,6 @@ def parse_mineru_page(filepath: Path) -> List[Dict[str, Any]]:
             entry_type = entry.get("type")
             # image entries carry content=None; .get default doesn't apply
             content_raw = entry.get("content") or ""
-            if entry_type not in ["text", "ref_text", "title"]:
-                # Keep any entry whose content contains an inv.) marker
-                # regardless of type (e.g. table_caption city headers).
-                if "inv" not in content_raw.lower():
-                    continue
 
             bbox = entry.get("bbox")
             if not bbox or len(bbox) < 4:
@@ -123,6 +118,27 @@ def parse_mineru_page(filepath: Path) -> List[Dict[str, Any]]:
 
             x_value = bbox[0]
             column = 1 if x_value < 0.25 else 2
+
+            # MinerU sometimes classifies the person columns as a table; the
+            # entries arrive concatenated inside <td> cells. Emit each cell as
+            # a line — the downstream explode passes split it into persons.
+            if entry_type == "table":
+                for cell in _extract_html_cells(content_raw):
+                    cell = cell.strip()
+                    if cell:
+                        entries.append({
+                            "column": column,
+                            "line": cell,
+                            "source": "table",
+                        })
+                continue
+
+            if entry_type not in ["text", "ref_text", "title"]:
+                # Keep any entry whose content contains an inv.) marker
+                # regardless of type (e.g. table_caption city headers).
+                if "inv" not in content_raw.lower():
+                    continue
+
             clean_text = content_raw.strip()
 
             if clean_text:
