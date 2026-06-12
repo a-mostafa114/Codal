@@ -26,7 +26,8 @@ from ocr_modules.ocr_input_builder import OcrInputConfig, build_ocr_inputs, writ
 from main import run_pipeline
 
 # ── Run selection ────────────────────────────────────────────────────────
-YEARS: List[str] = ["1930"]          # years to process
+# YEARS: List[str] = ["1911", "1912", "1913", "1914", "1920", "1921", "1922", "1930"]
+YEARS: List[str] = ["1920", "1921", "1930"]
 PROVIDERS: Optional[List[str]] = ["mineru"]  # None = all in config
 
 # ── Per-year full configurations ─────────────────────────────────────────
@@ -122,6 +123,7 @@ def main() -> None:
                 output_prefix=f"final_output_{name}",
                 checkpoint_prefix=name,
                 report_dir=str(provider_out_dir / "reports"),
+                year=int(year),
             )
 
 

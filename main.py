@@ -34,6 +34,7 @@ from ocr_modules import location
 from ocr_modules import firm_estate
 from ocr_modules import classification
 from ocr_modules import reporting
+from ocr_modules import book_profile
 
 
 # ── Step-4 parallel infrastructure ──────────────────────────────────────
@@ -165,12 +166,24 @@ def _w_sec_occup(args):
     return out
 
 
+def _infer_year(input_csv: str, out_dir: str) -> int:
+    """Best-effort 4-digit year from the output dir or input path."""
+    import re
+    for s in (str(out_dir), str(input_csv)):
+        m = re.search(r"(1[89]\d\d|20\d\d)", s)
+        if m:
+            return int(m.group(1))
+    raise ValueError(
+        "Could not infer book year from paths; pass year= to run_pipeline.")
+
+
 def run_pipeline(
     input_csv: str = "ocr_input.csv",
     out_dir: str = ".",
     output_prefix: str = "final_output",
     checkpoint_prefix: str | None = None,
     report_dir: str | None = None,
+    year: int | None = None,
 ) -> None:
     out_path = Path(out_dir)
     out_path.mkdir(parents=True, exist_ok=True)
@@ -193,8 +206,27 @@ def run_pipeline(
     df_death_reg_unacc = data_loader.load_death_register()
     first_names = data_loader.load_first_names()
     main_dataframe = data_loader.load_main_dataframe(path=input_csv)
+
+    # Resolve the book profile (year + layout + extraction strategy) and let
+    # the pipeline branch on it. The year prior is validated against a sniff
+    # of the actual OCR so a mis-dated or unusual book is caught.
+    if year is None:
+        year = _infer_year(input_csv, out_dir)
+    profile = book_profile.resolve_profile(year, main_dataframe)
+    print(f"    [book_profile] {profile}")
+    if profile.layout != book_profile.Layout.COMMA_DASH:
+        raise NotImplementedError(
+            f"Year {profile.year} has layout '{profile.layout.value}', which "
+            f"the current pipeline does not parse. Only COMMA_DASH "
+            f"(~1911–1959) is implemented; the {profile.ln_strategy} branch "
+            f"(Valerio's {profile.layout.value} era) still needs porting. "
+            f"Refusing to run rather than silently mis-parse.")
+
     surname_list = data_loader.build_surname_list(main_dataframe)
     reporter.capture(1, "Load data", surname_list, extra={
+        "book_year": profile.year,
+        "book_layout": profile.layout.value,
+        "ln_strategy": profile.ln_strategy,
         "main_dataframe_rows": int(len(main_dataframe)),
         "death_register_rows": int(len(df_death_reg_unacc)),
         "dirty_last_names_rows": int(len(dirty_last_names_list)),
@@ -805,6 +837,12 @@ def main() -> None:
         default=None,
         help="Optional reports directory (default: <out-dir>/reports).",
     )
+    parser.add_argument(
+        "--year",
+        type=int,
+        default=None,
+        help="Book year (drives layout/era profile). Inferred from paths if omitted.",
+    )
     args = parser.parse_args()
     run_pipeline(
         input_csv=args.input,
@@ -812,6 +850,7 @@ def main() -> None:
         output_prefix=args.output_prefix,
         checkpoint_prefix=args.checkpoint_prefix,
         report_dir=args.report_dir,
+        year=args.year,
     )
 
 
