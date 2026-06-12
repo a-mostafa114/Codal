@@ -392,6 +392,58 @@ def take_out_fake_sec_lines(df):
     return df
 
 
+# ── Ditto (repeated-surname) line fill ──────────────────────────────────
+
+# First comma-segment must consist of initials tokens only ('C.', 'A. O.',
+# 'Th.') — not abbreviated places ('K:krona ...') or firms ('A.=B. ...').
+_PURE_INITIALS_SEG_RE = re.compile(r'^\s*(?:[A-Z](?:[a-z]{1,2})?\.\s*)+$')
+
+
+def fill_ditto_lastnames(df):
+    """Recover surnames for initials-led ditto lines.
+
+    Books print consecutive same-surname persons with a leading dash that
+    OCR often loses entirely, leaving lines such as 'C., postexp., Mt,
+    8490-7860' right under 'Nyberg, C. E. H., postexp., ...'. Such rows
+    pass every person check except last_name and were silently dropped
+    (~700-1,300 per 1920s book). Following Valerio's post-processing
+    rule: a person-candidate row whose line *starts* with initials
+    inherits last_name/best_match from the closest preceding person row
+    in the same page+column.
+    """
+    ln_col = df.columns.get_loc("last_name")
+    bm_col = df.columns.get_loc("best_match")
+
+    donor_key, donor_ln, donor_bm = None, "", ""
+    pages = df["page"].values
+    cols = df["column"].values
+    filled = 0
+
+    for i in range(len(df)):
+        key = (pages[i], cols[i])
+        if key != donor_key:
+            donor_key, donor_ln, donor_bm = key, "", ""
+
+        row = df.iloc[i]
+        if (row["split"] in (1, 3) and row["firm_dummy"] == 0
+                and row["estate_dummy"] == 0):
+            ln = row["last_name"]
+            if isinstance(ln, str) and ln != "":
+                # a donor surname must be a real word, not stray initials
+                if re.search(r'[A-Za-z]{3}', ln):
+                    donor_ln, donor_bm = ln, row["best_match"]
+            elif (donor_ln and row["index"] != "A1"
+                    and "," in str(row["line"])
+                    and _PURE_INITIALS_SEG_RE.match(str(row["line"]).split(",")[0])
+                    and not re.search(FIRM_PATTERN, str(row["line"]))):
+                df.iat[i, ln_col] = donor_ln
+                df.iat[i, bm_col] = donor_bm
+                filled += 1
+
+    print(f"    [ditto fill] {filled} initials-led lines inherited a surname")
+    return df
+
+
 # ── Hustru (wife) line fill ─────────────────────────────────────────────
 
 def fill_hustru_lines(df):

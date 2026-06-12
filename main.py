@@ -768,6 +768,7 @@ def run_pipeline(
     # STEP 14 – Final output
     # ================================================================
     print("[Step 14/14] Writing final output ...")
+    surname_list = classification.fill_ditto_lastnames(surname_list)
     surname_list = classification.fill_hustru_lines(surname_list)
     final_set = surname_list[[
         "page", "column", "row", "line", "line_complete", "index", "split",
