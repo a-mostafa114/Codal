@@ -18,6 +18,17 @@ import pandas as pd
 from .config import FIRM_PATTERN, INITIALS_PATTERN
 
 
+def _chat(s, i):
+    """Character at position ``i`` of ``s``, or '' if out of range.
+
+    split_line's case logic guards positional access only with
+    ``next_line[0].isupper()`` (length >= 1) but then reads ``next_line[1]``
+    / ``[2]``, which crashes on 1-2 char OCR lines (never seen in the MinerU
+    books, common in the Amazon-format ones).
+    """
+    return s[i] if i < len(s) else ''
+
+
 # ── Number / punctuation cleaning ───────────────────────────────────────
 
 _UNICODE_DASH_RE = re.compile(r'[‒–—―−]')  # ‒ – — ― −
@@ -264,14 +275,14 @@ def split_line(df, occ_list):
                          or (re.search(r'\d+', next_line)
                              and all(n > 1000 for n in [int(x) for x in re.findall(r'\d+', next_line)])))
                     and (((not next_line or (not next_line[0].isupper()
-                                            or (next_line[0].isupper() and next_line[1] in [".", ","])
-                                            or (next_line[0].isupper() and next_line[2] in [".", ","])))
+                                            or (next_line[0].isupper() and _chat(next_line, 1) in [".", ","])
+                                            or (next_line[0].isupper() and _chat(next_line, 2) in [".", ","])))
                           and any(num > 1000 for num in [int(x) for x in re.findall(r'\d+', next_line)]))
                          or (re.search(FIRM_PATTERN, line)
                              and any(num > 1000 for num in [int(x) for x in re.findall(r'\d+', next_line)])
                              and (not next_line or (not next_line[0].isupper()
-                                                    or (next_line[0].isupper() and not next_line.startswith("A.-B") and next_line[1] in [".", ","])
-                                                    or (next_line[0].isupper() and next_line[2] in [".", ","])))))):
+                                                    or (next_line[0].isupper() and not next_line.startswith("A.-B") and _chat(next_line, 1) in [".", ","])
+                                                    or (next_line[0].isupper() and _chat(next_line, 2) in [".", ","])))))):
                 df.at[idx, "split"] = 1
                 df.at[nxt, "split"] = 2
                 continue
@@ -299,8 +310,8 @@ def split_line(df, occ_list):
                                 or ((re.search(r'\s*\d+-', combined) or re.search(r'^-\s*\d+\s+\d+$', next_line))
                                     and re.search(FIRM_PATTERN, line)
                                     and (not next_line[0].isupper()
-                                         or (next_line[0].isupper() and not next_line.startswith("A.-B") and next_line[1] in [".", ","])
-                                         or (next_line[0].isupper() and next_line[2] in [".", ","])))):
+                                         or (next_line[0].isupper() and not next_line.startswith("A.-B") and _chat(next_line, 1) in [".", ","])
+                                         or (next_line[0].isupper() and _chat(next_line, 2) in [".", ","])))):
                             df.at[idx, "split"] = 1
                             df.at[nxt, "split"] = 2
                             continue

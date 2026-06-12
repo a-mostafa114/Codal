@@ -206,6 +206,9 @@ def build_location_list(surname_list):
         return loc
 
     location_list["location"] = location_list.apply(resolve_location, axis=1)
+    # Coerce to string: resolve_location can yield NaN/float, and an all-empty
+    # result infers float dtype, both of which break the .str accessor below.
+    location_list["location"] = location_list["location"].fillna("").astype(str)
     # Drop entries that still have empty location (inv.) line with no usable city name)
     location_list = location_list[location_list["location"].str.strip() != ""]
 
