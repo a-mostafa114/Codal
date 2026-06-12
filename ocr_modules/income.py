@@ -106,6 +106,16 @@ def split_income(row):
     if leading_dash and income_1 != "" and income_2 == "":
         income_1, income_2 = "", income_1
 
+    # A lone >=8-digit income is two columns whose separator OCR lost
+    # ('4788747050' = 47887—47050). Split at the midpoint and accept only
+    # when the halves are within ~6.5x of each other (Valerio's suspect
+    # ratio) — real incomes of this era never reach 10M kr.
+    if income_2 == "" and len(income_1) >= 8:
+        half = (len(income_1) + 1) // 2
+        a, b = income_1[:half], income_1[half:]
+        if not b.startswith("0") and max(int(a), int(b)) <= 6.5 * min(int(a), int(b)):
+            income_1, income_2 = a, b
+
     row["income_1"] = income_1
     row["income_2"] = income_2
     return row
