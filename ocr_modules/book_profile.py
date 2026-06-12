@@ -100,20 +100,36 @@ def detect_layout(df, sample: int = 4000) -> Layout:
     return Layout.NO_DASH_NO_COMMA
 
 
-def resolve_profile(year, df=None) -> BookProfile:
-    """Profile from year prior, validated against a sniff of ``df`` if given.
+# Restrictiveness: comma_dash is the most permissive (richest delimiters),
+# no_dash_no_comma the least. On a year/detection disagreement we take the more
+# restrictive layout so the guard refuses rather than silently mis-parsing.
+_RESTRICTIVENESS = {
+    Layout.COMMA_DASH: 0,
+    Layout.DASH_NO_COMMA: 1,
+    Layout.NO_DASH_NO_COMMA: 2,
+}
 
-    On disagreement the *detected* layout wins (the book is what it is), but we
-    keep the year's ln_strategy and surface the mismatch to the caller's log.
+
+def resolve_profile(year, df=None) -> BookProfile:
+    """Profile from year prior, reconciled with a sniff of ``df`` if given.
+
+    A book is treated as the permissive comma+dash layout only when the year
+    prior and the OCR sniff agree. They are mixed in practice — 1960s books
+    carry enough stray commas (Stockholm addresses) that a page sample can
+    sniff as comma+dash even though occupation/parish are not comma-delimited,
+    which would make the pipeline silently produce degraded output. So on
+    disagreement we keep the *more restrictive* layout, which the pipeline
+    guard then refuses to parse.
     """
     prof = profile_for_year(year)
     if df is None or "line" not in getattr(df, "columns", []):
         return prof
     detected = detect_layout(df)
-    if detected != prof.layout:
-        print(f"    [book_profile] year {prof.year} prior layout "
-              f"{prof.layout.value!r} but OCR looks {detected.value!r}; "
-              f"using detected.")
-        return BookProfile(prof.year, detected, prof.ln_strategy,
-                           prof.note + " [layout overridden by detection]")
-    return prof
+    if detected == prof.layout:
+        return prof
+    chosen = max(prof.layout, detected, key=_RESTRICTIVENESS.__getitem__)
+    print(f"    [book_profile] year {prof.year} prior layout "
+          f"{prof.layout.value!r} disagrees with OCR sniff "
+          f"{detected.value!r}; using more restrictive {chosen.value!r}.")
+    return BookProfile(prof.year, chosen, prof.ln_strategy,
+                       prof.note + " [layout reconciled to more restrictive]")
