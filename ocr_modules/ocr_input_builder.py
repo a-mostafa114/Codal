@@ -516,7 +516,17 @@ def process_df(df: pd.DataFrame) -> pd.DataFrame:
     """Apply standard splitting + row indexing to a raw OCR DataFrame."""
     _require_columns(df, {"page", "column", "line"}, "process_df")
 
-    df = df.drop_duplicates(subset="line")
+    # Dedup within (page, column), NOT book-wide. A book-wide
+    # drop_duplicates(subset="line") deletes any line whose exact text also
+    # appears on another page -- but the Taxeringskalender legitimately
+    # re-lists the same person in more than one place (e.g. a suburb resident
+    # printed in both the Stockholm city section and the Stockholm-lan
+    # section). The book-wide dedup silently stripped those re-listings from
+    # whichever page came later, gutting whole pages (e.g. 1912 p.628 dropped
+    # 35 of 62 individuals) and corrupting any per-page comparison. Scoping the
+    # dedup to the page+column keeps every printed occurrence on its own page
+    # while still removing true intra-page duplicates.
+    df = df.drop_duplicates(subset=["page", "column", "line"])
 
     p, q = 0, 1
     while p != q:
